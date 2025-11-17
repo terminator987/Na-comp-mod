@@ -15,8 +15,6 @@
 	}
 	modifier = {
 		naval_damage_taken = -0.10
-
-		allow_diplomacy_force_embargo = yes
 		allow_cabinet_naval_focus = yes
 
 

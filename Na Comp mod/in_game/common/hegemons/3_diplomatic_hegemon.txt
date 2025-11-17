@@ -16,7 +16,6 @@
 	modifier = {
 		improve_relation_impact = 0.3
 		
-		allow_diplomacy_influence_nation = yes
 		allow_cabinet_diplomatic_corps = yes
 
 	}

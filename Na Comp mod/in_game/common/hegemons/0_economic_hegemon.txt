@@ -21,7 +21,6 @@
 	
 	modifier = {
 		food_consumption_modifier = -0.1
-		allow_diplomacy_force_divert_trade  = yes
 		allow_cabinet_reduced_paperwork = yes
 
 	}

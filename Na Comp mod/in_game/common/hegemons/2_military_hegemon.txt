@@ -15,8 +15,7 @@
 	
 	modifier = {
 		global_war_score_cost = -0.1
-		
-		allow_diplomacy_violate_sovereignty = yes
+	
 		allow_cabinet_soldiers_as_workforce = yes
 
 	}
