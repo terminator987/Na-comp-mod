@@ -1,0 +1,11 @@
+﻿{
+	"name":	"Na Comp mod",
+	"id":	"",
+	"version":	"1",
+	"supported_game_version":	"",
+	"short_description":	"Na comp Mod",
+	"tags":	["Balance"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}
