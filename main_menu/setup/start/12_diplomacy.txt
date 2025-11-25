@@ -164,7 +164,7 @@ diplomacy_manager = {
     dependency = { first = FRA second = BGN subject_type = appanage }
     dependency = { first = FRA second = BOU subject_type = appanage }
     dependency = { first = FRA second = AUX subject_type = appanage }
-    dependency = { first = FRA second = SAN subject_type = appanage }
+   
     dependency = { first = FRA second = DRE subject_type = appanage }
     dependency = { first = FRA second = VDM subject_type = appanage }
     dependency = { first = FRA second = EVR subject_type = appanage }
@@ -179,7 +179,7 @@ diplomacy_manager = {
     dependency = { first = FRA second = FOI subject_type = vassal }
     dependency = { first = FRA second = AMG subject_type = vassal }
     dependency = { first = FRA second = FRZ subject_type = vassal }
-    dependency = { first = FRA second = BAR subject_type = vassal }
+    
     dependency = { first = FRA second = BLS subject_type = vassal }
     dependency = { first = FRA second = AST subject_type = vassal }
     dependency = { first = FRA second = COM subject_type = vassal }
@@ -206,6 +206,19 @@ diplomacy_manager = {
     dependency = { first = FOI second = MDM subject_type = fiefdom }
     dependency = { first = ALE second = PRC subject_type = fiefdom }
     dependency = { first = BOU second = MRC subject_type = fiefdom }
+
+    #Burgundy Vassals
+    dependency = { first = BUR second = LOR subject_type = vassal }
+    dependency = { first = BUR second = MTZ subject_type = vassal }
+    dependency = { first = BUR second = MTB subject_type = vassal }
+    dependency = { first = BUR second = BAR subject_type = vassal }
+    dependency = { first = BUR second = BRT subject_type = vassal }
+    dependency = { first = BUR second = SLM subject_type = vassal }
+    dependency = { first = BUR second = SCL subject_type = vassal }
+    dependency = { first = BUR second = SAV subject_type = vassal }
+    dependency = { first = BUR second = TUL subject_type = vassal }
+    dependency = { first = BUR second = SAN subject_type = vassal }
+    dependency = { first = BUR second = VDU subject_type = vassal }
 
     #-------Italy-------
     dependency = { first = NAP second = ACH subject_type = vassal }

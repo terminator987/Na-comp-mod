@@ -14004,6 +14004,7 @@ countries = {
 			provins
 			peyrusse entraigues st_affrique
 			allegre chalancon peyre chateauneuf_de_randon florac st_ambroix
+			alluyes 
 		}
 		own_control_integrated = {
 			#Appanages
@@ -15319,7 +15320,7 @@ countries = {
 			la_mothe_en_bassigny bar_le_duc clermont_en_argonne
 			saint_mihiel longwy #HRE
 			# own_control_integrated, but culture accepted
-			alluyes #B. du Perche-Gou�t
+			
 			ligny etain
 		}
 		starting_technology_level = 3
