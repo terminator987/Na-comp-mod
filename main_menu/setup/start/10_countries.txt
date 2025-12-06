@@ -21586,10 +21586,10 @@ countries = {
 			matruh sallum tobruk
 			el_qoseir ras_gharib safaga
 			el_jundi faran nuweiba saint_katrine
-			ayntab dluk
+			
 			jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
 			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
-			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+			
 			umluj al_hawra al_manjur al_maramiyah
 			al_ula al_bleiteh al_farah_ula al_marwa az_zubayir mughayra
 			duba ad_disah al_azlam al_wajh bada_yaqub bir_al_qurr
@@ -32292,6 +32292,9 @@ countries = {
 	KIL = {
 		own_control_core = {
 			kilis afrin trapessac
+			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+			iskenderun
+			ayntab dluk
 		}
 
 		include = "expl_middle_east"
