@@ -274,7 +274,7 @@ locations={
 	dortmund = { rank = town town_setup = german_town }
 	frankfurt = { rank = town town_setup = german_town }
 	beeskow = { rank = town town_setup = german_town }
-	freiberg = { rank = town town_setup = german_town }
+	meissen = { rank = town town_setup = german_town }
 	freiburg = { rank = town town_setup = german_town }
 	kassel = { rank = town town_setup = german_town }
 	gorlitz = { rank = town town_setup = german_town }
@@ -288,6 +288,7 @@ locations={
 	luneburg = { rank = town town_setup = german_town }
 	magdeburg = { rank = city town_setup = german_city }
 	munich = { rank = town town_setup = german_town }
+	landshut = { rank = town town_setup = german_town }
 	munster = { rank = town town_setup = german_town }
 	oettingen = { rank = town town_setup = german_town }
 	nuremberg = { rank = town town_setup = german_town }
@@ -373,6 +374,8 @@ locations={
 	poznan = 	{ rank = town	town_setup = polish_town }
 	torun = 	{ rank = town	town_setup = baltic_town	prosperity = -0.5}
 	wroclaw = { rank = town 	town_setup = polish_town }
+	warsaw = { rank = town 	town_setup = polish_town }
+	kazimierz = { rank = town 	town_setup = polish_town }
 	wloclawek =	{ prosperity = -0.2 }
 	radziejow =	{ prosperity = -0.2 }
 
@@ -385,8 +388,9 @@ locations={
 
 	# Ruthenia
 	chernihiv = { rank = town 	town_setup = ruthenian_town }
-	ismail = { rank = town town_setup = ruthenian_town }
+	ismail = { rank = town 	town_setup = polish_town }
 	kyiv = { rank = town 		town_setup = ruthenian_town }	
+	belz = { rank = town 	town_setup = polish_town }
 	lviv = { rank = town 		town_setup = ruthenian_town }	
 	polotsk = { rank = town 	town_setup = ruthenian_town }
 	poltava = { rank = town town_setup = ruthenian_town }
@@ -402,6 +406,7 @@ locations={
 	smolensk = { rank = city 		town_setup = russian_city }
 	tver = { rank = city 			town_setup = russian_city }
 
+	mozhaysk = { rank = town 		town_setup = russian_town }
 	kursk = { rank = town 			town_setup = russian_town }
 	vladimir = { rank = town 		town_setup = russian_town }
 	yaroslavl = { rank = town 		town_setup = russian_town }

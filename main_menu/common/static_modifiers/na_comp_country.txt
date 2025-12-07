@@ -17,7 +17,7 @@ call_for_peace = {
 	monthly_war_exhaustion = 0
 	monthly_diplomats = 0
 }
-bra_wittelsbacher_neglect_1_1 = {
+bra_wittelsbacher_neglect_1 = {
 	game_data = {
 		category = country
 	}

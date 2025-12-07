@@ -13072,7 +13072,9 @@ countries = {
 	CRO = {
 		own_control_core = {
 			sibenik kaseg knin novigrad crikvenica senj
-			bihac krk makarska srb sinj otocac
+			bihac krk makarska srb sinj otocac gradiski_brod dubica
+			bjelovar koprivnica kutina pakrac vaska virovitica
+			zagreb cakovec karlovac petrinja sisak slunj varazdin
 		}
 		our_cores_conquered_by_others = {
 			zadar split
@@ -17447,7 +17449,6 @@ countries = {
 			pancevo
 			kikinda titel modos
 			belgrad debrc sabac
-			gradiski_brod dubica
 			buda pest kalocsa felegyhaza
 			sopron vasvar magyarovar zalavar
 			veszprem gyor komarom fehervar esztergom
@@ -17470,10 +17471,7 @@ countries = {
 			kovin veliky_beckerek carasova mihalt
 			timisoara arad zarand
 			dabaca baia_crisului gurghiu
-			#Banate of Croatia
-			bjelovar koprivnica kutina pakrac vaska virovitica
-			vukovar ilok pozega sremska_mitrovica petrovaradin
-			zagreb cakovec karlovac petrinja sisak slunj varazdin
+			pozega vukovar ilok sremska_mitrovica petrovaradin
 		}
 
 		own_control_integrated = {

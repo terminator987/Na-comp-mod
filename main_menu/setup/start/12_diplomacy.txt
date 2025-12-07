@@ -234,10 +234,7 @@ diplomacy_manager = {
 
     dependency = { first = PAP second = FAE subject_type = vassal }
 
-    dependency = { first = SAV second = CEV subject_type = vassal }
-    dependency = { first = SAV second = AOS subject_type = fiefdom }
     dependency = { first = SAV second = GNV subject_type = vassal start_date = 1329.1.1 }
-    dependency = { first = SAV second = PIE subject_type = appanage }
     dependency = { first = SAV second = VUD subject_type = appanage }
 
     dependency = { first = VER second = PAD subject_type = vassal }
@@ -335,15 +332,11 @@ diplomacy_manager = {
 
     #Balkans:
     scripted_mutual = { first = HUN second = POL type = alliance }
-    scripted_oneway = { first = HUN second = HAB type = embargo_nation }
-    scripted_oneway = { first = POL second = HAB type = embargo_nation }
-    scripted_oneway = { first = BOH second = HAB type = embargo_nation }
     dependency = { first = NAP second = ALB subject_type = vassal }
     dependency = { first = ALB second = ANT subject_type = vassal }
     dependency = { first = ALB second = MTR subject_type = vassal }
     dependency = { first = ALB second = MZK subject_type = vassal }
     dependency = { first = ALB second = THP subject_type = vassal }
-    dependency = { first = HUN second = BOS subject_type = vassal }
 
     #Anatolia
     dependency = { first = AYD second = INA subject_type = vassal }
