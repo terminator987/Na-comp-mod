@@ -17,6 +17,7 @@ alliance_can_exist = {
 		is_rebel_country = no
 	}
 	scope:recipient = {
+		opinion = { target = scope:actor value >= -201 }
 		not = { has_blocked_treaties = scope:actor }
 		not = { is_subject_of = scope:actor }
 		not = { is_rival_of = scope:actor }

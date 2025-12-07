@@ -8,7 +8,7 @@ scripted_trigger bra_ruled_by_wittelsbacher_trigger = {
 }
 
 scripted_trigger bra_has_dynastic_chaos_active_trigger = {
-	has_country_modifier = bra_wittelsbacher_neglect
+	has_country_modifier = bra_wittelsbacher_neglect_1
 }
 
 scripted_effect bra_change_investment_score = {
@@ -93,12 +93,9 @@ flavor_bra_dynasty.1 = {
 		name = flavor_bra_dynasty.1.a
 		historical_option = yes
 		add_legitimacy = -40
-		add_country_modifier = { modifier = bra_wittelsbacher_neglect years = -1 mode = add_and_extend }
+		add_country_modifier = { modifier = bra_wittelsbacher_neglect_1 years = -1 mode = add_and_extend }
 		custom_tooltip = {
 			text = flavor_bra_dynasty.1.a.at
-			every_owned_location = {
-				change_control = control_ultimate_penalty
-			}
 		}
 		custom_tooltip = flavor_bra_dynasty.1.a.bt
 		custom_tooltip = flavor_bra_dynasty.1.a.ct
@@ -117,7 +114,7 @@ flavor_bra_dynasty.2 = {
 	desc = flavor_bra_dynasty.2.desc
 	fire_only_once = yes
 	trigger = {
-		has_country_modifier = bra_wittelsbacher_neglect
+		has_country_modifier = bra_wittelsbacher_neglect_1
 		OR = {
 			NOT = { government_type = government_type:monarchy }
 			NOT = { is_member_of_international_organization = international_organization:hre }
@@ -138,7 +135,7 @@ flavor_bra_dynasty.2 = {
 	}
 	option = {
 		name = flavor_bra_dynasty.2.a
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		if = {
 			limit = { has_variable = bra_wittelsbacher_investment_var }
 			remove_variable = bra_wittelsbacher_investment_var
@@ -462,7 +459,7 @@ flavor_bra_dynasty.8 = {
 	#Brandenburg shall become the pride of the Wittelsbacher
 	option = {
 		name = flavor_bra_dynasty.8.a
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		remove_variable = bra_wittelsbacher_investment_var
 		add_legitimacy = legitimacy_severe_bonus
 		add_prestige = prestige_severe_bonus
@@ -666,7 +663,7 @@ flavor_bra_dynasty.1000 = {
 	# Abdicate to the true ruler.
 	option = {
 		name = flavor_bra_dynasty.1000.c
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		add_stability = stability_radical_penalty
 		set_new_ruler = scope:target_character
 		custom_tooltip = {
@@ -1524,7 +1521,7 @@ flavor_bra_dynasty.1102 = {
 		set_new_ruler = scope:emperor_ruler
 		scope:emperor_ruler = { add_character_modifier = { modifier = bra_fresh_emperor_ruler_of_brandenburg years = -1 mode = add_and_extend } }
 		add_stability = stability_mild_bonus
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		remove_variable = bra_wittelsbacher_investment_var
 	}
 	option = {
@@ -1533,7 +1530,7 @@ flavor_bra_dynasty.1102 = {
 		set_new_ruler = scope:emperor_ruler
 		scope:emperor_ruler = { add_character_modifier = { modifier = bra_fresh_emperor_ruler_of_brandenburg years = -1 mode = add_and_extend } }
 		add_stability = stability_mild_bonus
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		remove_variable = bra_wittelsbacher_investment_var
 	}
 }
@@ -1573,7 +1570,7 @@ flavor_bra_dynasty.1103 = {
 		set_new_ruler = scope:dynasty_character
 		scope:dynasty_character = { add_character_modifier = { modifier = bra_fresh_ruler_of_brandenburg years = -1 mode = add_and_extend } }
 		add_stability = stability_mild_bonus
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		remove_variable = bra_wittelsbacher_investment_var
 	}
 	option = {
@@ -1582,7 +1579,7 @@ flavor_bra_dynasty.1103 = {
 		set_new_ruler = scope:dynasty_character
 		scope:dynasty_character = { add_character_modifier = { modifier = bra_fresh_ruler_of_brandenburg years = -1 mode = add_and_extend } }
 		add_stability = stability_mild_bonus
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		remove_variable = bra_wittelsbacher_investment_var
 	}
 }
@@ -1652,7 +1649,7 @@ flavor_bra_dynasty.1104 = {
 		}
 	}
 	after = {
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		remove_variable = bra_wittelsbacher_investment_var
 	}
 }
@@ -1686,7 +1683,7 @@ flavor_bra_dynasty.1105 = {
 		name = flavor_bra_dynasty.1105.a
 		set_new_ruler = scope:hohenzollern_character
 		add_stability = stability_mild_bonus
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		remove_variable = bra_wittelsbacher_investment_var
 	}
 }
@@ -1708,7 +1705,7 @@ flavor_bra_dynasty.1106 = {
 	option = {
 		name = flavor_bra_dynasty.1106.a
 		add_legitimacy = legitimacy_severe_penalty
-		remove_country_modifier = bra_wittelsbacher_neglect
+		remove_country_modifier = bra_wittelsbacher_neglect_1
 		remove_variable = bra_wittelsbacher_investment_var
 	}
 }
