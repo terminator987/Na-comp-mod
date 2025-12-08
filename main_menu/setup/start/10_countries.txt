@@ -17926,6 +17926,19 @@ countries = {
 	KNI = { #Knights Hospitaller
 		own_control_core = {
 			rodos kos
+			kilis afrin trapessac
+			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+			iskenderun
+			ayntab dluk
+			jerusalem acre amman beersheba gaza hebron karak  majdal nablus safed sughar jaffa 
+			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
+			bosra dara irbid nawa salkhad suwayda azraq
+			burraq jayrud qutayfah
+			ithriya sukhnah taybah
+			khanaser qastal salamiyya
+			marrat
+			arak huwwarin qaryatayn tadmur
+			deir_ez_zor tabqah
 		}
 
 		include = "catholic_military_order"
@@ -17964,10 +17977,11 @@ countries = {
 		}
 
 		tolerated_cultures = {
-			greek_culture
+			levantine_culture
+			syriac_culture
 		}
 
-		capital = rodos
+		capital = acre
 		dynasty = villeneuve_dynasty
 	}
 
@@ -21580,13 +21594,11 @@ countries = {
 		}
 
 		own_control_integrated = {
+			al_quwayrah maan aqaba
 			el_arish nekhel qatya warrada
 			matruh sallum tobruk
 			el_qoseir ras_gharib safaga
 			el_jundi faran nuweiba saint_katrine
-			
-			jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
-			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
 			
 			umluj al_hawra al_manjur al_maramiyah
 			al_ula al_bleiteh al_farah_ula al_marwa az_zubayir mughayra
@@ -32289,10 +32301,7 @@ countries = {
 	#Kilis - KIL
 	KIL = {
 		own_control_core = {
-			kilis afrin trapessac
-			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
-			iskenderun
-			ayntab dluk
+
 		}
 
 		include = "expl_middle_east"
@@ -33075,7 +33084,6 @@ countries = {
 	#Al 'Alī - AAL
 	AAL = {
 		own_control_core = {
-			burraq jayrud qutayfah
 			sakaka dumat_al_jandal aba_al_qur al_hamad arar
 		}
 
@@ -33104,8 +33112,6 @@ countries = {
 	#Al Mira - AMR
 	AMR = {
 		own_control_core = {
-			bosra dara irbid nawa salkhad suwayda
-			azraq
 			kaf al_harrah an_nasifah qurayyat_al_milh
 		}
 
@@ -33134,17 +33140,11 @@ countries = {
 	#Al Fadl - FDL
 	FDL = {
 		own_control_core = {
-			ithriya sukhnah taybah
-			khanaser qastal salamiyya
-			marrat
-			arak huwwarin qaryatayn tadmur
+			zubala al_labbah al_thulayma al_waqbi linah lowqah
 		}
 
 		own_control_integrated = {
-			zubala al_labbah al_thulayma al_waqbi linah lowqah
-			al_anbar hit ayn_tamr karbala
-			anah abu_kemal haditha
-			deir_ez_zor tabqah rahba
+
 		}
 
 		starting_technology_level = 3
@@ -33170,9 +33170,9 @@ countries = {
 			ruler_term = {	 character = fdl_muzzaffar_ad_din_musa_ibn_muhanna start_date = 1335.1.1	}
 		}
 
-		capital = tadmur
+		capital = al_thulayma
 		tolerated_cultures = {
-			levantine_culture
+			
 		}
 		religious_school = hanafi_school
 		government = { mysticism_vs_jurisprudence = -15 }
@@ -56213,6 +56213,9 @@ countries = {
 			khalafabad quban
 			ahvaz dowraq hamidiyeh hoveyzeh mosharahat muhammerah
 			samawa suq_al_shuyukh kazimah
+			al_anbar hit ayn_tamr karbala
+			anah abu_kemal haditha
+			rahba
 		}
 
 		include = "expl_middle_east"
