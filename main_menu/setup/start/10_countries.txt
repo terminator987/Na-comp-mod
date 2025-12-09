@@ -12850,15 +12850,17 @@ countries = {
 			budimlja brskovo gjakova mitrovica pristina novo_brdo skopje kumanovo veles prosek shtip
 			kratovo vranje podgorica bar_cg prijepolje visegrad ustikolina soko_grad
 			glubocica nis prokuplje stalac ravno jagodina gacko trebinje ohrid kocani strumica
-			krusevac kucevo branicevo rudnik smederevo krupanj valjevo uzice pljevlja
+			krusevac kucevo branicevo rudnik smederevo uzice pljevlja
 			gradac zica trgoviste_SER sjenica velbuzd
 			arilje brvenik medveda
+			sremska_mitrovica petrovaradin
+			belgrad debrc sabac krupanj valjevo
 		}
 		own_control_integrated = {
 			koman has dukagjini lezha florina
 		}
 		our_cores_conquered_by_others = {
-			slano mostar konjic belgrad debrc sabac
+			slano mostar konjic
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -13074,6 +13076,7 @@ countries = {
 			bihac krk makarska srb sinj otocac gradiski_brod dubica
 			bjelovar koprivnica kutina pakrac vaska virovitica
 			zagreb cakovec karlovac petrinja sisak slunj varazdin
+			osijek pozega vukovar ilok
 		}
 		our_cores_conquered_by_others = {
 			zadar split
@@ -17428,7 +17431,6 @@ countries = {
 
 	HUN = {	#Hungary
 		own_control_core = {
-			osijek
 			aiud hunedoara cincu
 			cristuru_secuiesc reghin
 			mezhorje sighet
@@ -17437,7 +17439,7 @@ countries = {
 			cheresig ineu lipova mako oradea szarvas
 			baja_hungary
 			csurgo simontornya kaposvar mohacs nagykanizsa siklos zalaegerszeg
-			kapuvar kormend papa szombathely tata
+			kapuvar kormend papa szombathely tata olsnica
 			abrahamtelke heves kecskemet adony solt
 			hajduszoboszlo miskolc szabolcs
 			gonc mukachevo satoraljaujhely velikyi_bereznyi
@@ -17447,7 +17449,6 @@ countries = {
 			povazska_bystrica zilina
 			pancevo
 			kikinda titel modos
-			belgrad debrc sabac
 			buda pest kalocsa felegyhaza
 			sopron vasvar magyarovar zalavar
 			veszprem gyor komarom fehervar esztergom
@@ -17461,17 +17462,11 @@ countries = {
 			miercurea_cluc chezdi_osorheiu covasna odorhei gheorgheni
 			bistrita cuhea rakhiv khust sic dej
 			debrecen nagyboszormeny nagykallo nagyecsed varda szatmar syvlyush zalau baia_mare
-			szolnok eger karcag borsod
+			szolnok eger karcag borsod jaszbereny
 			bekes csanad szeged
 			kovin veliky_beckerek carasova mihalt
 			timisoara arad zarand
 			dabaca baia_crisului gurghiu
-			pozega vukovar ilok sremska_mitrovica petrovaradin
-		}
-
-		own_control_integrated = {
-			#Croatia
-			olsnica jaszbereny
 		}
 
 		starting_technology_level = 3
@@ -17540,7 +17535,6 @@ countries = {
 		court_language = latin_language
 
 		tolerated_cultures = {
-			croatian
 			cuman_culture
 			german_carpathian
 			slovak
@@ -18089,20 +18083,7 @@ countries = {
 
 	KNI = { #Knights Hospitaller
 		own_control_core = {
-			rodos kos
-			kilis afrin trapessac
-			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
-			iskenderun
-			ayntab dluk
-			jerusalem acre amman beersheba gaza hebron karak  majdal nablus safed sughar jaffa 
-			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
-			bosra dara irbid nawa salkhad suwayda azraq
-			burraq jayrud qutayfah
-			ithriya sukhnah taybah
-			khanaser qastal salamiyya
-			marrat
-			arak huwwarin qaryatayn tadmur
-			deir_ez_zor tabqah
+
 		}
 
 		include = "catholic_military_order"
@@ -18141,11 +18122,10 @@ countries = {
 		}
 
 		tolerated_cultures = {
-			levantine_culture
-			syriac_culture
+			greek_culture
 		}
 
-		capital = acre
+		capital = rodos
 		dynasty = villeneuve_dynasty
 	}
 
@@ -31494,12 +31474,33 @@ countries = {
 	}
 
 	KOJ = { #Kingdom of Jerusalem
-		our_cores_conquered_by_others = { }
+		own_control_core = {
+			kilis afrin trapessac
+			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+			iskenderun
+			ayntab dluk
+			jerusalem acre amman beersheba gaza hebron karak  majdal nablus safed sughar jaffa 
+			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
+			bosra dara irbid nawa salkhad suwayda azraq
+			burraq jayrud qutayfah
+			ithriya sukhnah taybah
+			khanaser qastal salamiyya
+			marrat
+			arak huwwarin qaryatayn tadmur
+			deir_ez_zor tabqah
+			rodos kos
+		}
 		starting_technology_level = 3
-		include = "expl_eastern_europe"
-		include = "eastern_european_catholic_monarchy_not_present"
+		include = "catholic_military_order"
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
 		government = {
-			type = monarchy
+			type = theocracy
 			heir_selection = cognatic_primogeniture
 
 			ruler_term = { character = koj_baldovino_v_jerusalem start_date = 1183.11.20 end_date = 1186.8.1 regnal_number = 5 }
@@ -31553,10 +31554,30 @@ countries = {
 				name_hugh = 1
 			}
 		}
+
+			centralization_vs_decentralization = 20
+			aristocracy_vs_plutocracy = -95
+			serfdom_vs_free_subjects = -20
+			traditionalist_vs_innovative = -60
+			spiritualist_vs_humanist = -90
+			mercantilism_vs_free_trade = -30
+			offensive_vs_defensive = 50
+			land_vs_naval = 30
+			quality_vs_quantity = -60
+			belligerent_vs_conciliatory = -60
+			capital_economy_vs_traditional_economy = 25
+			individualism_vs_communalism = -20
+			outward_vs_inward = -40
+
 		country_rank = rank_kingdom
 		court_language = french_language
-		capital = jerusalem
+		capital = antioch
+		tolerated_cultures = {
+			syriac_culture
+			levantine_culture
+		}
 	}
+
 	#Dilmaçids - DIL https://en.wikipedia.org/wiki/Beylik_of_Dilma%C3%A7
 	DIL = {
 		own_control_core = {
