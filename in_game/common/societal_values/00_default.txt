@@ -58,8 +58,8 @@ spiritualist_vs_humanist = {
 		global_clergy_city_desired_pop_scaled = 0.02
 		tolerance_own = 2
 		
-		global_pop_conversion_speed_modifier = 0.50
-		global_pop_assimilation_speed_modifier = -0.5
+		global_pop_conversion_speed_modifier = 0.25
+		global_pop_assimilation_speed_modifier = -0.25
 		religious_unity_importance_modifier = 0.2
 		court_language_is_liturgical_language_importance_modifier = 0.25
 		bias_for_scholar_policies = 25
@@ -71,8 +71,8 @@ spiritualist_vs_humanist = {
 		tolerance_heathen = 1
 
 		
-		global_pop_conversion_speed_modifier = -0.50
-		global_pop_assimilation_speed_modifier = 0.5
+		global_pop_conversion_speed_modifier = -0.25
+		global_pop_assimilation_speed_modifier = 0.25
 		religious_unity_importance_modifier = -0.2
 		court_language_is_liturgical_language_importance_modifier = -0.25
 		bias_for_scholar_policies = 25

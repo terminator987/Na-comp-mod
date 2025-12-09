@@ -374,6 +374,7 @@ locations={
 	poznan = 	{ rank = town	town_setup = polish_town }
 	torun = 	{ rank = town	town_setup = baltic_town	prosperity = -0.5}
 	wroclaw = { rank = town 	town_setup = polish_town }
+	raciborz = { rank = town 	town_setup = polish_town }
 	warsaw = { rank = town 	town_setup = polish_town }
 	kazimierz = { rank = town 	town_setup = polish_town }
 	wloclawek =	{ prosperity = -0.2 }
