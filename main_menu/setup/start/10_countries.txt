@@ -1688,7 +1688,6 @@ countries = {
 			budejovice j_hradec benesov mlada_boleslav kourim kutna_hora
 			bechyne jicin podebrady caslav nachod nemecky_brod
 			chrudim hradec_kralove klodzko litomysl trebon
-			bautzen gorlitz hoyerswerda rothenburg_oberlausitz marienstern
 		}
 
 		starting_technology_level = 3
@@ -17461,10 +17460,6 @@ countries = {
 			zemplin kosice humenne uzhorod beregovo
 			miercurea_cluc chezdi_osorheiu covasna odorhei gheorgheni
 			bistrita cuhea rakhiv khust sic dej
-			turda targu_mures cetatea_balta felvint cluj
-			fagaras sibiu sebes alba_iulia medias sighisoara brasov sfantu_gheorghe
-			hateg caransebes lugoj deva
-			bihar beius baia_de_aries huedin crasna
 			debrecen nagyboszormeny nagykallo nagyecsed varda szatmar syvlyush zalau baia_mare
 			szolnok eger karcag borsod
 			bekes csanad szeged
@@ -17475,6 +17470,7 @@ countries = {
 		}
 
 		own_control_integrated = {
+			#Croatia
 			olsnica jaszbereny
 		}
 
@@ -17547,9 +17543,7 @@ countries = {
 			croatian
 			cuman_culture
 			german_carpathian
-			german_transylvanian
 			slovak
-			szekely_culture
 			transylvanian
 			serbian
 			rusyn_culture
@@ -17734,6 +17728,176 @@ countries = {
 		}
 		country_rank = rank_duchy
 		capital = huedin
+	}
+
+	#NA Comp Transylvanian Minors
+	A01 = {	#Székely 
+		own_control_core = {
+			targu_mures chezdi_osorheiu covasna cristuru_secuiesc gheorgheni odorhei sfantu_gheorghe miercurea_cluc
+			reghin		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = targu_mures
+		tolerated_cultures = {
+			transylvanian
+		}
+	}
+
+	A02 = {	#Härmeschtat 
+		own_control_core = {
+			sibiu medias sebes sighisoara
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"		
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = sibiu
+		tolerated_cultures = {
+			transylvanian
+		}
+	}
+
+	A03 = {	#Kruhnen 
+		own_control_core = {
+			brasov cincu fagaras
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"		
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = brazov
+		tolerated_cultures = {
+			transylvanian
+		}
+	}
+
+	A04 = {	#Kokelburg 
+		own_control_core = {
+			alba_iulia aiud cetatea_balta 
+			gurghiu
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"		
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = cetatea_balta
+		tolerated_cultures = {
+			transylvanian
+			hungarian
+		}
+	}
+
+	A05 = {	#Deva 
+		own_control_core = {
+			deva hateg hunedoara
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = deva
+		tolerated_cultures = {
+			hungarian
+		}
+	}
+
+	A06 = {	#Kolozsvár 
+		own_control_core = {
+			cluj		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = cluj
+		tolerated_cultures = {
+			transylvanian
+		}
+	}
+
+	A07 = {	#Turda 
+		own_control_core = {
+			turda baia_de_aries huedin		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = turda
+		tolerated_cultures = {
+			hungarian
+		}
+	}
+
+	A08 = {	#Dej 
+		own_control_core = {
+			dabaca baita dej		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = dej
+		tolerated_cultures = {
+			hungarian
+		}
+	}
+
+	A09 = {	#Bistrița 
+		own_control_core = {
+			bistrita sic		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = bistrita
+		tolerated_cultures = {
+			german_transylvanian
+			hungarian
+		}
 	}
 
 	CLI = {	#Cilli
@@ -21605,10 +21769,6 @@ countries = {
 			duba ad_disah al_azlam al_wajh bada_yaqub bir_al_qurr
 			tabuk_arabia al_khanbarah al_muazzam al_ukhaydir bajdah bir_ibn_hermas dhat_al_hajj
 			aynuna al_bad al_muwaylih haql makna
-		}
-
-		own_control_conquered = {
-			iskenderun
 		}
 
 		include = "expl_muslim_mediterranean"
@@ -31186,7 +31346,7 @@ countries = {
 	CIL = {
 		own_control_core = {
 			adana
-			anavarza kars_armenia
+			anavarza kars_armenia iskenderun
 			sis caxud hargan molevon
 			tarsus candir_cil corycus
 			ayas kapan
@@ -36320,9 +36480,9 @@ countries = {
 		country_rank = rank_county
 	}
 
-	SPB = { #Spremberg
+	SPB = { #Görlitz
 		own_control_core = {
-			spremberg
+			spremberg bautzen gorlitz hoyerswerda rothenburg_oberlausitz marienstern
 		}
 
 		starting_technology_level = 3
@@ -36340,6 +36500,7 @@ countries = {
 		}
 
 		country_rank = rank_county
+		capital = gorlitz
 	}
 
 	GLA = { #Glauchau

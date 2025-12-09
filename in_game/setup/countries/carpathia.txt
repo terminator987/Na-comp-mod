@@ -1,0 +1,135 @@
+﻿HUN = {
+	color = map_hungarian
+	color2 = rgb { 152  85  92 }
+
+	unit_color0 = hsv360 {	7 87 50 }
+	unit_color1 = hsv360 {	130 53 38 }
+	unit_color2 = rgb {	239 239 242 }
+
+	culture_definition = hungarian
+	religion_definition = catholic
+
+	description_category = diplomatic
+	difficulty = 1
+}
+
+WAL = {
+	color = map_wallachian
+	color2 = rgb { 82 160 242 }
+
+	culture_definition = wallachian
+	religion_definition = orthodox
+}
+
+BIA = {
+	color = rgb { 36  157  123 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+BLD = {
+	color = rgb { 236  57  123 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+HTN = {
+	color = rgb { 236  57  223 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+HSC = {
+	color = rgb { 136  57  223 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+IAS = {
+	color = rgb { 36  57  123 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+SRC = {
+	color = rgb { 136  157  223 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+SSI = {
+	color = rgb { 36  57  223 }
+   culture_definition = moldovan
+   religion_definition = orthodox
+}
+
+TRA = {
+	color = map_transylvanian
+	color2 = rgb { 211  207  173 }
+
+	culture_definition = hungarian
+	religion_definition = catholic
+}
+
+A01 = {
+	color = rgb { 25 39 117 }
+
+	culture_definition = szekely_culture
+	religion_definition = catholic
+}
+
+A02 = {
+	color = rgb { 235 220 40 }
+
+	culture_definition = german_transylvanian
+	religion_definition = catholic
+}
+
+A03 = {
+	color = rgb { 166 27 12 }
+
+	culture_definition = german_transylvanian
+	religion_definition = catholic
+}
+
+A04 = {
+	color = rgb { 148 101 232 }
+
+	culture_definition = german_transylvanian
+	religion_definition = catholic
+}
+
+A05 = {
+	color = rgb { 148 144 28 }
+
+	culture_definition = transylvanian
+	religion_definition = orthodox
+}
+
+A06 = {
+	color = rgb { 13 130 7 }
+
+	culture_definition = hungarian
+	religion_definition = catholic
+}
+
+A07 = {
+	color = rgb { 49 160 186 }
+
+	culture_definition = transylvanian
+	religion_definition = catholic
+}
+
+A08 = {
+	color = rgb { 135 126 126 }
+
+	culture_definition = transylvanian
+	religion_definition = catholic
+}
+
+A09 = {
+	color = rgb { 237 237 237 }
+
+	culture_definition = transylvanian
+	religion_definition = catholic
+}
