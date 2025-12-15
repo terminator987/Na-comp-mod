@@ -1202,7 +1202,7 @@ countries = {
 			eastern_pomeranian
 		}
 
-		country_rank = rank_county
+		country_rank = rank_duchy
 		capital = brandenburg
 		dynasty = wittelsbach_dynasty
 	}
@@ -1331,7 +1331,7 @@ countries = {
 
 		}
 
-		country_rank = rank_county
+		country_rank = rank_duchy
 		capital = meissen
 		dynasty = wettin_dynasty
 		tolerated_cultures = {
@@ -1458,7 +1458,7 @@ countries = {
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
-		include = "catholic_bishopric_no_coast"
+		include = "catholic_german_bishopric_no_coast"
 		include = "expl_northern_europe"
 		country_rank = rank_duchy
 		government = {
@@ -10294,7 +10294,7 @@ countries = {
 			emilian
 		}
 
-		country_rank = rank_county
+		country_rank = rank_duchy
 		capital = milano
 		dynasty = visconti_dynasty
 	}
@@ -17377,7 +17377,7 @@ countries = {
 		starting_technology_level = 3
 		include = "expl_western_europe"
 		include = "catholic_monarchy_no_coast"
-		include = "german_principality"
+		include = "austria"
 		government = {
 
 			ruler = hab_albrecht_ii_habsburg
@@ -37358,7 +37358,7 @@ countries = {
 			ashkenazi
 		}
 
-		country_rank = rank_county
+		country_rank = rank_duchy
 		capital = erfurt
 	}
 

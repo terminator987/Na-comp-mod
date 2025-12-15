@@ -369,9 +369,9 @@ flavor_mei.50 = { #The Rise of Dresden
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = MEI
-		from = 1470.1.1
+		from = 1400.1.1
 		to = 1520.1.1
-		monthly_chance = 10
+		monthly_chance = 25
 	}
 
 	trigger = {
@@ -420,22 +420,18 @@ flavor_mei.50 = { #The Rise of Dresden
 				}
 				change_location_rank = location_rank:town
 			}
-			change_development  = development_severe_bonus
+			else = {
+				limit = {
+					location_rank = location_rank:town
+				}
+				change_location_rank = location_rank:city
+			}
 		}
 	}
 
 	option = {
 		name = flavor_mei.50.b
-		change_gold_effect = { scale = -3.00 }
-		location:dresden = {
-			if = {
-				limit = {
-					location_rank = location_rank:rural_settlement
-				}
-				change_location_rank = location_rank:town
-			}
-			change_development  = development_severe_bonus
-		}
+		change_societal_value = { type = centralization_vs_decentralization value = societal_value_move_to_left }
 	}
 
 	historical_info = flavor_mei.50.historical_info
@@ -1251,7 +1247,7 @@ flavor_mei.160 = { #University of Wittenberg
     dynamic_historical_event = {
         tag = MEI
 		tag = SAX
-        from = 1502.1.1
+        from = 1337.1.1
         to = 1530.1.1
         monthly_chance = 1
     }
@@ -1318,7 +1314,7 @@ flavor_mei.170 = { #University of Freiberg
 	dynamic_historical_event = {
 		tag = MEI
 		tag = SAX
-		from = 1750.1.1
+		from = 1337.1.1
 		to = 1836.1.1
 		monthly_chance = 1
 	}
@@ -2109,7 +2105,7 @@ flavor_mei.1003 = { #Thuringian Counts' War - Meissen
 		add_prestige = prestige_mild_bonus
 		declare_war_with_cb = {
 			target = scope:target_country
-			type = casus_belli:cb_claim_throne
+			type = casus_belli:cb_annex
 		}
 		change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_move_to_left }
 	}

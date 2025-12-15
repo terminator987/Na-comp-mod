@@ -16,7 +16,7 @@
 	individualism_vs_communalism = 30
 	outward_vs_inward = -30
 	parliament = {
-		parliament_type = landtag_parliament
+		parliament_type = estate_parliament
 	}
 
 	#Estate Privileges
@@ -24,7 +24,7 @@
 		#nobles
 		right_to_inherit
 		#Burghers
-
+		magdeburg_rights
 	}
 
 	laws = {
