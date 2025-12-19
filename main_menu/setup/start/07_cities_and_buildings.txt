@@ -1419,15 +1419,12 @@ building_manager = {
 
 
 	castle 		= { tag = SBL level = 1 location = edinburgh } 
-	castle 		= { tag = SBL level = 1 location = stirling } 
 	castle 		= { tag = SBL level = 1 location = roxburgh } 
 	stockade 	= { tag = SCO level = 1 location = inverary } # Eilean Donan castle
 	stockade 	= { tag = SCO level = 1 location = dingwall } # Urquhart castle
 	stockade 	= { tag = SCO level = 1 location = stonehaven } # Dunnotar Castle
 	stockade 	= { tag = SCO level = 1 location = dunbar } # Dunbar Castle
 	stockade 	= { tag = SBL level = 1 location = dumfries } # caerlaverock Castle
-	stockade 	= { tag = SBL level = 1 location = perth } 
-	stockade 	= { tag = SBL level = 1 location = kirkcudbright } # Buittle Castle
 
 	
 	monastery 	= { tag = SBL level = 1 location = kirkcudbright } # Sweetheart Monastery 

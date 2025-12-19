@@ -14034,10 +14034,6 @@ countries = {
 			grandpre #C. Grandpre
 		}
 
-		own_control_conquered = {
-			lille douai tournai #From Flanders after the Treaty of Athis-sur-Orge
-		}
-
 		our_cores_conquered_by_others = {
 		}
 
@@ -17044,7 +17040,7 @@ countries = {
 	#Hainaut
 	HAI = {
 		own_control_core = {
-			valenciennes #France
+			valenciennes lille douai tournai #France
 			ath chimay enghien maubeuge mons
 		}
 
@@ -17088,7 +17084,7 @@ countries = {
 		}
 
 		country_rank = rank_county
-		capital = valenciennes
+		capital = tournai
 	}
 
 	#Flanders
