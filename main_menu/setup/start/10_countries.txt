@@ -31477,20 +31477,7 @@ countries = {
 
 	KOJ = { #Kingdom of Jerusalem
 		own_control_core = {
-			kilis afrin trapessac
-			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
-			iskenderun
-			ayntab dluk
-			jerusalem acre amman beersheba gaza hebron karak  majdal nablus safed sughar jaffa 
-			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
-			bosra dara irbid nawa salkhad suwayda azraq
-			burraq jayrud qutayfah
-			ithriya sukhnah taybah
-			khanaser qastal salamiyya
-			marrat
-			arak huwwarin qaryatayn tadmur
-			deir_ez_zor tabqah
-			rodos kos
+			
 		}
 		starting_technology_level = 3
 		include = "catholic_military_order"
