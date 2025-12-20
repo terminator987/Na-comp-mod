@@ -15,7 +15,7 @@
 	food_consumption_per_strength = 1
 	
 	
-	damage_taken = 1.0		#infantry vs infantry in size
+	damage_taken = 1		#infantry vs infantry in size
 	
 	
 	frontage = 1
@@ -23,7 +23,7 @@
 	combat_speed = 2
 	
 	flanking_ability = 1.0
-	secure_flanks_defense = 0.25
+	secure_flanks_defense = 0.5
 
 	maintenance_demand =  infantry_maintenance
 	construction_demand = infantry_construction
