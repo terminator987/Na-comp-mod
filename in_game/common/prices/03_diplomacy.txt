@@ -86,8 +86,8 @@ corrupt_officials_monthly_cost = {
 }
 
 abdicate_price = {
-	prestige = 100
-	legitimacy = 20
+	prestige = 20
+	legitimacy = 10
 }
 
 middle_kingdom_tribute_price = {
