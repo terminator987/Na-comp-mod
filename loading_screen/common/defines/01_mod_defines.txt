@@ -9,3 +9,6 @@ NDiplomacy = {
 NEconomy = {
 	OVER_FORT_LIMIT_MULTIPLIER = 10.0
 }
+NMarket = {
+	MIN_PRICE_IMPACT = -0.05
+}
