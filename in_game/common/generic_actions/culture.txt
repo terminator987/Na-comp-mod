@@ -262,8 +262,7 @@ change_primary_culture = {
 					not = { culture = root }
 					OR = {
 						dominant_culture ?= root
-						ruler ?= { culture = root }
-						dominant_upper_class_culture ?= root
+						
 					}
 				}
 			}
