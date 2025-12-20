@@ -2982,6 +2982,9 @@ crown_castile_reform = {
 		change_policy_cost_modifier = -0.25
 		global_manpower_modifier = 0.10
 		monthly_legitimacy = 0.05
+		peasants_estate_levy_size = -0.2
+
+
 	}
 	years = 2
 }
