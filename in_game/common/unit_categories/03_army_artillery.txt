@@ -14,7 +14,7 @@
 	food_consumption_per_strength = 2
 	
 	
-	damage_taken = 1
+	damage_taken = 1.0
 	
 	
 	frontage = 1
