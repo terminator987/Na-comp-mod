@@ -15,7 +15,6 @@ ruler_adm = {
 	}
 	hire_advisor_cost_modifier = -0.005
 	global_crown_estate_power = 0.0025
-	global_build_buildings_cost = -0.001
 	global_distance_from_capital_cost_modifier = -0.001
 	
 	stability_importance_modifier = 0.001
