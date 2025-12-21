@@ -1011,6 +1011,8 @@ locations={
 	basra = { rank = city 		town_setup = levant_city }
 	damascus = { rank = city 	town_setup = levant_city }
 	jerusalem = { rank = city 	town_setup = levant_city }
+	tripoli_syria = { rank = town 	town_setup = levant_city }
+	karak = { rank = town 	town_setup = levant_city }
 	mosul = { rank = city 		town_setup = levant_city }
 	nusaybin = { rank = city 	town_setup = levant_city }
 	mecca = { rank = town 	town_setup = levant_city }
@@ -2073,13 +2075,11 @@ building_manager = {
 
 	#Poland
 	castle = { tag = TEU level = 1 location = malbork }
-	castle = { tag = TEU level = 1 location = szczytno }
-	castle = { tag = TEU level = 1 location = insterburg }
+	castle = { tag = TEU level = 1 location = tilsit }
 	castle = { tag = TEU level = 1 location = ostroda }
-	castle = { tag = ERM level = 1 location = olsztyn }
-	castle = { tag = CHL level = 1 location = lubawa }
-	castle = { tag = PMS level = 1 location = kwidzyn }
+	castle = { tag = TEU level = 1 location = kwidzyn }
 	castle = { tag = TEU level = 1 location = tuchola }
+	castle = { tag = TEU level = 1 location = torun }
 	castle = { tag = POL level = 1 location = poznan }
 	castle = { tag = PLK level = 1 location = plock }
 	castle = { tag = POL level = 1 location = krakow }

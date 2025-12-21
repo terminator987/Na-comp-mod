@@ -9,7 +9,7 @@
 		num_possible_rivals = 4
 		num_possible_artists = 2
 		
-		fort_limit = 2
+		fort_limit = 5
 		
 		cultures_capacity = 2
 		government_size = 1
@@ -48,7 +48,7 @@ rank_kingdom = {
 		
 		num_possible_rivals = 3
 		
-		fort_limit = 1
+		fort_limit = 3
 		
 		num_possible_artists = 1 
 		cultures_capacity = 1
@@ -83,6 +83,7 @@ rank_duchy = {
 		diplomatic_range = 200
 		
 		num_possible_rivals = 2
+		fort_limit = 1
 		diplomatic_capacity = 1
 		cultures_capacity = 0.5
 

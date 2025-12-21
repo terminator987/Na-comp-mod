@@ -234,14 +234,14 @@ offensive_vs_defensive = {
 		antagonism_declared_war_no_cb_giving_modifier = -0.1
 	}
 	right_modifier = {
-		fort_maintenance_cost = -0.2
+		fort_maintenance_cost = -0.1
 		combat_speed_modifier = 0.05
 		
 		global_defensive = 0.25
 		army_movement_speed = -0.05
 		defence_importance_modifier = 0.2
 		bias_for_diplomat_policies = 50
-		fort_limit_modifier = 0.5
+		fort_limit_modifier = 0.1
 	}
 }
 

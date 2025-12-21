@@ -1,0 +1,27 @@
+﻿SYR = {
+	color = rgb { 75 34 207 }
+   	culture_definition = levantine_culture
+   	religion_definition = sunni
+   	is_historic = yes
+}
+
+Z01 = {
+	color = rgb { 138 10 10 }
+   	culture_definition = french
+   	religion_definition = catholic
+   	is_historic = yes
+}
+
+SFD = {
+	color = rgb { 21 86 145 }
+   	culture_definition = levantine_culture
+   	religion_definition = sunni
+}
+
+ALK = {
+   	color = rgb { 43 196 94 }
+   	culture_definition = bedouin_culture
+   	religion_definition = sunni
+	is_historic = yes
+}
+
