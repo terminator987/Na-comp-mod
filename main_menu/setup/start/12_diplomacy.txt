@@ -237,7 +237,7 @@ diplomacy_manager = {
     dependency = { first = SAV second = GNV subject_type = vassal start_date = 1329.1.1 }
     dependency = { first = SAV second = VUD subject_type = appanage }
 
-    dependency = { first = VER second = PAD subject_type = vassal }
+
     dependency = { first = VER second = PAR subject_type = vassal }
     dependency = { first = VER second = LUC subject_type = vassal }
 
@@ -247,6 +247,9 @@ diplomacy_manager = {
 
     scripted_oneway = { first = PAP second = SIC type = guarantee }
     scripted_oneway = { first = ARA second = SIC type = guarantee }
+
+    dependency = { first = VEN second = PAD subject_type = vassal }
+    dependency = { first = VEN second = AQU subject_type = vassal }
 
     #-------Iberia-------
     dependency = { first = ARA second = MLL subject_type = vassal start_date = 1279.1.20 } #Treaty of Perpignan, where James II of Mallorca acknowledged the overlordship of his elder brother, Peter IV of Aragon

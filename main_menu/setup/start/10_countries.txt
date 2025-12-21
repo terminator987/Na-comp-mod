@@ -11792,6 +11792,9 @@ countries = {
 		own_control_core = {
 			chioggia venice mestre
 			pola rovinj pag zadar split brac slano
+			castelfranco treviso belluno
+			ceneda conegliano
+			feltre
 		}
 
 		own_control_integrated = {
@@ -11982,9 +11985,9 @@ countries = {
 		own_control_conquered = {
 			asola brescia palazzolo salo_ita breno nozza
 			cividale
-			ceneda conegliano
-			feltre
-			castelfranco treviso belluno
+			
+			
+			
 			rovereto
 		}
 
