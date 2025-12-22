@@ -11763,9 +11763,9 @@ countries = {
 			ruler_term = { character = urb_bonconte_i_montefeltro start_date = 1234.1.1 end_date = 1242.1.1 regnal_number = 1 }
 			ruler_term = { character = urb_montefeltrano_ii_montefeltro start_date = 1242.1.1 end_date = 1254.1.1 regnal_number = 2 }
 			ruler_term = { character = urb_guido_i_montefeltro start_date = 1254.1.1 end_date = 1285.1.1 regnal_number = 1 }
-			# Annexed by Papal State 1285-1296)
+			# Annexed by Papal State 1285-1296
 			ruler_term = { character = urb_federico_i_montefeltro start_date = 1296.1.1 end_date = 1322.1.1 regnal_number = 1 }
-			# Annexed by Papal State 1322-1323)
+			# Annexed by Papal State 1322-1323
 			ruler_term = { character = urb_sighinolfo_montefeltro start_date = 1323.4.26 regnal_number = 1 }
 			#ruler_term = { character = urb_guido_novello_montefeltro start_date = 1323.4.26 regnal_number = 2 } # Junior Count
 			#ruler_term = { character = urb_galasso_montefeltro start_date = 1323.4.26 regnal_number = 1 } # Junior Count
