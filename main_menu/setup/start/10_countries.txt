@@ -55,7 +55,7 @@ countries = {
 
 
 		own_control_colony = {
-			 asele
+			asele
 		}
 
 
@@ -17140,6 +17140,7 @@ countries = {
 			individualism_vs_communalism = -20
 
 		}
+		country_rank = rank_duchy
 		capital = bruges
 		court_language = french_language
 	}

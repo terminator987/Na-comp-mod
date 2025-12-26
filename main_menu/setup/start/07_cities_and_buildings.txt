@@ -231,6 +231,7 @@ locations={
 	mulhouse = { rank = town town_setup = french_town }
 	laon = { rank = town town_setup = french_town }
 	le_puy = { rank = town town_setup = french_town }
+	libourne = { rank = town town_setup = french_town }
 	lyon = { rank = town town_setup = french_town }
 	montauban = { rank = town town_setup = french_town }
 	montbrison = { rank = town town_setup = french_town }
@@ -1412,6 +1413,9 @@ building_manager = {
 	castle 		= { tag = ENG level = 1 location = windsor } 
 	castle 		= { tag = ENG level = 1 location = leeds } 
 	castle 		= { tag = ENG level = 1 location = pontefract } # conisbrough castle
+	castle 		= { tag = AQN level = 1 location = labrit }
+	castle 		= { tag = ENG level = 1 location = abbeville }
+
 
 	stockade 		= { tag = ENG level = 1 location = launceston } # tintagel
 	stockade 		= { tag = ENG level = 1 location = rochester } # Rochester Castle
