@@ -17445,10 +17445,9 @@ countries = {
 			abrahamtelke heves kecskemet adony solt
 			hajduszoboszlo miskolc szabolcs
 			gonc mukachevo satoraljaujhely velikyi_bereznyi
-			bardejov podmuran roznava
-			kremnica krupina nograd salgotarjan zvolen
-			prievidza trnava
-			povazska_bystrica zilina
+		
+			krupina
+			nograd salgotarjan
 			pancevo
 			kikinda titel modos
 			buda pest kalocsa felegyhaza
@@ -17456,11 +17455,11 @@ countries = {
 			veszprem gyor komarom fehervar esztergom
 			somogyvar tolna pecs segesd
 			bacs zenta bodrog halas
-			bratislava samorin nitra hlohovec holic
-			hont balassagyarmat stary_tekov banska_bystrica
-			trencin oravsky_podzamok turciansky_svaty_martin liptovsky_mikulas
-			gemer rimavska_sobota levoca lubica presov turna
-			zemplin kosice humenne uzhorod beregovo
+			
+			hont balassagyarmat stary_tekov 
+			
+			gemer  turna
+			zemplin kosice uzhorod beregovo
 			miercurea_cluc chezdi_osorheiu covasna odorhei gheorgheni
 			bistrita cuhea rakhiv khust sic dej
 			debrecen nagyboszormeny nagykallo nagyecsed varda szatmar syvlyush zalau baia_mare
@@ -17893,6 +17892,31 @@ countries = {
 		tolerated_cultures = {
 			german_transylvanian
 			hungarian
+		}
+	}
+	A10 = {	#Slovakia 
+		own_control_core = {
+			kremnica zvolen	
+			trencin oravsky_podzamok turciansky_svaty_martin liptovsky_mikulas
+			bratislava samorin nitra hlohovec holic
+			banska_bystrica
+			humenne
+		    bardejov podmuran roznava
+			rimavska_sobota levoca lubica presov
+			prievidza trnava
+			povazska_bystrica zilina
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = kremnica
+		tolerated_cultures = {
+			
 		}
 	}
 

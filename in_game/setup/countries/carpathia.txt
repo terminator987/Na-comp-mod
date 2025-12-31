@@ -133,3 +133,9 @@ A09 = {
 	culture_definition = transylvanian
 	religion_definition = catholic
 }
+A10 = {
+	color = rgb {36 57 123 }
+
+	culture_definition = slovak
+	religion_definition = catholic
+}
