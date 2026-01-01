@@ -2,7 +2,7 @@
 	potential = { has_or_had_tag = HUN }
 
 	age = age_1_traditions
-	army_cavalry_power = 0.1
+	army_cavalry_power = 0.2
 
 	requires = feudalism_advance
 }
