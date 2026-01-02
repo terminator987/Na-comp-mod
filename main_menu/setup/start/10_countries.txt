@@ -17045,7 +17045,7 @@ countries = {
 	#Hainaut
 	HAI = {
 		own_control_core = {
-			valenciennes lille douai tournai #France
+			valenciennes #France
 			ath chimay enghien maubeuge mons
 		}
 
@@ -17089,7 +17089,7 @@ countries = {
 		}
 
 		country_rank = rank_county
-		capital = tournai
+		capital = valenciennes
 	}
 
 	#Flanders
@@ -17097,8 +17097,6 @@ countries = {
 		own_control_core = {
 			cassel dunkirk oudenaarde ypres veurne
 			ostend bruges hulst ghent sint_niklaas aalst kortriik
-		}
-		our_cores_conquered_by_others = {
 			lille douai tournai
 		}
 		starting_technology_level = 3
