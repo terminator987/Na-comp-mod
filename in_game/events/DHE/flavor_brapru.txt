@@ -1938,7 +1938,7 @@ flavor_brapru.29 = {
 
 		historical_option = yes
 
-		change_gold_effect = { scale = -12 }
+		change_gold_effect = { scale = -3.5 }
 		scope:target_province = {
 			add_location_modifier = {
 				modifier = PRU_secondary_capital_tangermunde
