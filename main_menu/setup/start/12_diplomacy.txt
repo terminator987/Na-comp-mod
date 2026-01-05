@@ -97,7 +97,7 @@ diplomacy_manager = {
     dependency = { first = GEN second = GAZ subject_type = vassal }
 
     # Golden Horde
-        #Moldova
+    #Moldova
     dependency = { first = GLH second = BIA subject_type = tributary }
     dependency = { first = GLH second = BLD subject_type = tributary }
     dependency = { first = GLH second = HTN subject_type = tributary }
@@ -106,7 +106,7 @@ diplomacy_manager = {
     dependency = { first = GLH second = SRC subject_type = tributary }
     dependency = { first = GLH second = SSI subject_type = tributary }
     
-        #Ruthenia
+    #Ruthenia
     dependency = { first = GLH second = BRY subject_type = tributary }
     dependency = { first = GLH second = HAL subject_type = tributary }
     dependency = { first = GLH second = KIE subject_type = tributary }
