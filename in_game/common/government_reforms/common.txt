@@ -547,7 +547,7 @@ mining_communities = {
 	
 	country_modifier = {
 		global_stone_output_modifier = 0.2
-		global_iron_output_modifier = 0.1
+		global_iron_output_modifier = 0.2
 		global_copper_output_modifier = 0.2
 		expand_rgo_mining_cost_modifier = -0.33
 		monthly_towards_decentralization = societal_value_monthly_move
