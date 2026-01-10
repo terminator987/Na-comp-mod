@@ -299,7 +299,7 @@ num_colonial_charters_impact = {
 		subtract = 1
 	}
 	
-	colonial_maintenance_cost = 2
+	colonial_maintenance_cost = 1
 }
 
 
