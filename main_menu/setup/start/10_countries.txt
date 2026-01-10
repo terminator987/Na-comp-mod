@@ -2746,64 +2746,6 @@ countries = {
 		include = "expl_novgorod"
 	}
 
-	#Principality of Starodub (-on-the-Klyazma)
-	SKY = {
-		own_control_core = {
-			starodub_on_the_klyazma palekh rozhdestveno
-		}
-
-		starting_technology_level = 3
-		country_rank = rank_duchy
-
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = sky_dmitriy_fyodorovych_rurikovich
-
-			ruler_term = { character = sky_fyodor_ivanovich_rurikovich start_date = 1217.1.1 end_date = 1227.1.1 regnal_number = 1 }
-
-			ruler_term = { character = sky_ivan_vsevolodovich_kasha_rurikovich start_date = 1238.1.1 end_date = 1247.1.1 regnal_number = 1 }
-			ruler_term = { character = sky_ivan_vsevolodovich_kasha_rurikovich start_date = 1247.1.1 end_date = 1281.1.1 regnal_number = 1 }
-			ruler_term = { character = sky_ivan_vsevolodovich_kasha_rurikovich start_date = 1281.1.1 end_date = 1315.1.1 regnal_number = 1 }
-			ruler_term = { character = sky_vladimir_vsevolodovich_rurikovich start_date = 1315.1.1 end_date = 1330.1.1 regnal_number = 1 }
-			ruler_term = { character = sky_dmitriy_fyodorovych_rurikovich start_date = 1330.1.1 regnal_number = 1 }
-		}
-
-		liturgical_language = church_slavonic_language
-
-		capital = starodub_on_the_klyazma
-		include = "russian_principality_no_coast"
-		include = "expl_novgorod"
-	}
-
-	#Principality of Nizhny Novgorod
-	#Personal Union under Moscovy, event fires when MOS' ruler dies which gives NZH an owner ruler
-	NZH = {
-		own_control_core = {
-			nizhny_novgorod gorokhovets meshchersk pestyaki rastyapino
-		}
-
-		own_control_integrated = {
-			dalneye_konstantinovo
-		}
-
-		starting_technology_level = 3
-		country_rank = rank_duchy
-
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = mos_ivan_i_danilovich_kalita_rurikovich
-			ruler_term = { character = mos_ivan_i_danilovich_kalita_rurikovich start_date = 1325.11.21 regnal_number = 1 }
-		}
-
-		liturgical_language = church_slavonic_language
-
-		capital = nizhny_novgorod
-		include = "russian_principality_no_coast"
-		include = "expl_novgorod"
-	}
-
 	#Principality of Suzdal
 	SZL = {
 		own_control_core = {
@@ -2886,48 +2828,6 @@ countries = {
 		include = "expl_novgorod"
 	}
 
-	#Principality of Murom
-	MRM = {
-		own_control_core = {
-			murom gorbatovo melenki tuma starodub_votsky shatur 
-		}
-
-		own_control_integrated = {
-			klepiki
-		}
-
-		starting_technology_level = 3
-		country_rank = rank_duchy
-
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = mrm_vasily_yaroslavich_rurikovich
-
-			ruler_term = { character = mrm_gleb_vladimirovich_rurikovich start_date = 1013.1.1 end_date = 1015.1.1 regnal_number = 1 }
-			#ruler_term = { character = mrm_yaroslav_svyatoslavich_rurikovich start_date = 1097.1.1 end_date = 1123.1.1  regnal_number = 1 }
-
-			#ruler_term = { character = rya_svyatoslav_yaroslavich_rurikovich start_date = 1143.1.1 end_date = 1145.1.1 regnal_number = 1 }
-			#ruler_term = { character = prk_rostislav_yaroslavich_rurikovich start_date = 1145.1.1 end_date = 1147.1.1 regnal_number = 1 }
-			#ruler_term = { character = mrm_vladimir_svyatoslavich_rurikovich start_date = 1147.1.1 end_date = 1149.1.1 regnal_number = 1 }
-
-			#ruler_term = { character = mrm_vladimir_svyatoslavich_rurikovich start_date = 1155.1.1 end_date = 1161.1.1 regnal_number = 1 }
-			#ruler_term = { character = mrm_yuri_vladimirovich_rurikovich start_date = 1161.1.1 end_date = 1174.1.1 regnal_number = 1 }
-
-			#ruler_term = { character = mrm_david_yurievich_rurikovich start_date = 1203.1.1 end_date = 1228.1.1 regnal_number = 1 }
-			#ruler_term = { character = mrm_yuri_davidovich_rurikovich start_date = 1228.1.1 end_date = 1237.1.1 regnal_number = 1 }
-			#ruler_term = { character = mrm_yaroslav_yurievich_rurikovich start_date = 1237.1.1 end_date = 1270.1.1 regnal_number = 1 }
-
-			ruler_term = { character = mrm_vasily_yaroslavich_rurikovich start_date = 1330.1.1 regnal_number = 1 }
-		}
-
-		liturgical_language = church_slavonic_language
-
-		capital = murom
-		include = "russian_principality_no_coast"
-		include = "expl_novgorod"
-	}
-
 	#Principality of Mologa
 	MOG = {
 		own_control_core = {
@@ -2956,15 +2856,21 @@ countries = {
 	MOS = {
 		own_control_core = {
 			moscow zvenigorod ruza pushkino vokhna bronnitsy rogozh
-			mozhaysk vetza odintsovo
-			przemysl_moscow mushkov_pogost
+			mozhaysk vetza odintsovo maloyaroslavets borovsk vereya
+			przemysl_moscow mushkov_pogost kolomna khatun koshira serpukhov vysokoye
 			#Principality of Pereyaslavl-Zalessky
 			pereyaslavl alexandrovskaya_sloboda bogorodskoye_pereyaslavl kirzhach poreevo yanovo
+			nizhny_novgorod gorokhovets meshchersk pestyaki rastyapino dalneye_konstantinovo
+			starodub_on_the_klyazma palekh rozhdestveno
+			vladimir moshok muromtsevo_murom osovets sudogda vlasovo yaropolch 
+			murom gorbatovo melenki starodub_votsky shatur 
+			tuma	
+			yuryev_polsky
 		}
 
-		own_control_conquered = {
-			#Principality of Kolomna
-			kolomna borovsk khatun koshira maloyaroslavets serpukhov vereya vysokoye
+		own_control_integrated = {
+			zolotkovo
+			klepiki
 		}
 
 		starting_technology_level = 3
@@ -3035,43 +2941,6 @@ countries = {
 		include = "expl_novgorod"
 	}
 
-	#Grand Principality of Vladimir
-	#Personal Union under Moscovy
-	VLR = {
-		own_control_core = {
-			vladimir moshok muromtsevo_murom osovets sudogda vlasovo yaropolch 
-		}
-
-		own_control_integrated = {
-			zolotkovo
-		}
-
-		starting_technology_level = 3
-		country_rank = rank_duchy
-
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = mos_ivan_i_danilovich_kalita_rurikovich
-			
-			#ruler_term = {	character = kie_vsevolod_iii_rurikovich start_date = 1176.6.20 end_date = 1212.4.15 regnal_number = 1	}
-			#ruler_term = { character = nov_konstantin_vsevolodovich_rurikovich start_date = 1216.1.1 end_date = 1218.1.1 regnal_number = 1 }	
-			#ruler_term = { character = nov_svyatoslav_iii_vsevolodovich_rurikovich start_date = 1246.1.1 end_date = 1248.1.1 regnal_number = 1 }
-			#ruler_term = { character = vlr_andrey_yaroslavich_rurikovich start_date = 1248.1.1 end_date = 1252.1.1 regnal_number = 1 }
-			#ruler_term = { character = kie_alexander_nevsky_rurikovich start_date = 1252.1.1 end_date = 1263.1.1 regnal_number = 1 }
-			#ruler_term = { character = psk_aleksandr_mikhailovich_rurikovich start_date = 1326.1.1 end_date = 1327.1.1 regnal_number = 1 }
-			ruler_term = { character = szl_alexander_vasilyevich_rurikovich start_date = 1328.1.1 end_date = 1332.1.1 regnal_number = 1 }
-			ruler_term = { character = mos_ivan_i_danilovich_kalita_rurikovich start_date = 1332.1.1 regnal_number = 1 }
-		}
-
-		liturgical_language = church_slavonic_language
-
-		country_rank = rank_kingdom
-		capital = vladimir
-		include = "russian_principality_no_coast"
-		include = "expl_novgorod"
-	}
-
 	#Principality of Uglich
 	#Personal Union under Moscovy
 	UGL = {
@@ -3097,34 +2966,6 @@ countries = {
 		liturgical_language = church_slavonic_language
 
 		capital = uglich
-		include = "russian_principality_no_coast"
-		include = "expl_novgorod"
-	}
-
-	#Principality of Yuriev
-	YRV = {
-		own_control_core = {
-			yuryev_polsky
-		}
-
-		starting_technology_level = 3
-		country_rank = rank_duchy
-
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = yrv_yaroslav_ivanovich_rurikovich
-
-			#ruler_term = { character = nov_svyatoslav_iii_vsevolodovich_rurikovich start_date = 1214.1.1 end_date = 1230.1.1 regnal_number = 1 }
-			ruler_term = { character = yrv_dmitriy_svyatoslavich_rurikovich start_date = 1253.1.1 end_date = 1269.1.1 regnal_number = 1 }
-			ruler_term = { character = yrv_yaroslav_dmitrevich_rurikovich start_date = 1269.1.1 end_date = 1279.1.1 regnal_number = 1 }
-			ruler_term = { character = yrv_ivan_dmitrevich_rurikovich start_date = 1279.1.1 end_date = 1310.1.1 regnal_number = 1 }
-			ruler_term = { character = yrv_yaroslav_ivanovich_rurikovich start_date = 1310.1.1 regnal_number = 1 }
-		}
-
-		liturgical_language = church_slavonic_language
-
-		capital = yuryev_polsky
 		include = "russian_principality_no_coast"
 		include = "expl_novgorod"
 	}
