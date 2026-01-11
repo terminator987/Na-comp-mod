@@ -335,6 +335,11 @@ tsardom = {
 	allow = {
 		country_rank = country_rank:rank_empire
 		religion = religion:orthodox
+		OR = {
+			has_or_had_tag = LIT
+			has_or_had_tag = KIE
+			has_or_had_tag = MOS
+		}
 	}
 	country_modifier = {
 		global_distance_from_capital_cost_modifier = -0.05
