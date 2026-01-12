@@ -32576,7 +32576,7 @@ countries = {
 			al_sinn
 			eyvan
 			tabriz heris maragheh sarab tufarqan
-			ganja barda beylagan lemberan gardman shamkir
+			beylagan lemberan 
 			mughan baciravan bilasuvar germi salyan varsan
 			ahar aslanduz kaleybar khiyav mardanaqom qahqaheh
 			hadishahr marand
@@ -57273,7 +57273,8 @@ countries = {
 
 	KCN = { #Khachen
 		own_control_core = {
-			gandzasar haterk
+			gandzasar haterk 
+			gardman shamkir ganja barda
 		}
 
 		our_cores_conquered_by_others = {
@@ -57298,7 +57299,7 @@ countries = {
 			adhari_culture
 		}
 
-		capital = gandzasar
+		capital = barda
 	}
 
 	SYU = { #Syunik
