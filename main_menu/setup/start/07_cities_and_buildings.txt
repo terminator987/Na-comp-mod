@@ -994,7 +994,7 @@ locations={
 	zaranj = { rank = town town_setup = levant_city }
 	kabul = { rank = town town_setup = levant_city }
 
-	ganja = { rank = town town_setup = levant_city }
+	barda = { rank = town town_setup = levant_city }
 	ani = { rank = town town_setup = levant_city }
 	astarabad = { rank = town town_setup = levant_city }
 	siraf = { rank = town town_setup = levant_city }
