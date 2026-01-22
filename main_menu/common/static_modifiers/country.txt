@@ -235,8 +235,8 @@ call_for_peace = {
 	game_data = {
 		category = country
 	}
-	monthly_war_exhaustion = 0.008
-	monthly_diplomats = 0.025
+	monthly_war_exhaustion = 0.0
+	monthly_diplomats = 0.0
 }
 
 total_occupied = {
@@ -739,7 +739,7 @@ receiving_guarantee = {
 		category = country
 	}
 	
-	monthly_prestige = -0.1
+	monthly_prestige = 0.0
 }
 
 receiving_corrupt_officials = {
