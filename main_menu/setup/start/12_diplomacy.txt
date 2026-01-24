@@ -211,7 +211,6 @@ diplomacy_manager = {
     dependency = { first = BUR second = MTZ subject_type = vassal }
     dependency = { first = BUR second = MTB subject_type = vassal }
     dependency = { first = BUR second = BAR subject_type = vassal }
-    dependency = { first = BUR second = BRT subject_type = vassal }
     dependency = { first = BUR second = SLM subject_type = vassal }
     dependency = { first = BUR second = SCL subject_type = vassal }
     dependency = { first = BUR second = SAV subject_type = vassal }

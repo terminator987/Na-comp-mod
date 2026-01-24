@@ -28,7 +28,7 @@ education_elites_law = {
 
 	mixed_institutions = {
 		country_modifier = {
-			num_possible_artists = 1
+			research_speed_modifier = 0.03
 			monthly_towards_innovative = societal_value_tiny_monthly_move
 			global_burghers_max_literacy = 5
 			global_nobles_max_literacy = 5
@@ -347,8 +347,8 @@ education_masses_law = {
 			}
 		}
 		country_modifier = {
-			skill_of_new_artists = 0.15
-			invite_artist_cost_modifier = 0.1
+			cultural_influence_modifier = 0.15
+			stability_cost = -0.2
 		}
 		estate_preferences = {
 			burghers_estate
@@ -1752,7 +1752,7 @@ precious_metal_distribution_law = {
 			ban_exports_of_silver = yes
 			global_goods_gold_output_modifier = -0.05
 			global_silver_output_modifier = -0.05
-			minting_income_factor = 0.33
+			minting_income_factor = 0.1
 			monthly_towards_mercantilism = societal_value_tiny_monthly_move
 		}
 		estate_preferences = {
@@ -1765,21 +1765,11 @@ precious_metal_distribution_law = {
 			value = -100
 		}
 	}
-	regulated_gold_export = {
-		country_modifier = {
-			trade_efficiency = tiny_trade_efficiency_bonus
-		}
-		estate_preferences = {
-			crown_estate
-		}
-		years = 2
-	}
 	unlimited_gold_export = {
 		country_modifier = {
 			global_merchant_power = 0.1
 			global_goods_gold_output_modifier = 0.05
 			global_silver_output_modifier = 0.05
-			minting_income_factor = -0.33
 			monthly_towards_free_trade = societal_value_tiny_monthly_move
 		}
 		estate_preferences = {
