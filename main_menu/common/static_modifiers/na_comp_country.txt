@@ -1,4 +1,4 @@
-german_minor_expansion = {
+﻿german_minor_expansion = {
 	game_data = {
 		category = country 
 	}
@@ -9,13 +9,6 @@ german_minor_expansion = {
     antagonism_received_modifier = -0.2
 	country_cabinet_efficiency = 0.20
 	legislative_efficiency = 0.1
-}
-call_for_peace = {
-	game_data = {
-		category = country
-	}
-	monthly_war_exhaustion = 0
-	monthly_diplomats = 0
 }
 bra_wittelsbacher_neglect_1 = {
 	game_data = {
