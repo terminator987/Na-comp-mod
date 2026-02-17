@@ -388,7 +388,7 @@ war_exhaustion_impact = {
 	
 	global_production_efficiency = scaled_production_efficiency_penalty
 	trade_efficiency = scaled_trade_efficiency_penalty
-	global_population_growth = -0.0003
+	global_monthly_food_modifier = -0.025
 }
 
 

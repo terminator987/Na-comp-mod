@@ -10,6 +10,6 @@
 	}
 
 	country_modifier = {
-		monthly_war_exhaustion = -0.05
+		monthly_war_exhaustion = -0.025
 	}
 }
