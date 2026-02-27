@@ -703,7 +703,7 @@ countries = {
 			 balga   ostroda  dzierzgon elblag morag
 		}
 		own_control_integrated = {
-			ragnit tilsit mergentheim gumbinnen barten wegorzewo
+			ragnit tilsit  gumbinnen barten wegorzewo
 			gerdauen insterburg wehlau
 			labiau memel windenburg
 			elk nibork ryn_poland szczytno 
@@ -1184,11 +1184,13 @@ countries = {
 
 	BRA = {	#Brandenburg
 		own_control_core = {
+			brandenburg berlin teltow potsdam freienwalde herzfelde templin lebus 
 			brandenburg berlin teltow potsdam freienwalde herzfelde templin
 			chojna soltyn
 			stendal osterburg salzwedel gardelegen
 			wittenberge pritzwalk treuenbrietzen
 			angermunde prenzlau
+			beeskow
 		}
 
 		own_control_integrated = {
@@ -1314,7 +1316,7 @@ countries = {
 			eastern_pomeranian
 		}
 
-		country_rank = rank_county
+		country_rank = rank_duchy
 		capital = brandenburg
 		dynasty = wittelsbach_dynasty
 	}
@@ -1594,8 +1596,13 @@ countries = {
 
 	MAI = {	#Mainz
 		own_control_core = {
-			mainz aschaffenburg miltenberg buchen tauberbischofsheim
-			hofgeismar bensheim
+			mainz darmstadt worms oppenheim offenbach
+            tauberbischofsheim mergentheim
+			buchen bensheim erbach mosbach
+            aschaffenburg miltenberg lohr
+            hofgeismar
+            frankfurt
+			katzenelnbogen 
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -2889,7 +2896,7 @@ countries = {
 	#Principality of Starodub (-on-the-Klyazma)
 	SKY = {
 		own_control_core = {
-			starodub_on_the_klyazma palekh rozhdestveno
+			
 		}
 
 		starting_technology_level = 3
@@ -2920,7 +2927,7 @@ countries = {
 	#Personal Union under Moscovy, event fires when MOS' ruler dies which gives NZH an owner ruler
 	NZH = {
 		own_control_core = {
-			nizhny_novgorod gorokhovets meshchersk pestyaki rastyapino
+			
 		}
 
 		own_control_integrated = {
@@ -3029,7 +3036,7 @@ countries = {
 	#Principality of Murom
 	MRM = {
 		own_control_core = {
-			murom gorbatovo melenki tuma starodub_votsky shatur 
+	
 		}
 
 		own_control_integrated = {
@@ -3100,12 +3107,16 @@ countries = {
 			przemysl_moscow mushkov_pogost
 			#Principality of Pereyaslavl-Zalessky
 			pereyaslavl alexandrovskaya_sloboda bogorodskoye_pereyaslavl kirzhach poreevo yanovo
-		}
-
-		own_control_conquered = {
-			#Principality of Kolomna
+			nizhny_novgorod gorokhovets meshchersk pestyaki rastyapino dalneye_konstantinovo
+			starodub_on_the_klyazma palekh rozhdestveno
+			vladimir moshok muromtsevo_murom osovets sudogda vlasovo yaropolch 
+			murom gorbatovo melenki starodub_votsky shatur 
+			tuma	
+			yuryev_polsky
 			kolomna borovsk khatun koshira maloyaroslavets serpukhov vereya vysokoye
 		}
+
+		
 
 		starting_technology_level = 3
 		country_rank = rank_kingdom
@@ -3179,7 +3190,7 @@ countries = {
 	#Personal Union under Moscovy
 	VLR = {
 		own_control_core = {
-			vladimir moshok muromtsevo_murom osovets sudogda vlasovo yaropolch 
+			
 		}
 
 		own_control_integrated = {
@@ -3243,7 +3254,7 @@ countries = {
 	#Principality of Yuriev
 	YRV = {
 		own_control_core = {
-			yuryev_polsky
+			
 		}
 
 		starting_technology_level = 3
@@ -12019,6 +12030,9 @@ countries = {
 		own_control_core = {
 			chioggia venice mestre
 			pola rovinj pag zadar split brac slano
+			castelfranco treviso belluno
+			ceneda conegliano
+			feltre
 		}
 
 		own_control_integrated = {
@@ -12209,9 +12223,8 @@ countries = {
 		own_control_conquered = {
 			asola brescia palazzolo salo_ita breno nozza
 			cividale
-			ceneda conegliano
-			feltre
-			castelfranco treviso belluno
+			
+		
 			rovereto
 		}
 
@@ -13077,15 +13090,17 @@ countries = {
 			budimlja brskovo gjakova mitrovica pristina novo_brdo skopje kumanovo veles prosek shtip
 			kratovo vranje podgorica bar_cg prijepolje visegrad ustikolina soko_grad
 			glubocica nis prokuplje stalac ravno jagodina gacko trebinje ohrid kocani strumica
-			krusevac kucevo branicevo rudnik smederevo krupanj valjevo uzice pljevlja
+			krusevac kucevo branicevo rudnik smederevo uzice pljevlja
 			gradac zica trgoviste_SER sjenica velbuzd
 			arilje brvenik medveda
+			sremska_mitrovica petrovaradin
+			belgrad debrc sabac krupanj valjevo
 		}
 		own_control_integrated = {
 			koman has dukagjini lezha florina
 		}
 		our_cores_conquered_by_others = {
-			slano mostar konjic belgrad debrc sabac
+			slano mostar konjic
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -13298,7 +13313,10 @@ countries = {
 	CRO = {
 		own_control_core = {
 			sibenik kaseg knin novigrad crikvenica senj
-			bihac krk makarska srb sinj otocac
+			bihac krk makarska srb sinj otocac gradiski_brod dubica
+			bjelovar koprivnica kutina pakrac vaska virovitica
+			zagreb cakovec karlovac petrinja sisak slunj varazdin
+			osijek pozega vukovar ilok
 		}
 		our_cores_conquered_by_others = {
 			zadar split
@@ -14200,8 +14218,8 @@ countries = {
 			limoges nontron segur st_leonard aixe thiviers #Vic. Limoges
 			turenne gourdon #Vic.Turenne
 			mende #C. de Gevaudan
-			langres grancey #D. de Langres
-			macon #C. de Macon
+			
+			
 			beaujeu perreux trevoux #S.de Beaujeu
 			lyon riverie #C. de Lyon
 			le_puy #C. du Velay
@@ -14240,7 +14258,7 @@ countries = {
 			#C. de Champagne
 			chateau_thierry broyes vertus nogent_sur_seine bar_sur_aube
 			chaumont vaucouleurs vitry_en_pertois troyes epernay menehould
-			rosnay villemaur choiseul
+			rosnay villemaur 
 
 			#Too small/unimportant appanages
 			guise hirson
@@ -14484,6 +14502,19 @@ countries = {
 			avallon
 			montcenis
 			aignay arnay beaune auxonne louhans
+			nevers donzy
+			st_pierre_de_moutier montreuillon cercy
+			chateau_chinon #S. Chateau-Chinon
+			gray vesoul dole
+			pontarlier poligny orgelet ornans baume montbozon
+			# own_control_integrated, but culture accepted
+			luxeuil salins_les_bains
+			langres grancey #D. de Langres
+			tonnerre
+			auxerre
+			macon #C. de Macon
+			besancon
+			choiseul
 		}
 
 		starting_technology_level = 3
@@ -14550,10 +14581,7 @@ countries = {
 	#Franche-Comté (Vassal)
 	FCB = {
 		own_control_core = {
-			gray vesoul dole
-			pontarlier poligny orgelet ornans baume montbozon
-			# own_control_integrated, but culture accepted
-			luxeuil salins_les_bains
+			
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -14997,7 +15025,7 @@ countries = {
 	#Auxerre (Appanage)
 	AUX = {
 		own_control_core = {
-			auxerre
+			
 		}
 
 		starting_technology_level = 3
@@ -15910,7 +15938,7 @@ countries = {
 	#Tonnerre (Vassal, Fief Mouvant)
 	TON = {
 		own_control_core = {
-			tonnerre
+			
 		}
 
 		starting_technology_level = 3
@@ -16717,9 +16745,8 @@ countries = {
 	#Nevers
 	NEV = {
 		own_control_core = {
-			nevers donzy
-			st_pierre_de_moutier montreuillon cercy
-			chateau_chinon #S. Chateau-Chinon
+			
+		
 		}
 
 		starting_technology_level = 3
@@ -17640,7 +17667,6 @@ countries = {
 
 	HUN = {	#Hungary
 		own_control_core = {
-			osijek
 			aiud hunedoara cincu
 			cristuru_secuiesc reghin
 			mezhorje sighet
@@ -17649,48 +17675,34 @@ countries = {
 			cheresig ineu lipova mako oradea szarvas
 			baja_hungary
 			csurgo simontornya kaposvar mohacs nagykanizsa siklos zalaegerszeg
-			kapuvar kormend papa szombathely tata
+			kapuvar kormend papa szombathely tata olsnica
 			abrahamtelke heves kecskemet adony solt
 			hajduszoboszlo miskolc szabolcs
 			gonc mukachevo satoraljaujhely velikyi_bereznyi
-			bardejov podmuran roznava
-			kremnica krupina nograd salgotarjan zvolen
-			prievidza trnava
-			povazska_bystrica zilina
+		
+			krupina
+			nograd salgotarjan
 			pancevo
 			kikinda titel modos
-			belgrad debrc sabac
-			gradiski_brod dubica
 			buda pest kalocsa felegyhaza
 			sopron vasvar magyarovar zalavar
 			veszprem gyor komarom fehervar esztergom
 			somogyvar tolna pecs segesd
 			bacs zenta bodrog halas
-			samorin nitra hlohovec holic
-			hont balassagyarmat stary_tekov banska_bystrica
-			trencin oravsky_podzamok turciansky_svaty_martin liptovsky_mikulas
-			gemer rimavska_sobota levoca lubica presov turna
-			zemplin kosice humenne uzhorod beregovo
+			
+			hont balassagyarmat stary_tekov 
+			
+			gemer  turna
+			zemplin kosice uzhorod beregovo
 			miercurea_cluc chezdi_osorheiu covasna odorhei gheorgheni
 			bistrita cuhea rakhiv khust sic dej
-			turda targu_mures cetatea_balta felvint cluj
-			fagaras sibiu sebes alba_iulia medias sighisoara brasov sfantu_gheorghe
-			hateg caransebes lugoj deva
-			bihar beius baia_de_aries huedin crasna
 			debrecen nagyboszormeny nagykallo nagyecsed varda szatmar syvlyush zalau baia_mare
-			szolnok eger karcag borsod
+			szolnok eger karcag borsod jaszbereny
 			bekes csanad szeged
 			kovin veliky_beckerek carasova mihalt
 			timisoara arad zarand
 			dabaca baia_crisului gurghiu
-			#Banate of Croatia
-			bjelovar koprivnica kutina pakrac vaska virovitica
-			vukovar ilok pozega sremska_mitrovica petrovaradin
-			zagreb cakovec karlovac petrinja sisak slunj varazdin
-		}
-
-		own_control_integrated = {
-			bratislava olsnica jaszbereny
+			bihar beius crasna
 		}
 
 		starting_technology_level = 3
@@ -17958,6 +17970,200 @@ countries = {
 		}
 		country_rank = rank_duchy
 		capital = huedin
+	}
+		#NA Comp Transylvanian Minors
+	A01 = {	#Székely 
+		own_control_core = {
+			targu_mures chezdi_osorheiu covasna cristuru_secuiesc gheorgheni odorhei sfantu_gheorghe miercurea_cluc
+			reghin		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = targu_mures
+		tolerated_cultures = {
+			transylvanian
+		}
+	}
+
+	A02 = {	#Härmeschtat 
+		own_control_core = {
+			sibiu medias sebes sighisoara
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"		
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = sibiu
+		tolerated_cultures = {
+			transylvanian
+		}
+	}
+
+	A03 = {	#Kruhnen 
+		own_control_core = {
+			brasov cincu fagaras
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"		
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = brazov
+		tolerated_cultures = {
+			transylvanian
+		}
+	}
+
+	A04 = {	#Kokelburg 
+		own_control_core = {
+			alba_iulia aiud cetatea_balta 
+			gurghiu
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "catholic_monarchy_no_coast"
+		include = "german_principality"		
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = cetatea_balta
+		tolerated_cultures = {
+			transylvanian
+			hungarian
+		}
+	}
+
+	A05 = {	#Deva 
+		own_control_core = {
+			deva hateg hunedoara lugoj caransebes
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = deva
+		tolerated_cultures = {
+			hungarian
+		}
+	}
+
+	A06 = {	#Kolozsvár 
+		own_control_core = {
+			cluj		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = cluj
+		tolerated_cultures = {
+			transylvanian
+		}
+	}
+
+	A07 = {	#Turda 
+		own_control_core = {
+			turda baia_de_aries huedin felvint		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = turda
+		tolerated_cultures = {
+			hungarian
+		}
+	}
+
+	A08 = {	#Dej 
+		own_control_core = {
+			dabaca baita dej		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = dej
+		tolerated_cultures = {
+			hungarian
+		}
+	}
+
+	A09 = {	#Bistrița 
+		own_control_core = {
+			bistrita sic		
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = bistrita
+		tolerated_cultures = {
+			german_transylvanian
+			hungarian
+		}
+	}
+	A10 = {	#Slovakia 
+		own_control_core = {
+			kremnica zvolen	
+			trencin oravsky_podzamok turciansky_svaty_martin liptovsky_mikulas
+			bratislava samorin nitra hlohovec holic
+			banska_bystrica
+			humenne
+		    bardejov podmuran roznava
+			rimavska_sobota levoca lubica presov
+			prievidza trnava
+			povazska_bystrica zilina
+		}
+		starting_technology_level = 3
+		include = "expl_eastern_europe"
+		include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}		
+		capital = kremnica
+		tolerated_cultures = {
+			
+		}
 	}
 
 	CLI = {	#Cilli
@@ -21806,23 +22012,16 @@ countries = {
 		}
 
 		own_control_integrated = {
+			aqaba al_quwayrah maan
 			el_arish nekhel qatya warrada
 			matruh sallum tobruk
 			el_qoseir ras_gharib safaga
-			el_jundi faran nuweiba saint_katrine
-			ayntab dluk
-			jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah
-			beirut baalbek deir_qamar sidon tripoli_syria shoubak madaba
-			damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+			el_jundi faran nuweiba saint_katrine			
 			umluj al_hawra al_manjur al_maramiyah
 			al_ula al_bleiteh al_farah_ula al_marwa az_zubayir mughayra
 			duba ad_disah al_azlam al_wajh bada_yaqub bir_al_qurr
 			tabuk_arabia al_khanbarah al_muazzam al_ukhaydir bajdah bir_ibn_hermas dhat_al_hajj
 			aynuna al_bad al_muwaylih haql makna
-		}
-
-		own_control_conquered = {
-			iskenderun
 		}
 
 		include = "expl_muslim_mediterranean"
@@ -33887,6 +34086,159 @@ countries = {
 		government = { mysticism_vs_jurisprudence = -15 }
 		
 	}
+	#NA Comp Syria
+	#Syria - SYR
+	SYR = {
+		own_control_core = {
+			al_bab aleppo dabiq jabbul manbij maskanah zardana marrat
+			damascus burraq jayrud qutayfah nabek
+			hama homs masyaf kafartab qusayr khanaser qastal salamiyya
+			latakia
+			antioch arsuz artah idlib afrin
+			ithriya sukhnah taybah deir_ez_zor tabqah
+			arak huwwarin qaryatayn tadmur
+		}
+
+		include = "expl_muslim_mediterranean"
+		include = "expl_middle_east"
+		include = "muslim_monarchy"
+
+
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			syriac_culture
+			alawite_culture
+		}
+
+		capital = aleppo
+		religious_school = shafii_school 
+	}
+
+	
+	Z01 = { #Tripoli
+		own_control_core = {
+			jableh baniyas tartus
+			beirut baalbek deir_qamar sidon tripoli_syria
+		}
+		starting_technology_level = 3
+		include = "catholic_military_order"
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		government = {
+			type = theocracy
+
+			regnal_numbers = {
+				name_godfrey = 1
+				name_baldwin = 5
+				#Melisende = 1
+				name_fulk = 1
+				name_amalric = 2
+				name_sybil = 1
+				name_wido = 1
+				name_elizabeth = 2
+				name_conrad = 3
+				name_henry = 2
+				name_mary = 1
+				name_john = 2
+				name_frederick = 1
+				name_hugh = 1
+			}
+
+			centralization_vs_decentralization = -20
+			aristocracy_vs_plutocracy = -95
+			serfdom_vs_free_subjects = -20
+			traditionalist_vs_innovative = -60
+			spiritualist_vs_humanist = -90
+			mercantilism_vs_free_trade = -30
+			offensive_vs_defensive = 50
+			land_vs_naval = -30
+			quality_vs_quantity = -60
+			belligerent_vs_conciliatory = -60
+			capital_economy_vs_traditional_economy = 25
+			individualism_vs_communalism = -20
+			outward_vs_inward = -40
+
+			privilege = {
+				control_of_the_borderlands
+			}
+			laws = {
+				divine_cause_law = expulsion_of_heathens_policy
+				slave_conversion = force_slave_conversion
+				heir_religion_law = heir_same_religion
+			}	
+		}
+
+		country_rank = rank_duchy
+		court_language = french_language
+		capital = tripoli_syria
+		tolerated_cultures = {
+			syriac_culture
+			levantine_culture
+			alawite_culture
+		}
+	}
+
+	#Safad - SFD
+	SFD = {
+		own_control_core = {
+			jerusalem acre beersheba gaza hebron jaffa nablus majdal safed
+		}
+
+		include = "expl_muslim_mediterranean"
+		include = "expl_middle_east"
+		include = "muslim_monarchy"
+
+
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			syriac_culture
+		}
+
+		capital = jerusalem	
+		religious_school = shafii_school 
+	}
+
+	#Al-Karak - ALK
+	ALK = {
+		own_control_core = {
+			amman karak sughar shoubak madaba
+		}
+
+		include = "expl_middle_east"
+		include = "muslim_monarchy_no_coast"
+
+
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			levantine_culture
+		}
+
+		capital = karak	
+		religious_school = shafii_school 
+	}
+
+	
+
 
 	#Döger - DGE
 	DGE = {
@@ -34253,7 +34605,7 @@ countries = {
 
 	RIE = {	#Rieneck
 		own_control_core = {
-			lohr
+			
 		}
 
 		starting_technology_level = 3
@@ -35026,7 +35378,7 @@ countries = {
 
 	PAL = {	#The Palatinate
 		own_control_core = {
-			heidelberg sinsheim germersheim neustadt_an_der_haardt oppenheim  kaiserslautern
+			heidelberg sinsheim germersheim neustadt_an_der_haardt  kaiserslautern
 			amberg eschenbach neumarkt roding sulzbach #Oberpfalz
 		}
 
@@ -35103,7 +35455,7 @@ countries = {
 
 	BLB = {  # Bishopric of Lebus
 		own_control_core = {
-			lebus
+			
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -35166,7 +35518,7 @@ countries = {
 
 	BSK = {  # Beeskow-Starkow
 		own_control_core = {
-			beeskow
+			
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -35417,7 +35769,7 @@ countries = {
 
 	FLK = {  # Falkenstein (South Germany)
 		own_control_core = {
-			friedberg_hesse offenbach
+			friedberg_hesse 
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -35440,7 +35792,7 @@ countries = {
 
 	KTZ = {  # Katzenelnbogen (North Germany)
 		own_control_core = {
-			katzenelnbogen darmstadt
+			
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -36302,7 +36654,7 @@ countries = {
 
 	MSB = {	#Mosbach
 		own_control_core = {
-			mosbach
+		
 		}
 
 		starting_technology_level = 3
@@ -36856,7 +37208,7 @@ countries = {
 
 	BSC = { #Besancon (Free City)
 		own_control_core = {
-			besancon
+			
 		}
 
 		starting_technology_level = 3
@@ -38271,7 +38623,7 @@ countries = {
 
 	FRN = {	#Frankfurt
 		own_control_core = {
-			frankfurt
+			
 		}
 
 		starting_technology_level = 3
@@ -38287,7 +38639,7 @@ countries = {
 
 	ERB = {	#Erbach
 		own_control_core = {
-			erbach
+			
 		}
 
 		starting_technology_level = 3
@@ -38315,7 +38667,6 @@ countries = {
 
 	WRM = {	#Worms
 		own_control_core = {
-			worms
 		}
 
 		starting_technology_level = 3
