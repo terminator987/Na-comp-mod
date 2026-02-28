@@ -700,23 +700,21 @@ countries = {
 
 	TEU = { #Teutonic Order
 		own_control_core = {
-			balga ostroda dzierzgon elblag morag malbork lubawa 
-            grudziadz brodnica kwidzyn frombork lidzbark gdansk
+			dzierzgon elblag morag malbork kwidzyn 
+			balga konigsberg brandenburg_prussia insterburg wehlau fischhausen
+			ostroda szczytno
+			grudziadz brodnica lubawa torun chelmno
+            gdansk koscierzyna tczew gniew
+			frombork lidzbark olsztyn
+			memel tilsit
+			tuchola nowe swiecie
 		}
 		own_control_integrated = {
-		ragnit tilsit gumbinnen barten wegorzewo
-			gerdauen insterburg wehlau
-			labiau memel windenburg
-			elk nibork ryn_poland szczytno 
-		
-			konigsberg brandenburg_prussia fischhausen
-            #Chełmno Land
-			torun chelmno
-			#Pomerelia
-			gniew koscierzyna mirochowo puck tczew
-			tuchola bialobork czluchow nowe swiecie
-			olsztyn 
-
+			ragnit gumbinnen labiau windenburg
+			gerdauen
+			elk nibork ryn_poland barten wegorzewo
+			mirochowo puck 
+			bialobork czluchow
 			bytow lebork
 		}
 
@@ -1079,7 +1077,7 @@ countries = {
 	BRA = {	#Brandenburg
 		own_control_core = {
 			brandenburg berlin teltow potsdam freienwalde herzfelde templin lebus 
-			chojna soltyn
+			chojna soltyn torzym gorzow
 			stendal osterburg salzwedel gardelegen
 			wittenberge pritzwalk treuenbrietzen
 			angermunde prenzlau
@@ -1087,7 +1085,7 @@ countries = {
 		}
 
 		own_control_integrated = {
-			torzym swidwin choszczno drawsko czaplinek walcz czlopa santok gorzow
+			swidwin choszczno drawsko czaplinek walcz czlopa santok
 		}
 
 		include = "expl_western_europe"
