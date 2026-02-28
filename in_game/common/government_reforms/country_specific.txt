@@ -342,7 +342,7 @@ tsardom = {
 		}
 	}
 	country_modifier = {
-		global_distance_from_capital_cost_modifier = -0.05
+		global_distance_from_capital_speed_propagation = 0.1
 		peasants_estate_target_satisfaction = large_permanent_target_satisfaction
 	}
 	years = 2
@@ -1797,7 +1797,7 @@ fra_code_louis = {
 
 	country_modifier = {
 		global_monthly_control = 0.0008
-		global_distance_from_capital_cost_modifier = -0.05
+		global_distance_from_capital_speed_propagation = 0.1
 		legislative_efficiency = 0.1
 		government_reform_slots = 1
 	}
@@ -2380,7 +2380,7 @@ voivode_reform = {
 	country_modifier = {
 		monthly_towards_serfdom = societal_value_monthly_move
 		monthly_towards_decentralization = societal_value_monthly_move
-		global_distance_from_capital_cost_modifier = -0.05
+		global_distance_from_capital_speed_propagation = 0.1
 	}
 	years = 2
 }
@@ -2743,7 +2743,7 @@ collegium_reform = {
 		has_variable = collegium
 	}
 	country_modifier = {
-		global_distance_from_capital_cost_modifier = -0.025
+		global_distance_from_capital_speed_propagation = 0.1
 		country_cabinet_efficiency = 0.2
 		legislative_efficiency = 0.2
 	}
@@ -3749,7 +3749,7 @@ eth_wandering_court = {
 	}
 
 	country_modifier = {
-		global_distance_from_capital_cost_modifier = -0.1
+		global_distance_from_capital_speed_propagation = 0.2
 		global_monthly_prosperity = 0.001
 	}
 

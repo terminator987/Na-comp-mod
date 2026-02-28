@@ -672,7 +672,7 @@ administrative_system = {
 			current_age_or_later = { age = age_5_absolutism }
 		}
 		country_modifier = {
-			global_distance_from_capital_cost_modifier = -0.025
+			global_distance_from_capital_speed_propagation = 0.05
 			monthly_towards_centralization = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -718,7 +718,6 @@ administrative_system = {
 			}
 		}
 		country_modifier = {
-			global_distance_from_capital_cost_modifier = -0.1
 			global_monthly_development = 0.001
 		}
 		estate_preferences = {
@@ -731,7 +730,7 @@ administrative_system = {
 			culture = culture:nahua_culture
 		}
 		country_modifier = {
-			global_distance_from_capital_cost_modifier = -0.1
+			global_distance_from_capital_speed_propagation = 0.2
 			subject_income_modifier = 0.05
 		}
 		estate_preferences = {
@@ -838,7 +837,6 @@ administrative_system = {
 			culture = culture:castilian
 		}
 		country_modifier = {
-			global_distance_from_capital_cost_modifier = -0.1
 			global_integration_speed_modifier = 0.1
 			global_nobles_estate_power = 0.1
 		}
@@ -1091,7 +1089,7 @@ bureaucracy_law = {
 			NOT = { has_variable = reduced_powers_namestnik }
 		}
 		country_modifier = {
-			global_distance_from_capital_cost_modifier = -0.025
+			global_distance_from_capital_speed_propagation = 0.05
 		}
 		estate_preferences = {
 			nobles_estate
@@ -1484,7 +1482,7 @@ foreign_cultural_law = {
 		}
 		country_modifier = {
 			global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-			global_distance_from_capital_cost_modifier = -0.05
+			global_distance_from_capital_speed_propagation = 0.1
 			global_pop_assimilation_speed_modifier = 0.1
 		}
 		estate_preferences = {
