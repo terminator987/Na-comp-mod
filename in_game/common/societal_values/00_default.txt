@@ -86,7 +86,6 @@ aristocracy_vs_plutocracy = { #
 	left_modifier = {
 		discipline = 0.05
 		global_nobles_estate_power = 0.50
-		global_nobles_city_desired_pop_scaled = 0.01
 		
 		court_spending_cost  = 0.02
 		court_language_is_market_language_importance_modifier = -0.5
