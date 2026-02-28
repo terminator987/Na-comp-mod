@@ -226,3 +226,82 @@ german_biedermeier = {
 
 	requires = crown_power_advance_revolutions
 }
+
+#Unique Units
+saxon_defensioner = {
+	age = age_4_reformation
+	potential = {
+		culture = culture:saxon
+	}
+	unlock_unit = a_saxon_defensioner
+	
+	requires = unlock_pikemen_advance
+}
+
+prussian_grenadiers = {
+	age = age_5_absolutism
+	potential = {
+		has_or_had_tag = PRU
+	}
+	unlock_unit = a_prussian_grenadiers
+
+	requires = absolutism_agressive_advance
+}
+
+bavarian_jager = {
+	age = age_5_absolutism
+	potential = {
+		has_or_had_tag = BAV
+	}
+	unlock_unit = a_bavarian_jager
+
+	requires = absolutism_agressive_advance
+}
+
+hesse_jager = {
+	age = age_4_reformation
+	potential = {
+		culture = culture:rhine_franconian
+	}
+	unlock_unit = a_hesse_jager
+
+	requires = unlock_pikemen_advance
+}
+
+austrian_grenzhussar = {
+	age = age_6_revolutions
+	potential = {
+		has_or_had_tag = HAB
+	}
+	unlock_unit = a_austrian_grenzhussar
+
+	requires = fort_limit_6_advance
+}
+
+austrian_grenzer = {
+	age = age_6_revolutions
+	potential = {
+		has_or_had_tag = HAB
+		OR = {
+			has_accepted_culture = culture:slovene
+			has_accepted_culture = culture:croatian
+		}
+	}
+	unlock_unit = a_austrian_grenzer
+
+	requires = fort_limit_6_advance
+}
+
+gebirgsschutzen_infantry = {
+	age = age_4_reformation
+	potential = {
+		OR = {
+			culture = culture:southern_bavarian
+			culture = culture:danube_bavarian
+			is_swiss_for_advances = yes
+		}
+	}
+	unlock_unit = a_gebirgsschutzen_infantry
+
+	requires = unlock_pikemen_advance
+}
