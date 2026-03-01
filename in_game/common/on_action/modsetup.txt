@@ -1,0 +1,13 @@
+on_game_start = {
+	on_actions = {
+		r_on_game_start
+	}
+}
+
+r_on_game_start = {
+	effect = {
+    	c:FRA = {
+            trigger_event_non_silently = setup_mod.1
+        }
+	}
+}

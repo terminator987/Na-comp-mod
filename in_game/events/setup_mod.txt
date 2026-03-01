@@ -1,0 +1,176 @@
+﻿namespace = setup_mod
+setup_mod.1 = {
+	type = country_event
+	title = setup_mod.1.title
+	desc = setup_mod.1.desc
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	option = {
+		name = setup_mod.1.a
+		hidden_effect = {
+			region:south_china_region = {
+				every_location_in_region = {
+					change_location_owner = c:CHI
+					add_core = c:CHI
+				}
+			}
+			region:east_china_region = {
+				every_location_in_region = {
+					change_location_owner = c:CHI
+					add_core = c:CHI
+				}
+			}
+			region:west_china_region = {
+				every_location_in_region = {
+					change_location_owner = c:CHI
+					add_core = c:CHI
+				}
+			}
+			region:manchuria_region = {
+				every_location_in_region = {
+					change_location_owner = c:CHI
+					add_core = c:CHI
+				}
+			}
+			region:mesoamerica_region = {
+				every_location_in_region = {
+					change_location_owner = c:TNC
+					add_core = c:TNC
+				}
+			}
+#			area:norrland_area = {
+#				every_location_in_area = {
+#					change_location_owner = c:SWE
+#					add_core = c:SWE
+#				}
+#			}
+#			area:finland_area = {
+#				every_location_in_area = {
+#					change_location_owner = c:SWE
+#					add_core = c:SWE
+#				}
+#			}
+#			area:karelia_area = {
+#				every_location_in_area = {
+#					change_location_owner = c:NOV
+#					add_core = c:NOV
+#				}
+#			}
+#			area:kola_area = {
+#				every_location_in_area = {
+#					change_location_owner = c:NOV
+#					add_core = c:NOV
+#			}
+#			}
+#			area:nord_norge_area = {
+#				every_location_in_area = {
+#					change_location_owner = c:NOR
+#					add_core = c:NOR
+#			}
+			}
+				if = {
+					limit = {
+						exists = c:JAP
+					}
+					international_organization:shinto = {
+						every_international_organization_owned_location = {
+							limit = {
+								has_owner = yes
+								OR = {
+									owner = root
+									owner = { is_neighbor_of = root }
+								}
+								NOT = { is_core_of = root }
+							}
+							add_core = c:JAP
+						}
+						every_international_organization_member = {
+							limit = { NOT = { this = c:JAP } }
+							trigger_event_silently = { id = setup_mod.2 }
+						}	
+					}
+				}
+				hidden_effect = {
+				 sub_continent:east_asia = {
+					every_location_in_sub_continent = {
+						owner = { abandon_location = prev }
+						every_pop = {
+							destroy_pop = this
+						}
+					}
+				 }
+				 sub_continent:south_east_asia = {
+					every_location_in_sub_continent = {
+						owner = { abandon_location = prev }
+						every_pop = {
+							destroy_pop = this
+						}
+					}
+				 }
+
+			 sub_continent:south_asia = {				
+                    every_location_in_sub_continent = {
+					owner = { abandon_location = prev }
+					every_pop = {
+						destroy_pop = this
+						}
+				}
+				 }
+				 continent:oceania = {
+					every_location_in_continent = {
+						owner = { abandon_location = prev }
+						every_pop = {
+							destroy_pop = this
+						}
+					}
+				 }
+				 sub_continent:east_asia = {
+                    every_location_in_sub_continent = {
+                        add_location_modifier = { modifier = noasiacolonize_modifier years = 600 mode = add}
+                    }
+				}
+				sub_continent:south_east_asia = {
+                    every_location_in_sub_continent = {
+                        add_location_modifier = { modifier = noasiacolonize_modifier years = 600 mode = add}
+                    }
+				}
+
+				sub_continent:south_asia = {
+                    every_location_in_sub_continent = {
+                        add_location_modifier = { modifier = noasiacolonize_modifier years = 600 mode = add}
+                   }
+				}
+				continent:oceania = {
+                    every_location_in_continent = {
+                        add_location_modifier = { modifier = noasiacolonize_modifier years = 600 mode = add}
+                    }
+				}
+				}
+			}
+		}
+setup_mod.2 = {
+	type = country_event
+	title = hre.103.title
+	desc = hre.103.desc
+
+ 	illustration_tags = {
+ 		10 = happy
+ 		10 = interior
+ 	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	option = {
+		name = hre.103.a
+		c:JAP = {
+			annex_country_diplomatically = { country = root }
+		}
+	}
+}
