@@ -1,6 +1,7 @@
 ﻿renaissance = {
 	age = age_2_renaissance 
 	
+	location = florence	#fallback for when no valid
 	
 	can_spawn = {
 		OR = {
@@ -59,7 +60,9 @@
 
 banking = {
 	age = age_2_renaissance 
+
 	
+	location = genoa	#fallback for when no valid
 	
 	can_spawn = {
 		OR = {
@@ -111,7 +114,8 @@ banking = {
 
 professional_armies = {
 	age = age_2_renaissance 
-	
+
+	location = paris	#fallback for when no valid
 	
 	can_spawn = {
 		OR = {

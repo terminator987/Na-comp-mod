@@ -950,6 +950,7 @@ mexican_city = {
 	weapon_guild = 2
 	tannery = 1
 	stockade = 1
+	tools_guild = 2
 }
 
 mexican_town = {
@@ -960,6 +961,7 @@ mexican_town = {
 	tannery = 1
 	mason = 1
 	pottery_guild = 1
+	tools_guild = 1
 }
 
 south_east_woodlands_town = {
@@ -1197,6 +1199,7 @@ yucatan_town = {
 	pottery_guild = 1
 	granary = 2
 	weapon_guild = 1
+	tools_guild = 1
 }
 
 andes_town = {
@@ -1208,6 +1211,7 @@ andes_town = {
 	pottery_guild = 1
 	granary = 2
 	weapon_guild = 1
+	tools_guild = 1
 }
 
 andes_city = {
@@ -1224,6 +1228,8 @@ andes_city = {
 	tannery = 1
 	granary = 3
 	castle = 1
+	tools_guild = 2
+	terraces = 3
 }
 
 east_african_coastal_town = {

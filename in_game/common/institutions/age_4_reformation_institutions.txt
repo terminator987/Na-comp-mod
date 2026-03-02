@@ -1,6 +1,7 @@
 ﻿confessionalism = {
 	age = age_4_reformation 
 	
+	location = augsburg	#fallback for when no valid
 	
 	can_spawn = {
 		OR = {
@@ -65,6 +66,8 @@
 
 global_trade = {
 	age = age_4_reformation 
+
+	location = lisbon	#fallback for when no valid
 	
 	can_spawn = {
 		OR = {
@@ -80,12 +83,7 @@ global_trade = {
 				has_game_rule = institution_spawn_plausible
 				has_institution = institution:banking
 				has_institution = institution:new_world
-
-
-				OR = {
-					continent = continent:europe
-					sub_continent = sub_continent:north_africa
-				}
+				continent = continent:europe
 
 				is_market_center = yes
 				location_rank = location_rank:city
@@ -129,6 +127,8 @@ global_trade = {
 artillery_institution = {
 	age = age_4_reformation 
 	
+
+	location = constantinople	#fallback for when no valid
 	can_spawn = {
 		OR = {
 			AND = {
@@ -142,11 +142,7 @@ artillery_institution = {
 			AND = {
 				has_game_rule = institution_spawn_plausible
 				has_institution = institution:professional_armies
-
-				OR = {
-					continent = continent:europe
-					sub_continent = sub_continent:north_africa
-				}
+				continent = continent:europe
 
 				has_building_with_at_least_one_level = gun_smith
 				has_building_with_at_least_one_level = tools_guild

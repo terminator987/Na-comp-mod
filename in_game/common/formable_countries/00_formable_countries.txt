@@ -671,6 +671,8 @@ SAR_f = {
 	level = 2
 	required_locations_fraction = 0.85
 	rule = historical
+	
+	capital_required = no
 
 	potential = {
 		culture = { has_culture_group = culture_group:italian_group }
@@ -995,6 +997,8 @@ PRU_f = { #Prussia
 	level = 2
 	required_locations_fraction = 0.75
 	rule = historical
+	
+	capital_required = no
 
 	potential = {
 		culture = { has_culture_group = culture_group:german_group }
@@ -1023,10 +1027,8 @@ PRU_f = { #Prussia
 	form_effect = {
 		if = {
 			limit = {
-				OR = {
 					government_type != government_type:republic
 					government_type != government_type:monarchy
-				}
 			}
 			change_government_type = government_type:monarchy
 			add_legitimacy = legitimacy_radical_bonus
@@ -1099,7 +1101,7 @@ LVA_f = { # Baltic
 GER_f = {
 
 	level = 4
-	required_locations_fraction = 0.75
+	required_locations_fraction = 0.66
 	rule = plausible
 	potential = {
 		culture = { has_culture_group = culture_group:german_group }
@@ -1359,7 +1361,7 @@ UKR_f = { #Ruthenia
 }
 
 ROM_f = {
-	level = 4
+	level = 5
 	required_locations_fraction = 0.75
 	rule = fantasy
 	
@@ -2663,6 +2665,8 @@ KOJ_f = {
 	level = 2
 	required_locations_fraction = 0.75
 	rule = plausible
+	
+	capital_required = no
 
 	potential = {
 		religion = religion:catholic
@@ -2801,7 +2805,7 @@ MCH_f = {
 	rule = historical
 	
 	potential = {
-		culture = culture:jurchen_culture
+		culture ?= { has_culture_group = culture_group:jurchen_group }
 	}
 
 
@@ -2963,6 +2967,31 @@ MGE_f = {
 				mode = add_and_extend
 			}
 		}
+	}
+}
+
+MGO_f = {
+	level = 3
+	required_locations_fraction = 0.85
+	rule = historical
+	potential = {
+		culture = {
+			has_culture_group = culture_group:mongolian_group
+		}
+	}
+	allow = {
+		in_civil_war = no
+	}
+	
+	name = MGO
+	flag = MGO
+	adjective = MGO_ADJ
+	tag = MGO
+	color = map_MGO
+	regions = {
+		mongolia_region
+	}
+	form_effect = {
 	}
 }
 
@@ -4141,5 +4170,154 @@ AZT_f = {
 			limit = { country_rank_level < 4 }
 			set_country_rank_effect = { rank = country_rank:rank_empire }
 		}
+	}
+}
+
+TUR_f = {
+	level = 3
+	rule = historical
+
+	potential = {
+		always = no #Formed by event
+	}
+
+	allow = {
+	}
+
+	tag = TUR
+
+	regions = {
+	}
+	form_effect = {
+	}
+}
+
+ASK_f = {
+	level = 3
+	rule = historical
+
+	potential = {
+		always = no #Formed by event
+	}
+
+	allow = {
+	}
+
+	tag = ASK
+	name = ASK
+	adjective = ASK_ADJ
+	flag = ASK
+	color = map_ASK
+
+	regions = {
+	}
+	form_effect = {
+	}
+}
+
+JAP_f = {
+	level = 4
+	rule = historical
+
+	potential = {
+		always = no #Formed by event
+	}
+
+	allow = {
+	}
+
+	tag = JAP
+
+	regions = {
+	}
+	form_effect = {
+	}
+}
+
+PGR_f = {
+	level = 3
+	rule = historical
+
+	potential = {
+		always = no #Formed by event
+	}
+
+	allow = {
+	}
+
+	tag = PGR
+	name = PGR
+	adjective = PGR_ADJ
+	flag = PGR
+	color = map_PGR
+
+	regions = {
+	}
+	form_effect = {
+	}
+}
+
+MTM_f = {
+	level = 3
+	rule = historical
+
+	potential = {
+		always = no #Formed by event
+	}
+
+	allow = {
+	}
+
+	tag = MTM
+	name = MTM
+	adjective = MTM_ADJ
+	flag = MTM
+	color = map_MTM
+
+	regions = {
+	}
+	form_effect = {
+	}
+}
+
+YUA_f = {
+	level = 3
+	rule = historical
+
+	potential = {
+		always = no #Formed by event
+	}
+
+	allow = {
+	}
+
+	tag = YUA
+
+	regions = {
+	}
+	form_effect = {
+	}
+}
+
+CSH_f = {
+	level = 3
+	rule = historical
+
+	potential = {
+		always = no #Formed by event
+	}
+
+	allow = {
+	}
+
+	tag = CSH
+	name = CSH
+	adjective = CSH_ADJ
+	flag = CSH
+	color = map_CSH
+
+	regions = {
+	}
+	form_effect = {
 	}
 }

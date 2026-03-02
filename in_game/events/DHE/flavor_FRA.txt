@@ -128,7 +128,11 @@ flavor_fra.2 = { # The Anjou Claim to Naples
 	option = {
 		name = flavor_fra.2.a
 		historical_option = yes
-		add_casus_belli = {	target = c:NAP	type = casus_belli:cb_claim_throne	}
+		add_casus_belli = {
+			target = c:NAP
+			type = casus_belli:cb_claim_throne
+			character = scope:ruler_fra
+		}		
 		every_known_country = {
 			limit = {
 				any_owned_location = {
@@ -2189,6 +2193,7 @@ flavor_fra.1015 = { # Jacquerie
 	}
 
 	trigger = {
+		in_civil_war = no
 		#Regular triggers - hard
 		trigger_if = {
 			limit = {
@@ -2852,7 +2857,6 @@ flavor_fra.1102 = { # Annexation of an Appanage
 
 
 flavor_fra.1103 = { # Consolidation of Appanage Lands
-	hide_portraits = yes
 	type = country_event
 	title = flavor_fra.1103.title
 	desc = flavor_fra.1103.desc
@@ -2879,6 +2883,7 @@ flavor_fra.1103 = { # Consolidation of Appanage Lands
 
 	trigger = {
 		has_reform = government_reform:french_feudal_nobility
+		has_ruler = yes
 		c:FRA = {
 			any_subject = {
 				is_subject_type = appanage
@@ -2897,8 +2902,9 @@ flavor_fra.1103 = { # Consolidation of Appanage Lands
 			type = centralization_vs_decentralization
 			value = societal_value_huge_move_to_left
 		}
-		add_prestige = prestige_extreme_bonus
-		add_legitimacy = legitimacy_extreme_bonus
+		add_prestige = prestige_severe_bonus
+		add_legitimacy = legitimacy_severe_bonus
+		add_legitimacy = stability_mild_bonus
 		ai_chance = {
 			base = 1
 		}
@@ -3300,6 +3306,7 @@ flavor_fra.1123 = { # King Abolishes Fouage on Deathbed... but the state ignores
 
 scripted_effect marcel_death_remove_effect = {
 	remove_country_modifier = fra_marcel_tax_embargo
+	remove_country_modifier = fra_recognized_marcel_in_parliament
 	remove_variable = fra_marcel_opposes_the_crown
 	remove_variable = marcel_embargo_tax_collection
 	remove_variable = marcel_reputation_ruined
@@ -3358,7 +3365,9 @@ flavor_fra.1130 = { # Étienne Marcel
 	option = { # He's just another delegate for the bourgeoisie
 		name = flavor_fra.1130.a
 		historical_option = yes
-		add_prestige = prestige_weak_bonus
+		add_prestige = prestige_severe_bonus
+		change_societal_value = { type = aristocracy_vs_plutocracy value = societal_value_move_to_left }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_penalty }
 		grant_estate_privilege = estate_privilege:fra_leadership_of_marcel
 		ai_chance = {
 			base = 90
@@ -3367,7 +3376,8 @@ flavor_fra.1130 = { # Étienne Marcel
 	
 	option = { # Welcome him to the Estates-General
 		name = flavor_fra.1130.b
-		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_weak_bonus }
+		add_country_modifier = { modifier = fra_recognized_marcel_in_parliament years = 10 mode = add }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
 		grant_estate_privilege = estate_privilege:fra_leadership_of_marcel
 		ai_chance = {
 			base = 10
@@ -6892,7 +6902,6 @@ flavor_fra.2025 = { # Monopolization of Coeur
 }
 
 
-
 flavor_fra.2031 = { # The League of the Public Weal
 	type = country_event
 	fire_only_once = yes
@@ -7050,6 +7059,7 @@ flavor_fra.2033 = { # The League Demands Autonomy!
         	ruler ?= {
             	save_scope_as = league_leader_ruler
         	}
+			leave_all_wars_with = c:FRA
 			declare_war_with_cb = {
 				target = c:FRA
 				type = casus_belli:cb_league_of_public_weal
@@ -8336,7 +8346,11 @@ flavor_fra.2102 = { # Milan requests aid against Naples
 			modifier = antagonism_pressed_claim
 			value = 15
 		}
-		add_casus_belli = {	target = c:NAP	type = casus_belli:cb_claim_throne	}
+		add_casus_belli = {
+			target = c:NAP
+			type = casus_belli:cb_claim_throne
+			character = scope:ruler_fra
+		}		
 		add_opinion = { target = c:NAP modifier = fra_claimed_naples }
 		add_opinion = { target = c:MLO modifier = opinion_came_to_our_aid_mlo }
 		ai_chance = {
@@ -8763,7 +8777,11 @@ flavor_fra.2105 = { # Campaign for Milan
 			modifier = antagonism_pressed_claim
 			value = 5
 		}
-		add_casus_belli = {	target = c:MLO	type = casus_belli:cb_claim_throne	}
+		add_casus_belli = {
+			target = c:MLO
+			type = casus_belli:cb_claim_throne
+			character = scope:ruler_fra
+		}		
 		if = {
 			limit = {
 				is_leader_of_international_organization = international_organization:foreign_league_france
@@ -10259,6 +10277,7 @@ flavor_fra.330 = { # The Edict of Fontainebleau # Based on Francis I
 		any_active_disaster = { disaster_type = disaster_type:french_wars_religion }
 		has_ruler = yes
 		at_war = no
+		religion = religion:catholic
 		religion:lutheran = { is_religion_enabled = yes }
 		"religion_percentage_in_country(religion:lutheran)" > 0
 		religion:calvinist = { is_religion_enabled = yes }
