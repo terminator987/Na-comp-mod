@@ -1780,8 +1780,15 @@ flavor_fra.26 = {
 	}
 	option = {
 		name = flavor_fra.26.a
+
 		add_stability = stability_extreme_bonus
 		add_government_power = government_power_mild_bonus
+
+		add_country_modifier = {
+			modifier = victory_in_the_hyw_modifier
+			years = modifier_duration_years_long
+			mode = replace
+		}
 	}
 }
 
@@ -2863,7 +2870,7 @@ flavor_fra.1103 = { # Consolidation of Appanage Lands
 
 	dynamic_historical_event = {
 		tag = FRA
-		from = 1405.1.1
+		from = 1337.1.1
 		to = 1836.1.1
 		monthly_chance = 100
 	}
