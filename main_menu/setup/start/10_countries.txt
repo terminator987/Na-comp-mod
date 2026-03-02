@@ -4647,6 +4647,8 @@ countries = {
 			glasgow paisley dumbarton aberdeen dunbar banff dunfermline st_andrews dundee buchan mar inverurie stonehaven clackmannan aberfeldy irvine
 			oban inverary cowal forfar arbroath arran selkirk scone
 			dornoch durness tongue	
+			kirkcudbright kenmure stranraer ayr perth edinburgh stirling roxburgh linlithgow duns dumfries lanark
+			strathearn cupar
 		}	
 		own_control_conquered = {
 			thurso
@@ -4779,89 +4781,6 @@ countries = {
 		}
 	}
 
-	SBL = { # Balliol Pretender
-		own_control_core = {
-			kirkcudbright kenmure stranraer ayr perth edinburgh stirling roxburgh linlithgow duns dumfries lanark
-			strathearn cupar
-		}
-		our_cores_conquered_by_others = {
-			glasgow paisley dumbarton aberdeen dunbar elgin banff dunfermline st_andrews dundee buchan mar inverurie stonehaven clackmannan aberfeldy irvine dornoch durness tongue
-			oban inverary cowal forfar arbroath arran selkirk scone
-
-			#Ross
-			dingwall gairloch ullapool 
-		}
-
-		include = "expl_northern_europe"
-		starting_technology_level = 3
-		include = "catholic_monarchy"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = sco_edward_balliol
-
-			ruler_term = { character = sco_edward_balliol start_date = 1332.9.24 }
-
-
-			privilege = {
-				#nobles
-				scottish_clans
-				banal_lordship
-				nobility_council
-				primacy_of_nobility
-				#burghers
-				formal_guilds
-				burghers_royal_burgh_commissioners
-				#peasants
-				access_to_royal_and_ecclesiastical_courts
-				#tribes
-				tribes_creach
-				tribes_fosterage
-				tribes_manrent
-				tribes_scotland_gaelic_heritage
-			}
-			laws = {
-				language_of_pleading = language_of_pleading_court
-				legal_code_law = common_law_policy
-				sco_clan_holdings = inherited_clan_holdings
-			}
-			#Societal Values
-			centralization_vs_decentralization = 60
-			traditionalist_vs_innovative = -50
-			spiritualist_vs_humanist = -50
-			aristocracy_vs_plutocracy = -50
-			serfdom_vs_free_subjects = 0
-			mercantilism_vs_free_trade = -10
-			belligerent_vs_conciliatory = 10
-			quality_vs_quantity = -30
-			offensive_vs_defensive = -20
-			capital_economy_vs_traditional_economy = 90
-			individualism_vs_communalism = -10
-			outward_vs_inward = -20
-
-			reforms = {
-				sbl_restorer_of_the_disinherited
-				scottish_shires_reform
-			}
-		}
-		court_language = norman_dialect
-		country_rank = rank_kingdom
-		capital = perth
-		revolt = yes
-
-		accepted_cultures = { }
-		tolerated_cultures = { english norse_gael highland }
-
-		currency_data = {
-			gold = 250 # Support from the English
-			stability = 45 # Rebels
-			prestige = 10
-			government_power = 50 # Support from the English
-			war_exhaustion = 1.5 # Starting Turnmoil with the Brus
-			army_tradition = 20
-		}
-	}
-
 	LOI = { # The Isles
 		own_control_core = {
 			# Western Isles
@@ -4934,7 +4853,7 @@ countries = {
 	}
 	CLA = {
 		own_control_core = {
-			belfast newtownards ballymena
+			belfast newtownards ballymena carrickfergus
 		}
 		our_cores_conquered_by_others = {
 			# TYR Tyrone
@@ -4953,7 +4872,7 @@ countries = {
 				name_henry = 1
 			}
 		}
-		capital = newtownards
+		capital = belfast
 	}
 	MCM = { # Munster
 		own_control_core = {
@@ -5178,7 +5097,7 @@ countries = {
 	}
 	GLS = {
 		own_control_core = {
-			ballycastle
+			ballycastle dunluce
 		}
 
 		include = "catholic_monarchy_english_lordship_irish_earldom"
@@ -5433,11 +5352,13 @@ countries = {
 	}
 	ULS = { # Ulster
 		own_control_core = {
-			carrickfergus downpatrick dunluce
+			downpatrick
 		}
 
 
 		our_cores_conquered_by_others = {
+			dunluce
+			carrickfergus
 			# Glens
 			ballycastle
 			# CLA clandeboye
@@ -5466,7 +5387,7 @@ countries = {
 		tolerated_cultures = { irish }
 
 		include = "catholic_monarchy_english_lordship_irish_earldom"
-		capital = carrickfergus
+		capital = downpatrick
 	}
 	MYO = { # Mayo
 		own_control_core = {

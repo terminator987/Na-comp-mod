@@ -151,8 +151,8 @@ take_capital_subjugation = {
 	ticking_war_score = 0.5
 }
 
-take_capital_force_migration = {
-	type = take_capital
+superiority_force_migration = {
+	type = superiority
 	
 	attacker = {
 	}
@@ -221,8 +221,8 @@ independence_annexing_me = {
 	ticking_war_score = 0.5
 }
 
-take_capital_coalition = {
-	type = take_capital
+superiority_coalition = {
+	type = superiority
 	
 	war_name = "COALITION_WAR_NAME" #uses second
 	
@@ -427,6 +427,18 @@ humiliate = {
 	attacker = {
 		conquer_cost = 10.0
 		subjugate_cost = 10.0
+	}
+	defender = {
+	}
+	ticking_war_score = 0.5
+}
+
+superiority_rival = {
+	type = superiority
+	
+	attacker = {
+		conquer_cost = 1
+		subjugate_cost = 1
 	}
 	defender = {
 	}

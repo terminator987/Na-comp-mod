@@ -23,6 +23,8 @@ city = {
 		local_pop_promotion_speed_modifier = 0.25
 		
 		free_building_levels = 100
+
+		local_peasant_enfranchisment = 0.25
 		
 		max_constructions_at_same_time = 1
 	}
@@ -69,6 +71,8 @@ town = {
 		
 		local_monthly_food_modifier = -0.2
 		free_building_levels = 25
+		
+		local_peasant_enfranchisment = 0.1
 	}
 	
 	country_modifier = {
@@ -97,6 +101,8 @@ rural_settlement = {
 		local_monthly_food_modifier = 0.1
 		
 		local_population_growth = 0.001
+				
+		local_peasant_enfranchisment = -0.2
 	}
 	
 	country_modifier = {
