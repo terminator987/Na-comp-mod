@@ -53,6 +53,7 @@ locations={
 	# ireland
 	dublin = { rank = town 			town_setup = british_town_port}
 	cork = { rank = town 			town_setup = british_town_port}
+	belfast = { rank = town 			town_setup = british_town_port}
 	waterford = { rank = town 		town_setup = british_town_port}
 	new_ross = { rank = town 		town_setup = british_town_port}
 	wexford = { rank = town 		town_setup = british_town_port}
@@ -61,8 +62,8 @@ locations={
 	sligo = { rank = town 			town_setup = british_town_port}
 	
 	# greece
-	athens  = { rank = city			town_setup = greek_town_port }
-	thessaloniki = { rank = city 	town_setup = greek_town_port }
+	athens = { rank = city			town_setup = greek_city_port }
+	thessaloniki = { rank = city 	town_setup = greek_city_port }
 	candia = { rank = town 			town_setup = greek_town_port }
 	corinth = { rank = town 		town_setup = greek_town_port }
 	ioannina = { rank = town 		town_setup = balkan_town }
@@ -390,7 +391,7 @@ locations={
 
 	# Ruthenia
 	chernihiv = { rank = town 	town_setup = ruthenian_town }
-	ismail = { rank = town 	town_setup = polish_town }
+	ismail = { rank = town town_setup = ruthenian_town }
 	kyiv = { rank = city 		town_setup = russian_city }	
 	belz = { rank = town 	town_setup = polish_town }
 	lviv = { rank = town 		town_setup = ruthenian_town }	
@@ -426,24 +427,24 @@ locations={
 	sarai_al_jadid = { rank = town			town_setup = russian_town }
 	
 	# Maghreb
-	mahdia = { rank = city town_setup = maghreb_city }
+	mahdia = { rank = city town_setup = maghreb_coastal_city }
 	marrakesh = { rank = city 	town_setup = maghreb_city }
-	rabat = { rank = city 	town_setup = maghreb_city }
-	annaba = { rank = city 		town_setup = maghreb_city }
-	bejaia = { rank = city 	town_setup = maghreb_city }
+	rabat = { rank = city 	town_setup = maghreb_coastal_city }
+	annaba = { rank = city 		town_setup = maghreb_coastal_city }
+	bejaia = { rank = city 	town_setup = maghreb_coastal_city }
 	fez = { rank = city 		town_setup = maghreb_city }
 	meknes = { rank = city 		town_setup = maghreb_city }
 	constantine_ALG = { rank = city town_setup = maghreb_city }
 	sijilmasa = { rank = city 	town_setup = maghreb_city }
 	tlemcen = { rank = city 	town_setup = maghreb_city }
-	tunis = { rank = city 		town_setup = maghreb_city }
-	oran = { rank = city 		town_setup = maghreb_city }
+	tunis = { rank = city 		town_setup = maghreb_coastal_city }
+	oran = { rank = city 		town_setup = maghreb_coastal_city }
 	
-	algiers = { rank = town 	town_setup = maghreb_town }
+	algiers = { rank = town 	town_setup = maghreb_coastal_town }
 	kairouan = { rank = town town_setup = maghreb_town }
-	azemmour = { rank = town 		town_setup = maghreb_town }
-	noul_lamta = { rank = town 	town_setup = maghreb_town }
-	cherchell = { rank = town 	town_setup = maghreb_town }
+	azemmour = { rank = town 		town_setup = maghreb_coastal_town }
+	noul_lamta = { rank = town 	town_setup = maghreb_coastal_town }
+	cherchell = { rank = town 	town_setup = maghreb_coastal_town }
 	tahert = { rank = town 		town_setup = maghreb_town }
 	taza = { rank = town 		town_setup = maghreb_town }
 	tidsi = { rank = town 		town_setup = maghreb_town }
@@ -881,13 +882,13 @@ locations={
 	chamdo = { rank = city town_setup = central_asian_city }
 	leh = { rank = city town_setup = central_asian_city }
 	urgench = { rank = city town_setup = central_asian_city }
-	chimgi_tura = { rank = city town_setup = central_asian_city }
 	sarayjuk = { rank = city town_setup = central_asian_city }
 	turpan = { rank = city town_setup = central_asian_city }
-	aksu = { rank = town town_setup = central_asian_city }
-	khotan = { rank = town town_setup = central_asian_city }
-	kurla = { rank = town town_setup = central_asian_city }
-	yarkand = { rank = town town_setup = central_asian_city }
+	aksu = { rank = town town_setup = central_asian_town }
+	khotan = { rank = town town_setup = central_asian_town }
+	kurla = { rank = town town_setup = central_asian_town }
+	yarkand = { rank = town town_setup = central_asian_town }
+	chimgi_tura = { rank = town town_setup = central_asian_town }
 
 	#Mongolia and Manchuria
 	karakorum = { rank = town town_setup = chinese_town }
@@ -990,10 +991,9 @@ locations={
 	tbilisi = { rank = city 	town_setup = anatolian_city }
 	gladzor = { rank = town town_setup = anatolian_city }
 	yazd = { rank = city town_setup = levant_city }
-
+	
 	zaranj = { rank = town town_setup = levant_city }
 	kabul = { rank = town town_setup = levant_city }
-
 	barda = { rank = town town_setup = levant_city }
 	ani = { rank = town town_setup = levant_city }
 	astarabad = { rank = town town_setup = levant_city }
@@ -1401,6 +1401,11 @@ building_manager = {
 	banking_office = { tag = BRD level = 1 location = nicosia_cyp }
 	banking_office = { tag = BRD level = 1 location = jerusalem }
 
+	banking_office = { tag = ACC level = 1 location = florence }
+	banking_office = { tag = ACC level = 1 location = naples }
+	banking_office = { tag = ACC level = 1 location = rodos }
+	banking_office = { tag = ACC level = 1 location = avignon }
+
 	
 	
 	
@@ -1543,7 +1548,8 @@ building_manager = {
 	monastery 	= { tag = ENG level = 1 location = london } # Westminster Abbey
 	monastery 	= { tag = ENG level = 1 location = skipton } # Bolton Priory
 	stockade 	= { tag = DHM level = 1 location = durham }
-	
+
+	cathedral 	= { tag = ENG level = 1 location = london } # Old St Paul's Cathedral
 	cathedral 	= { tag = ENG level = 1 location = york } # York Minster
 	cathedral 	= { tag = ENG level = 1 location = canterbury } # Canterbury Cathedral
 	cathedral 	= { tag = ENG level = 1 location = wells } # Wells Cathedral
@@ -1724,6 +1730,7 @@ building_manager = {
 	dock = { tag = ARA level = 1	location = barcelona }
 	dock = { tag = CAS level = 1	location = sevilla }
 	dock = { tag = GRA level = 1	location = malaga }
+	dock = { tag = ENG level = 1 location = london }
 
 	fishing_village = { tag = CAS level = 1 location = bilbao }
 	fishing_village = { tag = CAS level = 1 location = laredo }
@@ -2289,6 +2296,95 @@ building_manager = {
 	calmecac = { tag = TNC level = 1 location = tenochtitlan }
 	telpochcalli = { tag = TNC level = 1 location = tenochtitlan }
 	warrior_temple = { tag = TNC level = 1 location = tenochtitlan }
+	
+	market_village = { tag = CNL level = 1 location = calkini }
+	market_village = { tag = UAY level = 1 location = tixmul }
+	market_village = { tag = HEL level = 1 location = dzilam }
+	market_village = { tag = KOW level = 1 location = chakanbakan }
+	market_village = { tag = CTM level = 1 location = chactemal }
+	market_village = { tag = XOL level = 1 location = xicallanco }
+	market_village = { tag = YOK level = 1 location = cupilco }
+	market_village = { tag = TZE level = 1 location = quechula }
+	market_village = { tag = LAC level = 1 location = napinaica }
+	market_village = { tag = MMM level = 1 location = chinabajul }
+	market_village = { tag = THT level = 1 location = tehuantepec }
+	market_village = { tag = CTZ level = 1 location = coatzacoalco }
+	market_village = { tag = TOZ level = 1 location = tozlan }
+	market_village = { tag = TOH level = 1 location = tochtepec }
+	market_village = { tag = TTA level = 1 location = teutila }
+	market_village = { tag = ATP level = 1 location = atepec }
+	market_village = { tag = MIX level = 1 location = tututepec }
+	market_village = { tag = OMT level = 1 location = ometepec }
+	market_village = { tag = TPL level = 1 location = yucundaa }
+	market_village = { tag = CLP level = 1 location = chilapa }
+	market_village = { tag = TPT level = 1 location = tecpan }
+	market_village = { tag = IXA level = 1 location = ixtapan }
+	market_village = { tag = CLM level = 1 location = coliman }
+	market_village = { tag = TZM level = 1 location = tlamazolan }
+	market_village = { tag = CZL level = 1 location = cuzalapa }
+	market_village = { tag = TAA level = 1 location = tlalpan }
+	market_village = { tag = AME level = 1 location = ameca }
+	market_village = { tag = CON level = 1 location = coinan }
+	market_village = { tag = XAL level = 1 location = xalisco }
+	market_village = { tag = GCH level = 1 location = cuauhchinanco }
+	market_village = { tag = MIT level = 1 location = mitic }
+	market_village = { tag = MET level = 1 location = metztitlan }
+	market_village = { tag = OZL level = 1 location = ozuluama }
+	market_village = { tag = HST level = 1 location = teayotlan }
+	market_village = { tag = QHZ level = 1 location = quiahuiztlan }
+	market_village = { tag = TOT level = 1 location = cempoala }
+	market_village = { tag = PTL level = 1 location = puctlan }
+	market_village = { tag = CSM level = 1 location = cosamaloapan }
+	market_village = { tag = TEO level = 1 location = teotitlan }
+	market_village = { tag = YOH level = 1 location = yohualtepec }
+	market_village = { tag = TLO level = 1 location = teloloapan }
+	market_village = { tag = CUZ level = 1 location = cutzamala }
+	market_village = { tag = TUZ level = 1 location = tuzantla }
+	market_village = { tag = MAT level = 1 location = tollohcan }
+	market_village = { tag = HJZ level = 1 location = huexotzinco }
+	market_village = { tag = OTO level = 1 location = xaltocan }
+	market_village = { tag = TEE level = 1 location = tetela }
+	market_village = { tag = TLX level = 1 location = tizatlan }
+	market_village = { tag = IZO level = 1 location = itzocan }
+
+	#Andes
+	
+
+	terraces = { tag = TAI level = 1 location = teyuna }
+	terraces = { tag = ZAQ level = 1 location = chunsua }
+	terraces = { tag = QUL level = 1 location = hatunqulla }
+	terraces = { tag = LUP level = 1 location = chucuito }
+
+	market_village = { tag = UMA level = 1 location = achacachi }
+	market_village = { tag = PCJ level = 1 location = axawiri }
+	market_village = { tag = KRK level = 1 location = karanka }
+	market_village = { tag = SUR level = 1 location = sura }
+	market_village = { tag = CRA level = 1 location = charka }
+	market_village = { tag = KNA level = 1 location = ayaviri }
+	market_village = { tag = CNC level = 1 location = waqrapukara }
+	market_village = { tag = PIG level = 1 location = pikillaqta }
+	market_village = { tag = AYA level = 1 location = pisaq }
+	market_village = { tag = CSU level = 1 location = qusqu }
+	market_village = { tag = KKE level = 1 location = yanahuara }
+	market_village = { tag = SRA level = 1 location = soras }
+	market_village = { tag = URC level = 1 location = huaman_karpa }
+	market_village = { tag = MYM level = 1 location = paqwayranra }
+	market_village = { tag = PCR level = 1 location = wari_peru }
+	market_village = { tag = HNK level = 1 location = allpas }
+	market_village = { tag = HRC level = 1 location = huarco }
+	market_village = { tag = ICM level = 1 location = ishma }
+	market_village = { tag = CLQ level = 1 location = collique }
+	market_village = { tag = NTA level = 1 location = cantamarca }
+	market_village = { tag = PCO level = 1 location = tucssa }
+	market_village = { tag = ANI level = 1 location = aruni }
+	market_village = { tag = CHJ level = 1 location = atico }
+	market_village = { tag = HCH level = 1 location = markahuamachuco }
+	market_village = { tag = XLL level = 1 location = xllang }
+	market_village = { tag = CUI level = 1 location = tantaricuy }
+	market_village = { tag = CYA level = 1 location = kuelap }
+	market_village = { tag = GRR level = 1 location = cangochamba }
+	market_village = { tag = CAV level = 1 location = calvas }
+	market_village = { tag = MLT level = 1 location = malacatos }
 
 	#Asia
 	dock = { tag = KOR level = 1	location = gyeongju }
