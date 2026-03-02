@@ -111,7 +111,7 @@ serfdom_vs_free_subjects = {
 		
 		nobles_estate_target_satisfaction = large_permanent_target_satisfaction
 
-
+	
 		global_peasant_enfranchisment = -0.33
 		
 		control_importance_modifier = 0.1
