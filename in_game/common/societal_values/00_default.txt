@@ -251,7 +251,7 @@ offensive_vs_defensive = {
 		army_movement_speed = -0.1
 		defence_importance_modifier = 0.2
 		bias_for_diplomat_policies = 50
-		fort_limit_modifier = 0.5
+		fort_limit_modifier = 0.1
 	}
 }
 
