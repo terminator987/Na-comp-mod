@@ -275,7 +275,7 @@
 		country_modifier = {
 			global_crown_estate_power = 0.10
 			nobles_estate_agenda_impact = 0.2
-			global_estate_max_tax = 0.05
+			global_estate_max_tax = 0.025
 			monthly_towards_absolutism = societal_value_tiny_monthly_move
 		}
 		estate_preferences = {

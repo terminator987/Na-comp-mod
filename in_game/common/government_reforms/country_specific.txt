@@ -866,10 +866,9 @@ ancient_french_taxation = {
 
 
 	country_modifier = {
-		monthly_legitimacy = 0.1
+		monthly_legitimacy = 0.2
 		global_peasant_enfranchisment = -0.1
 		government_reform_slots = 1
-		nobles_estate_max_tax = 0.1
 	}
 	years = 2
 }
@@ -1782,7 +1781,7 @@ gabelle = {
 	}
 
 	country_modifier = {
-		peasants_estate_max_tax	= 0.2
+		peasants_estate_max_tax	= 0.1
 		monthly_towards_serfdom = societal_value_monthly_move
 		government_reform_slots = 1
 	}

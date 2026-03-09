@@ -155,11 +155,10 @@ diplomacy_manager = {
     #Appanages
     
     dependency = { first = FRA second = ALE subject_type = appanage }
-    dependency = { first = FRA second = AUV subject_type = appanage }
     dependency = { first = FRA second = BGN subject_type = appanage }
     dependency = { first = FRA second = BOU subject_type = appanage }
     dependency = { first = FRA second = AUX subject_type = appanage }
-   
+    dependency = { first = FRA second = VLN subject_type = appanage }
     dependency = { first = FRA second = DRE subject_type = appanage }
     dependency = { first = FRA second = VDM subject_type = appanage }
     dependency = { first = FRA second = EVR subject_type = appanage }
@@ -168,19 +167,15 @@ diplomacy_manager = {
     dependency = { first = FRA second = ANJ subject_type = appanage }
     dependency = { first = FRA second = ARS subject_type = appanage }
     dependency = { first = FRA second = ANG subject_type = appanage }
+    dependency = { first = FRA second = AUV subject_type = appanage }
+    dependency = { first = FRA second = GUY subject_type = appanage } 
+    dependency = { first = FRA second = TOU subject_type = appanage }
+
 
     #Vassal, Fief Mouvant of France
     dependency = { first = FRA second = BRI subject_type = vassal }
-    dependency = { first = FRA second = FOI subject_type = vassal }
-    dependency = { first = FRA second = AMG subject_type = vassal }
-    dependency = { first = FRA second = FRZ subject_type = vassal }
-    
     dependency = { first = FRA second = BLS subject_type = vassal }
-    dependency = { first = FRA second = AST subject_type = vassal }
-    dependency = { first = FRA second = COM subject_type = vassal }
-    dependency = { first = FRA second = IJO subject_type = vassal }
     dependency = { first = FRA second = MRT subject_type = vassal }
-    dependency = { first = FRA second = VLN subject_type = vassal }
     dependency = { first = FRA second = PER subject_type = vassal }
     dependency = { first = FRA second = TON subject_type = vassal }
     dependency = { first = FRA second = MON subject_type = vassal }
@@ -191,14 +186,11 @@ diplomacy_manager = {
     dependency = { first = FRA second = NRB subject_type = vassal }
     dependency = { first = FRA second = VNT subject_type = vassal }
     dependency = { first = FRA second = RCC subject_type = vassal }
-    dependency = { first = FRA second = CLT subject_type = vassal }
 
     #Vassals of vassals
     dependency = { first = ANJ second = MIE subject_type = fiefdom }
     dependency = { first = FLA second = NAM subject_type = vassal }
     dependency = { first = ARS second = STP subject_type = vassal }
-    dependency = { first = FOI second = BRR subject_type = fiefdom }
-    dependency = { first = FOI second = MDM subject_type = fiefdom }
     dependency = { first = ALE second = PRC subject_type = fiefdom }
     dependency = { first = BOU second = MRC subject_type = fiefdom }
 
@@ -251,7 +243,12 @@ diplomacy_manager = {
 
     scripted_oneway = { first = ARA second = ANR type = guarantee }
     scripted_oneway = { first = FRA second = ANR type = guarantee }
-    scripted_oneway = { first = FOI second = ANR type = guarantee }
+
+    dependency = { first = CAS second = C01 subject_type = fiefdom }
+    dependency = { first = CAS second = LON subject_type = fiefdom }
+    dependency = { first = CAS second = GLC subject_type = fiefdom }    
+    dependency = { first = CAS second = NAV subject_type = vassal }
+
 
     #scripted_oneway = { first = CAS second = CTV type = military_sponsorship }
     #scripted_oneway = { first = CAS second = STO type = military_sponsorship }

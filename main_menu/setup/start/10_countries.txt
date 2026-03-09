@@ -13220,7 +13220,6 @@ countries = {
 			palma ciudadela_de_menorca ibiza manacor pollensa #Kingdom of Mallorca
 			puigcerda prades #County of Cerdanya
 			perpignan #County of Roselló
-			montpellier #Lordship of Montpellier
 		}
 
 		starting_technology_level = 3
@@ -13279,11 +13278,7 @@ countries = {
 			leon astorga castrocalbon mansilla ponferrada riano sahagun villablino villafranca_bierzo
 			salamanca alba_de_tormes bejar ciudad_rodrigo coria ledesma matilla_de_canos piedrahita san_felices yecla_de_yeltes
 			zamora alba_de_aliste alcanices benavente fermoselle puebla_de_sanabria toro villalpando
-			cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia
-			jaen andujar baeza cazorla jodar martos ubeda
 			murcia albacete caravaca cartagena chinchilla cieza hellin lorca mula segura_de_la_sierra villena
-			sevilla arcos_de_la_frontera cadiz carmona constantina ecija jerez_de_la_frontera medina_sidonia moron olvera osuna sanlucar tarifa
-			huelva almonaster_la_real aracena aroche ayamonte coria_del_rio niebla puebla_de_guzman sanlucar_la_mayor
 			bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
 		}
 
@@ -13466,11 +13461,11 @@ countries = {
 	}
 
 	LON = {
-		our_cores_conquered_by_others = {
+		own_control_core = {
 			oviedo aviles castropol tineo villaviciosa cangas llanes mieres #Asturias
 			leon mansilla riano sahagun astorga castrocalbon ponferrada villablino villafranca_bierzo #León
 			zamora alba_de_aliste fermoselle toro benavente alcanices puebla_de_sanabria villalpando #Zamora
-			salamanca alba_de_tormes matilla_de_canos ciudad_rodrigo coria ledesma san_felices yecla_de_yeltes #Salamanca
+			salamanca alba_de_tormes matilla_de_canos ciudad_rodrigo coria ledesma san_felices yecla_de_yeltes bejar piedrahita #Salamanca
 			granadilla galisteo caceres alcantara arroyo brozas valencia_de_alcantara #Cáceres
 			badajoz albuquerque barcarrota jerez_de_los_caballeros villanueva_del_fresno merida montanchez #Badajoz
 		}
@@ -13481,7 +13476,7 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_monarchy_not_present"
+		include = "iberian_monarchy"
 		government = {
 			type = monarchy
 
@@ -13547,12 +13542,48 @@ countries = {
 			}
 		}
 
+		tolerated_cultures = {
+			castilian
+			andalusi
+		}
+
 		country_rank = rank_kingdom
 		capital = leon
 	}
 
+	C01 = {
+		own_control_core = {
+			sevilla carmona constantina ecija moron olvera osuna coria_del_rio #Sevilla
+			arcos_de_la_frontera cadiz jerez_de_la_frontera medina_sidonia tarifa sanlucar #Cádiz
+			huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman sanlucar_la_mayor #Heulva
+			cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia #Córdoba
+			jaen andujar baeza cazorla jodar martos ubeda #Jaén
+		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "iberian_monarchy"
+
+		government = {
+			type = monarchy
+
+
+		}
+
+		tolerated_cultures = {
+			andalusi
+		}
+
+		country_rank = rank_kingdom
+		capital = sevilla
+	}
+
 	GLC = {
-		our_cores_conquered_by_others = {
+		own_control_core = {
 			coruna betanzos ferrol mondonedo vivero #A Coruña
 			lugo monforte_de_lemos navia_de_suarna sarria villalba #Lugo
 			ourense barco_de_valdeorras ginzo_de_limia monterrey ribadavia viana_bolo #Ourense
@@ -13565,11 +13596,10 @@ countries = {
 		include = "expl_silk_road_center"
 		include = "expl_silk_road_east"
 		include = "expl_indian_trade_route"
-		include = "catholic_monarchy_not_present"
+		include = "iberian_monarchy"
 
-		country_rank = rank_kingdom
-		capital = santiago_compostela
 		government = {
+			type = monarchy
 
 			ruler_term = { character = lon_ordono_ii_leon start_date = 910.1.1 end_date = 914.1.1 regnal_number = 2 }
 			ruler_term = { character = glc_sancho_ordonez start_date = 926.2.12 end_date = 929.6.10 regnal_number = 0 }
@@ -13581,79 +13611,19 @@ countries = {
 
 			ruler_term = { character = cas_alfonso_vii_burgundy start_date = 1111.9.17 end_date = 1111.11.1 regnal_number = 7 }
 		}
-		capital = santiago_compostela
-	}
-
-	GRA = {
-		own_control_core = {
-			almeria almanzora baza gergal mojacar velez_rubio
-			granada adra almunecar guadix huescar illora loja pinar orgiva
-			malaga antequera velez_malaga
-		}
-
-		our_cores_conquered_by_others = {
-			olvera
-		}
-
-		starting_technology_level = 3
-		include = "expl_muslim_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "muslim_monarchy_no_abrahamic_dhimmi"
-
-		government = {
-			ruler = gra_yusuf_i_nasrid
-
-			ruler_term = { character = gra_muhammad_i_nasrid start_date = 1238.5.1 end_date = 1273.1.20 regnal_number = 1 }
-			ruler_term = { character = gra_muhammad_ii_nasrid start_date = 1273.1.20 end_date = 1302.1.20 regnal_number = 2 }
-			ruler_term = {
-				character = gra_muhammad_ii_nasrid start_date = 1302.1.20 end_date = 1302.4.7 regnal_number = 2
-				character = gra_muhammad_iii_nasrid start_date = 1302.1.20 end_date = 1302.4.7 regnal_number = 3
-			}
-			ruler_term = { character = gra_muhammad_iii_nasrid start_date = 1302.4.7 end_date = 1309.3.14 regnal_number = 3 }
-			ruler_term = { character = gra_nasr_i_nasrid start_date = 1309.3.14 end_date = 1314.2.8 regnal_number = 1 }
-			ruler_term = { character = gra_ismail_i_nasrid start_date = 1314.2.8 end_date = 1325.7.8 regnal_number = 1 }
-			ruler_term = { character = gra_muhammad_iv_nasrid start_date = 1325.7.8 end_date = 1333.8.25 regnal_number = 4 }
-			ruler_term = { character = gra_yusuf_i_nasrid start_date = 1333.8.25 regnal_number = 1 }
-
-			regnal_numbers = {
-				name_muhammad = 4
-				name_nasr = 1
-				name_ishmael = 1
-				name_joseph = 1
-			}
-
-			reforms = {
-				the_jewel_of_alandalus_reform
-			}
-			laws = {
-				sharia_law = maliki_policy
-			}
-		}
-		court_language = maghrebi_dialect
-		religious_school = maliki_school
-		government = { mysticism_vs_jurisprudence = -5 }
 
 		country_rank = rank_duchy
-
-		tolerated_cultures = {
-			sephardi
-		}
-
-		capital = granada
+		capital = santiago_compostela
 	}
 
 	#Navarre
 	NAV = {
 		own_control_core = {
-			pamplona elizondo estella olite roncesvalles sanguesa tudela viana laguardia
+			pamplona elizondo estella olite roncesvalles sanguesa tudela viana #Navarre 
 			saint_jean_pied_de_port #Gascony
-		}
-
-		our_cores_conquered_by_others = {
-			bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
+			laguardia anana vitoria salvatierra #Álava
+			bilbao durango valmaseda #Biscay
+			onate san_sebastian tolosa #Gipuzkoa
 		}
 
 		starting_technology_level = 3
@@ -13769,17 +13739,17 @@ countries = {
 		own_control_core = {
 			paris brie_comte_robert corbeil montmorency
 			amiens breteuil corbie nesle peronne
-			clermont montargis sens saint_florentin senlis nemours melun
+			montargis sens saint_florentin senlis nemours melun
 			beauvais saint_quentin noyon la_rochelle
 			ribemont laon
-			cahors mirepoix limoux carcassonne lavaur castelnaudary condom nerac bazas agen
+			cahors limoux carcassonne lavaur castelnaudary 
 			bergerac montauban albi millau saint_pons beziers agde sauveterre_de_guyenne
 			figeac villefranche chaumont_vexin
 			bar_sur_seine
-			limeuil sarlat marmande montflanquin
 			braine loudun
 			mauriac riom tour_auvergne brioude saint_flour vodable
 			montaigut herment
+			meaux provins mouzon alluyes
 
 			tours chinon loches chatillon_sur_indre #D. de Touraine
 
@@ -13793,7 +13763,6 @@ countries = {
 			
 			
 			beaujeu perreux trevoux #S.de Beaujeu
-			lyon riverie #C. de Lyon
 			le_puy #C. du Velay
 			viviers # C. de Viviers
 			nimes uzes melgueil
@@ -13812,13 +13781,6 @@ countries = {
 
 			tarbes #C. Bigorre
 			lodeve #C. Lodeve
-
-			fenouillet toulouse verdun_sur_garonne villemur
-			meaux
-			provins
-			peyrusse entraigues st_affrique
-			allegre chalancon peyre chateauneuf_de_randon florac st_ambroix
-			alluyes
 		}
 		own_control_integrated = {
 			#Appanages
@@ -14133,10 +14095,6 @@ countries = {
 			capital_economy_vs_traditional_economy = 70
 			individualism_vs_communalism = -20
 			outward_vs_inward = -20
-
-			reforms = {
-				french_appanage_reform
-			}
 		}
 
 		tolerated_cultures = {
@@ -14280,61 +14238,6 @@ countries = {
 		capital = belleme
 	}
 
-	#Auvergne (Appanage)
-	AUV = {
-		own_control_core = {
-			vic_le_comte
-		}
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast_no_censor"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			regency = consort_regency
-			active_regent = auv_margaret_evreux
-			start_regency_date = 1332.8.6
-			end_regency_date = 1344.5.8
-			heir = auv_jeanne_auvergne
-			reforms = {
-				french_appanage_reform
-			}
-
-			ruler_term = { character = auv_gui_i_auvergne start_date = 979.1.1 end_date = 989.1.1 regnal_number = 1 }
-			ruler_term = { character = auv_guilhem_iv_auvergne start_date = 989.1.1 end_date = 1016.1.1 regnal_number = 4 }
-			ruler_term = { character = auv_robert_i_auvergne start_date = 1016.1.1 end_date = 1032.1.1 regnal_number = 1 }
-			ruler_term = { character = auv_guilhem_v_auvergne start_date = 1032.1.1 end_date = 1064.1.1 regnal_number = 5 }
-			ruler_term = { character = auv_robert_ii_auvergne start_date = 1064.1.1 end_date = 1096.1.1 regnal_number = 2 }
-			ruler_term = { character = auv_guilhem_vi_auvergne start_date = 1096.1.1 end_date = 1136.1.1 regnal_number = 6 }
-			ruler_term = { character = auv_robert_iii_auvergne start_date = 1136.1.1 end_date = 1147.1.1 regnal_number = 3 }
-			ruler_term = { character = auv_guilhem_vii_auvergne start_date = 1147.1.1 end_date = 1155.1.1 regnal_number = 7	}
-			ruler_term = {
-				character = auv_guilhem_vii_auvergne start_date = 1155.1.1 end_date = 1169.1.1 regnal_number = 7
-				character = auv_guilhem_viii_auvergne start_date = 1155.1.1 end_date = 1169.1.1 regnal_number = 8
-			}
-			ruler_term = { character = auv_guilhem_viii_auvergne start_date = 1169.1.1 end_date = 1182.1.1 regnal_number = 8 }
-			ruler_term = { character = auv_robert_iv_auvergne start_date = 1182.1.1 end_date = 1194.1.1 regnal_number = 4 }
-			ruler_term = { character = auv_guilhem_ix_auvergne start_date = 1194.1.1 end_date = 1197.1.1 regnal_number = 9 }
-			ruler_term = { character = auv_gui_ii_auvergne start_date = 1197.1.1 end_date = 1222.1.1 regnal_number = 2 }
-			ruler_term = { character = auv_guilhem_x_auvergne start_date = 1222.1.1 end_date = 1247.1.1 regnal_number = 10 }
-			ruler_term = { character = auv_robert_v_auvergne start_date = 1247.1.1 end_date = 1277.1.7 regnal_number = 5 }
-			ruler_term = { character = auv_guilhem_xi_auvergne start_date = 1277.1.7 end_date = 1280.1.1 regnal_number = 11 }
-			ruler_term = { character = auv_robert_vi_auvergne start_date = 1280.1.1 end_date = 1314.1.1 regnal_number = 6 }
-			ruler_term = { character = auv_robert_vii_auvergne start_date = 1314.1.1 end_date = 1325.10.13 regnal_number = 7 }
-			ruler_term = { character = auv_guilhem_xii_auvergne start_date = 1325.10.13 end_date = 1332.8.6 regnal_number = 12 }
-
-			regnal_numbers = {
-				name_wido = 2
-				name_william = 12
-				name_robert = 7
-				name_joanna = 1
-			}
-		}
-
-		capital = vic_le_comte
-	}
-
-
 	#Ventadour
 	VNT = {
 		own_control_core = {
@@ -14391,50 +14294,6 @@ countries = {
 		}
 
 		capital = rochechouart
-	}
-
-	#Carlat
-	CLT = {
-		own_control_core = {
-			aurillac
-		}
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = clt_renaud_iv_pons
-
-			ruler_term = { character = cat_ramon_berenguer_iii_barcelona start_date = 1113.1.1 end_date = 1131.7.19 regnal_number = 1 }
-			ruler_term = { character = pro_berenguier_ramon_barcelona start_date = 1131.7.19 end_date = 1144.3.1 regnal_number = 1 }
-			ruler_term = { character = pro_ramon_berenguier_iii_barcelona start_date = 1144.3.1 end_date = 1166.3.1 regnal_number = 2 }
-			ruler_term = {
-				character = pro_doca_ii_barcelona start_date = 1166.3.1 end_date = 1167.1.1 regnal_number = 2
-				character = ara_alfons_ii_arago start_date = 1166.3.1 end_date = 1167.1.1 regnal_number = 1 # As Co-Ruler
-			}
-			ruler_term = { character = clt_renaud_iv_pons start_date = 1325.1.1 regnal_number = 4 }
-
-			regnal_numbers = {
-				name_bernard = 3
-				name_gilbert = 4
-				name_berengar = 1
-				name_douce = 2
-				name_raymond.name_berengar = 2
-				name_berengar.name_raymond = 1
-				name_alphonse = 1
-				name_hugh = 2
-				name_henry = 2
-				name_elizabeth = 1
-				name_reginald = 4
-			}
-		}
-
-		tolerated_cultures = {
-			languedocien
-		}
-
-		capital = aurillac
 	}
 
 	#Angoulême
@@ -14707,198 +14566,6 @@ countries = {
 		capital = sancerre
 	}
 
-	#Foix (Vassal, Fief Mouvant of France) Special case
-	FOI = {
-		own_control_core = {
-			foix pamiers
-		}
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = foi_gaston_ii_foix
-
-			ruler_term = { character = foi_bernard_roger_foix start_date = 1012.1.1 end_date = 1034.1.1 regnal_number = 1 }
-			ruler_term = { character = foi_roger_i_foix start_date = 1034.1.1 end_date = 1064.1.1 regnal_number = 1 }
-			ruler_term = { character = foi_roger_ii_foix start_date = 1064.1.1 end_date = 1124.1.1 regnal_number = 2 }
-			ruler_term = { character = foi_roger_iii_foix start_date = 1124.1.1 end_date = 1148.1.1 regnal_number = 3 }
-			ruler_term = { character = foi_roger_bernard_i_foix start_date = 1148.1.1 end_date = 1188.11.1 regnal_number = 1 }
-			ruler_term = { character = foi_raymond_roger_foix start_date = 1188.11.1 end_date = 1223.4.3 regnal_number = 1 }
-			ruler_term = { character = foi_roger_bernard_ii_foix start_date = 1223.4.3 end_date = 1241.5.26 regnal_number = 2 }
-			ruler_term = { character = foi_roger_iv_foix start_date = 1241.5.26 end_date = 1265.2.24 regnal_number = 4 }
-			ruler_term = { character = foi_roger_bernard_iii_foix start_date = 1265.2.24 end_date = 1302.3.3 regnal_number = 3 }
-			ruler_term = { character = foi_gaston_i_foix start_date = 1302.3.3 end_date = 1315.12.13 regnal_number = 1 }
-			ruler_term = { character = foi_gaston_ii_foix start_date = 1315.12.13 regnal_number = 2 }
-
-			regnal_numbers = {
-				name_bernard.name_roger = 1
-				name_roger = 4
-				name_roger.name_bernard = 3
-				name_raymond.name_roger = 1
-				name_gaston = 2
-			}
-
-			reforms = {
-				french_ducal_vassal_reform
-			}
-		}
-
-		tolerated_cultures = {
-			gascon
-		}
-
-		capital = foix
-	}
-
-	#Béarn (In PU with Foix)
-	BRR = {
-		own_control_core = {
-			oloron orthez pau #Vic. of Béarn
-		}
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = foi_gaston_ii_foix
-			
-			ruler_term = { character = foi_roger_bernard_iii_foix start_date = 1240.4.26 end_date = 1302.3.3 regnal_number = 1 }
-			ruler_term = { character = foi_gaston_i_foix start_date = 1302.3.3 end_date = 1315.12.13 regnal_number = 8 }
-			ruler_term = { character = foi_gaston_ii_foix start_date = 1315.12.13 regnal_number = 9 }
-
-			regnal_numbers = {
-				name_centule.name_lupus = 1
-				name_centule = 6
-				name_gaston = 9
-				#Guiscarde = 1
-				name_peter = 1
-				name_mary = 1
-				name_william.name_raymond = 1
-				name_roger.name_bernard = 1
-			}
-
-			reforms = {
-				french_ducal_vassal_reform
-			}
-		}
-
-		capital = pau
-	}
-
-	#Mont-de-Marsan (In PU with Foix)
-	MDM = {
-		own_control_core = {
-			mont_de_marsan aire #Vic. of Mont-de-Marsan
-		}
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = foi_gaston_ii_foix
-
-			ruler_term = { character = foi_roger_bernard_iii_foix start_date = 1240.4.26 end_date = 1302.3.3 regnal_number = 1 }
-			ruler_term = { character = foi_gaston_i_foix start_date = 1302.3.3 end_date = 1315.12.13 regnal_number = 1 }
-			ruler_term = { character = foi_gaston_ii_foix start_date = 1315.12.13 regnal_number = 2 }
-
-			regnal_numbers = {
-				name_aetius = 1
-				name_januarius = 2
-				name_lupus = 2
-				name_william = 1
-				name_raymond = 1
-				name_gerald = 1
-				name_peter = 1
-				name_centule = 1
-				name_beatrix = 1
-				name_petronilla = 1
-				name_nuno = 1
-				name_wido = 1
-				name_aimar = 1
-				name_boson = 1
-				name_amata = 1
-				name_constance = 1
-				name_haimo = 1
-				name_margaret = 1
-				name_roger.name_bernard = 1
-				name_gaston = 2
-			}
-
-			reforms = {
-				french_ducal_vassal_reform
-			}
-		}
-
-		capital = mont_de_marsan
-	}
-	#Armagnac (Vassal, Fief Mouvant)
-	AMG = {
-		own_control_core = {
-			auch nogaro rodez
-			lectoure #Vic. de Lomagne
-			lautrec #Vic. de Lautrec
-		}
-
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = amg_jean_i_armagnac
-
-			ruler_term = { character = amg_bernard_i_armagnac start_date = 965.1.1 end_date = 995.1.1 regnal_number = 1 }
-			ruler_term = { character = amg_geraud_i_armagnac start_date = 995.1.1 end_date = 1020.1.1 regnal_number = 1 }
-			ruler_term = { character = amg_bernard_ii_armagnac start_date = 1020.1.1 end_date = 1063.1.1 regnal_number = 2 }
-			ruler_term = { character = amg_geraud_ii_armagnac start_date = 1063.1.1 end_date = 1103.1.1 regnal_number = 2 }
-			ruler_term = { character = amg_bernard_iii_armagnac start_date = 1103.1.1 end_date = 1110.1.1 regnal_number = 3 }
-			ruler_term = { character = amg_geraud_iii_armagnac start_date = 1110.1.1 end_date = 1160.1.1 regnal_number = 3 }
-			ruler_term = { character = amg_bernard_iv_armagnac start_date = 1160.1.1 end_date = 1193.1.1 regnal_number = 4 }
-			ruler_term = { character = amg_geraud_iv_armagnac start_date = 1193.1.1 end_date = 1215.1.1 regnal_number = 4 }
-			ruler_term = { character = amg_geraud_v_armagnac start_date = 1215.1.1 end_date = 1219.9.30 regnal_number = 5 }
-			ruler_term = { character = amg_pierre_gerard_armagnac start_date = 1219.9.30 end_date = 1242.1.1 regnal_number = 1 }
-			ruler_term = { character = amg_bernard_v_armagnac start_date = 1242.1.1 end_date = 1245.7.22 regnal_number = 5 }
-			ruler_term = {
-				character = amg_mascarose_i_armagnac start_date = 1245.7.22 end_date = 1246.3.25 regnal_number = 1
-				character = amg_arnaud_odon_lomagne start_date = 1245.7.22 end_date = 1246.3.25 regnal_number = 1
-			}
-
-			ruler_term = { character = amg_arnaud_odon_lomagne start_date = 1246.3.25 end_date = 1255.1.1 regnal_number = 1 }
-			ruler_term = {
-				character = amg_mascarose_ii_lomagne start_date = 1255.1.1 end_date = 1256.1.1 regnal_number = 2
-				character = fra_eschivat_iv_chabanais start_date = 1255.1.1 end_date = 1256.1.1 regnal_number = 1
-			}
-
-			ruler_term = { character = amg_geraud_vi_armagnac start_date = 1256.1.1 end_date = 1285.1.1 regnal_number = 6 }
-			ruler_term = { character = amg_bernard_vi_armagnac start_date = 1285.1.1 end_date = 1319.1.1 regnal_number = 6 }
-			ruler_term = { character = amg_jean_i_armagnac start_date = 1319.1.1 regnal_number = 1 }
-
-			regnal_numbers = {
-				name_bernard = 6
-				name_gerald = 6
-				name_peter.name_gerard = 1
-				name_mascarose = 2
-				name_arnold.name_otto = 1
-				name_eschivat = 1
-				name_john = 1
-			}
-			reforms = {
-				french_ducal_vassal_reform
-			}
-		}
-
-		tolerated_cultures = {
-			languedocien
-		}
-
-		capital = auch
-	}
-
-
 	#Dreux (Appanage)
 	DRE = {
 		own_control_core = {
@@ -14944,7 +14611,6 @@ countries = {
 	VDM = {
 		own_control_core = {
 			vendome
-			castres #S. de Castres
 		}
 
 		starting_technology_level = 3
@@ -15015,54 +14681,68 @@ countries = {
 		capital = etampes
 	}
 
-	#Forez (Vassal, Fief Mouvant)
-	FRZ = {
+	#Auvergne (Appanage)
+	AUV = {
 		own_control_core = {
-			roanne montbrison feurs saint_etienne
-			thiers #S. Thiers
+			roanne montbrison feurs saint_etienne lyon riverie #Lyonnais
+			thiers clermont vic_le_comte vodable brioude riom allegre #Lower Auvergne
+			montaigut herment chambon tour_auvergne #Combraille
+			saint_flour aurillac mauriac #Upper Auvergne
+			perreux trevoux beaujeu #Beaujolais
+			peyre mende chateauneuf_de_randon #Gevaudan
 		}
-
 		starting_technology_level = 3
 		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
+		include = "catholic_monarchy_no_coast_no_censor"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
-			ruler = frz_guigues_vii_albon
-
-			ruler_term = { character = frz_guigues_i_albon start_date = 1117.1.1 end_date = 1137.11.8 regnal_number = 1 }
-			ruler_term = { character = frz_guigues_ii_albon start_date = 1137.11.8 end_date = 1198.1.1 regnal_number = 2 }
-			ruler_term = { character = frz_guigues_iii_albon start_date = 1198.1.1 end_date = 1204.11.28 regnal_number = 3 }
-			ruler_term = { character = frz_guigues_iv_albon start_date = 1204.11.28 end_date = 1241.10.29 regnal_number = 4 }
-			ruler_term = { character = frz_guigues_v_albon start_date = 1241.10.29 end_date = 1259.9.12 regnal_number = 5 }
-			ruler_term = { character = frz_renaud_i_albon start_date = 1259.9.12 end_date = 1270.1.1 regnal_number = 1 }
-			ruler_term = { character = frz_guigues_vi_albon start_date = 1270.1.1 end_date = 1278.1.1 regnal_number = 6 }
-			ruler_term = { character = frz_jean_i_albon start_date = 1278.1.1 end_date = 1333.7.3 regnal_number = 1 }
-			ruler_term = { character = frz_guigues_vii_albon start_date = 1333.11.8 regnal_number = 7 }
-
-			regnal_numbers = {
-				name_artaldus = 4
-				name_pontius = 1
-				name_gerald = 1
-				name_william = 2
-				name_eustathius = 1
-				name_wido = 1
-				name_wigo = 7
-				name_reginald = 1
-				name_john = 1
+			regency = consort_regency
+			active_regent = auv_margaret_evreux
+			start_regency_date = 1332.8.6
+			end_regency_date = 1344.5.8
+			heir = auv_jeanne_auvergne
+			reforms = {
+				french_appanage_reform
 			}
 
-			reforms = {
-				french_ducal_vassal_reform
+			ruler_term = { character = auv_gui_i_auvergne start_date = 979.1.1 end_date = 989.1.1 regnal_number = 1 }
+			ruler_term = { character = auv_guilhem_iv_auvergne start_date = 989.1.1 end_date = 1016.1.1 regnal_number = 4 }
+			ruler_term = { character = auv_robert_i_auvergne start_date = 1016.1.1 end_date = 1032.1.1 regnal_number = 1 }
+			ruler_term = { character = auv_guilhem_v_auvergne start_date = 1032.1.1 end_date = 1064.1.1 regnal_number = 5 }
+			ruler_term = { character = auv_robert_ii_auvergne start_date = 1064.1.1 end_date = 1096.1.1 regnal_number = 2 }
+			ruler_term = { character = auv_guilhem_vi_auvergne start_date = 1096.1.1 end_date = 1136.1.1 regnal_number = 6 }
+			ruler_term = { character = auv_robert_iii_auvergne start_date = 1136.1.1 end_date = 1147.1.1 regnal_number = 3 }
+			ruler_term = { character = auv_guilhem_vii_auvergne start_date = 1147.1.1 end_date = 1155.1.1 regnal_number = 7	}
+			ruler_term = {
+				character = auv_guilhem_vii_auvergne start_date = 1155.1.1 end_date = 1169.1.1 regnal_number = 7
+				character = auv_guilhem_viii_auvergne start_date = 1155.1.1 end_date = 1169.1.1 regnal_number = 8
+			}
+			ruler_term = { character = auv_guilhem_viii_auvergne start_date = 1169.1.1 end_date = 1182.1.1 regnal_number = 8 }
+			ruler_term = { character = auv_robert_iv_auvergne start_date = 1182.1.1 end_date = 1194.1.1 regnal_number = 4 }
+			ruler_term = { character = auv_guilhem_ix_auvergne start_date = 1194.1.1 end_date = 1197.1.1 regnal_number = 9 }
+			ruler_term = { character = auv_gui_ii_auvergne start_date = 1197.1.1 end_date = 1222.1.1 regnal_number = 2 }
+			ruler_term = { character = auv_guilhem_x_auvergne start_date = 1222.1.1 end_date = 1247.1.1 regnal_number = 10 }
+			ruler_term = { character = auv_robert_v_auvergne start_date = 1247.1.1 end_date = 1277.1.7 regnal_number = 5 }
+			ruler_term = { character = auv_guilhem_xi_auvergne start_date = 1277.1.7 end_date = 1280.1.1 regnal_number = 11 }
+			ruler_term = { character = auv_robert_vi_auvergne start_date = 1280.1.1 end_date = 1314.1.1 regnal_number = 6 }
+			ruler_term = { character = auv_robert_vii_auvergne start_date = 1314.1.1 end_date = 1325.10.13 regnal_number = 7 }
+			ruler_term = { character = auv_guilhem_xii_auvergne start_date = 1325.10.13 end_date = 1332.8.6 regnal_number = 12 }
+
+			regnal_numbers = {
+				name_wido = 2
+				name_william = 12
+				name_robert = 7
+				name_joanna = 1
 			}
 		}
 
 		tolerated_cultures = {
-			vivaro_alpine
-			auvergnat
+			arpitan
+			burgundian
 		}
-
-		capital = montbrison
+		country_rank = rank_duchy
+		capital = clermont
 	}
 
 	#Lorraine (Vassal, Fief Mouvant)
@@ -15233,167 +14913,12 @@ countries = {
 		capital = blois
 	}
 
-	#Astarac (Vassal, Fief Mouvant)
-	AST = {
-		own_control_core = {
-			mirande
-		}
-
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			regency = consort_regency
-			active_regent = mfa_cecilia_comminges
-			start_regency_date = 1330.1.1
-			end_regency_date = 1349.1.1
-			heir = ast_centule_iv_astarac
-
-			ruler_term = { character = ast_arnaud_garcia_astarac start_date = 920.1.1 end_date = 960.1.1 regnal_number = 1 }
-			ruler_term = { character = ast_garcia_arnaud_astarac start_date = 960.1.1 end_date = 975.1.1 regnal_number = 1 }
-			ruler_term = { character = ast_arnaud_ii_astarac start_date = 975.1.1 end_date = 1023.1.1 regnal_number = 2 }
-			ruler_term = { character = ast_guillaume_astarac start_date = 1023.1.1 end_date = 1072.1.1 regnal_number = 1 }
-			ruler_term = { character = ast_sanche_i_astarac start_date = 1072.1.1 end_date = 1099.1.1 regnal_number = 1 }
-			ruler_term = { character = ast_bernard_i_astarac start_date = 1099.1.1 end_date = 1142.1.1 regnal_number = 1 }
-			ruler_term = { character = ast_sanche_ii_astarac start_date = 1142.1.1 end_date = 1155.1.1 regnal_number = 2 }
-			ruler_term = { character = ast_bernard_ii_astarac start_date = 1155.1.1 end_date = 1157.1.1 regnal_number = 2 }
-			ruler_term = { character = ast_bohemond_astarac start_date = 1157.1.1 end_date = 1176.1.1 regnal_number = 1 }
-			ruler_term = { character = ast_bernard_iii_astarac start_date = 1176.1.1 end_date = 1192.1.1 regnal_number = 3 }
-			ruler_term = { character = ast_centule_i_astarac start_date = 1192.1.1 end_date = 1243.1.1 regnal_number = 1 }
-			ruler_term = { character = ast_centule_ii_astarac start_date = 1243.1.1 end_date = 1249.8.24 regnal_number = 2 }
-			ruler_term = { character = ast_bernard_iv_astarac start_date = 1249.8.24 end_date = 1291.1.1 regnal_number = 4 }
-			ruler_term = { character = ast_centule_iii_astarac start_date = 1291.1.1 end_date = 1300.1.1 regnal_number = 3 }
-			ruler_term = { character = ast_bernard_v_astarac start_date = 1300.1.1 end_date = 1331.1.1 regnal_number = 5 }
-
-			regnal_numbers = {
-				name_arnold = 2
-				name_garcia = 1
-				name_william = 1
-				name_sancho = 2
-				name_bernard = 5
-				name_bohemond = 1
-				name_centule = 3
-			}
-
-			reforms = {
-				french_ducal_vassal_reform
-			}
-		}
-		capital = mirande
-	}
-
-	#Comminges (Vassal, Fief Mouvant)
-	COM = {
-		own_control_core = {
-			muret aspet saint_lizier
-		}
-
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		government = {
-			type = monarchy
-			heir_selection = semi_salic_law
-			regency = consort_regency
-			active_regent = alb_agnes_perigord
-			start_regency_date = 1336.1.1
-			end_regency_date = 1354.5.1
-			heir = com_jean_comminges
-
-			ruler_term = { character = com_arnaud_i_comminges start_date = 949.1.1 end_date = 957.1.1 regnal_number = 1 }
-			ruler_term = { character = com_roger_i_comminges start_date = 957.1.1 end_date = 979.1.1 regnal_number = 1 }
-			ruler_term = {
-				character = com_roger_i_comminges start_date = 979.1.1 end_date = 988.1.1 regnal_number = 1 
-				character = com_arnaud_ii_comminges start_date = 979.1.1 end_date = 988.1.1 regnal_number = 2
-			}
-			ruler_term = {
-				character = com_roger_i_comminges start_date = 988.1.1 end_date = 1003.1.1 regnal_number = 1 
-				character = com_eudes_comminges start_date = 988.1.1 end_date = 1003.1.1 regnal_number = 1
-			}
-			ruler_term = {
-				character = com_roger_i_comminges start_date = 1003.1.1 end_date = 1012.1.1 regnal_number = 1 
-				character = com_eudes_comminges start_date = 1003.1.1 end_date = 1012.1.1 regnal_number = 1
-				character = com_roger_ii_comminges start_date = 1003.1.1 end_date = 1012.1.1 regnal_number = 2
-			}
-			ruler_term = {
-				character = com_eudes_comminges start_date = 1012.1.1 end_date = 1035.1.1 regnal_number = 1
-				character = com_roger_ii_comminges start_date = 1012.1.1 end_date = 1035.1.1 regnal_number = 2
-			}
-			ruler_term = { character = com_arnaud_iii_comminges start_date = 1035.1.1 end_date = 1070.1.1 regnal_number = 3 }
-			ruler_term = { character = com_roger_iii_comminges start_date = 1070.1.1 end_date = 1105.1.1 regnal_number = 3 }
-			ruler_term = { character = com_bernard_i_comminges start_date = 1105.1.1 end_date = 1145.1.1 regnal_number = 1 }
-			ruler_term = { character = com_bernard_ii_comminges start_date = 1145.1.1 end_date = 1153.1.1 regnal_number = 2 }
-			ruler_term = { character = com_bernard_iii_comminges start_date = 1153.1.1 end_date = 1176.1.1 regnal_number = 3 regnal_name = name_bernard }
-			ruler_term = { character = com_bernard_iv_comminges start_date = 1176.1.1 end_date = 1225.2.22 regnal_number = 4 }
-			ruler_term = { character = com_bernard_v_comminges start_date = 1225.2.22 end_date = 1241.11.30 regnal_number = 5 }
-			ruler_term = { character = com_bernard_vi_comminges start_date = 1241.11.30 end_date = 1295.3.20 regnal_number = 6 }
-			ruler_term = { character = com_bernard_vii_comminges start_date = 1295.3.20 end_date = 1312.7.21 regnal_number = 7 }
-			ruler_term = { character = com_bernard_viii_comminges start_date = 1312.7.21 end_date = 1336.1.1 regnal_number = 8 }
-
-			regnal_numbers = {
-				name_arnold = 3
-				name_roger = 3
-				name_otto = 1
-				name_bernard = 8
-			}
-
-			reforms = {
-				french_ducal_vassal_reform
-			}
-		}
-		capital = muret
-	}
-
-	#Isle de Jourdan (Vassal, Fief Mouvant)
-	IJO = {
-		own_control_core = {
-			lisle_jourdain
-		}
-
-		starting_technology_level = 3
-		include = "expl_western_europe"
-		include = "catholic_monarchy_no_coast"
-		government = {
-			type = monarchy
-			heir_selection = cognatic_primogeniture
-			ruler = ijo_bernard_iv_lisle_jourdain
-
-			ruler_term = { character = ijo_odon_raymond_lisle_jourdain start_date = 1000.1.1 end_date = 1038.1.1 regnal_number = 1 }
-			ruler_term = { character = ijo_raymond_lisle_jourdain start_date = 1038.1.1 end_date = 1089.1.1 regnal_number = 1 }
-			ruler_term = { character = ijo_jourdain_i_lisle_jourdain start_date = 1089.1.1 end_date = 1132.1.1 regnal_number = 1 }
-			ruler_term = { character = ijo_bernard_i_lisle_jourdain start_date = 1132.1.1 end_date = 1161.1.1 regnal_number = 1 }
-			ruler_term = { character = ijo_jourdain_ii_lisle_jourdain start_date = 1161.1.1 end_date = 1194.1.1 regnal_number = 2 }
-			ruler_term = { character = ijo_jourdain_iii_lisle_jourdain start_date = 1194.1.1 end_date = 1205.1.1 regnal_number = 3 }
-			ruler_term = { character = ijo_bernard_ii_lisle_jourdain start_date = 1205.1.1 end_date = 1228.1.1 regnal_number = 2 }
-			ruler_term = { character = ijo_bernard_iii_lisle_jourdain start_date = 1228.1.1 end_date = 1240.1.1 regnal_number = 3 }
-			ruler_term = { character = ijo_jourdain_iv_lisle_jourdain start_date = 1240.1.1 end_date = 1271.1.1 regnal_number = 4 }
-			ruler_term = { character = ijo_jourdain_v_lisle_jourdain start_date = 1271.1.1 end_date = 1304.1.1 regnal_number = 3 }
-			ruler_term = { character = ijo_bernard_iv_lisle_jourdain start_date = 1304.1.1 regnal_number = 4 }
-
-			regnal_numbers = {
-				name_otto.name_raymond = 1
-				name_raymond = 1
-				name_jordan = 5
-				name_bernard = 4
-			}
-
-			reforms = {
-				french_ducal_vassal_reform
-			}
-		}
-
-		capital = lisle_jourdain
-	}
-
 	#Valentinois (Vassal, Fief Mouvant)
 	VLN = {
 		own_control_core = {
-			valence die privas montlaur condorcet
-
-			# own_control_integrated, but culture accepted
-			tournon #S. de Tournon
+			tournon privas montlaur le_puy viviers chalancon #Vivarais
+			valence die condorcet #Valentinois
+			st_ambroix #Nimois
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -15431,7 +14956,6 @@ countries = {
 			auvergnat
 		}
 
-		country_rank = rank_county
 		capital = valence
 	}
 
@@ -16268,23 +15792,20 @@ countries = {
 		capital = angers
 	}
 
-	#Gascony (Revolter)
+	#Gascony (Appanage)
 	GUY = {
-		our_cores_conquered_by_others = {
-			#1150 borders
-			bayonne tosse tartas labrit dax libourne mimizan mauleon
-			mont_de_marsan aire #Vic. Marsan
-			auch #Armagnac
-			tarbes #C. Bigorre
-			saint_gaudens #Vic. des Quatre Valles
-			mirande #C. Astarac
-			muret saint_lizier #C. Comminges
-			lectoure #Vic. de Lomagne
+		own_control_core = {
+			mont_de_marsan aire #Tursan
+			auch nogaro lectoure lisle_jourdain mirande #Armagnac
+			tarbes oloron pau orthez #Béarn and Bigorre
+			saint_gaudens muret saint_lizier aspet #Comminges
+			sauveterre_de_guyenne bazas nerac condom #Bazadais
+			verdun_sur_garonne #Toulousain
 		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
+		include = "catholic_monarchy_no_coast"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -16306,7 +15827,16 @@ countries = {
 				name_william = 2
 				name_bernard = 1
 			}
+			reforms = {
+				french_appanage_reform
+			}
 		}
+
+		tolerated_cultures = {
+			languedocien
+		}
+
+		country_rank = rank_duchy
 		capital = auch
 	}
 
@@ -16534,7 +16064,7 @@ countries = {
 	#Narbonne
 	NRB = {
 		own_control_core = {
-			narbonne
+			narbonne montpellier
 		}
 
 		starting_technology_level = 3
@@ -16613,19 +16143,25 @@ countries = {
 		capital = boulogne_sur_mer
 	}
 
-	#Toulouse (Revolter)
+	#Toulouse (Appanage)
 	TOU = {
-		our_cores_conquered_by_others = {
-			toulouse lisle_jourdain narbonne lavaur castelnaudary saint_pons beziers agde lodeve melgueil
-			nimes uzes french_ales castres rodez villefranche figeac cahors agen peyrusse entraigues peyre mende
-			lectoure montauban albi villemur lautrec verdun_sur_garonne montflanquin gourdon pamiers foix
-			mirepoix limoux carcassonne fenouillet montpellier chateauneuf_de_randon st_affrique millau 
-			florac st_ambroix
+		own_control_core = {
+			toulouse villemur castelnaudary lavaur #Toulousain
+			carcassonne fenouillet limoux #Razés
+			saint_pons beziers agde lodeve #Narbonnais
+			melgueil nimes uzes french_ales #Nimois
+			villefranche rodez st_affrique millau entraigues peyrusse #Rouergue
+			castres albi lautrec #Castres
+			mirepoix foix pamiers #Foix
+			florac #Gevaudan
+			figeac cahors montflanquin gourdon #Quercy
+			agen montauban marmande #Agenais 
+			sarlat limeuil bergerac #Périgord       		 
 		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
-		include = "catholic_monarchy_not_present"
+		include = "catholic_monarchy"
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -16649,7 +16185,16 @@ countries = {
 				name_simeon = 1
 				name_joanna = 1
 			}
+			reforms = {
+				french_appanage_reform
+			}
 		}
+
+		tolerated_cultures = {
+			gascon
+		}
+
+		country_rank = rank_duchy
 		capital = toulouse
 	}
 
@@ -18114,6 +17659,11 @@ countries = {
 			nedroma tegeget kalaat_sraghna midelt
 			aouint_yghomane afso ifrane
 			ronda algeciras gibraltar marbella
+
+			#Granada
+			almeria almanzora baza gergal mojacar velez_rubio
+			granada adra almunecar guadix huescar illora loja pinar orgiva
+			malaga antequera velez_malaga
 		}
 
 		control = {

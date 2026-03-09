@@ -925,7 +925,6 @@ mesta_council_law = {
 	quadrillas_organization = {
 		country_modifier = {
 			global_wool_output_modifier = 0.25
-			nobles_estate_max_tax = 0.1
 			tax_income_efficiency = small_tax_income_efficiency_bonus
 		}
 		estate_preferences = {
@@ -940,7 +939,6 @@ mesta_council_law = {
 		country_modifier = {
 			global_wool_output_modifier = 0.5
 			expand_rgo_farming_cost_modifier = 0.33
-			nobles_estate_max_tax = 0.1
 			tax_income_efficiency = medium_tax_income_efficiency_bonus
 		}
 		estate_preferences = {

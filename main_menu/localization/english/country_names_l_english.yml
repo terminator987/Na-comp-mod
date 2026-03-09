@@ -891,6 +891,8 @@
  EUR_english_ADJ: "$EUR_ADJ$"
  LON: "León"
  LON_ADJ: "Leonese"
+ C01: "Andalucía"
+ C01_ADJ: "Andalucían"
  GLC: "Galicia"
  GLC_ADJ: "Galician"
  NAV: "Navarre"
