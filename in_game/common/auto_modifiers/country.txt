@@ -41,7 +41,7 @@ country_base_values = {
 	
 	combined_arms_max_threshold = 0.5
 	combined_arms_min_percent_for_bonus = 0.1
-	combined_bonus_per_type = 0.025
+	combined_bonus_per_type = 0
 	
 	annexation_speed_base = 0.5	
 
