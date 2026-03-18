@@ -40387,15 +40387,13 @@ countries = {
 			lahoysk begoml byerazino ilya krasnoe smalyavichy
 			minsk chervyen koidanova marjina_horka rakau stowbtsy svislach
 			mogilev bykhaw
+			palanga rietavas silale skuodas taurage
+			mazeikiai
 		}
 		own_control_integrated = {
 			grodek
 			#Podlasie
 			drohiczyn bielsk_podlaski mielnik sokolow suraz
-		}
-		own_core = {
-			palanga rietavas silale skuodas taurage
-			mazeikiai
 		}
 
 		include = "expl_eastern_europe"
