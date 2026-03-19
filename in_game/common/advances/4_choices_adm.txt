@@ -140,7 +140,7 @@ organised_construction = {
 	icon = renaissance_development
 	for = adm
 
-	court_spending_cost = -0.03
+	court_spending_cost = -0.05
 }
 organised_mercenary_payment = {
 	age = age_3_discovery
@@ -192,7 +192,7 @@ efficient_construction_plans = {
 	age = age_3_discovery
 	for = adm
 	
-	tax_income_efficiency = small_tax_income_efficiency_bonus
+	tax_income_efficiency = medium_tax_income_efficiency_bonus
 	
 }
 

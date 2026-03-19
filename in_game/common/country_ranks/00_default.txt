@@ -42,7 +42,6 @@
 			limit = {
 				exists = international_organization:hre
 			}
-			modifier:block_from_change_to_empire_rank_catholic = no
 		}
 		modifier:block_from_change_to_empire_rank = no		
 	}
