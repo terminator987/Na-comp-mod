@@ -145,10 +145,10 @@ fra_taille = {
 	permanent_tax = {
 		country_modifier = {
 			monthly_towards_centralization = societal_value_tiny_monthly_move
-			burghers_estate_max_tax	= 0.1
-			peasants_estate_max_tax	= 0.1
-			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
-			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			burghers_estate_max_tax	= 0.025
+			peasants_estate_max_tax	= 0.025
+			burghers_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
+			peasants_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
 		}
 		estate_preferences = {
 			nobles_estate
@@ -158,7 +158,6 @@ fra_taille = {
 	}
 	exceptional_only = {
 		country_modifier = {
-			global_crown_estate_power = -0.05
 			monthly_towards_decentralization = societal_value_tiny_monthly_move
 			estate_enrichment = 0.1
 			global_estate_target_satisfaction = medium_permanent_target_satisfaction					
