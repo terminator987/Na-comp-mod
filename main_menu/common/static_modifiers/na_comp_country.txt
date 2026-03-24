@@ -9,7 +9,7 @@
     antagonism_received_modifier = -0.2
 	country_cabinet_efficiency = 0.20
 	legislative_efficiency = 0.1
-	monthly_gold_income = 5
+	monthly_gold_income = 7.5
 }
 bra_wittelsbacher_neglect_1 = {
 	game_data = {
