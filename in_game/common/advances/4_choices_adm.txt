@@ -54,7 +54,7 @@ benefits_for_mercenaries = {
 	for = adm
 
 	requires = debt_and_loans
-	mercenary_maintenance_cost = -0.15
+	mercenary_maintenance_cost = -0.1
 }
 organised_mercenary_recruitment = {
 	age = age_2_renaissance
@@ -62,7 +62,7 @@ organised_mercenary_recruitment = {
 	for = adm
 
 	requires = benefits_for_mercenaries
-	hire_mercenary_premium_cost_modifier = -0.2
+	hire_mercenary_premium_cost_modifier = -0.1
 }
 
 state_efficiency = {
