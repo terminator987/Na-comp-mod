@@ -174,7 +174,7 @@ hire_mercenary_leader = {
 
 # this is multiplied by the total hire cost of the unit.
 hire_mercenary_premium = {
-	gold = 0.25
+	gold = 1.25
 }
 
 # this is multiplied by the total hire cost of the unit.
