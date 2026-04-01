@@ -103,6 +103,7 @@ age_3_discovery = {
 		levy_combat_efficiency_modifier = -0.1
 
 		antagonism_religion_influence = 0.15
+		hire_mercenary_premium_cost_modifier = 0.15
 	}
 	
 	war_score_from_battles = -0.2
@@ -152,10 +153,13 @@ age_4_reformation = {
 		antagonism_religion_influence = 0.2
 		antagonism_culture_influence = 0.1
 		antagonism_government_type_influence = 0.1
+		mercenary_maintenance_cost = 1
+		hire_mercenary_premium_cost_modifier = 0.33
 	}
 	war_score_from_battles = -0.4
 	efficiency = 0.4
 	victory_card = 3
+	mercenaries = -0.25
 
 
 	max_ai_privilege_per_estate = {
@@ -210,6 +214,8 @@ age_5_absolutism = {
 		antagonism_culture_influence = 0.2
 		antagonism_government_type_influence = 0.2
 		antagonism_societal_value_influence = 0.1
+		mercenary_maintenance_cost = 1.5
+		hire_mercenary_premium_cost_modifier = 0.75
 	}
 	
 	war_score_from_battles = -0.6
@@ -267,6 +273,8 @@ age_6_revolutions = {
 		antagonism_culture_influence = 0.1
 		antagonism_societal_value_influence = 0.2
 		antagonism_government_type_influence = 0.25
+		mercenary_maintenance_cost = 2
+		hire_mercenary_premium_cost_modifier = 1.25
 	}
 	
 	mercenaries = -0.9

@@ -169,12 +169,12 @@ replace_rival = {
 
 # this is multiplied by his attributes and other factors
 hire_mercenary_leader = {
-	gold = 0.25
+	gold = 0.5
 }
 
 # this is multiplied by the total hire cost of the unit.
 hire_mercenary_premium = {
-	gold = 1.25
+	gold = 1
 }
 
 # this is multiplied by the total hire cost of the unit.
