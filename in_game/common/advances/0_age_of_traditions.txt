@@ -263,7 +263,7 @@ feudalism_advance = {
 	global_nobles_max_literacy = 20
 	allow_estate_parliament = yes
 	military_tactics = 1.0
-	global_mercenaries_modifier = -0.75
+	global_mercenaries_modifier = -0.6
 	mercenary_maintenance_cost = 1
 	
 	allow = { has_embraced_institution = institution:feudalism }
