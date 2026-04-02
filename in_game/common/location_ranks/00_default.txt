@@ -28,6 +28,8 @@ city = {
 		local_disease_resistance = -0.6
 		
 		max_constructions_at_same_time = 1
+
+		local_population_growth = 0.001
 	}
 	
 	country_modifier = {
@@ -75,6 +77,8 @@ town = {
 		local_peasant_enfranchisment = 0.1
 
 		local_disease_resistance = -0.25
+
+		local_population_growth = 0.0015
 	}
 	
 	country_modifier = {
@@ -102,7 +106,7 @@ rural_settlement = {
 		local_max_rgo_size_modifier = 1.0
 		local_monthly_food_modifier = 0.1
 		
-		local_population_growth = 0.001
+		local_population_growth = 0.0025
 				
 		local_peasant_enfranchisment = -0.2
 	}
