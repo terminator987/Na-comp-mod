@@ -1,0 +1,350 @@
+
+#From the mod Reinforce in Occupied Locations, all credit goes to the creator of that mod
+
+on_location_occupied = {
+	effect = {
+		ROOT = {
+			every_country_together_in_war_with = {
+				save_scope_as = ally_countries
+			}
+		}
+		scope:target = {
+			every_unit_in_location = {
+				limit = {
+					owner = ROOT 
+				}
+				every_sub_unit = {
+					limit = {
+						is_levy = no
+						is_mercenary = no
+					}
+					save_scope_value_as = {
+						name = before_num
+						value = subunit_strength
+					}
+					add_subunit_strength_percentage = 0.1
+					save_scope_value_as = {
+						name = after_num
+						value = subunit_strength
+					}
+					save_scope_value_as = {
+						name = subtract_num
+						value = {
+							add = scope:after_num
+							subtract = scope:before_num
+						}
+					}
+					root = {					
+						if = {
+							limit = {
+								scope:subtract_num <= root.manpower
+							}
+							add_manpower = {
+								value = scope:subtract_num
+								multiply = -1
+							}
+						}
+						else = {
+							prev = {
+								add_subunit_strength_percentage = -0.1
+								add_subunit_strength = root.manpower
+							}
+							add_manpower = {
+								value = root.manpower
+								multiply = -1
+							}
+						}
+					}
+				}
+			}
+		}
+		scope:target = {
+			every_unit_in_location = {
+				limit = {
+					owner = scope:ally_countries
+				}
+				every_sub_unit = {
+					limit = {
+						is_levy = no
+						is_mercenary = no
+					}
+					save_scope_value_as = {
+						name = before_num
+						value = subunit_strength
+					}
+					add_subunit_strength_percentage = 0.1
+					save_scope_value_as = {
+						name = after_num
+						value = subunit_strength
+					}
+					save_scope_value_as = {
+						name = subtract_num
+						value = {
+							add = scope:after_num
+							subtract = scope:before_num
+						}
+					}
+					scope:ally_countries = {					
+						if = {
+							limit = {
+								scope:subtract_num <= scope:ally_countries.manpower
+							}
+							add_manpower = {
+								value = scope:subtract_num
+								multiply = -1
+							}
+						}
+						else = {
+							prev = {
+								add_subunit_strength_percentage = -0.1
+								add_subunit_strength = scope:ally_countries.manpower
+							}
+							add_manpower = {
+								value = scope:ally_countries.manpower
+								multiply = -1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+on_siege_won = {
+	effect = {
+		ROOT = {
+			every_country_together_in_war_with = {
+				save_scope_as = ally_countries
+			}
+		}
+		scope:target = {
+			every_unit_in_location = {
+				limit = {
+					owner = ROOT 
+				}
+				every_sub_unit = {
+					limit = {
+						is_levy = no
+						is_mercenary = no
+					}
+					save_scope_value_as = {
+						name = before_num
+						value = subunit_strength
+					}
+					add_subunit_strength_percentage = 0.1
+					save_scope_value_as = {
+						name = after_num
+						value = subunit_strength
+					}
+					save_scope_value_as = {
+						name = subtract_num
+						value = {
+							add = scope:after_num
+							subtract = scope:before_num
+						}
+					}
+					root = {					
+						if = {
+							limit = {
+								scope:subtract_num <= root.manpower
+							}
+							add_manpower = {
+								value = scope:subtract_num
+								multiply = -1
+							}
+						}
+						else = {
+							prev = {
+								add_subunit_strength_percentage = -0.1
+								add_subunit_strength = root.manpower
+							}
+							add_manpower = {
+								value = root.manpower
+								multiply = -1
+							}
+						}
+					}
+				}
+			}
+		}
+		scope:target = {
+			every_unit_in_location = {
+				limit = {
+					owner = scope:ally_countries
+				}
+				every_sub_unit = {
+					limit = {
+						is_levy = no
+						is_mercenary = no
+					}
+					save_scope_value_as = {
+						name = before_num
+						value = subunit_strength
+					}
+					add_subunit_strength_percentage = 0.1
+					save_scope_value_as = {
+						name = after_num
+						value = subunit_strength
+					}
+					save_scope_value_as = {
+						name = subtract_num
+						value = {
+							add = scope:after_num
+							subtract = scope:before_num
+						}
+					}
+					scope:ally_countries = {					
+						if = {
+							limit = {
+								scope:subtract_num <= scope:ally_countries.manpower
+							}
+							add_manpower = {
+								value = scope:subtract_num
+								multiply = -1
+							}
+						}
+						else = {
+							prev = {
+								add_subunit_strength_percentage = -0.1
+								add_subunit_strength = scope:ally_countries.manpower
+							}
+							add_manpower = {
+								value = scope:ally_countries.manpower
+								multiply = -1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+monthly_country_pulse = {
+	effect = {
+		ROOT = {
+			every_country_together_in_war_with = {
+				save_scope_as = ally_countries
+			}
+		}
+		ROOT = {
+			every_controlled_location = {
+				limit = {
+					NOT = {
+						OR = {
+							owner = ROOT
+							owner = scope:ally_countries
+						}							
+					}
+				}
+				every_unit_in_location = {
+					limit = {
+						owner = ROOT 
+					}
+					every_sub_unit = {
+						limit = {
+							is_levy = no
+							is_mercenary = no
+						}
+						save_scope_value_as = {
+							name = before_num
+							value = subunit_strength
+						}
+						add_subunit_strength_percentage = 0.1
+						save_scope_value_as = {
+							name = after_num
+							value = subunit_strength
+						}
+						save_scope_value_as = {
+							name = subtract_num
+							value = {
+								add = scope:after_num
+								subtract = scope:before_num
+							}
+						}
+						root = {					
+							if = {
+								limit = {
+									scope:subtract_num <= root.manpower
+								}
+								add_manpower = {
+									value = scope:subtract_num
+									multiply = -1
+								}
+							}
+							else = {
+								prev = {
+									add_subunit_strength_percentage = -0.1
+									add_subunit_strength = root.manpower
+								}
+								add_manpower = {
+									value = root.manpower
+									multiply = -1
+								}
+							}
+						}
+					}
+				}
+			}
+			every_controlled_location = {
+				limit = {
+					NOT = {
+						OR = {
+							owner = ROOT
+							owner = scope:ally_countries
+						}							
+					}
+				}
+				every_unit_in_location = {
+					limit = {
+						owner = scope:ally_countries
+					}
+					every_sub_unit = {
+						limit = {
+							is_levy = no
+							is_mercenary = no
+						}
+						save_scope_value_as = {
+							name = before_num
+							value = subunit_strength
+						}
+						add_subunit_strength_percentage = 0.1
+						save_scope_value_as = {
+							name = after_num
+							value = subunit_strength
+						}
+						save_scope_value_as = {
+							name = subtract_num
+							value = {
+								add = scope:after_num
+								subtract = scope:before_num
+							}
+						}
+						scope:ally_countries = {					
+							if = {
+								limit = {
+									scope:subtract_num <= scope:ally_countries.manpower
+								}
+								add_manpower = {
+									value = scope:subtract_num
+									multiply = -1
+								}
+							}
+							else = {
+								prev = {
+									add_subunit_strength_percentage = -0.1
+									add_subunit_strength = scope:ally_countries.manpower
+								}
+								add_manpower = {
+									value = scope:ally_countries.manpower
+									multiply = -1
+								}
+							}
+						}
+					}
+				}
+			}		
+		}
+	}
+}
