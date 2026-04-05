@@ -25,3 +25,6 @@ NMarket = {
 NLocation = {
     FORT_GARRISON_UPKEEP = 1.5
 }
+NCombat = {
+    SIEGE_REGIMENTS_FOR_ARTILLERY = 1
+}
