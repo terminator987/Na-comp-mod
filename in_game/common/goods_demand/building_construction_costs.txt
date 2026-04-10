@@ -353,7 +353,6 @@ caravanserai_building_construction = {
 funduq_building_construction = {
 	lumber = 0.3
 	masonry = 0.1
-	goods_gold = 0.05
 	tools = 0.2
 	paper = 0.1
 	category = building_construction
@@ -361,7 +360,6 @@ funduq_building_construction = {
 
 caravan_stop_building_construction = {
 	salt = 0.1
-	goods_gold = 0.05
 	livestock = 0.3
 	category = building_construction
 }
@@ -380,7 +378,6 @@ early_capital_building_construction = {
 	tools = 2
 	glass = 2
 	fine_cloth = 2
-	goods_gold = 2
 	category = building_construction
 }
 
@@ -389,7 +386,6 @@ early_capital_building_silver_construction = {
 	tools = 2
 	glass = 2
 	fine_cloth = 2
-	silver = 2
 	category = building_construction
 }
 
@@ -423,7 +419,6 @@ capital_building_construction = {
 	tools = 2
 	glass = 2
 	fine_cloth = 2
-	goods_gold = 2
 	marble = 2
 	category = building_construction
 }
@@ -433,7 +428,6 @@ local_governor_construction = {
 	tools = 5
 	glass = 5
 	fine_cloth = 2
-	goods_gold = 2
 	category = building_construction
 }
 
@@ -443,7 +437,6 @@ prestige_building_construction = {
 	glass = 2
 	copper = 2
 	tin = 2
-	goods_gold = 2
 	marble = 5
 	category = building_construction
 }
@@ -599,7 +592,6 @@ bolshoi_construction = {
 	masonry = 3
 	marble = 1
 	glass = 1
-	goods_gold = 0.5
 	
 	category = building_construction
 }
@@ -616,7 +608,6 @@ hanseatic_town_hall_construction = {
 	tools = 2
 	glass = 2
 	fine_cloth = 2
-	goods_gold = 2
 	marble = 2
 	category = building_construction
 }

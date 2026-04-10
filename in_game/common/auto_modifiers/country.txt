@@ -385,7 +385,6 @@ negative_stability_impact = {
 
 		
 	global_estate_target_satisfaction = negative_stability_satisfaction_scale
-	global_mercenaries_modifier = 0.5
 	monthly_doom = 0.5
 	monthly_righteousness = -0.1
 }
