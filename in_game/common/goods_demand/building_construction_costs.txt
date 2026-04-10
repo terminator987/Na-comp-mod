@@ -718,6 +718,20 @@ japanese_clan_building_construction = {
 }
 
 
+renaissance_aqueduct_construction = {
+	masonry = 0.25
+	lumber = 0.25
+	
+	category = building_construction
+}
+
+aqueduct_construction = {
+	masonry = 0.25
+	lumber = 0.25
+	
+	category = building_construction
+}
+
 ###########################################################################
 # code will use the following as default if no scripted in the building
 ##########################################################################

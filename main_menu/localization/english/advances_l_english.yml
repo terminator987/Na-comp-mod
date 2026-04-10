@@ -6188,3 +6188,8 @@
 
  unlock_grenadiers_advance: "$a_grenadiers$"
  unlock_grenadiers_advance_desc: "$a_grenadiers_desc$"
+
+ #Aqueduct
+
+aqueduct_system: "Aqueduct system"
+aqueduct_system_desc: " "

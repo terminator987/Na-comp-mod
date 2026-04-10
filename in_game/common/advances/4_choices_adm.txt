@@ -209,6 +209,8 @@ expanded_infrastructure_network = {
 	build_gravel_road_cost_modifier = -0.1
 	build_paved_road_cost_modifier = -0.1
 	build_modern_road_cost_modifier = -0.1
+	unlock_building = renaissance_aqueduct
+	global_population_capacity_modifier = 0.25
 }
 
 

@@ -9,8 +9,7 @@ city = {
 		local_clergy_desired_pop = 0.1
 	
 		local_max_control = 0.1
-		local_population_capacity = 100
-		local_population_capacity_modifier = 0.25
+		local_population_capacity = 50
 		
 		local_food_capacity = 500
 		
@@ -25,8 +24,12 @@ city = {
 		free_building_levels = 100
 
 		local_peasant_enfranchisment = 0.25
+
+		local_disease_resistance = -0.6
 		
 		max_constructions_at_same_time = 1
+
+		local_population_growth = 0.001
 	}
 	
 	country_modifier = {
@@ -64,8 +67,7 @@ town = {
 		local_clergy_desired_pop = 0.05
 		
 		local_max_control = 0.05
-		local_population_capacity = 20
-		local_population_capacity_modifier = 0.10
+		local_population_capacity = 10
 		local_food_capacity = 250
 		local_integration_speed_modifier = -0.25
 		
@@ -73,6 +75,10 @@ town = {
 		free_building_levels = 25
 		
 		local_peasant_enfranchisment = 0.1
+
+		local_disease_resistance = -0.25
+
+		local_population_growth = 0.0015
 	}
 	
 	country_modifier = {
@@ -100,7 +106,7 @@ rural_settlement = {
 		local_max_rgo_size_modifier = 1.0
 		local_monthly_food_modifier = 0.1
 		
-		local_population_growth = 0.001
+		local_population_growth = 0.0025
 				
 		local_peasant_enfranchisment = -0.2
 	}
