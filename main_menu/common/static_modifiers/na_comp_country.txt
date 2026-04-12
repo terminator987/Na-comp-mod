@@ -19,3 +19,9 @@ bra_wittelsbacher_neglect_1 = {
 	global_estate_target_satisfaction = -0.1
 	monthly_towards_decentralization = 0.05
 }
+sweden_compensatory_pop_growth = {
+	game_date = {
+		category = country
+	}
+	global_population_growth = 0.004
+}

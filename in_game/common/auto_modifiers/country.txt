@@ -368,6 +368,7 @@ positive_stability_impact = {
 		
 	global_estate_target_satisfaction = positive_stability_satisfaction_scale
 	global_pop_promotion_speed_modifier = 1.0
+	global_monthly_prosperity = 0.0025
 	monthly_doom = -0.1
 	monthly_righteousness = 0.1
 }

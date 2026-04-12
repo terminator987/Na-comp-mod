@@ -41,6 +41,19 @@ russian_resiliance = {
 	requires = russian_integration
 }
 
+muscovy_kiev_pop_growth = {
+	age = age_1_traditions
+	potential = {
+		culture = { has_culture_group = culture_group:russian_group }
+		OR = {
+			has_or_had_tag = KIE
+			has_or_had_tag = MOS
+		}
+	}
+	global_population_growth = 0.001
+	requires = russian_integration
+}
+
 land_of_the_rus = {
 	age = age_2_renaissance
 	potential = {
