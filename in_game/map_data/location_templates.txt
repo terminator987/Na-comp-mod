@@ -838,13 +838,13 @@ eutin = { topography = flatland vegetation = grasslands climate = oceanic religi
 lauenburg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = wool}
 kiel = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = holsatian raw_material = livestock natural_harbor_suitability = 0.75}
 heide = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.00}
-steinburg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = holsatian raw_material = legumes natural_harbor_suitability = 0.00}
+steinburg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = holsatian raw_material = lead natural_harbor_suitability = 0.00}
 rendsburg = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = holsatian raw_material = wild_game}
 stormarn = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = salt}
 segeberg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = holsatian raw_material = horses}
 pinneberg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = holsatian raw_material = beeswax natural_harbor_suitability = 0.00}
 plon = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = holsatian raw_material = fish natural_harbor_suitability = 0.00}
-chojna = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = fish}
+chojna = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = coal}
 soltyn = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = fur}
 gorzow = { topography = wetlands vegetation = woods climate = continental religion = catholic culture = markish raw_material = wool}
 santok = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = lumber}
@@ -857,7 +857,7 @@ haldensleben = { topography = flatland vegetation = grasslands climate = contine
 wolmirstedt = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = livestock}
 havelberg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = markish raw_material = livestock}
 wittstock = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = wool}
-ruppin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = medicaments}
+ruppin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = iron}
 pritzwalk = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = legumes}
 wittenberge = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = markish raw_material = wool}
 prenzlau = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = wool}
@@ -865,7 +865,7 @@ templin = { topography = flatland vegetation = forest climate = continental reli
 angermunde = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = lumber}
 berlin = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = fiber_crops}
 teltow = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = wool}
-treuenbrietzen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = legumes}
+treuenbrietzen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = iron}
 herzfelde = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = markish raw_material = legumes}
 freienwalde = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = livestock}
 lebus = { topography = flatland vegetation = woods climate = continental religion = catholic culture = markish raw_material = wild_game}
@@ -1110,7 +1110,7 @@ eisleben = { topography = flatland vegetation = grasslands climate = continental
 schwerin = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = wheat}
 hagenow = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = clay}
 grevesmuhlen = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = western_pomeranian raw_material = sand natural_harbor_suitability = 0.00}
-wismar = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = western_pomeranian raw_material = legumes natural_harbor_suitability = 0.60}
+wismar = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = western_pomeranian raw_material = copper natural_harbor_suitability = 0.60}
 doberan = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = western_pomeranian raw_material = fish natural_harbor_suitability = 0.00}
 grabow = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = livestock}
 rostock = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = western_pomeranian raw_material = fiber_crops natural_harbor_suitability = 0.75}
@@ -1121,19 +1121,19 @@ malchin = { topography = flatland vegetation = grasslands climate = continental 
 waren = { topography = flatland vegetation = forest climate = continental religion = catholic culture = western_pomeranian raw_material = livestock}
 neubrandenburg = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = clay}
 strelitz = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = beeswax}
-malchow = { topography = flatland vegetation = woods climate = continental religion = catholic culture = western_pomeranian raw_material = fish}
+malchow = { topography = flatland vegetation = woods climate = continental religion = catholic culture = western_pomeranian raw_material = amber}
 lake_muritz = { topography = lakes climate = continental}
 stralsund = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = western_pomeranian raw_material = amber natural_harbor_suitability = 0.50}
 ribnitz = { topography = flatland vegetation = woods climate = continental religion = catholic culture = western_pomeranian raw_material = wild_game natural_harbor_suitability = 0.00}
 grimmen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = sand natural_harbor_suitability = 0.00}
-rugen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = fish natural_harbor_suitability = 0.00}
+rugen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = iron natural_harbor_suitability = 0.00}
 swinousjcie = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = amber natural_harbor_suitability = 0.00}
 wolgast = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = salt natural_harbor_suitability = 0.00}
 anklam = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = livestock natural_harbor_suitability = 0.00}
 demmin = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = legumes}
 stettin = { topography = flatland vegetation = farmland climate = continental religion = catholic culture = western_pomeranian raw_material = wheat natural_harbor_suitability = 0.50}
 ueckermunde = { topography = flatland vegetation = woods climate = continental religion = catholic culture = western_pomeranian raw_material = fish natural_harbor_suitability = 0.00}
-kamien = { topography = wetlands vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = fish natural_harbor_suitability = 0.00}
+kamien = { topography = wetlands vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = coal natural_harbor_suitability = 0.00}
 nowogard = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = legumes}
 goleniow = { topography = wetlands vegetation = woods climate = continental religion = catholic culture = eastern_pomeranian raw_material = lumber natural_harbor_suitability = 0.00}
 koszalin = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = fish natural_harbor_suitability = 0.00}
