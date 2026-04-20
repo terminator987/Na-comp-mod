@@ -67,6 +67,7 @@ castle = {
 	allow = {
 		NOT = {
 			any_neighbor_location = {
+				owner ?= scope:actor 
 				OR = {
 					has_building = building_type:castle
 					has_building = building_type:bastion
@@ -123,6 +124,7 @@ bastion = {
 	allow = {
 		NOT = {
 			any_neighbor_location = {
+				owner ?= scope:actor 
 				OR = {
 					has_building = building_type:castle
 					has_building = building_type:bastion
@@ -182,6 +184,7 @@ star_fort = {
 	allow = {
 		NOT = {
 			any_neighbor_location = {
+				owner ?= scope:actor 
 				OR = {
 					has_building = building_type:castle
 					has_building = building_type:bastion
@@ -239,6 +242,7 @@ fortress = {
 	allow = {
 		NOT = {
 			any_neighbor_location = {
+				owner ?= scope:actor 
 				OR = {
 					has_building = building_type:castle
 					has_building = building_type:bastion
@@ -246,7 +250,7 @@ fortress = {
 					has_building = building_type:fortress
 					has_building = building_type:fortress_church
 				}
-			}
+			}	
 		}
 	}
 	
