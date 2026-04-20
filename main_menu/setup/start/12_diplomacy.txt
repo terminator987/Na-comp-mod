@@ -247,7 +247,7 @@ diplomacy_manager = {
     dependency = { first = CAS second = C01 subject_type = fiefdom }
     dependency = { first = CAS second = LON subject_type = fiefdom }
     dependency = { first = CAS second = GLC subject_type = fiefdom }    
-    dependency = { first = CAS second = NAV subject_type = vassal }
+    dependency = { first = ARA second = NAV subject_type = vassal }
 
 
     #scripted_oneway = { first = CAS second = CTV type = military_sponsorship }

@@ -193,5 +193,6 @@ sweden_event_nacomp.1 = {
 	option = {
 		name = sweden_event_nacomp.1.a
 		add_country_modifier = { modifier = sweden_compensatory_pop_growth years = 100 mode = add_and_extend }
+		add_country_modifier = { modifier = sweden_eco_boost years = 30 mode = add_and_extend }
 	}
 }

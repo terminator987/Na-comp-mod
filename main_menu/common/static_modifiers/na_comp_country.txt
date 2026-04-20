@@ -25,3 +25,10 @@ sweden_compensatory_pop_growth = {
 	}
 	global_population_growth = 0.004
 }
+sweden_eco_boost = {
+	game_data = {
+		category = country 
+	}
+	
+	monthly_gold_income = 7.5
+}

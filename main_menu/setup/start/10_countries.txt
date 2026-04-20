@@ -13562,7 +13562,7 @@ countries = {
 	C01 = {
 		own_control_core = {
 			sevilla carmona constantina ecija moron olvera osuna coria_del_rio #Sevilla
-			arcos_de_la_frontera cadiz jerez_de_la_frontera medina_sidonia tarifa sanlucar #Cádiz
+			arcos_de_la_frontera cadiz jerez_de_la_frontera medina_sidonia sanlucar #Cádiz
 			huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman sanlucar_la_mayor #Heulva
 			cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia #Córdoba
 			jaen andujar baeza cazorla jodar martos ubeda #Jaén
@@ -17671,7 +17671,7 @@ countries = {
 			#Granada
 			almeria almanzora baza gergal mojacar velez_rubio
 			granada adra almunecar guadix huescar illora loja pinar orgiva
-			malaga antequera velez_malaga
+			malaga antequera velez_malaga tarifa
 		}
 
 		control = {
