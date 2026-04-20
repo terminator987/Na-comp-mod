@@ -30,5 +30,5 @@ sweden_eco_boost = {
 		category = country 
 	}
 	
-	monthly_gold_income = 7.5
+	monthly_gold_income = 5
 }
