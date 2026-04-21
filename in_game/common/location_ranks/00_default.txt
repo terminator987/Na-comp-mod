@@ -34,7 +34,7 @@ city = {
 	
 	country_modifier = {
 		monthly_doom = 0.03
-		fort_limit = 0.5
+		fort_limit = 0.25
 	}
 	
 	allow = {

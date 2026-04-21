@@ -2018,7 +2018,6 @@ building_manager = {
 	castle = { tag = TIR level = 1 location = merano }
 	castle = { tag = LBV level = 1 location = landshut }
 	castle = { tag = PAL level = 1 location = amberg }
-	castle = { tag = TRI level = 1 location = coblenz }
 	#castle = { tag = ANS level = 1 location = bayreuth }		#ansbach cant afford it
 	#castle = { tag = FLA level = 1 location = lille }
 	#castle = { tag = BRB level = 1 location = antwerp }
