@@ -125,17 +125,20 @@ bastion = {
 	
 	
 	allow = {
-		NOT = {
-			any_neighbor_location = {
-				owner ?= scope:actor 
-				OR = {
-					has_building = building_type:castle
-					has_building = building_type:bastion
-					has_building = building_type:star_fort
-					has_building = building_type:fortress
-					has_building = building_type:fortress_church
+		OR = {
+			NOT = {
+				any_neighbor_location = {
+					owner ?= scope:actor 
+					OR = {
+						has_building = building_type:castle
+						has_building = building_type:bastion
+						has_building = building_type:star_fort
+						has_building = building_type:fortress
+						has_building = building_type:fortress_church
+					}
 				}
 			}
+			is_strait = yes
 		}
 	}
 
@@ -185,17 +188,20 @@ star_fort = {
 	
 	
 	allow = {
-		NOT = {
-			any_neighbor_location = {
-				owner ?= scope:actor 
-				OR = {
-					has_building = building_type:castle
-					has_building = building_type:bastion
-					has_building = building_type:star_fort
-					has_building = building_type:fortress
-					has_building = building_type:fortress_church
+		OR = {
+			NOT = {
+				any_neighbor_location = {
+					owner ?= scope:actor 
+					OR = {
+						has_building = building_type:castle
+						has_building = building_type:bastion
+						has_building = building_type:star_fort
+						has_building = building_type:fortress
+						has_building = building_type:fortress_church
+					}
 				}
 			}
+			is_strait = yes
 		}
 	}
 
@@ -243,17 +249,20 @@ fortress = {
 	city = yes
 	
 	allow = {
-		NOT = {
-			any_neighbor_location = {
-				owner ?= scope:actor 
-				OR = {
-					has_building = building_type:castle
-					has_building = building_type:bastion
-					has_building = building_type:star_fort
-					has_building = building_type:fortress
-					has_building = building_type:fortress_church
+		OR = {
+			NOT = {
+				any_neighbor_location = {
+					owner ?= scope:actor 
+					OR = {
+						has_building = building_type:castle
+						has_building = building_type:bastion
+						has_building = building_type:star_fort
+						has_building = building_type:fortress
+						has_building = building_type:fortress_church
+					}
 				}
-			}	
+			}
+			is_strait = yes
 		}
 	}
 	
