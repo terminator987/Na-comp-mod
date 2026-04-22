@@ -29,7 +29,7 @@ traditionalist_vs_innovative = {
 		cultural_tradition_modifier = 1.0
 
 		
-		stability_decay = -0.025
+		stability_decay = -0.015
 		embrace_institution_cost_modifier = 1.0
 		
 		language_change_threshold_modifier = 1
@@ -41,7 +41,7 @@ traditionalist_vs_innovative = {
 		global_max_literacy = 10
 		cultural_influence_modifier = 1.0
 
-		stability_decay = 0.025
+		stability_decay = 0.015
 		embrace_institution_cost_modifier = -0.5
 		
 		language_change_threshold_modifier = -1
