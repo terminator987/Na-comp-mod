@@ -9,6 +9,9 @@ meritocracy_spawn.1 = {
 	trigger = {
 		current_year > 1400
 		NOT = { has_embraced_institution = institution:meritocracy }
+		capital = {  
+			institution_progress:meritocracy < 100
+		}
 	}
 
 	option = {
