@@ -17,3 +17,6 @@
  sweden_event_nacomp.1.title: "Sweden population growth compensation"
  sweden_event_nacomp.1.desc: "100 pop growth buff to compensate with the harsh losses incured with the population capacity rework"
  sweden_event_nacomp.1.a: "Don't troll"
+ meritocracy.spawn.1.title: "Meritocracy spawn"
+ meritocracy.spawn.1.desc: "This event spawns the Meritocracy institution in your capital, as China and the East Asia do not exist."
+ meritocracy.spawn.1.a : "Whatever"

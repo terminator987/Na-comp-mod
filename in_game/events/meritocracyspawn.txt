@@ -1,0 +1,24 @@
+namespace = meritocracy_spawn
+
+meritocracy_spawn.1 = {
+	type = country_event
+	title = meritocracy.spawn.1.title
+	desc = meritocracy.spawn.1.desc
+	fire_only_once = yes
+
+	trigger = {
+		current_year > 1400
+		NOT = { has_embraced_institution = institution:meritocracy }
+	}
+
+	option = {
+		name = meritocracy.spawn.1.a
+
+		capital= {
+			change_institution_progress = {
+				type = institution:meritocracy
+				value = 100
+			}
+		}
+	}
+}
