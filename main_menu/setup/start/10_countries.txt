@@ -10570,7 +10570,7 @@ countries = {
 			neapolitan
 		}
 
-		court_language = latin_language
+		court_language = church_dialect
 		capital = avignon
 
 		is_valid_for_release = no
@@ -11127,7 +11127,7 @@ countries = {
 		include = "catholic_abbey"
 		include = "expl_mediterranean"
 
-		court_language = latin_language
+		court_language = church_dialect
 		country_rank = rank_county
 		capital = saint_claude
 	}
@@ -16897,7 +16897,7 @@ countries = {
 		dynasty = anjou_dynasty
 		#dynasty = anjou_hungary_dynasty
 		country_rank = rank_kingdom
-		court_language = latin_language
+		court_language = church_dialect
 
 		tolerated_cultures = {
 			cuman_culture
@@ -39569,7 +39569,7 @@ countries = {
 		capital = krakow
 		dynasty = piast_dynasty
 		country_rank = rank_kingdom
-		court_language = latin_language
+		court_language = church_dialect
 
 		timed_modifier = {
 			modifier = "interdict"

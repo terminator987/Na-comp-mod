@@ -558,13 +558,14 @@ pirate_stronghold = {
 	city = yes
 megalopolis = yes
 
+	estate = peasants_estate
 	build_time = small_capital_build_time
 	
 	expensive = yes
 
 
 	possible_production_methods = {
-		pirate_stronghold_maintenance
+		estate_building_input
 	}
 
 
@@ -611,9 +612,18 @@ megalopolis = yes
 	allow = {
 		custom_tooltip = {
 			text = local_governor_tt
-			scope:actor = {	total_building_levels_including_construction:local_governor < modifier:num_local_governors }
+			scope:actor = {
+				total_building_levels_including_construction:local_governor < {
+					value = modifier:num_local_governors
+					subtract = total_building_levels_including_construction:lieutenancy
+				}
+			}
 		}
 		owner = scope:actor #not in subjects
+		trigger_if = { 
+			limit = { has_building = building_type:seljuk_mint }
+			NOT = { has_building = building_type:seljuk_mint }
+		}
 	}
 
 	location_potential = {
@@ -623,6 +633,8 @@ megalopolis = yes
 
 	remove_if = {
 		location = { has_road_to_capital = no }
+		NOT = { owner = { at_war = yes } }
+		NOT = { owner = { in_civil_war = yes } }
 	}
 
 	expensive = yes
@@ -630,7 +642,7 @@ megalopolis = yes
 	automation_build_allowed = no
 	ai_forbid_shutdown = yes
 	forbidden_for_estates = yes
-
+	important_for_AI = yes
 
 	build_time = government_build_time
 

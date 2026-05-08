@@ -1,4 +1,4 @@
-alliance_can_exist = {
+﻿alliance_can_exist = {
 	scope:actor = {
 		opinion = { target = scope:recipient value >= 0 }
 		not = { has_blocked_treaties = scope:recipient }

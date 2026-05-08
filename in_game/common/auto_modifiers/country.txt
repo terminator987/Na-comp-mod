@@ -56,6 +56,8 @@ country_base_values = {
 	silver_impacts_inflation = 1.0
 
 
+	crown_power_from_population = 1.0
+
 	supply_depot_capacity = 50
 	
 	artillery_bonus_vs_fort = 5
@@ -81,11 +83,11 @@ country_base_values = {
 	diplomatic_range = 1000
 	naval_range = 1000
 	colonial_range = 1000
-	trade_range = 1000
+	trade_range = 200
 
 	mercenary_range = 500
 	
-	army_logistics_distance = 50
+	army_logistics_distance = 30
 	
 	raw_material_in_province_impact = 0.1
 	
@@ -95,7 +97,7 @@ country_base_values = {
 	
 	global_food_decay = 0.005
 	
-	diplomatic_capacity = 1
+	diplomatic_capacity = 2
 	max_diplomats = 1
 	monthly_diplomats = 0.1
 	casus_belli_creation_speed = 4.0
@@ -188,7 +190,7 @@ country_base_values = {
 	estate_building_destruction_satisfaction_impact = -0.01
 	
 
-	win_war_chance_threshold = 0.66
+	win_war_chance_threshold = 0.6
 	war_declaration_stab_hit_tolerance = 0
 	war_declaration_war_exhaustion_tolerance = 0
 	
@@ -198,7 +200,7 @@ country_base_values = {
 	
 	parliament_request_issue_support_needed = 0.5
 	
-	diplomatic_reputation = 3
+	diplomatic_reputation = 1
 	
 	land_morale_movement_cost = 0.001
 	naval_morale_movement_cost = 0.0
@@ -270,6 +272,9 @@ location_tt_name = {
 		country_type = location
 	}
 	research_speed = 1
+	cultural_tradition = 0.25
+	cultural_influence = 0.25
+
 }
 
 building_tt_name = {
@@ -284,6 +289,8 @@ pop_tt_name = {
 		country_type = pop
 	}
 	research_speed = 0.1
+	cultural_tradition = 0.25
+	cultural_influence = 0.25
 }
 
 army_tt_name = {
@@ -398,7 +405,7 @@ war_exhaustion_impact = {
 	
 	
 	global_production_efficiency = scaled_production_efficiency_penalty
-	selling_efficiency = scaled_trade_efficiency_penalty
+	import_efficiency = scaled_trade_efficiency_penalty
 	global_monthly_food_modifier = -0.025
 }
 
@@ -900,6 +907,45 @@ low_purity = {
 	peasants_estate_target_satisfaction = huge_permanent_target_satisfaction
 }
 
+high_honor = {
+	potential_trigger = {
+		exists = religion
+		religion = { has_honor = yes }
+	}
+	limit = {
+		honor > 75
+	}
+	scales_with = {
+		value = honor
+		subtract = 75
+		multiply = 0.04
+	}
+
+	monthly_purity = 1
+}
+
+low_honor = {
+	potential_trigger = {
+		exists = religion
+		religion = { has_honor = yes }
+	}
+	limit = {
+		honor < 25
+	}
+	scales_with = {
+		value = honor
+		multiply = -0.04
+		add = 1
+	}
+
+	monthly_purity = -1
+
+	nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	peasants_estate_target_satisfaction = huge_permanent_target_satisfaction
+}
+
 doom = {
 	potential_trigger = {
 		exists = religion
@@ -912,6 +958,7 @@ doom = {
 	subject_loyalty = -1
 	global_estate_target_satisfaction = tiny_satisfaction_scaled_down_penalty
 	stability_decay = 0.001
+	monthly_nahualt_reform_progress = -0.01
 }
 
 
@@ -1153,7 +1200,7 @@ attacker_in_war = {
 		}
 	}
 	
-	monthly_towards_offensive = societal_value_monthly_move
+	monthly_towards_offensive = societal_value_large_monthly_move
 	monthly_doom = -0.1
 }
 
@@ -1172,8 +1219,21 @@ ruler_is_not_a_commander_during_war = {
 		at_war = yes
 		modifier:ruler_must_be_commander_during_war = yes
 		ruler ?= {
+			owner = root
+			trigger_if = {
+				limit = { is_general = yes }
 			NOT = { is_leading_largest_army_of = root }
+				unit ?= { owner != root }
+			}
+			trigger_else_if = {
+				limit = { is_admiral = yes }
 			NOT = { is_leading_largest_navy_of = root }
+				unit ?= { owner != root }
+			}
+			trigger_else = {
+				NOT = { is_leading_largest_army_of = root }
+				NOT = { is_leading_largest_navy_of = root }
+			}
 		}
 	}
 	
@@ -1271,6 +1331,26 @@ heir_is_admiral = {
 	monthly_towards_naval = societal_value_minor_monthly_move
 }
 
+regent_is_general = {
+	potential_trigger = {
+		regent ?= {
+			is_general = yes
+		}
+	}
+	monthly_towards_belligerent = societal_value_minor_monthly_move
+	monthly_towards_land = societal_value_minor_monthly_move
+}
+
+regent_is_admiral = {
+	potential_trigger = {
+		regent ?= {
+			is_admiral = yes
+		}
+	}
+	monthly_towards_belligerent = societal_value_minor_monthly_move
+	monthly_towards_naval = societal_value_minor_monthly_move
+}
+
 capital_occupied = {
 	potential_trigger = { 
 		at_war = yes
@@ -1342,6 +1422,23 @@ ruler_has_all_traits = {
 	monthly_republican_tradition = -0.1 # isn't he becoming a despot?
 }
 
+d008_high_legitimacy = {
+	potential_trigger = {
+		uses_government_power = legitimacy
+		has_variable = legitimacy_benefits_variable
+	}
+	limit = {
+		legitimacy > 50
+	}
+	scales_with = {
+		value = legitimacy
+		multiply = 0.01
+	}
+
+	global_pop_assimilation_speed_modifier = 0.2
+	global_integration_speed_modifier = 0.2
+}
+
 below_half_fort_limit = {
 	potential_trigger = { 
 		used_fort_limit_percentage < 0.5
@@ -1369,6 +1466,20 @@ over_fort_limit = {
 	
 	monthly_towards_conciliatory = societal_value_monthly_move
 	monthly_towards_defensive = societal_value_monthly_move
+	global_defensive = -1.0
+}
+
+over_bureaucracy_limit = {
+	potential_trigger = { 
+		max_bureaucracy_slots < num_bureaucracies
+	}
+
+	scales_with = {
+		value = num_bureaucracies
+		subtract = max_bureaucracy_slots
+	}
+	stability_investment = large_stability_investment_penalty
+	court_spending_cost_modifier = 0.2
 }
 
 country_tax_base = {
@@ -1425,3 +1536,48 @@ used_fort_limit = {
 	
 	great_power_score = 0.3
 }
+
+bureaucracy_nomos_empsychos_high_legitimacy = {
+	potential_trigger = {
+		uses_government_power = legitimacy
+		modifier:global_estate_satisfaction_from_legitimacy != 0
+	}
+	limit = { legitimacy > 50 }
+	scales_with = {
+		value = legitimacy
+		multiply = 0.01
+	}
+	
+	global_estate_target_satisfaction = 0.05
+}
+
+bureaucracy_nomos_empsychos_low_legitimacy = {
+	potential_trigger = {
+		uses_government_power = legitimacy
+		modifier:global_estate_satisfaction_from_legitimacy != 0
+	}
+	limit = { legitimacy < 50 }
+	scales_with = {
+		value = legitimacy
+		multiply = -0.01
+		add = 1
+	}
+	
+	global_estate_target_satisfaction = -0.05
+}
+
+scaled_gov_power_monthly_nahualt_reform_progress = {
+	potential_trigger = {
+		religion = religion:nahuatl
+	}
+	limit = {
+		legitimacy > 50
+	}
+	scales_with = {
+		value = legitimacy
+		multiply = 0.01
+	}
+
+	monthly_nahualt_reform_progress = 0.25
+}
+

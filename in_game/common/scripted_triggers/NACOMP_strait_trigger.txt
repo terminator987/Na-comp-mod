@@ -1,4 +1,4 @@
-is_strait = {
+﻿is_strait = {
     custom_tooltip = {
         text = is_strait_tt
         OR = {
