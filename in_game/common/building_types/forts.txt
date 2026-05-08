@@ -10,7 +10,7 @@
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = small_fort_building
@@ -59,7 +59,7 @@ castle = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = medium_fort_building
@@ -124,7 +124,7 @@ bastion = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	allow = {
@@ -188,7 +188,7 @@ star_fort = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	allow = {
@@ -251,7 +251,7 @@ fortress = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	allow = {
 		OR = {

@@ -15,7 +15,7 @@
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	location_potential = {
 		dominant_culture = culture:maori_culture
@@ -54,7 +54,7 @@ bardic_school = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		has_reform = government_reform:celtic_traditions_reform
@@ -94,7 +94,7 @@ hanseatic_kontor = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	increase_per_level_cost = 0.5
 	
@@ -136,7 +136,7 @@ hanseatic_shipwright_guild = {
 	pop_size_created = dock_employment
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = medium_port_building_time
 	expensive = yes
 	possible_production_methods = {
@@ -168,7 +168,7 @@ hanseatic_town_hall = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	increase_per_level_cost = 0.5
 	
@@ -217,7 +217,7 @@ fondaco = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	increase_per_level_cost = 0.5
 	
@@ -263,7 +263,7 @@ venetian_arsenal = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	expensive = yes
 	location_potential = {
 		is_capital = yes
@@ -313,7 +313,7 @@ kurultai = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	allow_wrong_startup = yes
 	
@@ -422,7 +422,7 @@ order_stronghold = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	
@@ -468,7 +468,7 @@ order_commandery = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	allow_wrong_startup = yes
 	
@@ -550,7 +550,7 @@ banking_office = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	
@@ -590,7 +590,7 @@ tribes_of_galway = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = small_capital_build_time
@@ -633,7 +633,7 @@ copenhagen_dockyard = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	expensive = yes
@@ -680,7 +680,7 @@ caravanserai = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	
@@ -732,7 +732,7 @@ caravan_stop = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	
@@ -786,7 +786,7 @@ cinque_port = {  # ESTATE BUILDING
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	country_potential = {
 		tag = ENG
@@ -882,7 +882,7 @@ seat_of_cardinal = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	category = religious_category
 	
@@ -942,7 +942,7 @@ north_sea_shipyards = {
 	rural_settlement = no
 	town = no
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = large_port_building_time
@@ -989,7 +989,7 @@ galley_barracks = {
 	rural_settlement = no
 	town = no
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	
 	location_potential = {
@@ -1026,7 +1026,7 @@ janissary_barracks = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	expensive = yes
 	
@@ -1055,7 +1055,7 @@ safaviyya_order_hall = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = soldier_building
 	always_add_demands = yes
@@ -1083,7 +1083,7 @@ ghilman_barracks = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = soldier_building
 	always_add_demands = yes
 	modifier = {
@@ -1109,7 +1109,7 @@ stannary_court = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	can_close = no
 
@@ -1168,7 +1168,7 @@ lieutenancy = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = government_build_time
@@ -1242,7 +1242,7 @@ barcelona_royal_shipyard = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = large_port_building_time
 	
@@ -1289,7 +1289,7 @@ uffizi = {
 	employment_size = huge_noble_employment
 	
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = small_capital_build_time
@@ -1426,7 +1426,7 @@ brethren_marsh = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 
 	allow = {	
@@ -1487,7 +1487,7 @@ sofa_barracks = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = soldier_building
 
@@ -1520,7 +1520,7 @@ cawa_barracks = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	
 	build_time = soldier_building
@@ -1551,7 +1551,7 @@ kings_manor = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -1615,7 +1615,7 @@ polders = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	location_potential = {
 		OR = {
@@ -1656,7 +1656,7 @@ telpochcalli = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = soldier_building
@@ -1695,7 +1695,7 @@ calmecac = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = government_build_time
 
@@ -1736,7 +1736,7 @@ panaqa_building = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = instant_build_time
 	
 	country_potential = { 
@@ -1819,7 +1819,7 @@ terraces = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	location_potential = {
 		OR = {
@@ -1860,7 +1860,7 @@ tambo = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	location_potential = {
 		num_roads > 0
@@ -1897,7 +1897,7 @@ incamisana = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	location_potential = {
 	}
@@ -1929,7 +1929,7 @@ royal_society = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -1993,7 +1993,7 @@ royal_academy_of_arts = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -2049,7 +2049,7 @@ peel_towers = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	expensive = yes
 	
@@ -2097,7 +2097,7 @@ dun_fort = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes	
+    megalopolis = yes	
 	
 	build_time = small_fort_building
 	
@@ -2147,7 +2147,7 @@ kokufu = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	ai_foreign_ignore_naval_range = yes
 	
@@ -2204,7 +2204,7 @@ gosho = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	ai_foreign_ignore_naval_range = yes
 	
@@ -2344,7 +2344,7 @@ yakata = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	ai_foreign_ignore_naval_range = yes
 	
@@ -2497,7 +2497,7 @@ tatara = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	ai_foreign_ignore_naval_range = yes
 	
@@ -2610,7 +2610,7 @@ clan_family_shrine = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	ai_foreign_ignore_naval_range = yes
 	
@@ -2656,7 +2656,7 @@ korean_gunnery_land_defense = {
 	employment_size = castle_employment
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = small_fort_building
 	allow = {
 		modifier:fort_level > 0
@@ -2680,7 +2680,7 @@ korean_gunnery_coastal_defense = {
 	employment_size = castle_employment
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = small_fort_building
 	allow = {
 		modifier:fort_level > 0
@@ -2712,7 +2712,7 @@ kremlin = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	expensive = yes
@@ -2765,7 +2765,7 @@ stroganov_school_of_iconic_art = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -2826,7 +2826,7 @@ venetian_palaces = {
 	category = cultural_category
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	location_potential = {
 		is_capital = yes
 	}
@@ -2866,7 +2866,7 @@ venetian_quarter = {
 	category = trade_category
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	country_potential = {
 		tag = VEN
 	}
@@ -2904,7 +2904,7 @@ galata = {
 	category = trade_category
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	country_potential = {
 		tag = GEN
 	}
@@ -2942,7 +2942,7 @@ novodevichy_convent = {
 	employment_size = castle_employment
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	price = orthodox_monastery_building
 
@@ -2995,7 +2995,7 @@ moscow_artillery_yard = {
 	employment_size = military_support_employment
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 
 	build_time = big_soldier_building
@@ -3058,7 +3058,7 @@ bund = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	location_potential = {
 		OR = {
@@ -3093,7 +3093,7 @@ kalari = {
 	employment_size = normal_noble_employment
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = soldier_building
 	allow = { owner = { has_primary_or_accepted_culture = prev.dominant_culture } }
 	remove_if = { NOT = { owner = { has_primary_or_accepted_culture = prev.location.dominant_culture } } }
@@ -3115,7 +3115,7 @@ ibadat_khana = {
 	employment_size = huge_religious_building_employment
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = cultural_building_time
 	country_potential = {
 		does_not_own_any_copy_of_building_type = { type = ibadat_khana }
@@ -3154,7 +3154,7 @@ academy_of_sciences = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -3214,7 +3214,7 @@ greek_latin_academy = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -3271,7 +3271,7 @@ sukharev_tower = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -3331,7 +3331,7 @@ the_bock_fortifications = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	country_potential = {
 		always = no
@@ -3379,7 +3379,7 @@ ruined_great_wall_of_china = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = huge_unique_build_time
 
 
@@ -3420,7 +3420,7 @@ repaired_great_wall_of_china = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = huge_unique_build_time
 
 
@@ -3463,7 +3463,7 @@ free_economic_society = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -3523,7 +3523,7 @@ imperial_academy_of_arts = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -3580,7 +3580,7 @@ moscow_orphanage = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -3639,7 +3639,7 @@ institute_of_noble_maidens = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		custom_tooltip = {
@@ -3703,7 +3703,7 @@ royal_atarazanas_seville = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	
@@ -3745,7 +3745,7 @@ alhambra = {
 	employment_size = huge_noble_employment
 	
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -3790,7 +3790,7 @@ theodosian_walls = {
 	rural_settlement = no
 	town = no
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = huge_unique_build_time
 
 	location_potential = {
@@ -3862,7 +3862,7 @@ bey_fortress = {
 	category = defense_category
 	
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = small_fort_building
 
 	country_potential = {
@@ -3963,7 +3963,7 @@ mamluk_barracks = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = soldier_building
@@ -4052,7 +4052,7 @@ kurmina_headquarter = {
 	rural_settlement = no
 	town = no
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = medium_soldier_building
@@ -4089,7 +4089,7 @@ great_enclosure = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	expensive = yes
 	location_potential = {
 		is_capital = yes
@@ -4117,7 +4117,7 @@ great_hill_complex = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	expensive = yes
 	location_potential = {
 		is_capital = yes
@@ -4145,7 +4145,7 @@ great_valley_complex = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	expensive = yes
 	location_potential = {
 		is_capital = yes
@@ -4175,7 +4175,7 @@ trans_saharan_trade_outposts = {
 	category = trade_category
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	country_potential = {
 		custom_tooltip = {
 			text = son_unlocked_trans_saharan_outposts_tt
@@ -4215,7 +4215,7 @@ khmer_baray = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	expensive = yes
 	location_potential = {
 		dominant_culture = culture:khmer_culture
@@ -4253,7 +4253,7 @@ bajang_ratu = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = large_capital_build_time
@@ -4330,7 +4330,7 @@ fulani_cattle_rearing_pen = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	country_potential = {
 		has_unlocked_building_trigger = {
@@ -4375,7 +4375,7 @@ walls_of_benin = {
 	rural_settlement = no
 	town = no
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = huge_unique_build_time
 
 	location_potential = {
@@ -4415,7 +4415,7 @@ zazzau_walls = {
 	rural_settlement = no
 	town = no
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	build_time = small_fort_building
 	
 	country_potential = {
@@ -4454,7 +4454,7 @@ eghabho_nore_mansion = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	build_time = religious_building_time
 	
@@ -4493,7 +4493,7 @@ ribat = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = small_fort_building
@@ -4541,7 +4541,7 @@ por_feitoria = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = trade_post_build_time
@@ -4581,7 +4581,7 @@ gurgaddi = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	country_potential = {
 		tag = SIKH
@@ -4618,7 +4618,7 @@ sufi_mosque = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	can_close = no
 	
@@ -4654,7 +4654,7 @@ wali_songo_shrine = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	can_close = no
 	
@@ -4694,7 +4694,7 @@ zhixian = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	build_time = small_capital_build_time
 	
@@ -4737,7 +4737,7 @@ seljuk_mint = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	AI_ignore_available_worker_flag = yes
 	build_time = large_capital_build_time
@@ -4803,7 +4803,7 @@ tur_kodjabashi_office = {
 	rural_settlement = no
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	
 	build_time = large_capital_build_time
@@ -4858,7 +4858,7 @@ qalat_al_mashwar = {
 	category = cultural_category
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	location_potential = {
 		this = location:tlemcen
 		is_capital = yes
@@ -4901,7 +4901,7 @@ german_river_toll_castle = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = trade_post_build_time
 
@@ -4943,7 +4943,7 @@ german_mountain_toll_castle = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = trade_post_build_time
 

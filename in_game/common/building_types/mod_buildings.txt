@@ -10,7 +10,7 @@ renaissance_aqueduct = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	location_potential = {
 		NOT = {
@@ -44,7 +44,7 @@ generic_aqueduct = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	obsolete = renaissance_aqueduct
 

@@ -6378,7 +6378,6 @@ flavor_fra.2013 = { # University of Poitiers
 			is_core_of = ROOT
 			NOT = { owner = { modifier:university_construction_blocked = no } }
 			is_city = yes
-megalopolis = yes
 		}
  	}
 

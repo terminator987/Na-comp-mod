@@ -10,7 +10,7 @@
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = medium_soldier_building
 	
@@ -51,7 +51,7 @@ warrior_temple = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = medium_soldier_building
 	
@@ -88,7 +88,7 @@ armory = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	important_for_AI = yes
 
@@ -183,7 +183,7 @@ barracks = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	obsolete = armory
 	
@@ -278,7 +278,7 @@ conscription_center = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = soldier_building
 	
@@ -324,7 +324,7 @@ jurchen_barracks = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	rural_settlement = yes
 	
 	build_time = soldier_building
@@ -364,7 +364,7 @@ thema_headquarters = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = medium_soldier_building
 
@@ -407,7 +407,7 @@ city_guard = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	build_time = medium_soldier_building
 	

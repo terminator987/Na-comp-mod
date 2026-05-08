@@ -9,7 +9,7 @@
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -68,7 +68,7 @@ house_of_parliament = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -126,7 +126,7 @@ order_headquarters = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -188,7 +188,7 @@ admiralty = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -236,7 +236,7 @@ war_college = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -285,7 +285,7 @@ tax_assessor = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -332,7 +332,7 @@ supreme_court = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -379,7 +379,7 @@ chancery = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -443,7 +443,7 @@ republican_assembly = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 	
 	expensive = yes
 	build_time = large_capital_build_time
@@ -505,7 +505,7 @@ royal_garden = {
 	
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	expensive = yes
 	build_time = large_capital_build_time
@@ -556,7 +556,7 @@ pirate_stronghold = {
 	rural_settlement = yes
 	town = yes
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 
 	estate = peasants_estate
 	build_time = small_capital_build_time
@@ -607,7 +607,7 @@ local_governor = {
 	rural_settlement = no
 	town = no
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 		 
 	allow = {
 		custom_tooltip = {
@@ -707,7 +707,7 @@ naval_governor = {
 	rural_settlement = no
 	town = no
 	city = yes
-megalopolis = yes
+    megalopolis = yes
 		 
 	allow = {
 		custom_tooltip = {

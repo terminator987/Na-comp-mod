@@ -61,7 +61,6 @@ megalopolis = {
 	
 	color = color_rank_empire
 	is_established_city = yes
-megalopolis = yes
 	
 	construction_demand = build_megalopolis_demand
 	
@@ -124,7 +123,6 @@ city = {
 	
 	color = color_rank_kingdom
 	is_established_city = yes
-megalopolis = yes
 	
 	construction_demand = build_city_demand
 	
@@ -172,7 +170,6 @@ town = {
 	
 	color = color_rank_duchy
 	is_established_city = yes
-megalopolis = yes
 	
 	build_time = 365
 	construction_demand = build_town_demand
