@@ -173,7 +173,7 @@ swabian_frugal_people = {
 		culture = culture:swabian
 	}
 	bank_interest = -0.01
-	court_spending_cost = -0.02
+	court_spending_cost_modifier = -0.05
 
 	requires = gov_reform_reformation_a
 }
@@ -202,7 +202,7 @@ german_fair_towns = {
 		has_or_had_tag = GER
 	}
 	trade_range_modifier = 0.1
-	merchant_maintenance_cost = -0.1
+	merchant_maintenance_efficiency = 0.2
 }
 
 ############################

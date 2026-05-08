@@ -9,6 +9,7 @@
 	
 	town = yes
 	city = yes
+megalopolis = yes
 
 	AI_ignore_available_worker_flag = yes #since we may build this to increase pop promotion we don't want lack of workers to block it
 
@@ -57,6 +58,7 @@ library = {
 
 	town = yes
 	city = yes
+megalopolis = yes
 
 	
 	graphical_tags = { medium_religious }
@@ -96,6 +98,7 @@ confucian_school = {
 	rural_settlement = no
 	town = yes
 	city = yes
+megalopolis = yes
 	
 	build_time = cultural_building_time
 
@@ -149,6 +152,7 @@ confucian_academy = {
 
 	town = yes
 	city = yes
+megalopolis = yes
 
 	expensive = yes
 
@@ -195,6 +199,7 @@ opera_house = {
 	
 	town = yes
 	city = yes
+megalopolis = yes
 
 	expensive = yes
 
@@ -235,6 +240,7 @@ theater = {
 	
 	town = yes
 	city = yes
+megalopolis = yes
 
 	
 
@@ -265,6 +271,7 @@ jesuit_college = {
 	
 	town = yes
 	city = yes
+megalopolis = yes
 
 	expensive = yes
 
@@ -321,6 +328,7 @@ art_school = {
 	
 	town = yes
 	city = yes
+megalopolis = yes
 	
 	expensive = yes
 	build_time = large_cultural_building_time
@@ -360,6 +368,7 @@ arts_academy = {
 	
 	town = yes
 	city = yes
+megalopolis = yes
 	
 	expensive = yes
 	build_time = large_cultural_building_time

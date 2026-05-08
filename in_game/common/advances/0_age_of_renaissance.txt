@@ -237,7 +237,7 @@ professional_armies_advance = {
 	age = age_2_renaissance
 	icon = professional_armies_advance
 			
-	army_maintenance_cost = -0.10
+	army_maintenance_efficiency = 0.20
 
 	depth = 0
 
@@ -482,6 +482,7 @@ renaissance_city_rights = {
 	age = age_2_renaissance
 	requires = renaissance_urbanisation
 	
+	megalopolis_upgrade_cost_modifier = -0.1
 	city_upgrade_cost_modifier = -0.1
 	town_upgrade_cost_modifier = -0.1
 }

@@ -1284,7 +1284,7 @@ economical_policies_law = {
 			global_firearms_output_modifier = 0.1
 			global_cannons_output_modifier = 0.1
 			global_weaponry_output_modifier = 0.1
-			army_maintenance_cost = -0.05
+			army_maintenance_efficiency = 0.1
 		}
 		estate_preferences = {
 			crown_estate
@@ -1314,7 +1314,7 @@ economical_policies_law = {
 	royal_charter_policy = {
 		country_modifier = {
 			merchant_power_from_maritime_modifier = 0.1
-			navy_maintenance_cost = -0.05
+			navy_maintenance_efficiency = 0.1
 		}
 		estate_preferences = {
 			nobles_estate
@@ -1342,7 +1342,7 @@ economical_policies_law = {
 		potential = { has_reform = government_reform:pirate_brethren_reform }
 		country_modifier = {
 			enable_black_market_buildings = yes
-			trade_efficiency = small_trade_efficiency_bonus
+			selling_efficiency = small_trade_efficiency_bonus
 		}
 		estate_preferences = {
 			burghers_estate
@@ -1416,7 +1416,7 @@ cultural_traditions_law = {
 			has_unlocked_policy_trigger = { type = plc_sarmatism }
 		}
 		country_modifier = {
-			army_cavalry_power = 0.1
+			army_light_cavalry_power = 0.1
 			monthly_towards_decentralization = societal_value_monthly_move
 			monthly_towards_inward = societal_value_monthly_move
 		}
@@ -2001,7 +2001,7 @@ precious_metal_distribution_law = {
 
 	regulated_gold_export = {
 		country_modifier = {
-			trade_efficiency = tiny_trade_efficiency_bonus
+			selling_efficiency = tiny_trade_efficiency_bonus
 		}
 		estate_preferences = {
 			crown_estate

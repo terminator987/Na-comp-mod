@@ -402,7 +402,7 @@ lumber_improvements_discovery = {
 regulate_court_procedures = {
 	age = age_3_discovery
 	icon = genoese_banking_traditions
-	court_spending_cost = -0.01
+	court_spending_cost_modifier = -0.05
 	
 	requires = artists_advance_discovery
 }

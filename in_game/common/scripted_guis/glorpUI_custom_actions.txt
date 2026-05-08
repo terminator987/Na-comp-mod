@@ -1,4 +1,4 @@
-SetUseVanillaPortrait = {
+﻿SetUseVanillaPortrait = {
     effect = {
         if = {
             limit = { NOT = { has_variable = useVanillaPortrait } }
@@ -18,6 +18,18 @@ SetUseStaticFlag = {
         }
         else = {
             remove_variable = useStaticFlag
+        }
+    }
+}
+
+SetUseFramedStaticFlag = {
+    effect = {
+        if = {
+            limit = { NOT = { has_variable = useFramedStaticFlag } }
+            set_variable = { name = useFramedStaticFlag value = 1 }
+        }
+        else = {
+            remove_variable = useFramedStaticFlag
         }
     }
 }
@@ -191,6 +203,18 @@ SetDisableLeftPanelStatsBar = {
     }
 }
 
+SetDisableColouredMapmodeButtons = {
+    effect = {
+        if = {
+            limit = { NOT = { has_variable = disableColouredMapmodeButtons } }
+            set_variable = { name = disableColouredMapmodeButtons value = 1 }
+        }
+        else = {
+            remove_variable = disableColouredMapmodeButtons
+        }
+    }
+}
+
 SetToggleLeftPanelStatsBar = {
     effect = {
         if = {
@@ -201,4 +225,71 @@ SetToggleLeftPanelStatsBar = {
             remove_variable = toggleLeftPanelStatsBar
         }
     }
+}
+
+EnableMassRecruiting = {
+	effect = {
+		if = { # Set
+			limit = {
+				NOT = { has_variable = massRecruiting }
+			}
+			set_variable = { name = massRecruiting value = 5 }
+		}
+		else = { # Unset
+			remove_variable = massRecruiting
+		}
+	}
+}
+
+ClearMassRecruiting = {
+	effect = {
+		remove_variable = massRecruiting
+	}
+}
+
+UpdateMassRecruiting = {
+	effect = {
+		if = { # Iterate
+			limit = {
+				var:massRecruiting > 1
+			}
+			change_variable = {
+				name = massRecruiting
+				subtract = 1
+			}
+		}
+		else = { # Unset
+			remove_variable = massRecruiting
+		}
+	}
+}
+
+SetVanillaMapmodeWidth = {
+	effect = {
+		if = {
+			limit = { NOT = { has_variable = vanillaMapmodeWidth } }
+			set_variable = { name = vanillaMapmodeWidth value = 1 }
+		}
+		else = {
+			remove_variable = vanillaMapmodeWidth
+		}
+	}
+}
+
+SetVanillaMapmodeHeight = {
+	effect = {
+		if = {
+			limit = { NOT = { has_variable = vanillaMapmodeHeight } }
+			set_variable = { name = vanillaMapmodeHeight value = 1 }
+		}
+		else = {
+			remove_variable = vanillaMapmodeHeight
+		}
+	}
+}
+
+RefreshAvgStats = {
+	effect = {
+		glorpui_sync_avg_stats = yes
+	}
 }

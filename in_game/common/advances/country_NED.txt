@@ -49,7 +49,7 @@ gel_warring_spirit = {
 		has_or_had_tag = GEL
 		has_or_had_tag = FLA
 	}
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 	
 	requires = feudalism_advance
 }
@@ -373,7 +373,7 @@ a_trading_hub = { #1637
 			has_or_had_tag = NED
 		}
 	}
-	trade_efficiency = small_trade_efficiency_bonus
+	selling_efficiency = small_trade_efficiency_bonus
 
 	requires = construction_speed_absolutism
 }

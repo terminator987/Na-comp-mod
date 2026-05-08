@@ -428,6 +428,7 @@ improved_charcoal_maker = {
 	rural_settlement = yes
 	town = yes
 	city = yes
+megalopolis = yes
 	
 	
 

@@ -75,7 +75,7 @@ locations={
 	durres = { rank = town 			town_setup = balkan_town }
 	
 	# turkey (modern day)
-	constantinople = { rank = city 	town_setup = greek_city_port }
+	constantinople = { rank = megalopolis 	town_setup = greek_city_port }
 	edirne = { rank = town 			town_setup = balkan_town }
 	gallipoli = { rank = town 		town_setup = greek_town_port }
 	
@@ -111,7 +111,7 @@ locations={
 	brescia = { rank = city 		town_setup = italian_city }
 	cremona = { rank = city 		town_setup = italian_city }
 	ferrara = { rank = city 		town_setup = italian_city }
-	florence = { rank = city 		town_setup = italian_city }
+	florence = { rank = city 		town_setup = florence_city }
 	genoa = { rank = city 			town_setup = italian_trading_capital }
 	lucca = { rank = city 			town_setup = italian_coastal_city }
 	mantova = { rank = city 		town_setup = italian_city }
@@ -126,7 +126,7 @@ locations={
 	pisa = { rank = city 			town_setup = italian_trading_capital }
 	rome = { rank = city 			town_setup = italian_coastal_city }
 	siena = { rank = city 			town_setup = italian_city }
-	venice = { rank = city 			town_setup = italian_trading_capital }
+	venice = { rank = city 			town_setup = venice_city }
 	verona = { rank = city 			town_setup = italian_city }
 	
 	alessandria = { rank = town 	town_setup = italian_town }
@@ -258,7 +258,7 @@ locations={
 	la_rochelle = { rank = town town_setup = french_town }
 
 	#Germany
-	lubeck = { rank = city town_setup = german_coastal_city }
+	lubeck = { rank = city town_setup = lubeck_city  }
 	erfurt = { rank = city town_setup = german_city }
 	cologne = { rank = city town_setup = german_city }
 	speyer = { rank = city town_setup = german_city }
@@ -293,7 +293,7 @@ locations={
 	landshut = { rank = town town_setup = german_town }
 	munster = { rank = town town_setup = german_town }
 	oettingen = { rank = town town_setup = german_town }
-	nuremberg = { rank = town town_setup = german_town }
+	nuremberg = { rank = town town_setup = nuremberg_town }
 	osnabruck = { rank = town town_setup = german_town }
 	paderborn = { rank = town town_setup = german_town }
 	regensburg = { rank = town town_setup = german_town }
@@ -339,7 +339,7 @@ locations={
 	salzburg = { rank = town town_setup = german_town }
 
 	#Low Countries	
-	bruges = { rank = city 				town_setup = lowlands_coastal_city }
+	bruges = { rank = city 				town_setup = bruges_city }
 	ghent = { rank = city 				town_setup = lowlands_city }
 	ypres = { rank = town 				town_setup = lowlands_town }
 
@@ -471,12 +471,12 @@ locations={
 	
 	# Iberia
 	barcelona = { rank = city 	town_setup = iberian_city_port	 }
-	cordoba = { rank = city town_setup = iberian_city }
+	cordoba = { rank = city town_setup = cordoba_city }
 	granada = { rank = city town_setup = iberian_city }
 	lisbon = { rank = city town_setup = iberian_city_port }
 	malaga = { rank = city town_setup = iberian_city_port }
 	sevilla = { rank = city town_setup = iberian_city }
-	toledo = { rank = city town_setup = iberian_city }
+	toledo = { rank = city town_setup = toledo_city }
 	valencia = { rank = city town_setup = iberian_city_port }
 	valladolid = { rank = city town_setup = iberian_city }
 	
@@ -574,7 +574,7 @@ locations={
 	# Egypt and Libya
 	alexandria = { rank = city 	town_setup	 = egyptian_city }
 	asyut = { rank = city 		town_setup	 = egyptian_city }
-	cairo = { rank = city 		town_setup	 = egyptian_city  }
+	cairo = { rank = megalopolis 		town_setup	 = cairo_city  }
 	damietta = { rank = city 	town_setup	 = egyptian_city }
 	mansoura = { rank = city 	town_setup	 = egyptian_city }
 	qus = { rank = city 		town_setup	 = egyptian_city }
@@ -600,7 +600,7 @@ locations={
 	
 	# China
 	anyang = { rank = city town_setup = chinese_city }
-	dadu = { rank = city town_setup = chinese_city }
+	dadu = { rank = megalopolis town_setup = chinese_city }
 	changsha = { rank = city town_setup = chinese_city }
 	chengdu = { rank = city town_setup = chinese_city }
 	baxian = { rank = city town_setup = chinese_city }
@@ -929,7 +929,7 @@ locations={
 	amasya = { rank = city		town_setup = anatolian_city }
 	ankara = { rank = city 		town_setup = anatolian_city }
 	antioch = { rank = city	 	town_setup = anatolian_city }
-	bursa = { rank = city 		town_setup = anatolian_city}
+	bursa = { rank = city 		town_setup = bursa_city}
 	diyarbekir = { rank = city 	town_setup = anatolian_city }
 	izmit = { rank = city 		town_setup = anatolian_city }
 	kayseri = { rank = city 	town_setup = anatolian_city }
@@ -1010,7 +1010,7 @@ locations={
 	aleppo = { rank = city 		town_setup = levant_city }
 	baghdad = { rank = city 	town_setup = levant_city }
 	basra = { rank = city 		town_setup = levant_city }
-	damascus = { rank = city 	town_setup = levant_city }
+	damascus = { rank = city 	town_setup = damascus_city }
 	jerusalem = { rank = city 	town_setup = levant_city }
 	tripoli_syria = { rank = town 	town_setup = levant_city }
 	karak = { rank = town 	town_setup = levant_city }

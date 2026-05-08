@@ -88,7 +88,7 @@ recruitment_law = {
 			NOT = { current_age = age_1_traditions }
 		}
 		country_modifier = {
-			mercenary_maintenance_cost = -0.075
+			mercenary_maintenance_efficiency = 0.15
 			monthly_towards_individualism = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -106,7 +106,7 @@ recruitment_law = {
 		}
 		country_modifier = {
 			global_mercenaries_modifier = 0.2
-			mercenary_maintenance_cost = -0.05
+			mercenary_maintenance_efficiency = 0.1
 			monthly_towards_individualism = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -147,7 +147,7 @@ recruitment_law = {
 		}
 		country_modifier = {
 			discipline = 0.025
-			mercenary_maintenance_cost = -0.075
+			mercenary_maintenance_efficiency = 0.1
 			monthly_towards_quality = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -302,7 +302,7 @@ recruitment_law = {
 		}
 		country_modifier = {
 			global_manpower_modifier = 0.2
-			army_maintenance_cost = -0.1
+			army_maintenance_efficiency = 0.2
 			global_monthly_food_modifier = -0.1
 			monthly_towards_outward = societal_value_monthly_move
 		}
@@ -507,7 +507,8 @@ army_doctrine_law = {
 	}
 	sustained_discipline_policy = {
 		country_modifier = {
-			army_infantry_power = 0.1
+			army_heavy_infantry_power = 0.1
+			army_light_infantry_power = 0.1
 			monthly_towards_quality = societal_value_monthly_move
 
 		}
@@ -518,8 +519,9 @@ army_doctrine_law = {
 	}
 	cavalry_warfare_policy = {
 		country_modifier = {
-			army_cavalry_power = 0.1
-			
+			army_heavy_cavalry_power = 0.1
+			army_light_cavalry_power = 0.1
+	
 			monthly_towards_offensive = societal_value_monthly_move
 		}
 		estate_preferences = {

@@ -35,7 +35,7 @@ court_accounting = {
 
 	requires = renaissance_thought
 	
-	court_spending_cost = -0.01
+	court_spending_cost_modifier = -0.05
 }
 
 
@@ -54,7 +54,7 @@ benefits_for_mercenaries = {
 	for = adm
 
 	requires = debt_and_loans
-	mercenary_maintenance_cost = -0.15
+	mercenary_maintenance_efficiency = 0.1
 }
 organised_mercenary_recruitment = {
 	age = age_2_renaissance
@@ -140,7 +140,7 @@ organised_construction = {
 	icon = renaissance_development
 	for = adm
 
-	court_spending_cost = -0.05
+	court_spending_cost_modifier = -0.2
 }
 organised_mercenary_payment = {
 	age = age_3_discovery
@@ -404,7 +404,7 @@ nationalistic_enthusiasm = {
 	icon = regimental_system
 	for = adm
 
-	army_maintenance_cost = -0.05
+	army_maintenance_efficiency = 0.1
 }
 improved_shipyards = {
 	age = age_6_revolutions

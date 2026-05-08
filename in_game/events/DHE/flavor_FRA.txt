@@ -4277,7 +4277,7 @@ flavor_fra.1160 = { # The Roaming Routiers
 	trigger = {
 		at_war = no
 		has_truce_with = c:ENG
-		can_build_units_of_category = sub_unit_category:army_infantry #Check that the country can have infantry in the first place for the mercs
+		can_build_units_of_category = sub_unit_category:sub_unit_category:army_heavy_infantry #Check that the country can have infantry in the first place for the mercs
 		any_owned_location = {
 			is_capital = no
 			region = region:france_region
@@ -4370,7 +4370,7 @@ flavor_fra.1160 = { # The Roaming Routiers
 				name = rogue_free_company_1
 				home = scope:english_french_flashpoint_1
 				categories = {
-					army_infantry = 7
+					army_heavy_infantry = 7
 				}
 				save_scope_as = rogue_company_1
 			}
@@ -4378,7 +4378,7 @@ flavor_fra.1160 = { # The Roaming Routiers
 				name = rogue_free_company_2
 				home = scope:english_french_flashpoint_2
 				categories = {
-					army_infantry = 7
+					army_heavy_infantry = 7
 				}
 				save_scope_as = rogue_company_2
 			}
@@ -6378,6 +6378,7 @@ flavor_fra.2013 = { # University of Poitiers
 			is_core_of = ROOT
 			NOT = { owner = { modifier:university_construction_blocked = no } }
 			is_city = yes
+megalopolis = yes
 		}
  	}
 

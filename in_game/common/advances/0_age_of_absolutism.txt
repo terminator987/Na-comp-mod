@@ -375,7 +375,7 @@ war_score_absolutism_advance = {
 	icon = diplomatic_influence
 	requires = artillery_vs_fort_age_5_absolutism
 
-	global_war_score_cost = -0.1
+	global_war_score_efficiency = 0.2
 }
 
 correct_box_advance_absolutism = {

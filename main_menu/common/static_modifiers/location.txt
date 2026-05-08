@@ -1880,7 +1880,7 @@ stronghold_city_modifier = {
 	}
 
 	local_max_control = 0.2
-	local_war_score_cost = -0.5
+	local_war_score_efficiency = -0.25
 	local_monthly_control = 0.002
 }
 

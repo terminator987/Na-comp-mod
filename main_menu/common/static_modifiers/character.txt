@@ -91,7 +91,7 @@ admiral_adm = {
 	}
 	blockade_efficiency = 0.005
 	possible_frontage_modifier = 0.001
-	navy_maintenance_cost = -0.002
+	navy_maintenance_efficiency = 0.004
 	correct_box_chance = 0.001
 }
 
@@ -295,7 +295,7 @@ boh_hussite_king = {
 	game_data = {
 		category = character
 	}
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 	diplomatic_reputation = diplomatic_reputation_weak_penalty
 	monthly_religious_influence = -0.5
 }
@@ -305,7 +305,7 @@ protecting_against_slave_trade = {
 		category = character
 	}
 	ban_exports_of_slaves_goods = yes
-	trade_efficiency = small_trade_efficiency_penalty
+	selling_efficiency = small_trade_efficiency_penalty
 }
 
 accepting_slave_trade = {
@@ -439,7 +439,7 @@ tonnage_and_poundage_denied = {
 		category = character
 	}
 
-	court_spending_cost = 0.05
+	court_spending_cost_modifier = 0.05
 	monthly_legitimacy = -0.1
 }
 
@@ -813,7 +813,7 @@ chi_recommendation_public_works = {
 	}
 
 	global_road_building_time = -0.25
-	army_maintenance_cost = 0.02
+	army_maintenance_efficiency = 0.04
 	control_importance_modifier = 0.1
 }
 
@@ -935,7 +935,7 @@ steamroll_administrator = {
 	}
 	legislative_efficiency = 0.2
 	tax_income_efficiency = large_tax_income_efficiency_bonus
-	court_spending_cost = -0.05
+	court_spending_cost_modifier = -0.05
 	global_nobles_estate_power = 0.1
 }
 
@@ -1287,7 +1287,7 @@ fra_sun_king_court_patronage = {
 	dip = 12
 	cultural_influence = 1
 	skill_of_new_artists = 0.1
-	court_spending_cost = 0.15
+	court_spending_cost_modifier = 0.25
 }
 
 fra_sun_king_scaled_back_court_patronage = {
@@ -1297,7 +1297,7 @@ fra_sun_king_scaled_back_court_patronage = {
 	monthly_prestige = 0.10
 	monthly_legitimacy = 0.10
 	dip = 5
-	court_spending_cost = 0.05
+	court_spending_cost_modifier = 0.1
 }
 
 the_sun_king_bonus = {
@@ -1651,7 +1651,7 @@ erratic_excited = {
 	game_data = {
 		category = character
 	}
-	court_spending_cost = 0.03
+	court_spending_cost_modifier = 0.1
 	#AI
 }
 erratic_paranoid = {
@@ -1881,7 +1881,7 @@ horde_show_of_strength = {
 		category = character
 	}
 	discipline = 0.05
-	army_maintenance_cost = -0.15
+	army_maintenance_efficiency = 0.3
 }
 horde_battle_plans = {
 	game_data = {
@@ -1923,7 +1923,7 @@ ira_army_reformer = {
 		category = character
 	}
 	army_tradition_decay = -0.001
-	army_maintenance_cost = -0.15
+	army_maintenance_efficiency = 0.3
 	discipline = 0.025
 }
 ira_the_lawgiver = {
@@ -2044,7 +2044,7 @@ rtr_yuanzhangs_leadership = {
 	game_data = {
 		category = character
 	}
-	army_maintenance_cost = -0.25
+	army_maintenance_efficiency = 0.25
 }
 
 maj_sumpah_palapa_modifier = {
@@ -2129,7 +2129,7 @@ insatiable_ambition = {
 	#AI
 	war_declaration_stab_hit_tolerance = 25
 	war_declaration_war_exhaustion_tolerance = 2
-	antagonism_tolerance = 100	#Let's be real: Napoleon should take as much land as possible
+	coalition_strength_tolerance = 3	#Let's be real: Napoleon should take as much land as possible
 }
 
 witch_doctor = {
@@ -2306,7 +2306,7 @@ gun_designer_ruler = {
 		category = character
 	}
 	
-	army_infantry_power = 0.05
+	army_heavy_infantry_power = 0.05
 }
 
 busy_modifier = {

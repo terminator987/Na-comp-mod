@@ -88,7 +88,6 @@ country_base_values = {
 	army_logistics_distance = 50
 	
 	raw_material_in_province_impact = 0.1
-	produced_in_market_bonus = 0.2
 	
 	estate_satisfaction_from_building = 0.025
 	
@@ -103,7 +102,7 @@ country_base_values = {
 	
 	subject_loyalty = 5
 	
-	court_spending_cost = 0.1
+	court_spending_cost_modifier = 0.2
 	diplomatic_spending_cost = 0.1
 	
 	
@@ -399,7 +398,7 @@ war_exhaustion_impact = {
 	
 	
 	global_production_efficiency = scaled_production_efficiency_penalty
-	trade_efficiency = scaled_trade_efficiency_penalty
+	selling_efficiency = scaled_trade_efficiency_penalty
 	global_monthly_food_modifier = -0.025
 }
 

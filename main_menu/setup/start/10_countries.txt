@@ -31366,8 +31366,6 @@ countries = {
 				name_frederick = 1
 				name_hugh = 1
 			}
-		}
-
 			centralization_vs_decentralization = 20
 			aristocracy_vs_plutocracy = -95
 			serfdom_vs_free_subjects = -20
@@ -31381,6 +31379,7 @@ countries = {
 			capital_economy_vs_traditional_economy = 25
 			individualism_vs_communalism = -20
 			outward_vs_inward = -40
+		}
 
 		country_rank = rank_kingdom
 		court_language = french_language

@@ -523,6 +523,7 @@ colonial_charter.100 = {
 				scope:target = {
 					any_location_in_province = {
 						is_city = yes
+megalopolis = yes
 						count = 0
 					}
 				}

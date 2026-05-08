@@ -24,7 +24,7 @@ window = {
         vbox = {
             window_header_alt = {
                 blockoverride "header_text" {
-                    raw_text = "Glorp UI Customization"
+                    text = "glorpui_name"
                 }
                 blockoverride "window_header_alt_color_texture" {
                     using = color_advances_texture
@@ -40,28 +40,37 @@ window = {
                     blockoverride "content" {
                         button_secondary_tab_alt = {
                             using = layoutpolicy_expanding
-                            text = "Toggles"
+                            text = "glorpui__toggles_name"
                             down = "[Or(Not(GetVariableSystem.Exists('glorpUI_tab')), GetVariableSystem.HasValue( 'glorpUI_tab', 'left_panel' ))]"
                             tooltip_enabled = no
                             onclick = "[GetVariableSystem.Set( 'glorpUI_tab', 'left_panel' )]"
                         }
-                        #
-                        button_secondary_tab_alt = {
-                            using = layoutpolicy_expanding
-                            text = "War View"
-                            down = "[GetVariableSystem.HasValue( 'glorpUI_tab', 'war_view' )]"
-                            default_format = "#medium"
-                            tooltip_enabled = no
-                            onclick = "[GetVariableSystem.Set( 'glorpUI_tab', 'war_view' )]"
-                        }
 
                         button_secondary_tab_alt = {
                             using = layoutpolicy_expanding
-                            text = "Top Bar"
+                            text = "glorpui__top_bar_name"
                             down = "[GetVariableSystem.HasValue( 'glorpUI_tab', 'top_bar' )]"
                             default_format = "#medium"
                             tooltip_enabled = no
                             onclick = "[GetVariableSystem.Set( 'glorpUI_tab', 'top_bar' )]"
+                        }
+
+                        button_secondary_tab_alt = {
+                            using = layoutpolicy_expanding
+                            text = "glorpui__mapmodes_bar_name"
+                            down = "[GetVariableSystem.HasValue( 'glorpUI_tab', 'mapmodes' )]"
+                            default_format = "#medium"
+                            tooltip_enabled = no
+                            onclick = "[GetVariableSystem.Set( 'glorpUI_tab', 'mapmodes' )]"
+                        }
+
+                        button_secondary_tab_alt = {
+                            using = layoutpolicy_expanding
+                            default_format = "#medium"
+                            text = "GLORP_UI_OTHER"
+                            down = "[GetVariableSystem.HasValue( 'glorpUI_tab', 'other' )]"
+                            tooltip_enabled = no
+                            onclick = "[GetVariableSystem.Set( 'glorpUI_tab', 'other' )]"
                         }
                     }
                 }
@@ -77,7 +86,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Vanilla Flag and Portrait"
+                                text = "glorpui__useVanillaPortrait_name"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetUseVanillaPortrait').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -90,7 +99,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Use Static Flag"
+                                text = "glorpui__useStaticFlag_name"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetUseStaticFlag').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -99,11 +108,25 @@ window = {
                             }
                         }
 
+                        # Left Panel - Big Static Flag
+                        hbox = {
+                            visible = "[Player.MakeScope.GetVariable('useStaticFlag').IsSet]"
+                            spacing = 10
+                            text_single = {
+                                text = "glorpui__useFramedStaticFlag_name"
+                            }
+                            checkbox_square_alt = {
+                                onclick = "[GetScriptedGui('SetUseFramedStaticFlag').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                                checked = "[Player.MakeScope.GetVariable('useFramedStaticFlag').IsSet]"
+                                tooltip_enabled = no
+                            }
+                        }
+
                         # Left Panel - Vanilla Icon Backgrounds
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Vanilla Icon Backgrounds on the Left Panel"
+                                text = "glorpui__useDefaultIconsBGLeftPanel_name"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetUseDefaultIconsBGLeftPanel').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -111,11 +134,12 @@ window = {
                                 tooltip_enabled = no
                             }
                         }
+
                         # Left Panel - Vanilla Icons
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Vanilla Icons on the Left Panel"
+                                text = "glorpui__useDefaultIconsLeftPanel_name"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetUseDefaultIconsLeftPanel').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -124,24 +148,11 @@ window = {
                             }
                         }
 
-                        # Cabinet view
-                        hbox = {
-                            spacing = 10
-                            text_single = {
-                                raw_text = "Vanilla Cabinet View"
-                            }
-                            checkbox_square_alt = {
-                                onclick = "[GetScriptedGui('SetUseVanillaCabinetView').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                                checked = "[Player.MakeScope.GetVariable('useVanillaCabinetView').IsSet]"
-                                tooltip_enabled = no
-                            }
-                        }
-
                         # Left Panel Stats Bar
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Left Panel Stats Bar"
+                                text = "glorpui__disableLeftPanelStatsBar_name"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetDisableLeftPanelStatsBar').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -169,35 +180,6 @@ window = {
                         # }
                     }
 
-                    # War View
-                    vbox = {
-                        visible = "[GetVariableSystem.HasValue( 'glorpUI_tab', 'war_view' )]"
-
-                        hbox = {
-                            spacing = 10
-                            text_single = {
-                                raw_text = "Vanilla Army Strength"
-                            }
-                            checkbox_square_alt = {
-                                onclick = "[GetScriptedGui('SetUseVanillaArmyStrength').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                                checked = "[Player.MakeScope.GetVariable('useVanillaArmyStrength').IsSet]"
-                                tooltip_enabled = no
-                            }
-                        }
-
-                        hbox = {
-                            spacing = 10
-                            text_single = {
-                                raw_text = "Vanilla Participant Colour"
-                            }
-                            checkbox_square_alt = {
-                                onclick = "[GetScriptedGui('SetUseVanillaParticipantColour').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                                checked = "[Player.MakeScope.GetVariable('useVanillaParticipantColour').IsSet]"
-                                tooltip_enabled = no
-                            }
-                        }
-                    }
-
                     # Top Bar
                     vbox = {
                         visible = "[GetVariableSystem.HasValue( 'glorpUI_tab', 'top_bar' )]"
@@ -205,7 +187,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Income"
+                                text = "INCOME_LABEL"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetDisableTopBarIncome').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -216,7 +198,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Stability"
+                                text = "stability"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetDisableTopBarStability').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -227,7 +209,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Population"
+                                text = "population"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetDisableTopBarPopulation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -238,7 +220,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Legitimacy"
+                                text = "legitimacy"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetDisableTopBarLegitimacy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -249,7 +231,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Prestige"
+                                text = "prestige"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetDisableTopBarPrestige').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -260,7 +242,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Diplomats"
+                                text = "game_concept_diplomats"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetDisableTopBarDiplomats').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -271,7 +253,7 @@ window = {
                         hbox = {
                             spacing = 10
                             text_single = {
-                                raw_text = "Dynamic War Stats"
+                                text = "glorpui__dynamicWarStats_name"
                             }
                             checkbox_square_alt = {
                                 onclick = "[GetScriptedGui('SetEnableDynamicWarStats').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -280,11 +262,50 @@ window = {
                             }
                             tooltipwidget = {
                                 LeftClickButtonTooltip = {
-                                    blockoverride "onclick_text" { raw_text = "Dynamically Shows & Hides Manpower, Sailors and War Exhaustion" }
+                                    blockoverride "onclick_text" { text = "glorpui__dynamicWarStats_desc" }
                                 }
                             }
                         }
                     }
+
+					# Mapmode Bar
+					vbox = {
+						visible = "[GetVariableSystem.HasValue( 'glorpUI_tab', 'mapmodes' )]"
+						# Coloured Mapmode Buttons
+						hbox = {
+							spacing = 10
+							text_single = {
+								text = "glorpui__disableColouredMapmodeButtons_name"
+							}
+							checkbox_square_alt = {
+								onclick = "[GetScriptedGui('SetDisableColouredMapmodeButtons').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								checked = "[Not(Player.MakeScope.GetVariable('disableColouredMapmodeButtons').IsSet)]"
+								tooltip_enabled = no
+							}
+						}
+						hbox = {
+							spacing = 10
+							text_single = {
+								text = "glorpui__vanillaMapmodeWidth_name"
+							}
+							checkbox_square_alt = {
+								onclick = "[GetScriptedGui('SetVanillaMapmodeWidth').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								checked = "[Player.MakeScope.GetVariable('vanillaMapmodeWidth').IsSet]"
+								tooltip_enabled = no
+							}
+						}
+						hbox = {
+							spacing = 10
+							text_single = {
+								text = "glorpui__vanillaMapmodeHeight_name"
+							}
+							checkbox_square_alt = {
+								onclick = "[GetScriptedGui('SetVanillaMapmodeHeight').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								checked = "[Player.MakeScope.GetVariable('vanillaMapmodeHeight').IsSet]"
+								tooltip_enabled = no
+							}
+						}
+					}
                 }
             }
         }

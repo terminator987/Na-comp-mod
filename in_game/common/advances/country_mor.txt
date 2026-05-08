@@ -40,7 +40,7 @@ trans_saharan_trade = {
 	}
 
 	requires = trade_range_advance_age_2
-	trade_land_movement_cost_modifier = -0.2
+	trade_land_efficiency = 0.4
 }
 
 first_fleet_of_the_med = {
@@ -86,7 +86,7 @@ atlantic_trade_routes = {
 	
 	requires = maritime_advance_age_4
 	
-	trade_sea_movement_cost_modifier = -0.1
+	trade_sea_efficiency = 0.2
 }
 
 foreign_politics = {

@@ -190,7 +190,7 @@
 		}
 		country_modifier = {
 			monthly_towards_plutocracy = societal_value_monthly_move
-			court_spending_cost  = -0.01
+			court_spending_cost_modifier = -0.05
 			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
 		}
 		estate_preferences = {
@@ -213,7 +213,7 @@
 		}
 		country_modifier = {
 			monthly_towards_centralization = societal_value_monthly_move
-			court_spending_cost  = 0.025
+			court_spending_cost_modifier = 0.1
 			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
 			burghers_estate_target_satisfaction = tiny_permanent_target_satisfaction
 			clergy_estate_target_satisfaction = tiny_permanent_target_satisfaction
@@ -748,7 +748,7 @@
 			has_policy = mongol_law_policy
 		}
 		country_modifier = {
-			army_cavalry_power = 0.1
+			army_light_cavalry_power = 0.1
 			monthly_towards_quantity = societal_value_monthly_move
 			legislative_efficiency = -0.1
 		}
@@ -969,7 +969,7 @@ sharia_law = {
 		}
 
 		country_modifier = {
-			trade_efficiency = small_trade_efficiency_bonus
+			selling_efficiency = small_trade_efficiency_bonus
 			monthly_towards_free_trade = societal_value_minor_monthly_move
 		}
 		years = 2

@@ -40,7 +40,7 @@ crown_power_advance_reformation = {
 confessional_court = {
 	age = age_4_reformation
 	icon = court_accounting
-	court_spending_cost = -0.005
+	court_spending_cost_modifier = -0.05
 	global_pop_conversion_speed_modifier = 0.1
 	
 	requires = power_projection_advance_3
@@ -59,7 +59,7 @@ war_score_reformations_advance = {
 	icon = diplomatic_influence
 	requires = confessional_court
 
-	global_war_score_cost = -0.05
+	global_war_score_efficiency = 0.1
 }
 
 
@@ -138,7 +138,7 @@ lumber_improvements_reformation = {
 global_trade_advance = {
 	age = age_4_reformation
 		
-	merchant_maintenance_cost = -0.10
+	merchant_maintenance_efficiency = 0.20
 	depth = 0
 	allow = { has_embraced_institution = institution:global_trade }
 }
@@ -273,7 +273,7 @@ development_of_maritime_law = {
 	
 	requires = chartered_companies
 	
-	merchant_maintenance_cost = -0.1
+	merchant_maintenance_efficiency = 0.2
 }
 
 diplomatic_range_age_3 = {

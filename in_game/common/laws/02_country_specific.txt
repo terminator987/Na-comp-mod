@@ -346,7 +346,7 @@ french_colonial_ambition_focus = {
 			global_foreign_build_buildings_cost = -0.2
 			colonial_range_modifier = 0.25
 			merchant_power_from_maritime_modifier = 0.05
-			trade_efficiency = small_trade_efficiency_bonus
+			selling_efficiency = small_trade_efficiency_bonus
 		}
 		estate_preferences = {
 			burghers_estate
@@ -359,7 +359,7 @@ french_colonial_ambition_focus = {
 			has_unlocked_policy_trigger = { type = french_east_india_company }
 		}
 		country_modifier = {
-			trade_efficiency = medium_trade_efficiency_bonus
+			selling_efficiency = medium_trade_efficiency_bonus
 			tolerance_heathen = 1.5
 			global_foreign_build_buildings_cost = -0.2
 			colonial_range_modifier = 0.33
@@ -590,7 +590,7 @@ teu_amber_monopoly_law = {
 
 	state_controlled_amber_gathering = {
 		country_modifier = {
-			trade_efficiency = tiny_trade_efficiency_bonus
+			selling_efficiency = tiny_trade_efficiency_bonus
 			monthly_towards_aristocracy = societal_value_minor_monthly_move
 		}
 		location_modifier = {
@@ -655,7 +655,7 @@ nav_adaptability = {
 			casus_belli_creation_speed_modifier = 0.33
 			diplomatic_reputation = diplomatic_reputation_severe_penalty
 			spy_network_construction = 0.05
-			global_war_score_cost = -0.05
+			global_war_score_efficiency = 0.1
 			monthly_towards_belligerent = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -759,7 +759,7 @@ ashta_pradhan_council_law = {
 	apc_mazumdar_focus_policy = {
 		country_modifier = {
 			tax_income_efficiency = large_tax_income_efficiency_bonus
-			trade_efficiency = small_trade_efficiency_bonus
+			selling_efficiency = small_trade_efficiency_bonus
 		}
 		estate_preferences = {
 			nobles_estate
@@ -846,7 +846,7 @@ kor_currency = {
 					min = 0
 				}
 			}
-			trade_land_movement_cost_modifier = -0.2
+			trade_land_efficiency = 0.4
 		}
 		country_modifier = {
 			monthly_towards_traditional_economy = societal_value_minor_monthly_move
@@ -905,7 +905,7 @@ kor_currency = {
 				}
 			}
 
-			trade_efficiency = small_trade_efficiency_bonus
+			selling_efficiency = small_trade_efficiency_bonus
 		}
 		years = 2
 	}
@@ -1119,7 +1119,7 @@ sco_authority_over_the_clergy = {
 			global_crown_estate_power = 0.1
 			monthly_religious_influence = -1
 			cultural_tradition = 0.2
-			court_spending_cost = -0.01
+			court_spending_cost_modifier = -0.05
 			global_clergy_estate_power = -0.15
 			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 			clergy_estate_min_tax = 0.05

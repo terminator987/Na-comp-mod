@@ -14,8 +14,8 @@ teu_teutonic_heavy_cavalry = {
 	potential = {
 		has_or_had_tag = TEU
 	}
-	army_cavalry_power = 0.1
-	army_cavalry_maintenance_cost_modifier = -0.1
+	army_heavy_cavalry_power = 0.1
+	army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	
 	requires = teu_crusader_discipline
 }
@@ -38,7 +38,7 @@ teu_infantry_tactics = {
 	potential = {
 		has_or_had_tag = TEU
 	}
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 }
 teu_teutonic_religious_authority = {
 	age = age_3_discovery

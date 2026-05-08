@@ -681,7 +681,7 @@ casa_de_contratacion = {
 		has_unlocked_government_reform_trigger = { type = casa_de_contratacion }
 	}
 	country_modifier = {
-		merchant_maintenance_cost = -0.2
+		merchant_maintenance_efficiency = 0.4
 		subject_income_modifier = 0.025
 		merchant_power_from_maritime_modifier = 0.1
 		government_reform_slots = 1
@@ -1053,8 +1053,8 @@ basic_timariot_system = {
 		}
 	}
 	country_modifier = {
-		army_cavalry_power = 0.1
-		army_cavalry_maintenance_cost_modifier = -0.1
+		army_heavy_cavalry_power = 0.1
+		army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	}
 	years = 2
 }
@@ -1067,8 +1067,8 @@ expanded_timariot_system = {
 		NOT = { has_variable = abolished_timariot_system }
 	}
 	country_modifier = {
-		army_cavalry_power = 0.2
-		army_cavalry_maintenance_cost_modifier = -0.2
+		army_heavy_cavalry_power = 0.2
+		army_heavy_cavalry_maintenance_cost_modifier = -0.2
 		monthly_towards_aristocracy = societal_value_monthly_move
 	}
 	years = 2
@@ -1116,7 +1116,7 @@ ottoman_eunuch_viziers = {
 	country_modifier = {
 		nobles_estate_target_satisfaction = small_permanent_target_satisfaction
 		country_cabinet_efficiency = 0.05
-		court_spending_cost = 0.01
+		court_spending_cost_modifier = 0.05
 		government_reform_slots = 1
 	}
 	years = 2
@@ -1129,8 +1129,8 @@ sekban_system = {
 		has_variable = tur_sekban_system
 	}
 	country_modifier = {
-		army_infantry_power = 0.1
-		army_infantry_maintenance_cost_modifier = -0.1
+		army_light_infantry_power = 0.1
+		army_light_infantry_maintenance_cost_modifier = -0.1
 		government_reform_slots = 1
 		global_peasants_estate_power = 0.2
 	}
@@ -1474,7 +1474,7 @@ navy_board_reform = {
 	country_modifier = {
 		monthly_towards_naval = societal_value_monthly_move
 		monthly_navy_tradition = 0.05
-		navy_maintenance_cost = -0.1
+		navy_maintenance_efficiency = 0.2
 		ship_build_speed = 0.15
 	}
 
@@ -1547,7 +1547,7 @@ ned_shipbuilding_industry = {
 		}
 	}
 	country_modifier = {
-		navy_maintenance_cost = -0.1
+		navy_maintenance_efficiency = 0.2
 		global_sailors_modifier = 0.1
 		ship_build_speed = 0.33
 		monthly_towards_naval = societal_value_monthly_move
@@ -1767,7 +1767,7 @@ european_militia_reform = {
 	country_modifier = {
 		military_tactics = 0.1
 		army_artillery_power = 0.15
-		army_cavalry_power = 0.15
+		army_heavy_cavalry_power = 0.1
 	}
 
 	years = 1
@@ -2007,7 +2007,7 @@ shogunate = {
 		is_leader_of_international_organization = international_organization:japanese_shogunate
 	}
 	country_modifier = {
-		court_spending_cost = -0.01
+		court_spending_cost_modifier = -0.05
 		appease_nobles_estate_from_shogun_court_cost_modifier = -0.3
 		cultural_influence_modifier = 0.2
 		government_reform_slots = 1
@@ -2034,7 +2034,7 @@ shogunate_kanrei_council = {
 		}
 	}	
 	country_modifier = {
-		court_spending_cost = 0.03
+		court_spending_cost_modifier = 0.20
 		stability_investment = standard_stability_investment
 		country_cabinet_efficiency = 0.15
 		government_reform_slots = 1
@@ -2162,7 +2162,7 @@ kor_daedongbeob = {
 		peasants_estate_target_satisfaction = medium_permanent_target_satisfaction
 		global_estate_max_tax = 0.05
 		government_reform_slots = 1
-		trade_efficiency = small_trade_efficiency_bonus
+		selling_efficiency = small_trade_efficiency_bonus
 	}
 }
 
@@ -2238,7 +2238,7 @@ kor_sadae_reform = {
 		is_subject_type = tributary
 	}
 	country_modifier = {
-		trade_efficiency = medium_trade_efficiency_bonus
+		selling_efficiency = medium_trade_efficiency_bonus
 		monthly_legitimacy = 0.25
 		scale = { # goes from -0.5 to 0.5
 			value = -0.5
@@ -2269,8 +2269,8 @@ haixi_jurchen_reform = {
 		}
 	}
 	country_modifier = {
-		army_cavalry_build_cost_modifier = -0.25
-		army_cavalry_maintenance_cost_modifier = -0.10
+		army_light_cavalry_build_cost_modifier = -0.25
+		army_light_cavalry_maintenance_cost_modifier = -0.10
 		monthly_towards_sinicized = societal_value_tiny_monthly_move
 	}
 
@@ -2371,7 +2371,7 @@ byzantine_court_ceremonies_reform = {
 	}
 	country_modifier = {
 		cultural_tradition = 0.20
-		court_spending_cost = 0.02
+		court_spending_cost_modifier = 0.10
 		monthly_legitimacy = 0.10
 		monthly_prestige = 0.10
 	}
@@ -2444,7 +2444,7 @@ council_of_ten = {
 		global_nobles_estate_power = -0.1
 		monthly_republican_tradition = 0.05
 		stability_investment = small_stability_investment
-		court_spending_cost = 0.01
+		court_spending_cost_modifier = 0.05
 		government_reform_slots = 1
 	}
 	years = 2
@@ -2478,7 +2478,7 @@ signoria_of_venice = {
 	}
 	country_modifier = {
 		global_merchant_capacity_modifier = 0.50
-		merchant_maintenance_cost = -0.25
+		merchant_maintenance_efficiency = 0.50
 		global_crown_estate_power = 0.2
 		monthly_towards_free_trade = societal_value_monthly_move
 		government_reform_slots = 1
@@ -2519,7 +2519,7 @@ portuguese_monarchy_reform = {
 		has_embraced_institution = institution:legalism
 	}
 	country_modifier = {
-		navy_maintenance_cost = -0.1
+		navy_maintenance_efficiency = 0.2
 		global_sailors_modifier = 0.1
 		tax_income_efficiency = large_tax_income_efficiency_bonus
 	}
@@ -2664,18 +2664,21 @@ mhr_ashta_pradhan = {
 }
 
 theme_system = {
+	content_priority = 200
 	age = age_1_traditions
 	potential = {
 		has_or_had_tag = BYZ
-		custom_tooltip = {
-			text = byz_theme_system_not_obselete_tt
-			NOT = { has_variable = unlocked_modern_byzantine_army }
-		}
+	}
+	allow = {
+		NOT = { has_reform = government_reform:modern_imperial_army }
 	}
 	country_modifier = {
 		monthly_towards_decentralization = societal_value_minor_monthly_move
 		global_nobles_estate_power = 0.25
 		allow_thema_headquarters = yes
+		government_size = 1
+		global_crown_estate_power = -0.1
+		army_heavy_cavalry_maintenance_cost_modifier = -0.1
 	}
 	years = 2
 }
@@ -2691,7 +2694,7 @@ modern_imperial_army = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		army_maintenance_cost = -0.1
+		army_maintenance_efficiency = 0.2
 		monthly_army_tradition = 0.1
 	}
 	years = 2
@@ -2831,7 +2834,7 @@ dutch_republic_reform = {
 		government_type = government_type:republic
 	}
 	country_modifier = {
-		trade_efficiency = small_trade_efficiency_bonus
+		selling_efficiency = small_trade_efficiency_bonus
 		navy_heavy_ship_power = 0.05
 		subject_loyalty = 10
 	}
@@ -2954,7 +2957,7 @@ warring_state = {
 		aggressiveness_modifier = 0.33
 		expected_warscore_modifier = 0.33
 		win_war_chance_threshold = -0.2
-		antagonism_tolerance = 15
+		coalition_strength_tolerance = 0.15
 	}
 
 	location_modifier = {
@@ -3198,7 +3201,7 @@ empower_the_eunuchs = {
 		}
 	}
 	country_modifier = {
-		court_spending_cost = 0.01
+		court_spending_cost_modifier = 0.05
 		scale = {
 			value = 1
 			add = modifier:eunuch_power
@@ -3394,7 +3397,7 @@ mamluk_government = {
 		can_promote_mamluks = yes
 		can_build_mamluk_barracks = yes
 		monthly_army_tradition = 0.1
-		court_spending_cost = 0.02
+		court_spending_cost_modifier = 0.1
 	}
 	years = 2
 }
@@ -3847,7 +3850,7 @@ shahana_i_mandi = {
 		government_reform_slots = 1
 		global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 		global_crown_estate_power = 0.1
-		trade_efficiency = small_trade_efficiency_bonus
+		selling_efficiency = small_trade_efficiency_bonus
 	}
 	years = 2
 }
@@ -3903,7 +3906,7 @@ soyurghal_governor_reform = {
 		}
 	}
 	country_modifier = {
-		court_spending_cost = 0.02
+		court_spending_cost_modifier = 0.1
 		global_monthly_prosperity = 0.002
 	}
 }
@@ -3971,7 +3974,7 @@ uc_bey_reform = { # Unique Gov Reform for Uc Bey subjects
 		is_subject = yes
 	}
 	country_modifier = {
-		army_maintenance_cost = -0.33
+		army_maintenance_efficiency = 0.25
 		monthly_towards_mysticism = societal_value_monthly_move
 		monthly_towards_defensive = societal_value_large_monthly_move
 		blocked_from_conversion = yes
@@ -4041,7 +4044,7 @@ cossacks_reform = {
 	country_modifier = {
 		amount_looted_modifier = 0.25
 		monthly_towards_land = societal_value_large_monthly_move
-		army_cavalry_power = 0.1
+		army_light_cavalry_power = 0.1
 	}
 }
 

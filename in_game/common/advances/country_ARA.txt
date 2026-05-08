@@ -34,8 +34,8 @@ ara_a_mediterranean_trade_power = {
 			is_aragonese_catalan_spain = yes
 		}
 	}
-	trade_efficiency = small_trade_efficiency_bonus
-	merchant_maintenance_cost  = -0.1
+	selling_efficiency = small_trade_efficiency_bonus
+	merchant_maintenance_efficiency = 0.2
 
 	requires = merchants_and_trade
 }
