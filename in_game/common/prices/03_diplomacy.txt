@@ -49,6 +49,13 @@ subject_pays_trade_company = {
 	ignore_inflation = yes
 }
 
+subject_pays_pronoia = {
+	scaled_gold = 0.2
+	scaled_sailors = 0.1
+	scaled_manpower = 0.1
+	ignore_inflation = yes
+}
+
 excommunication_price = {
 	religious_influence = 100
 }

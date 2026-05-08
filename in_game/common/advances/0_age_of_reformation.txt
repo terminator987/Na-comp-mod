@@ -79,6 +79,14 @@ early_modern_administation  = {
 	requires = reformation_subject_opinions_advance
 }
 
+town_rights_ref_advance = {
+	age = age_4_reformation
+	icon = town_rights_advance
+	requires = early_modern_administation
+	capital_possible_town_rights = 1
+}
+
+
 pharmacology_advance = {
 	age = age_4_reformation
 
@@ -129,6 +137,18 @@ lumber_improvements_reformation = {
 	age = age_4_reformation
 	requires = construction_speed_reformation
 	global_lumber_output_modifier = 0.50
+}
+
+generic_bureaucracy_4_advance = {	
+	age = age_4_reformation
+	icon = library_advance
+	requires = early_modern_administation
+	global_max_bureaucracy_slots = 1
+	
+	potential = { 
+		has_or_had_tag = BYZ
+		has_dlc = "d008_fate_of_the_phoenix"
+	}
 }
 
 ###############################
@@ -364,13 +384,7 @@ military_administration  = {
 	requires = food_advance_reformation
 }
 
-spanish_square = {
-	age = age_4_reformation
-	
-	military_tactics = 0.25
 
-	requires = scientific_experimentation
-}
 
 
 ###############################
@@ -400,6 +414,15 @@ correct_box_advance_reformation = {
 	correct_box_chance = 0.1
 		
 	requires = flintlock_gun
+}
+
+spanish_square = {
+	age = age_4_reformation
+	
+	military_tactics = 0.25
+	ai_weight = { add = 20 }
+
+	requires = correct_box_advance_reformation
 }
 
 

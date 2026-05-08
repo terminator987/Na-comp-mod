@@ -87,6 +87,8 @@ is_subject = {
 	
 	pop_join_rebel_threshold = -0.1
 	global_estate_target_satisfaction = large_permanent_target_satisfaction
+	global_pop_assimilation_speed_modifier = -0.5
+	global_pop_conversion_speed_modifier = -0.5
 
 }
 
@@ -149,6 +151,9 @@ average_control_50 = {
 	}
 
 	monthly_complacency = -0.1
+	
+	research_speed_modifier = 0.25
+	crown_power_from_population = 0.5
 }
 
 average_control = {
@@ -157,6 +162,26 @@ average_control = {
 	}
 	monthly_towards_centralization = societal_value_monthly_move
 }
+
+
+relative_subject_power = {
+	game_data = {
+		category = country
+	}
+
+	nobles_estate_target_satisfaction = 0.1
+	global_nobles_estate_power = 0.25
+	crown_power_from_population = -0.5
+}
+
+subject_territory_connectivity = {
+	game_data = {
+		category = country
+	}
+
+	loyalty_to_overlord = 20
+}
+
 
 num_of_market_centers_in_country = {
 	game_data = {
@@ -641,6 +666,22 @@ war_declared_on_us = {
 	global_levy_recruitment_speed_modifier = 0.25
 }
 
+unconditionally_surrendered = {
+	game_data = {
+		category = country
+	}
+
+	monthly_war_exhaustion = -0.1
+}
+
+sold_core_territory = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	monthly_rebel_growth = 0.005 # Scaled by code by number of cores sold
+}
+
 societal_value_push_centralization = {
 	game_data = {
 		category = country
@@ -928,6 +969,21 @@ receiving_support_loyalists = {
 		category = country
 	}
 	loyalty_to_overlord = 20
+}
+
+giving_curb_pronoia_military_action = {
+	game_data = {
+		category = country
+	}
+	monthly_diplomats = -0.1
+}
+
+receiving_curb_pronoia_military_action = {
+	game_data = {
+		category = country
+	}
+	loyalty_to_overlord = -15
+	blocked_from_declaring_war = yes
 }
 
 receiving_divert_trade = {
@@ -2479,7 +2535,7 @@ severe_trade_crisis = {
 	game_data = {
 		category = country
 	}
-	selling_efficiency = medium_trade_efficiency_penalty
+	import_efficiency = medium_trade_efficiency_penalty
 	burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 }
 
@@ -2488,7 +2544,7 @@ bad_free_trade_merchants = {
 	game_data = {
 		category = country
 	}
-	selling_efficiency = small_trade_efficiency_penalty
+	import_efficiency = small_trade_efficiency_penalty
 }
 
 
@@ -3958,6 +4014,7 @@ ikko_ikki_temple_towns = {
 	game_data = {
 		category = country
 	}
+	megalopolis_upgrade_cost_modifier = -0.1
 	city_upgrade_cost_modifier = -0.1
 	town_upgrade_cost_modifier = -0.1
 }
@@ -4154,6 +4211,7 @@ destroying_heretic_autocephalous_patriarchate = {
 destroying_heathen_autocephalous_patriarchate = {
 	game_data = {
 		category = country
+		decaying = yes
 	}
 	tolerance_heathen = -1
 }
@@ -4169,6 +4227,7 @@ maintaining_heretic_autocephalous_patriarchate = {
 maintaining_heathen_autocephalous_patriarchate = {
 	game_data = {
 		category = country
+		decaying = yes
 	}
 	tolerance_heathen = 1
 }
@@ -6072,6 +6131,49 @@ orthodox_protect_the_faith_modifier = {
 	global_integration_speed_modifier = 0.1
 }
 
+patriarch_increase_baptism_modifier = { 
+	game_data = {
+		category = country
+	}
+
+	global_pop_conversion_speed_modifier = 0.25
+	monthly_religious_influence = 0.05
+}
+
+patriarch_sponsors_monasteries_modifier = { 
+	game_data = {
+		category = country
+	}
+
+	orthodox_monastery_building_cost_modifier = -0.5
+}
+
+patriarch_improved_relations_modifier = { 
+	game_data = {
+		category = country
+	}
+
+	diplomatic_reputation = diplomatic_reputation_mild_bonus
+	improve_relation_impact = 0.2
+}
+
+patriarch_rally_population_modifier = { 
+	game_data = {
+		category = country
+	}
+
+	global_manpower_modifier = 0.10
+}
+
+patriarch_peace_modifier = { 
+	game_data = {
+		category = country
+	}
+
+	monthly_war_exhaustion = -0.05
+	stability_investment = standard_stability_investment
+}
+
 pious_prosperity_modifier = { 
 	game_data = {
 		category = country
@@ -6173,6 +6275,13 @@ hundred_years_war_impact = {
 	}
 	blocks_country_formation = yes
 }
+rise_of_timur_impact = {
+	game_data = {
+		category = country
+	}
+	blocks_country_formation = yes
+	aggressiveness_modifier = 0.5
+}
 grand_remonstrance_refused = {
 	game_data = {
 		category = country
@@ -6249,7 +6358,7 @@ restructuring = {
 	}
 
 	payment_to_overlord_modifier = -1
-	selling_efficiency = large_trade_efficiency_penalty
+	import_efficiency = large_trade_efficiency_penalty
 }
 
 parliament_influenced = {
@@ -6276,6 +6385,7 @@ infrastructure_funds_modifier = {
 	global_build_buildings_cost = -0.1
 	town_upgrade_cost_modifier = -0.1
 	city_upgrade_cost_modifier = -0.1
+	megalopolis_upgrade_cost_modifier = -0.1
 }
 
 warrior_banners_modifier = {
@@ -6284,7 +6394,7 @@ warrior_banners_modifier = {
 	}
 	
 	global_levy_size_modifier = 0.05
-	army_maintenance_efficiency = 0.4
+	army_maintenance_efficiency = 0.3
 	expected_army_size_modifier = 0.1
 }
 
@@ -6702,6 +6812,7 @@ japanese_jokamachi = {
 
 	town_upgrade_cost_modifier = -0.5
 	city_upgrade_cost_modifier = -0.5
+	megalopolis_upgrade_cost_modifier = -0.25
 }
 
 jap_nanbokuchou = {
@@ -7661,7 +7772,7 @@ teu_wrath_of_the_pirates = {
 		category = country
 	}
 
-	selling_efficiency = large_trade_efficiency_penalty
+	import_efficiency = large_trade_efficiency_penalty
 }
 
 reduced_government_expenses = {
@@ -9895,7 +10006,7 @@ appanage_diplomatic_betrayal_modifier = {
 	}
 	
     appanage_prevented_from_call_to_war = yes
-	loyalty_to_overlord = -10		
+	loyalty_to_overlord = -25		
 }
 
 diplomatic_betrayal_modifier = {
@@ -10387,6 +10498,24 @@ chk_preservation_of_cahokia = {
 	stability_cost = 0.1
 	government_size = 2
 	prestige_decay = -0.0025
+}
+
+chk_funding_woodhenge_restoration = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+
+	monthly_gold_expense = 1
+}
+
+chk_funding_new_woodhenge_expansion = {
+	game_data = {
+		category = country
+		decaying = yes
+	}
+
+	monthly_gold_expense = 2
 }
 
 chk_return_of_political_elite = {

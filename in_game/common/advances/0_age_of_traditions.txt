@@ -179,6 +179,20 @@ windmills_advance = {
 	requires = agriculture_advance
 }
 
+aqueduct_system = {
+	age = age_1_traditions
+
+	potential = { 
+		OR = {
+			has_or_had_tag = BYZ
+			has_or_had_tag = ROM
+		}
+	}
+
+	unlock_building = aqueduct_system
+	requires = agriculture_advance
+}
+
 alchemy_advance = {
 	age = age_1_traditions
 	icon = alchemy_advance
@@ -202,6 +216,7 @@ city_building_advance = {
 	icon = city_building_advance
 	research_cost = 2.0
 	can_build_cities = yes
+	can_grant_town_rights = yes
 
 	requires = agriculture_advance
 }
@@ -534,6 +549,7 @@ efficient_bureaucracy = {
 	requires = educated_bureaucrats
 
 	legislative_efficiency = 0.05
+	global_bureaucracy_maintenance_cost_modifier = -0.02
 }
 
 right_to_rule = {

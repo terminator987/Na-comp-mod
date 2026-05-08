@@ -23987,7 +23987,6 @@ negro_amazon_jungle = { topography = flatland_wasteland vegetation = jungle clim
 purus_amazon_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
 solimoes_amazon_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
 cabaliana_lake = { topography = lakes climate = tropical}
-madeira_amazon_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
 curumu = { topography = wetlands vegetation = jungle climate = tropical religion = doi_wahire_religion culture = marajo_culture raw_material = fish natural_harbor_suitability = 0.00}
 ananatuba = { topography = wetlands vegetation = jungle climate = tropical religion = doi_wahire_religion culture = marajo_culture raw_material = fish natural_harbor_suitability = 0.00}
 anajas = { topography = wetlands vegetation = jungle climate = tropical religion = doi_wahire_religion culture = marajo_culture raw_material = lumber natural_harbor_suitability = 0.00}
@@ -24018,48 +24017,10 @@ itandeua_lake = { topography = lakes climate = tropical}
 itarim_lake = { topography = lakes climate = tropical}
 monte_alegre_lake = { topography = lakes climate = tropical}
 caxiuana_bay = { topography = lakes climate = tropical}
-mundurukania = { topography = flatland vegetation = jungle climate = tropical religion = namandu_religion culture = wuyjuyu_culture raw_material = wild_game}
-satere_mawe = { topography = flatland vegetation = jungle climate = tropical religion = namandu_religion culture = satere_mawe_culture raw_material = medicaments}
-curuai = { topography = wetlands vegetation = jungle climate = tropical religion = namandu_religion culture = wuyjuyu_culture raw_material = beeswax}
-tupulicus = { topography = wetlands vegetation = jungle climate = tropical religion = namandu_religion culture = tapajo_culture raw_material = lumber}
-ukarangma = { topography = wetlands vegetation = jungle climate = tropical religion = zemi_religion culture = ukaragma_culture raw_material = lumber}
-kuben_kran_ken = { topography = flatland vegetation = jungle climate = tropical religion = zemi_religion culture = ukaragma_culture raw_material = wild_game}
-xingu_amazon_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
-tapajos_amazon_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
-evuevi = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = guaikuru_culture raw_material = fiber_crops}
-sucuriu = { topography = hills vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = iron}
-piquiri = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = wild_game}
-camapua = { topography = hills vegetation = woods climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = gems}
-ytykyra = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = wild_game}
-pantanal_swamp = { topography = wetlands_wasteland vegetation = grasslands climate = tropical}
-pantanal_forest = { topography = flatland_wasteland vegetation = jungle climate = tropical}
-mebengokre = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = wild_game}
-aquidauana = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = terena_culture raw_material = clay}
-kadiweu = { topography = hills vegetation = forest climate = tropical religion = nallagdigua_religion culture = guaikuru_culture raw_material = wild_game}
-piripucu = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = guaikuru_culture raw_material = legumes}
-terena = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = terena_culture raw_material = wild_game}
-nioac = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = guaikuru_culture raw_material = wild_game}
-dawande = { topography = flatland vegetation = grasslands climate = tropical religion = zemi_religion culture = nambikwara_culture raw_material = fiber_crops}
-balotipone = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = wild_game}
-parecis = { topography = hills vegetation = woods climate = tropical religion = zemi_religion culture = haliti_culture raw_material = legumes}
-haliti = { topography = flatland vegetation = woods climate = tropical religion = zemi_religion culture = haliti_culture raw_material = wild_game}
-ikuiapa = { topography = hills vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = goods_gold}
-guato = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = guato_culture raw_material = beeswax}
-otuques = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = wild_game}
-paranaiba = { topography = plateau vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = wild_game}
-porekry = { topography = plateau vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = legumes}
-opaye = { topography = flatland vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = ofaie_culture raw_material = wild_game}
-ofaie = { topography = flatland vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = ofaie_culture raw_material = beeswax}
-taquarucu = { topography = flatland vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = ofaie_culture raw_material = legumes}
-anhandui = { topography = plateau vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = ofaie_culture raw_material = wild_game}
-kaiowa = { topography = plateau vegetation = woods climate = subtropical religion = tunpa_religion culture = ava_culture raw_material = fiber_crops}
-kaiwa = { topography = flatland vegetation = forest climate = tropical religion = tunpa_religion culture = ava_culture raw_material = medicaments}
-chiripa = { topography = flatland vegetation = forest climate = subtropical religion = tunpa_religion culture = ava_culture raw_material = lumber}
-maracaju = { topography = plateau vegetation = grasslands climate = tropical religion = tunpa_religion culture = ava_culture raw_material = wild_game}
-tacuru_jungle = { topography = flatland_wasteland vegetation = jungle climate = subtropical}
 bakairi = { topography = flatland vegetation = woods climate = tropical religion = akinha_ekugu_religion culture = kura_culture raw_material = fiber_crops}
 kukuro_kalapalo = { topography = flatland vegetation = jungle climate = tropical religion = akinha_ekugu_religion culture = kuikuro_culture raw_material = legumes}
 kuhikugu = { topography = wetlands vegetation = jungle climate = tropical religion = akinha_ekugu_religion culture = kuikuro_culture raw_material = wild_game}
+xingu_amazon_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
 irantxe = { topography = plateau vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = manoki_culture raw_material = gems}
 enawene = { topography = plateau vegetation = jungle climate = tropical religion = zemi_religion culture = enawene_nawe_culture raw_material = wild_game}
 kajkwakratxi = { topography = plateau vegetation = jungle climate = tropical religion = akinha_ekugu_religion culture = kajkwakratxi_culture raw_material = legumes}
@@ -24069,12 +24030,19 @@ rikbaktsa = { topography = flatland vegetation = jungle climate = tropical relig
 manoki = { topography = plateau vegetation = jungle climate = tropical religion = doi_wahire_religion culture = manoki_culture raw_material = gems}
 apiaka_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
 kayabi_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
+mundurukania = { topography = flatland vegetation = jungle climate = tropical religion = namandu_religion culture = wuyjuyu_culture raw_material = wild_game}
+satere_mawe = { topography = flatland vegetation = jungle climate = tropical religion = namandu_religion culture = satere_mawe_culture raw_material = medicaments}
+curuai = { topography = wetlands vegetation = jungle climate = tropical religion = namandu_religion culture = wuyjuyu_culture raw_material = beeswax}
+tupulicus = { topography = wetlands vegetation = jungle climate = tropical religion = namandu_religion culture = tapajo_culture raw_material = lumber}
+ukarangma = { topography = wetlands vegetation = jungle climate = tropical religion = zemi_religion culture = ukaragma_culture raw_material = lumber}
+kuben_kran_ken = { topography = flatland vegetation = jungle climate = tropical religion = zemi_religion culture = ukaragma_culture raw_material = wild_game}
 kura = { topography = flatland vegetation = jungle climate = tropical religion = akinha_ekugu_religion culture = kuikuro_culture raw_material = wild_game}
 kajabi = { topography = flatland vegetation = jungle climate = tropical religion = namandu_religion culture = kawaiwete_culture raw_material = fruit}
 kaiabi = { topography = flatland vegetation = jungle climate = tropical religion = namandu_religion culture = kawaiwete_culture raw_material = lumber}
 panara = { topography = flatland vegetation = jungle climate = tropical religion = doi_wahire_religion culture = panara_culture raw_material = medicaments}
 apiacas = { topography = flatland vegetation = jungle climate = tropical religion = doi_wahire_religion culture = panara_culture raw_material = medicaments}
 ikpeng = { topography = flatland vegetation = jungle climate = tropical religion = zemi_religion culture = ikpeng_culture raw_material = fiber_crops}
+tapajos_amazon_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
 oro_win = { topography = flatland vegetation = jungle climate = tropical religion = txapakura_religion culture = txapakura_culture raw_material = lumber}
 karipuna = { topography = flatland vegetation = jungle climate = tropical religion = tunpa_religion culture = kagwahiva_culture raw_material = wild_game}
 pakaasnovos = { topography = flatland vegetation = jungle climate = tropical religion = txapakura_religion culture = txapakura_culture raw_material = tin}
@@ -24082,6 +24050,7 @@ yjxa = { topography = wetlands vegetation = jungle climate = tropical religion =
 ahe = { topography = flatland vegetation = jungle climate = tropical religion = tunpa_religion culture = kagwahiva_culture raw_material = lumber}
 wari = { topography = flatland vegetation = jungle climate = tropical religion = txapakura_religion culture = txapakura_culture raw_material = wild_game}
 kaxarari = { topography = flatland vegetation = jungle climate = tropical religion = yage_religion culture = kaxarari_culture raw_material = medicaments}
+madeira_amazon_jungle = { topography = flatland_wasteland vegetation = jungle climate = tropical}
 uru_pa_in = { topography = flatland vegetation = jungle climate = tropical religion = tunpa_religion culture = kagwahiva_culture raw_material = fiber_crops}
 jiparana = { topography = flatland vegetation = jungle climate = tropical religion = tunpa_religion culture = kagwahiva_culture raw_material = legumes}
 uru_eu_wau_wau = { topography = hills vegetation = jungle climate = tropical religion = tunpa_religion culture = kagwahiva_culture raw_material = tin}
@@ -25309,6 +25278,37 @@ mrubicha = { topography = flatland vegetation = woods climate = arid religion = 
 pilaya_jungle = { topography = hills_wasteland vegetation = jungle climate = subtropical}
 yungas_jungle = { topography = hills_wasteland vegetation = jungle climate = continental}
 muyupampa_forest = { topography = flatland_wasteland vegetation = forest climate = arid}
+evuevi = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = guaikuru_culture raw_material = fiber_crops}
+sucuriu = { topography = hills vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = iron}
+piquiri = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = wild_game}
+camapua = { topography = hills vegetation = woods climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = gems}
+ytykyra = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = wild_game}
+pantanal_swamp = { topography = wetlands_wasteland vegetation = grasslands climate = tropical}
+pantanal_forest = { topography = flatland_wasteland vegetation = jungle climate = tropical}
+mebengokre = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = wild_game}
+aquidauana = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = terena_culture raw_material = clay}
+kadiweu = { topography = hills vegetation = forest climate = tropical religion = nallagdigua_religion culture = guaikuru_culture raw_material = wild_game}
+piripucu = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = guaikuru_culture raw_material = legumes}
+terena = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = terena_culture raw_material = wild_game}
+nioac = { topography = flatland vegetation = woods climate = tropical religion = nallagdigua_religion culture = guaikuru_culture raw_material = wild_game}
+dawande = { topography = flatland vegetation = grasslands climate = tropical religion = zemi_religion culture = nambikwara_culture raw_material = fiber_crops}
+balotipone = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = wild_game}
+parecis = { topography = hills vegetation = woods climate = tropical religion = zemi_religion culture = haliti_culture raw_material = legumes}
+haliti = { topography = flatland vegetation = woods climate = tropical religion = zemi_religion culture = haliti_culture raw_material = wild_game}
+ikuiapa = { topography = hills vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = goods_gold}
+guato = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = guato_culture raw_material = beeswax}
+otuques = { topography = flatland vegetation = woods climate = tropical religion = doi_wahire_religion culture = boe_culture raw_material = wild_game}
+paranaiba = { topography = plateau vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = wild_game}
+porekry = { topography = plateau vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = mebengokre_culture raw_material = legumes}
+opaye = { topography = flatland vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = ofaie_culture raw_material = wild_game}
+ofaie = { topography = flatland vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = ofaie_culture raw_material = beeswax}
+taquarucu = { topography = flatland vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = ofaie_culture raw_material = legumes}
+anhandui = { topography = plateau vegetation = grasslands climate = tropical religion = doi_wahire_religion culture = ofaie_culture raw_material = wild_game}
+kaiowa = { topography = plateau vegetation = woods climate = subtropical religion = tunpa_religion culture = ava_culture raw_material = fiber_crops}
+kaiwa = { topography = flatland vegetation = forest climate = tropical religion = tunpa_religion culture = ava_culture raw_material = medicaments}
+chiripa = { topography = flatland vegetation = forest climate = subtropical religion = tunpa_religion culture = ava_culture raw_material = lumber}
+maracaju = { topography = plateau vegetation = grasslands climate = tropical religion = tunpa_religion culture = ava_culture raw_material = wild_game}
+tacuru_jungle = { topography = flatland_wasteland vegetation = jungle climate = subtropical}
 jeguakava = { topography = flatland vegetation = grasslands climate = subtropical religion = tunpa_religion culture = ava_culture raw_material = wild_game}
 ibicui = { topography = flatland vegetation = grasslands climate = subtropical religion = tunpa_religion culture = ava_culture raw_material = fiber_crops}
 ibirapuita = { topography = flatland vegetation = grasslands climate = subtropical religion = tunpa_religion culture = ava_culture raw_material = legumes}
