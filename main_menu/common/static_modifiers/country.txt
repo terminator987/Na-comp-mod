@@ -6068,7 +6068,7 @@ orthodox_protect_the_faith_modifier = {
 		category = country
 	}
 
-	war_on_different_religion_cost_modifier = -0.1
+	war_score_vs_other_religion_efficiency = -0.1
 	global_integration_speed_modifier = 0.1
 }
 
@@ -6303,7 +6303,7 @@ jerusalem_resurgent_modifier = {
 		category = country 
 	}
 	
-	war_on_different_religion_cost_modifier = -0.25
+	war_score_vs_other_religion_efficiency = -0.25
 	global_crown_estate_power = 0.2
 	clergy_estate_levy_size = 0.33
 }

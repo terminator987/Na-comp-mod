@@ -474,7 +474,7 @@ crusader_liberator_of_jerusalem_modifier = {
 	}
 
 	monthly_religious_influence = 1
-	war_on_different_religion_cost_modifier = -0.25
+	war_score_vs_other_religion_efficiency = -0.25
 	global_pop_conversion_speed_modifier = 0.05
 }
 
