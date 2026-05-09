@@ -98,7 +98,7 @@ locations={
 	ohrid = { rank = town 			town_setup = balkan_town }	
 	prizren = { rank = town 		town_setup = balkan_town }	
 	skopje = { rank = town 			town_setup = balkan_town }	
-	dubrovnik = { rank = town 		town_setup = balkan_town }	
+	dubrovnik = { rank = city 		town_setup = dubrovnik_city }	
 	knin = { rank = town 			town_setup = balkan_town }	
 	rijeka = { rank = town 			town_setup = balkan_town }	
 	zagreb = { rank = town 			town_setup = balkan_town }	
@@ -112,11 +112,11 @@ locations={
 	cremona = { rank = city 		town_setup = italian_city }
 	ferrara = { rank = city 		town_setup = italian_city }
 	florence = { rank = city 		town_setup = florence_city }
-	genoa = { rank = city 			town_setup = italian_trading_capital }
+	genoa = { rank = city 			town_setup = genoa_city }
 	lucca = { rank = city 			town_setup = italian_coastal_city }
 	mantova = { rank = city 		town_setup = italian_city }
 	messina = { rank = city 		town_setup = italian_coastal_city }
-	milano = { rank = city 			town_setup = italian_city }
+	milano = { rank = city 			town_setup = milan_city  }
 	naples = { rank = city 			town_setup = italian_trading_capital }
 	padova = { rank = city 			town_setup = italian_city }
 	palermo = { rank = city 		town_setup = italian_coastal_city }
@@ -194,17 +194,17 @@ locations={
 	#France
 	angers = { rank = city 		town_setup = french_city }
 	arras = { rank = city 		town_setup = french_city }
-	bordeaux = { rank = city 	town_setup = french_city }
+	bordeaux = { rank = city 	town_setup = bordeaux_city }
 	marseille = { rank = city 	town_setup = french_city }
 	metz = { rank = city 		town_setup = french_city }
 	montpellier = { rank = city town_setup = french_city }
 	narbonne = { rank = city 	town_setup = french_city }
-	paris = { rank = city 		town_setup = french_city }
+	paris = { rank = city 		town_setup = paris_city }
 	rouen = { rank = city 		town_setup = french_city }
 	saint_omer = { rank = town 	town_setup = french_town }
 	toulouse = { rank = city 	town_setup = french_city }
 	tours = { rank = city 		town_setup = french_city }
-	troyes = { rank = city 		town_setup = french_city }
+	troyes = { rank = city 		town_setup = troyes_city }
 	
 	agen = { rank = town 			town_setup = french_town }
 	aix_en_provence = { rank = town town_setup = french_town }

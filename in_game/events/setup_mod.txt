@@ -153,6 +153,7 @@ setup_mod.1 = {
 				}
 			}
 		}
+}
 setup_mod.2 = {
 	type = country_event
 	title = hre.103.title

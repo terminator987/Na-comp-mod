@@ -96,6 +96,7 @@ randers = { topography = flatland vegetation = grasslands climate = oceanic reli
 viborg = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = danish raw_material = wheat natural_harbor_suitability = -0.25}
 aalborg = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = livestock natural_harbor_suitability = 0.50}
 ars = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = danish raw_material = beeswax natural_harbor_suitability = -0.25}
+limfjorden = { topography = narrows climate = oceanic}
 bolling = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = salt natural_harbor_suitability = 0.00}
 ringkobing = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = amber natural_harbor_suitability = 0.00}
 holstebro_lundenes = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = wool natural_harbor_suitability = -0.25}
@@ -601,7 +602,6 @@ kattegatt = { topography = inland_sea climate = continental}
 oresund = { topography = narrows climate = continental}
 stora_balt = { topography = narrows climate = oceanic}
 lilla_balt = { topography = narrows climate = oceanic}
-limfjorden = { topography = narrows climate = oceanic}
 kalmar_sund = { topography = narrows climate = continental}
 skanska_kusten = { topography = narrows climate = continental}
 blekinge_kust = { topography = inland_sea climate = continental}
@@ -20158,40 +20158,40 @@ kesagami_lake = { topography = lakes climate = continental}
 mahnahwoonan = { topography = flatland vegetation = sparse climate = arctic religion = midewiwin_religion culture = iyiyiyu_culture raw_material = fish natural_harbor_suitability = 0.00}
 sivukutaitiarruvik = { topography = flatland vegetation = sparse climate = arctic religion = midewiwin_religion culture = iyiniyu_culture raw_material = fish natural_harbor_suitability = 0.00}
 akimiski = { topography = wetlands vegetation = sparse climate = arctic religion = midewiwin_religion culture = ilili_culture raw_material = fish natural_harbor_suitability = 0.00}
-bay_of_quinte = { topography = lakes climate = continental}
-central_lake_ontario = { topography = lakes climate = continental}
-niagara_basin = { topography = lakes climate = continental}
-eastern_erie_basin = { topography = lakes climate = continental}
-central_erie_basin = { topography = lakes climate = continental}
-pelee_island = { topography = lakes climate = continental}
-lake_st_clair = { topography = lakes climate = continental}
-northern_lake_huron = { topography = lakes climate = continental}
-deadmans_point = { topography = lakes climate = continental}
-cunningham_point = { topography = lakes climate = continental}
-georgian_bay = { topography = lakes climate = continental}
-manitoulin_channel = { topography = lakes climate = continental}
-southern_lake_huron = { topography = lakes climate = continental}
-clark_point = { topography = lakes climate = continental}
-blue_point = { topography = lakes climate = continental}
-whitefish_point = { topography = lakes climate = continental}
-saginaw_bay = { topography = lakes climate = continental}
-green_bay = { topography = lakes climate = continental}
-strait_of_makinac = { topography = lakes climate = continental}
-traverse_bay = { topography = lakes climate = continental}
-middle_lake_michigan = { topography = lakes climate = continental}
-south_lake_michigan = { topography = lakes climate = continental}
-wind_point = { topography = lakes climate = continental}
-au_sable_point = { topography = lakes climate = arctic}
-whitefish_bay = { topography = lakes climate = continental}
-michipicoten_bay = { topography = lakes climate = arctic}
-pukaskwa_point = { topography = lakes climate = arctic}
-keweenaw_bay = { topography = lakes climate = continental}
-schreiber_channel = { topography = lakes climate = arctic}
-black_bay = { topography = lakes climate = arctic}
-chequamegon_bay = { topography = lakes climate = continental}
-thunder_bay = { topography = lakes climate = arctic}
-keweenaw_coast = { topography = lakes climate = arctic}
-copper_harbor = { topography = lakes climate = arctic}
+bay_of_quinte = { topography = inland_sea climate = continental}
+central_lake_ontario = { topography = inland_sea climate = continental}
+niagara_basin = { topography = inland_sea climate = continental}
+eastern_erie_basin = { topography = inland_sea climate = continental}
+central_erie_basin = { topography = inland_sea climate = continental}
+pelee_island = { topography = inland_sea climate = continental}
+lake_st_clair = { topography = inland_sea climate = continental}
+northern_lake_huron = { topography = inland_sea climate = continental}
+deadmans_point = { topography = inland_sea climate = continental}
+cunningham_point = { topography = inland_sea climate = continental}
+georgian_bay = { topography = inland_sea climate = continental}
+manitoulin_channel = { topography = inland_sea climate = continental}
+southern_lake_huron = { topography = inland_sea climate = continental}
+clark_point = { topography = inland_sea climate = continental}
+blue_point = { topography = inland_sea climate = continental}
+whitefish_point = { topography = inland_sea climate = continental}
+saginaw_bay = { topography = inland_sea climate = continental}
+green_bay = { topography = inland_sea climate = continental}
+strait_of_makinac = { topography = inland_sea climate = continental}
+traverse_bay = { topography = inland_sea climate = continental}
+middle_lake_michigan = { topography = inland_sea climate = continental}
+south_lake_michigan = { topography = inland_sea climate = continental}
+wind_point = { topography = inland_sea climate = continental}
+au_sable_point = { topography = inland_sea climate = arctic}
+whitefish_bay = { topography = inland_sea climate = continental}
+michipicoten_bay = { topography = inland_sea climate = arctic}
+pukaskwa_point = { topography = inland_sea climate = arctic}
+keweenaw_bay = { topography = inland_sea climate = continental}
+schreiber_channel = { topography = inland_sea climate = arctic}
+black_bay = { topography = inland_sea climate = arctic}
+chequamegon_bay = { topography = inland_sea climate = continental}
+thunder_bay = { topography = inland_sea climate = arctic}
+keweenaw_coast = { topography = inland_sea climate = arctic}
+copper_harbor = { topography = inland_sea climate = arctic}
 aulatsivik_island = { topography = coastal_ocean climate = arctic}
 sloop_harbour_point = { topography = coastal_ocean climate = arctic}
 hawke_island = { topography = coastal_ocean climate = arctic}
