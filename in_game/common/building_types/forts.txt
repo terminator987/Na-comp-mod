@@ -41,7 +41,7 @@
 	raw_modifier = {
 		fort_level = 1
 		local_nobles_desired_pop = 0.005
-		propagating_zone_of_control = no
+		pure_tooltip_entry = pte_no_propagating_zone_of_control            # propagating_zone_of_control = no
 	}
 }
 
@@ -299,6 +299,9 @@ fortress = {
 	}
 }
 
+
+
+
 city_walls = {
 	is_foreign = no
 	max_levels = 1
@@ -351,4 +354,3 @@ city_walls = {
 
 	graphical_tags = { small_city_walls city_walls }
 }
-

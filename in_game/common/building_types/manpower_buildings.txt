@@ -347,7 +347,7 @@ jurchen_barracks = {
 	}
 	
 	possible_production_methods = {
-		early_soldier_building_maintenance
+		jurchen_barracks_maintenance
 	}
 	construction_demand = early_soldier_building_construction
 }
@@ -377,7 +377,7 @@ thema_headquarters = {
 		owner = { modifier:allow_thema_headquarters = yes }
 	}
 	
-	location_potential = { is_capital = no }
+	location_potential = { not = { is_capital = yes } }
 
 	remove_if = {
 		root.owner = { modifier:allow_thema_headquarters = no }
@@ -387,6 +387,7 @@ thema_headquarters = {
 		local_manpower = 0.01
 		can_recruit_regiment_in_this_location = yes
 		local_crown_estate_power = -0.1
+		local_levy_size_modifier = 0.1
 	}
 
 	possible_production_methods =  {

@@ -1205,7 +1205,6 @@ lieutenancy = {
 		NOT = { owner = { at_war = yes } }
 		NOT = { owner = { in_civil_war = yes } }
 	}
-
 	
 	modifier = {
 		local_proximity_source = 75
@@ -2123,8 +2122,10 @@ dun_fort = {
 		local_nobles_food_consumption = -0.2
 		local_unrest = -0.05
 		local_pop_assimilation_speed_modifier = -0.5
-		local_nobles_desired_pop = 0.01
 		local_tribes_estate_power = 2.0
+	}
+	raw_modifier = {
+		local_nobles_desired_pop = 0.01
 	}
 	
 	graphical_tags = { small_military }
@@ -2200,6 +2201,7 @@ gosho = {
 	
 	max_levels = 1
 	employment_size = large_noble_employment
+	pop_size_created = large_noble_employment
 	
 	rural_settlement = yes
 	town = yes
@@ -2214,21 +2216,26 @@ gosho = {
 
 	country_potential = {
 		has_reform = government_reform:japanese_imperial_family
-		country_type = building
 	}
 	
 	build_time = soldier_building
 	
 	allow = {
 		dominant_culture = { has_culture_group = culture_group:japanese_group }
+		OR = {
+			this = location:kyoto
+			AND = {
+				scope:actor = { country_type = building }
 		any_foreign_building_countries_in_location = { this = scope:actor }
+			}
+		}
 	}
 
 
 	modifier = {
 		manpower_to_building_owner = 0.001
 		can_recruit_regiment_in_this_location = yes
-		gold_to_building_owner = 0.1
+		gold_to_building_owner = 0.05
 	}
 
 	possible_production_methods = {
@@ -2249,6 +2256,7 @@ yamashiro = {
 	
 	max_levels = 1
 	employment_size = manpower_employment
+	pop_size_created = manpower_employment
 	
 	rural_settlement = yes
 	town = yes
@@ -2314,9 +2322,9 @@ yamashiro = {
 
 
 	modifier = {
-		manpower_to_building_owner = 0.001
+		manpower_to_building_owner = 0.002
 		can_recruit_regiment_in_this_location = yes
-		gold_to_building_owner = 0.1
+		gold_to_building_owner = 0.05
 	}
 
 	possible_production_methods = {
@@ -2340,6 +2348,7 @@ yakata = {
 	
 	max_levels = 1
 	employment_size = normal_noble_employment
+	pop_size_created = normal_noble_employment
 	
 	rural_settlement = yes
 	town = yes
@@ -2364,7 +2373,7 @@ yakata = {
 	}
 
 	modifier = {
-		gold_to_building_owner = 0.3
+		gold_to_building_owner = 0.2
 	}
 
 	possible_production_methods = {
@@ -2383,8 +2392,9 @@ shoen = {
 	
 	category = rgo_building_category
 	
-	max_levels = rural_building_cap
+	max_levels = japanese_clan_building_cap
 	employment_size = rural_peasant_produce_employment
+	pop_size_created = rural_peasant_produce_employment
 	
 	rural_settlement = yes
 	town = yes
@@ -2436,10 +2446,10 @@ shoen = {
 	}
 
 	modifier = {
-		gold_to_building_owner = 0.5
-		merchant_power_from_building = 0.5
-		merchant_capacity_from_building = 0.5
-		manpower_to_building_owner = 0.01
+		gold_to_building_owner = 0.1
+		merchant_power_from_building = 0.1
+		merchant_capacity_from_building = 0.1
+		manpower_to_building_owner = 0.001
 	}
 
 	unique_production_methods = {
@@ -2491,8 +2501,9 @@ tatara = {
 	
 	category = basic_industry_category
 	
-	max_levels = rural_building_cap
+	max_levels = japanese_clan_building_cap
 	employment_size = estate_peasants_employment
+	pop_size_created = estate_peasants_employment
 	
 	rural_settlement = yes
 	town = yes
@@ -2549,8 +2560,9 @@ clan_shipyards = {
 	
 	category = basic_industry_category
 	
-	max_levels = rural_building_cap
+	max_levels = japanese_clan_building_cap
 	employment_size = manpower_employment
+	pop_size_created = manpower_employment
 	
 	rural_settlement = yes
 	town = yes
@@ -2587,7 +2599,7 @@ clan_shipyards = {
 	modifier = {
 		building_owner_maritime_presence = 0.5
 		max_ships_built_at_same_time = 1
-		sailors_to_building_owner = 0.01
+		sailors_to_building_owner = 0.001
 		can_build_ships_in_this_location = yes
 		local_repair_speed = 0.01
 	}
@@ -2606,6 +2618,7 @@ clan_family_shrine = {
 	
 	max_levels = 1
 	employment_size = large_religious_building_employment
+	pop_size_created = large_religious_building_employment
 	
 	rural_settlement = yes
 	town = yes
@@ -2640,7 +2653,7 @@ clan_family_shrine = {
 	}
 
 	modifier = {
-		gold_to_building_owner = 0.05
+		gold_to_building_owner = 0.01
 		manpower_to_building_owner = 0.001
 	}
 
