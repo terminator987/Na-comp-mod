@@ -68,6 +68,8 @@ rank_kingdom = {
 		allowed_alliance = yes
 		allowed_guarantee = yes
 		allowed_support_rebels = yes
+		
+		num_local_governors = 1
 
 		
 		mercenary_range_modifier = 0.5
