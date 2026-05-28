@@ -2231,24 +2231,6 @@ TWS_f = {
 		owns = location:palermo
 
 		# 3 Cases
-		trigger_if = {
-			limit = { tag = SIC }
-			c:NAP = { 
-				NOT = { has_presence_in = region:italy_region }
-			}
-		}
-		trigger_else_if = {
-			limit = { tag = NAP }
-			c:SIC ?= { 
-				NOT = { has_presence_in = region:italy_region }
-			}
-		}
-		trigger_else = {
-			NOR = {
-				c:NAP ?= { has_presence_in = region:italy_region }
-				c:SIC ?= { has_presence_in = region:italy_region }
-			}
-		}
 	}
 	
 	name = TWS
