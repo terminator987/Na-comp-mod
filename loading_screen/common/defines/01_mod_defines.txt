@@ -27,4 +27,5 @@ NLocation = {
 }
 NCombat = {
     SIEGE_REGIMENTS_FOR_ARTILLERY = 1
+	COMBAT_DICE_SIDE = 7
 }

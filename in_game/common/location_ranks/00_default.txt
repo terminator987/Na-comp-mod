@@ -34,6 +34,8 @@ megalopolis = {
 		local_frontage_allowed = -3
 		
 		local_population_growth = 0.0005
+
+		local_disease_resistance = -0.8
 		
 	}
 	
