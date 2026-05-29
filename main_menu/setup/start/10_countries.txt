@@ -13472,10 +13472,10 @@ countries = {
 		own_control_core = {
 			oviedo aviles castropol tineo villaviciosa cangas llanes mieres #Asturias
 			leon mansilla riano sahagun astorga castrocalbon ponferrada villablino villafranca_bierzo #León
-			zamora alba_de_aliste fermoselle toro benavente alcanices puebla_de_sanabria villalpando #Zamora
-			salamanca alba_de_tormes matilla_de_canos ciudad_rodrigo coria ledesma san_felices yecla_de_yeltes bejar piedrahita #Salamanca
-			granadilla galisteo caceres alcantara arroyo brozas valencia_de_alcantara #Cáceres
-			badajoz albuquerque barcarrota jerez_de_los_caballeros villanueva_del_fresno merida montanchez #Badajoz
+			alcanices benavente puebla_de_sanabria
+			
+			
+			
 		}
 
 		starting_technology_level = 3
@@ -13750,13 +13750,8 @@ countries = {
 			montargis sens saint_florentin senlis nemours melun
 			beauvais saint_quentin noyon la_rochelle
 			ribemont laon
-			cahors limoux carcassonne lavaur castelnaudary 
-			bergerac montauban albi millau saint_pons beziers agde sauveterre_de_guyenne
-			figeac villefranche chaumont_vexin
 			bar_sur_seine
 			braine loudun
-			mauriac riom tour_auvergne brioude saint_flour vodable
-			montaigut herment
 			meaux provins mouzon alluyes
 
 			tours chinon loches chatillon_sur_indre #D. de Touraine
@@ -13766,16 +13761,10 @@ countries = {
 			chartres auneau #C. Chartres
 			tulle #Limousin
 			limoges nontron segur st_leonard aixe thiviers #Vic. Limoges
-			turenne gourdon #Vic.Turenne
-			mende #C. de Gevaudan
+			turenne #Vic.Turenne
 			
 			
-			beaujeu perreux trevoux #S.de Beaujeu
-			le_puy #C. du Velay
-			viviers # C. de Viviers
-			nimes uzes melgueil
-			french_ales #S. Ales
-			chambon #B. de Combraille
+			
 			chalons_champagne #C. de Chalon
 			reims #D. Reims
 
@@ -13787,8 +13776,7 @@ countries = {
 
 			chateauroux boussac #S. de Chateauroux
 
-			tarbes #C. Bigorre
-			lodeve #C. Lodeve
+		
 		}
 		own_control_integrated = {
 			#Appanages
