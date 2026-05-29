@@ -17206,7 +17206,7 @@ countries = {
 
 	A07 = {	#Turda 
 		own_control_core = {
-			turda baia_de_aries huedin		
+			turda baia_de_aries huedin felvint		
 		}
 		starting_technology_level = 3
 		include = "expl_eastern_europe"
