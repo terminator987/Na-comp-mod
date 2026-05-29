@@ -1087,7 +1087,7 @@ ghilman_barracks = {
 	build_time = soldier_building
 	always_add_demands = yes
 	modifier = {
-		local_manpower = 0.025
+		local_manpower = 0.01
 		can_recruit_regiment_in_this_location = yes
 	}
 	possible_production_methods = {

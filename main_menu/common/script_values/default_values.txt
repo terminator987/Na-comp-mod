@@ -993,7 +993,7 @@ estate_nobles_employment = 				0.02
 #slaves
 plantation_employment = 				1.0
 galley_barracks	= 						2.0
-slave_soldier_barracks = 				2.0
+slave_soldier_barracks = 				0.5
 
 
 #laborers 
