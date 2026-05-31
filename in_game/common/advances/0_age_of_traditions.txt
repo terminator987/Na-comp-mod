@@ -280,6 +280,7 @@ feudalism_advance = {
 	military_tactics = 1.0
 	global_mercenaries_modifier = -0.6
 	mercenary_maintenance_efficiency = 2
+	land_morale_movement_cost = -1
 	
 	allow = { has_embraced_institution = institution:feudalism }
 }
