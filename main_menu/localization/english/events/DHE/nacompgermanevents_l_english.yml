@@ -20,3 +20,7 @@
  meritocracy.spawn.1.title: "Meritocracy spawn"
  meritocracy.spawn.1.desc: "This event spawns the Meritocracy institution in your capital, as China and the East Asia do not exist."
  meritocracy.spawn.1.a: "Whatever"
+ flavor_custom_eng.1.title: "English defeat in the HYW"
+ flavor_custom_eng.1.desc: "After years of fighting, England has lost this war against France. Calamity is sure to follow this defeat..."
+ flavor_custom_eng.1.a: "God has forsaken us!"
+ 

@@ -32,3 +32,14 @@ sweden_eco_boost = {
 	
 	monthly_gold_income = 5
 }
+defeat_in_hyw_eng = {
+	game_data = { 
+		category = country
+		decaying = yes
+	}
+
+	global_production_efficiency = -0.2
+	global_estate_target_satisfaction = -0.15
+	monthly_legitimacy = -0.2
+	monthly_prestige = -0.2
+}

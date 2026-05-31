@@ -1,0 +1,28 @@
+namespace = nacomp_custom_events
+
+flavor_custom_eng.1 = {
+	type = country_event
+
+	title = flavor_custom_eng.1.title
+	desc = flavor_custom_eng.1.desc
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}			
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+	option = {
+		name = flavor_custom_eng.1.a
+
+		add_stability = stability_very_extreme_penalty
+		add_government_power = government_power_ultimate_penalty
+
+		add_country_modifier = {
+			modifier = defeat_in_hyw_eng
+			years = modifier_duration_years_century
+			mode = replace
+		}
+	}
+}

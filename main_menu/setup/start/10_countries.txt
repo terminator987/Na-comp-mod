@@ -13775,6 +13775,7 @@ countries = {
 			issoudun bourges lignieres sancoins vierzon #Berry(On October 1360, King John II created the title)
 
 			chateauroux boussac #S. de Chateauroux
+			chaumont_vexin
 
 		
 		}
