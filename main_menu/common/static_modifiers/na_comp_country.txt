@@ -38,7 +38,7 @@ defeat_in_hyw_eng = {
 		decaying = yes
 	}
 
-	global_production_efficiency = -0.2
+	global_production_efficiency = -0.3
 	global_estate_target_satisfaction = -0.15
 	monthly_legitimacy = -0.2
 	monthly_prestige = -0.2
