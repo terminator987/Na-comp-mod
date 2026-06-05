@@ -86,6 +86,7 @@ aristocracy_vs_plutocracy = { #
 	left_modifier = {
 		discipline = 0.05
 		global_nobles_estate_power = 0.50
+		global_nobles_pop_growth = 0.25
 		
 		court_spending_cost_modifier = 0.25
 		court_language_is_market_language_importance_modifier = -0.5
@@ -95,6 +96,7 @@ aristocracy_vs_plutocracy = { #
 	right_modifier = {
 		selling_efficiency = small_trade_efficiency_bonus
 		global_burghers_estate_power = 0.50
+		market_building_levels = 0.5
 		
 		court_spending_cost_modifier = -0.25
 		court_language_is_market_language_importance_modifier = 0.5
@@ -123,6 +125,7 @@ serfdom_vs_free_subjects = {
 
 		peasants_estate_target_satisfaction = large_permanent_target_satisfaction
 
+		global_devastation_recovery = 0.01
 
 		global_peasant_enfranchisment = 0.33
 		
@@ -219,7 +222,7 @@ quality_vs_quantity = {
 		food_consumption_modifier = -0.1
 		
 		army_initiative = -0.25
-		army_maintenance_efficiency = 0.1
+		army_maintenance_efficiency = 0.2
 		bias_for_militarist_policies = 50
 	}
 
