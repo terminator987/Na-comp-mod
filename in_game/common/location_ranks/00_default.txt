@@ -32,8 +32,6 @@ megalopolis = {
 		
 		movement_cost = 0.4		
 		local_frontage_allowed = -3
-		
-		local_population_growth = 0.0005
 
 		local_disease_resistance = -0.8
 		
@@ -103,7 +101,7 @@ city = {
 		max_constructions_at_same_time = 1
 
 		
-		local_population_growth = 0.001
+		local_population_growth = 0.0005
 		
 		movement_cost = 0.2
 		local_frontage_allowed = -2
@@ -111,7 +109,7 @@ city = {
 	
 	country_modifier = {
 		monthly_doom = 0.03
-		fort_limit = 0.25
+		fort_limit = 1
 	}
 	
 	allow = {
@@ -158,7 +156,7 @@ town = {
 		local_frontage_allowed = -1
 		
 		
-		local_population_growth = 0.0015
+		local_population_growth = 0.001
 	}
 	
 	country_modifier = {
@@ -186,7 +184,7 @@ rural_settlement = {
 		local_max_rgo_size_modifier = 1.0
 		local_monthly_food_modifier = 0.1
 		
-		local_population_growth = 0.0025
+		local_population_growth = 0.002
 				
 		local_peasant_enfranchisment = -0.2
 	}
