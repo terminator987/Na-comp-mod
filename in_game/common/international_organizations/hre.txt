@@ -120,9 +120,6 @@
 	no_cb_price_modifier_for_fellow_member = 0.75
 
 	modifier = {
-		block_from_change_to_kingdom_rank = yes
-		block_from_change_to_empire_rank = yes
-		block_from_change_to_duchy_rank = yes
 		reject_subjugation_reasons = 25
 	}
 
