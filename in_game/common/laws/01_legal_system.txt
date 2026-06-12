@@ -9,11 +9,7 @@
 		}
 	}
 
-	locked = {
-		religion.group = religion_group:muslim
-		has_policy = sharia_law_policy
-	}
-
+	
 	traditional_law_policy = {
 		country_modifier = {
 			global_estate_target_satisfaction = tiny_permanent_target_satisfaction
