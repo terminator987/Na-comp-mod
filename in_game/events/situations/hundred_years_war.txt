@@ -623,15 +623,6 @@ hundred_years_war.202 = {
 				limit = {
 					has_variable = demanded_aquitaine_returned	
 				}				
-				c:NRM = {
-					every_owned_location = {
-						limit = {
-							owner = c:NRM
-							NOT = { previous_owner = c:FRA }
-						}
-						add_core = c:FRA
-					}	
-				}
 			}
 		}	
 		remove_variable = demanded_aquitaine_returned		

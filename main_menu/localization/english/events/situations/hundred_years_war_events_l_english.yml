@@ -170,11 +170,11 @@
  hundred_years_war.216.b.tt: "We will crush their traitorous skulls on the battlefield!"
  
  # Tooltips
- hundred_years_war.200.tt.a: "Should [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] refuse, we can assert our claim to [GetCountry('NRM').GetNameWithNoTooltip], granting us Cores.\nThis will draw us closer with war against [GetCountry('ENG').GetNameWithNoTooltip]!"
+ hundred_years_war.200.tt.a: "Should [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] refuse, we can assert our claim to [GetCountry('NRM').GetNameWithNoTooltip] through conquest.\nThis will draw us closer with war against [GetCountry('ENG').GetNameWithNoTooltip]!"
  hundred_years_war.200.tt.b: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] may encourage [GetCountry('ENG').GetGovernment.GetRuler.GetShortNameWithNoTooltip] to press his claim to [GetCountry('FRA').GetNameWithNoTooltip] through [GetCharacter('eng_isabella_of_france').GetName] against our [ShowHeirSelectionName('salic_law')]!"
- hundred_years_war.201.tt.a: "The [GetCountry('FRA').GetAdjectiveWithNoTooltip] Court will see this as a violation of Edward's III vassal obligations, and may move to confiscate the [GetCountry('NRM').GetLongName], granting them Cores on all [GetCountry('NRM').GetAdjectiveWithNoTooltip] locations."
+ hundred_years_war.201.tt.a: "The [GetCountry('FRA').GetAdjectiveWithNoTooltip] Court will see this as a violation of Edward's III vassal obligations, and may move to confiscate the [GetCountry('NRM').GetLongName]."
  hundred_years_war.201.tt.b: "Relations between the [GetCountry('ENG').GetAdjectiveWithNoTooltip] and [GetCountry('FRA').GetAdjectiveWithNoTooltip] courts will stabilize, for now."
- hundred_years_war.202.tt.a: "This will cause the #W Hundred Years' War#! situation to fire sooner!\nWe will gain cores on all locations owned by the [GetCountry('NRM').GetLongName]."
+ hundred_years_war.202.tt.a: "This will cause the #W Hundred Years' War#! situation to fire sooner!"
  hundred_years_war.203.tt.a: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] status as a noble will be respected, and will not be executed."
  hundred_years_war.203.tt.d: "[SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] will become Lord of [GetCountry('ARS').GetLongNameWithNoTooltip], becoming a Vassal of [ROOT.GetName]!"
  may_grant_robert_artois_tt: "We will gain cores on [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip]'s claims in [GetCountry('ARS').GetLongName] in the province of Arras, along with the Province of Amiens.\nShould we conquer portions of Artois, we may grant [SCOPE.sCharacter('fugitive_robert_de_artois').GetShortNameWithNoTooltip] those territories and make [SCOPE.sCharacter('fugitive_robert_de_artois').GetHimHer] a vassal"

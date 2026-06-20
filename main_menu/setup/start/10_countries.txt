@@ -13113,15 +13113,12 @@ countries = {
 			castellon_de_la_plana ares_del_maestre llucena morella peniscola
 			jativa alcoy alicante denia elche orihuela
 			valencia gandia ayora bunol chelva lliria
+			cagliari tratalias villa_di_chiesa isili muravera seddori tortoli orosei terranova_pausania posada tempiopausania
+			sassari
 		}
 
 		own_control_integrated = {
 			jumilla
-		}
-
-		own_control_conquered = {
-			cagliari tratalias villa_di_chiesa isili muravera seddori tortoli orosei terranova_pausania posada tempiopausania
-			sassari
 		}
 
 		our_cores_conquered_by_others = {
