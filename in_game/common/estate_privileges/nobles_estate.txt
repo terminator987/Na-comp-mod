@@ -1846,3 +1846,27 @@ statutes_of_piotrkow = {
 		monthly_towards_aristocracy = societal_value_monthly_move
 	}
 }
+
+#Mamluks unique bad priv
+
+decentralized_mamluk_aristocracy = {
+	estate = nobles_estate
+
+	potential = {
+		has_or_had_tag = MAM
+	}
+
+	can_revoke = {
+		estate_satisfaction:nobles_estate > 0.80
+		"estate_power(estate_type:nobles_estate)" <= 0.15
+		stability >= 50
+	}
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 1
+		monthly_towards_aristocracy = societal_value_monthly_move
+		monthly_towards_decentralization = societal_value_monthly_move
+		global_max_control = -0.10
+		nobles_estate_max_tax = -0.15
+	}
+}

@@ -1035,7 +1035,7 @@ janissary_barracks = {
 	always_add_demands = yes
 	
 	modifier = {
-		local_manpower = 0.01
+		local_manpower = 0.0125
 		can_recruit_regiment_in_this_location = yes
 	}
 	
@@ -3968,7 +3968,7 @@ mamluk_barracks = {
 	is_foreign = no
 	pop_type = slaves
 	
-	max_levels = 3
+	max_levels = 1
 	employment_size = slave_soldier_barracks
 	
 	category = military_category
@@ -3991,7 +3991,7 @@ mamluk_barracks = {
 	always_add_demands = yes
 	
 	modifier = {
-		local_manpower = 0.01
+		local_manpower = 0.0125
 		can_recruit_regiment_in_this_location = yes
 	}
 	

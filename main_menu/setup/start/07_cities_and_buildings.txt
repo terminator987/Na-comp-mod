@@ -3527,11 +3527,11 @@ building_manager = {
 	#Egypt
 
 	##$mamluk$ Barracks
-	mamluk_barracks = { tag = MAM level = 3 location = cairo }
-	mamluk_barracks = { tag = MAM level = 2 location = alexandria }
+	mamluk_barracks = { tag = MAM level = 1 location = cairo }
+	mamluk_barracks = { tag = MAM level = 1 location = alexandria }
 	mamluk_barracks = { tag = MAM level = 1 location = damietta }
-	mamluk_barracks = { tag = MAM level = 2 location = mansoura }
-	mamluk_barracks = { tag = MAM level = 3 location = jerusalem }
+	mamluk_barracks = { tag = MAM level = 1 location = mansoura }
+	mamluk_barracks = { tag = MAM level = 1 location = jerusalem }
 	royal_court = { tag = MAM level = 1 location = cairo }
 	castle = { tag = MAM level = 1 location = baniyas } #https://en.wikipedia.org/wiki/Margat
 	#temple = { tag = MAM level = 1 location = hebron } #https://en.wikipedia.org/wiki/Cave_of_the_Patriarchs
