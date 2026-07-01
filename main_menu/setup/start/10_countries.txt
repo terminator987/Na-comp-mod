@@ -13566,11 +13566,7 @@ countries = {
 			huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman sanlucar_la_mayor #Heulva
 			cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia #Córdoba
 			jaen andujar baeza cazorla jodar martos ubeda #Jaén
-			#Granada
-			almeria almanzora baza gergal mojacar velez_rubio
-			granada adra almunecar guadix huescar illora loja pinar orgiva
-			malaga antequera velez_malaga tarifa
-			ronda algeciras gibraltar marbella
+			
 		}
 
 		starting_technology_level = 3
@@ -13628,6 +13624,69 @@ countries = {
 		country_rank = rank_duchy
 		capital = santiago_compostela
 	}
+	GRA = {
+		own_control_core = {
+			#Granada
+			almeria almanzora baza gergal mojacar velez_rubio
+			granada adra almunecar guadix huescar illora loja pinar orgiva
+			malaga antequera velez_malaga tarifa
+			ronda algeciras gibraltar marbella
+		}
+
+		our_cores_conquered_by_others = {
+			olvera
+		}
+
+		starting_technology_level = 3
+		include = "expl_muslim_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "muslim_monarchy_no_abrahamic_dhimmi"
+
+		government = {
+			ruler = gra_yusuf_i_nasrid
+
+			ruler_term = { character = gra_muhammad_i_nasrid start_date = 1238.5.1 end_date = 1273.1.20 regnal_number = 1 }
+			ruler_term = { character = gra_muhammad_ii_nasrid start_date = 1273.1.20 end_date = 1302.1.20 regnal_number = 2 }
+			ruler_term = {
+				character = gra_muhammad_ii_nasrid start_date = 1302.1.20 end_date = 1302.4.7 regnal_number = 2
+				character = gra_muhammad_iii_nasrid start_date = 1302.1.20 end_date = 1302.4.7 regnal_number = 3
+			}
+			ruler_term = { character = gra_muhammad_iii_nasrid start_date = 1302.4.7 end_date = 1309.3.14 regnal_number = 3 }
+			ruler_term = { character = gra_nasr_i_nasrid start_date = 1309.3.14 end_date = 1314.2.8 regnal_number = 1 }
+			ruler_term = { character = gra_ismail_i_nasrid start_date = 1314.2.8 end_date = 1325.7.8 regnal_number = 1 }
+			ruler_term = { character = gra_muhammad_iv_nasrid start_date = 1325.7.8 end_date = 1333.8.25 regnal_number = 4 }
+			ruler_term = { character = gra_yusuf_i_nasrid start_date = 1333.8.25 regnal_number = 1 }
+
+			regnal_numbers = {
+				name_muhammad = 4
+				name_nasr = 1
+				name_ishmael = 1
+				name_joseph = 1
+			}
+
+			reforms = {
+				the_jewel_of_alandalus_reform
+			}
+			laws = {
+				sharia_law = maliki_policy
+			}
+		}
+		court_language = maghrebi_dialect
+		religious_school = maliki_school
+		government = { mysticism_vs_jurisprudence = -5 }
+
+		country_rank = rank_duchy
+
+		tolerated_cultures = {
+			sephardi
+		}
+
+		capital = granada
+	}
+
 
 	#Navarre
 	NAV = {
