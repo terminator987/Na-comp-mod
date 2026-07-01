@@ -13285,6 +13285,7 @@ countries = {
 			zamora alba_de_aliste alcanices benavente fermoselle puebla_de_sanabria toro villalpando
 			murcia albacete caravaca cartagena chinchilla cieza hellin lorca mula segura_de_la_sierra villena
 			bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
+			
 		}
 
 		our_cores_conquered_by_others = {
@@ -13563,6 +13564,10 @@ countries = {
 			huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman sanlucar_la_mayor #Heulva
 			cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia #Córdoba
 			jaen andujar baeza cazorla jodar martos ubeda #Jaén
+			#Granada
+			almeria almanzora baza gergal mojacar velez_rubio
+			granada adra almunecar guadix huescar illora loja pinar orgiva
+			malaga antequera velez_malaga tarifa
 		}
 
 		starting_technology_level = 3
@@ -17654,10 +17659,7 @@ countries = {
 			aouint_yghomane afso ifrane
 			ronda algeciras gibraltar marbella
 
-			#Granada
-			almeria almanzora baza gergal mojacar velez_rubio
-			granada adra almunecar guadix huescar illora loja pinar orgiva
-			malaga antequera velez_malaga tarifa
+			
 		}
 
 		control = {
