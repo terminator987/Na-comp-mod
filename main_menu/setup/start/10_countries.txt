@@ -13115,6 +13115,10 @@ countries = {
 			valencia gandia ayora bunol chelva lliria
 			cagliari tratalias villa_di_chiesa isili muravera seddori tortoli orosei terranova_pausania posada tempiopausania
 			sassari
+
+			palma ciudadela_de_menorca ibiza manacor pollensa #Kingdom of Mallorca
+			puigcerda prades #County of Cerdanya
+			perpignan #County of Roselló
 		}
 
 		own_control_integrated = {
@@ -13222,9 +13226,7 @@ countries = {
 	}
 	MLL = {
 		own_control_core = {
-			palma ciudadela_de_menorca ibiza manacor pollensa #Kingdom of Mallorca
-			puigcerda prades #County of Cerdanya
-			perpignan #County of Roselló
+			
 		}
 
 		starting_technology_level = 3
