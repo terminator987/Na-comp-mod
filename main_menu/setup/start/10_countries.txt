@@ -13570,6 +13570,7 @@ countries = {
 			almeria almanzora baza gergal mojacar velez_rubio
 			granada adra almunecar guadix huescar illora loja pinar orgiva
 			malaga antequera velez_malaga tarifa
+			ronda algeciras gibraltar marbella
 		}
 
 		starting_technology_level = 3
@@ -17659,7 +17660,7 @@ countries = {
 			jerada taourirt debdou echemmaia sidi_bennour
 			nedroma tegeget kalaat_sraghna midelt
 			aouint_yghomane afso ifrane
-			ronda algeciras gibraltar marbella
+		
 
 			
 		}
