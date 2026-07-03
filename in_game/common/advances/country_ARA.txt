@@ -6,8 +6,10 @@
 			is_aragonese_catalan_spain = yes
 		}
 	}
-	navy_galley_power = 0.2
 	
+	selling_efficiency = small_trade_efficiency_bonus
+	merchant_maintenance_efficiency = 0.2
+	navy_galley_power = 0.2
 	requires = legalism_advance
 }
 
@@ -20,7 +22,7 @@ ara_desperta_ferro = {
 		}
 	}
 	land_morale_modifier = 0.1
-	fort_limit_modifier = 0.2
+	
 
 	requires = feudalism_advance
 }
@@ -34,8 +36,8 @@ ara_a_mediterranean_trade_power = {
 			is_aragonese_catalan_spain = yes
 		}
 	}
-	selling_efficiency = small_trade_efficiency_bonus
-	merchant_maintenance_efficiency = 0.2
+	fort_limit_modifier = 0.2
+	global_defensive = 0.1
 
 	requires = merchants_and_trade
 }
