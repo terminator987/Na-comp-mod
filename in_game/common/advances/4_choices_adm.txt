@@ -148,6 +148,7 @@ organised_mercenary_payment = {
 	for = adm
 
 	hire_mercenary_premium_cost_modifier = -0.2
+	global_manpower_modifier = 0.1
 }
 
 expansionism = {
