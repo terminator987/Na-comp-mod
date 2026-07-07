@@ -1942,7 +1942,7 @@ countries = {
 			mercantilism_vs_free_trade = 20
 			offensive_vs_defensive = 40
 			land_vs_naval = -50
-			quality_vs_quantity = 25
+			quality_vs_quantity = 0
 			belligerent_vs_conciliatory = 20
 			capital_economy_vs_traditional_economy = -20
 			individualism_vs_communalism = -20
@@ -1957,7 +1957,6 @@ countries = {
 
 				#nobles
 				noble_leaders_only
-				banal_lordship
 				noble_serfdom_rights
 				nobles_land_rights
 				kormlenije
@@ -2139,7 +2138,7 @@ countries = {
 
 	#Principality of Tver
 	TVE = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			tver brody_tver vertyazin
 		}
 
@@ -2165,7 +2164,7 @@ countries = {
 	#Principality of Kashin	(Ruler: Prince Vasily of Kashin (https://en.wikipedia.org/wiki/Mikhail_of_Tver#Family_and_children)
 	#Appanage of Tver
 	KAS = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			kashin kalyazin kesova_gora kimra
 		}
 
@@ -2190,7 +2189,7 @@ countries = {
 	#Principality of Klin
 	#Appanage of Tver
 	KLN = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			klin dubna
 		}
 
@@ -2215,7 +2214,7 @@ countries = {
 	#Principality of Zubtsov
 	#Appanage of Tver
 	ZUB = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			zubtsov gorodok kholm_tver lotoshino mikulino_tver
 		}
 
@@ -2239,7 +2238,7 @@ countries = {
 
 	#Principality of Dmitrov
 	DMI = {
-		own_control_core = {
+		our_cores_conquered_by_others = {
 			dmitrov rogachevo
 		}
 
@@ -2877,6 +2876,11 @@ countries = {
 			murom gorbatovo melenki starodub_votsky shatur 
 			tuma	
 			yuryev_polsky
+			dmitrov rogachevo
+			tver brody_tver vertyazin
+			kashin kalyazin kesova_gora kimra
+			klin dubna
+			zubtsov gorodok kholm_tver lotoshino mikulino_tver
 		}
 
 		own_control_integrated = {
@@ -2888,6 +2892,8 @@ countries = {
 		country_rank = rank_kingdom
 
 		government = {
+			quality_vs_quantity = 0
+			
 			type = monarchy
 			heir_selection = cognatic_primogeniture
 			ruler = mos_ivan_i_danilovich_kalita_rurikovich
@@ -40768,6 +40774,8 @@ countries = {
 		include = "lithuanian_monarchy"
 		government = {
 			ruler = kie_teodoras_ivanovich_rurikovich
+
+			quality_vs_quantity = 0
 
 			ruler_term = { character = kie_igor_rurikovich start_date = 912.1.1 end_date = 945.1.1 regnal_number = 1 }
 			ruler_term = { 

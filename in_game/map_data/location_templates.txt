@@ -4833,7 +4833,7 @@ khatun = { topography = flatland vegetation = farmland climate = continental rel
 przemysl_moscow = { topography = flatland vegetation = farmland climate = continental religion = orthodox culture = muscovite raw_material = livestock}
 serpukhov = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = lumber}
 koshira = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = wild_game}
-vysokoye = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = livestock}
+vysokoye = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = iron}
 zvenigorod = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = muscovite raw_material = millet}
 dmitrov = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = muscovite raw_material = wheat}
 mushkov_pogost = { topography = flatland vegetation = farmland climate = continental religion = orthodox culture = muscovite raw_material = livestock}
@@ -5092,7 +5092,7 @@ starodub_on_the_klyazma = { topography = flatland vegetation = forest climate = 
 palekh = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = fur}
 rozhdestveno = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = beeswax}
 suzdal = { topography = flatland vegetation = farmland climate = continental religion = orthodox culture = muscovite raw_material = beeswax}
-gavrilovskoye = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = wild_game}
+gavrilovskoye = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = iron}
 ilyinskoye_khovanskoye = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = muscovite raw_material = livestock}
 yuryev_polsky = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = salt}
 pereyaslavl = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = muscovite raw_material = medicaments}
@@ -5149,7 +5149,7 @@ romanov = { topography = flatland vegetation = forest climate = continental reli
 sol_velikaya = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = legumes}
 ust_sheksna = { topography = wetlands vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = lumber}
 gorodetsk = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = novgorodian raw_material = wild_game}
-ramenki = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = novgorodian raw_material = lumber}
+ramenki = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = novgorodian raw_material = iron}
 spas_na_kholmu = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = fur}
 ves_yogonskaya = { topography = wetlands vegetation = forest climate = arctic religion = orthodox culture = novgorodian raw_material = lumber}
 yezsk = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = clay}
@@ -5161,7 +5161,7 @@ kostroma = { topography = flatland vegetation = grasslands climate = continental
 nerekhta = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = muscovite raw_material = livestock}
 ostrovskoye = { topography = wetlands vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = millet}
 sudislavl = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = wild_game}
-yakovlevskoye_bolshoye = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = wild_game}
+yakovlevskoye_bolshoye = { topography = flatland vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = iron}
 mologa = { topography = flatland vegetation = grasslands climate = continental religion = orthodox culture = muscovite raw_material = fur}
 ilovna = { topography = wetlands vegetation = forest climate = continental religion = orthodox culture = muscovite raw_material = livestock}
 prozorovo = { topography = flatland vegetation = woods climate = continental religion = orthodox culture = muscovite raw_material = millet}
@@ -5506,7 +5506,7 @@ belekes = { topography = flatland vegetation = woods climate = continental relig
 bolshoy_ik = { topography = flatland vegetation = forest climate = continental religion = shamanism culture = bashkir raw_material = stone}
 ust_katav = { topography = hills vegetation = woods climate = continental religion = shamanism culture = bashkir raw_material = lumber}
 mesyagutovo = { topography = hills vegetation = forest climate = continental religion = shamanism culture = bashkir raw_material = wild_game}
-zlatoust = { topography = hills vegetation = woods climate = arctic religion = shamanism culture = bashkir raw_material = iron}
+zlatoust = { topography = hills vegetation = woods climate = arctic religion = shamanism culture = bashkir raw_material = lead}
 karagay = { topography = flatland vegetation = forest climate = arctic religion = shamanism culture = udmurt raw_material = fur}
 siva = { topography = flatland vegetation = forest climate = arctic religion = shamanism culture = udmurt raw_material = lumber}
 nytva = { topography = flatland vegetation = forest climate = arctic religion = shamanism culture = udmurt raw_material = wild_game}
@@ -5615,7 +5615,7 @@ kamensky_zavod = { topography = flatland vegetation = forest climate = continent
 kataysky = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = lumber}
 talitsa = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = lumber}
 kaslinsky = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = coal}
-kyshtym = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = iron}
+kyshtym = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = coal}
 chelyaba = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = iron}
 polevskoy = { topography = flatland vegetation = forest climate = arctic religion = sunni culture = yerle_qaliq_culture raw_material = copper}
 uyelgi = { topography = lakes climate = continental}
@@ -12064,7 +12064,7 @@ shchuchye = { topography = flatland vegetation = forest climate = continental re
 kargapolye = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = wild_game}
 kurtamysh = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = lumber}
 yetkul = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = iron}
-chebarkul = { topography = flatland vegetation = forest climate = continental religion = shamanism culture = bashkir raw_material = iron}
+chebarkul = { topography = flatland vegetation = forest climate = continental religion = shamanism culture = bashkir raw_material = wild_game}
 troitsk = { topography = flatland vegetation = forest climate = continental religion = sunni culture = yerle_qaliq_culture raw_material = lumber}
 uyskoye = { topography = flatland vegetation = woods climate = continental religion = sunni culture = bashkir raw_material = goods_gold}
 miass = { topography = hills vegetation = woods climate = arctic religion = shamanism culture = bashkir raw_material = iron}
