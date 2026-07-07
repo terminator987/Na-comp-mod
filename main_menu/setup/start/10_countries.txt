@@ -21256,14 +21256,12 @@ countries = {
 		religious_school = shafii_school #While Egypt today is mostly Hanafi, the $mamluks$ favored Shaafi over the rest
 		government = { mysticism_vs_jurisprudence = 20 }
 		
-
+		accepted_cultures = {
+			lower_egyptian_culture
+		}
 		tolerated_cultures = {
 			upper_egyptian_culture
-			coptic_culture mizrahi #else they be slaves
-			libyan_arabic_culture
-			bedouin_culture
-			eastern_amazigh
-			mizrahi
+			coptic_culture #else they be slaves
 		}
 
 		currency_data = { complacency = 15 }
