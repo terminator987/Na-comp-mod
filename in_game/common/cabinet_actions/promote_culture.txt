@@ -49,7 +49,7 @@
 							value > neutral 
 						}
 						
-						is_primary_or_accepted_in = scope:actor
+						is_primary_in = scope:actor
 					}
 				}
 
