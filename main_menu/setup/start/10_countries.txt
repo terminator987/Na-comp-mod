@@ -13981,6 +13981,7 @@ countries = {
 				chancellor_nobles
 				villes_franches
 				great_offices_of_the_crown_of_france
+				banal_lordship
 			}
 		}
 
@@ -21224,6 +21225,7 @@ countries = {
 				#Nobles
 				elaborate_court_ceremonies
 				banal_lordship
+				decentralized_mamluk_aristocracy
 
 				#Ulama
 				waqf_payments

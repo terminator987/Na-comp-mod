@@ -126,8 +126,20 @@
 		}
 	}
 
+	on_deactivate = {
+		if = {
+			limit = {
+				exists = scope:target_1
+			}
+			scope:target_1 = {
+				remove_variable = promoting_culture
+			}
+		}
+	}
+
 	location_modifier = {
 		local_pop_assimilation_speed = 0.04
+		local_migration_attraction = -0.15
 	}
 
 	progress = {
