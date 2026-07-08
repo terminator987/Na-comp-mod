@@ -1,0 +1,3 @@
+﻿maghreb_coastal_settlement = {
+	fishing_village = 2
+}

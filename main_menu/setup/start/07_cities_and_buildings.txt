@@ -439,7 +439,15 @@ locations={
 	tlemcen = { rank = city 	town_setup = maghreb_city }
 	tunis = { rank = city 		town_setup = maghreb_coastal_city }
 	oran = { rank = city 		town_setup = maghreb_coastal_city }
-	
+	ceuta = { rank = rural_settlement town_setup = maghreb_coastal_settlement}
+	asilah = { rank = rural_settlement town_setup = maghreb_coastal_settlement}
+	larache = { rank = rural_settlement town_setup = maghreb_coastal_settlement}
+	la_mamora = { rank = rural_settlement town_setup = maghreb_coastal_settlement}
+	sale = { rank = rural_settlement town_setup = maghreb_coastal_settlement}
+	anfa = { rank = rural_settlement town_setup = maghreb_coastal_settlement}
+	asfi = { rank = rural_settlement town_setup = maghreb_coastal_settlement}
+
+
 	algiers = { rank = town 	town_setup = maghreb_coastal_town }
 	kairouan = { rank = town town_setup = maghreb_town }
 	azemmour = { rank = town 		town_setup = maghreb_coastal_town }
