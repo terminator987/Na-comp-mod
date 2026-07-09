@@ -485,7 +485,7 @@ mita_system = {
 	country_modifier = {
 		global_peasants_migration_allowed = yes
 		global_peasants_estate_power = 0.2
-		global_build_buildings_cost = -0.1
+		global_build_buildings_efficiency = 0.1
 		global_pop_assimilation_speed_modifier = 0.25
 		monthly_towards_serfdom = societal_value_monthly_move
 	}

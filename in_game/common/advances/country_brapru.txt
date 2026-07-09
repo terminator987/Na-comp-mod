@@ -20,7 +20,7 @@ northern_march = {
 			has_or_had_tag = PRU
 		}
 	}
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	
 	requires = windmills_advance
 }
