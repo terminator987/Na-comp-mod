@@ -1336,7 +1336,7 @@ types SingleUnitWindowTypes
 						}
 						
 						header_button_left = {
-							# visible = "[And(Not(IsInSameWarAsSiegeOwner(Siege.Self)), And(Not(ObjectsEqual(Siege.GetBesieger.GetCountry, Player.Self)), Not(ObjectsEqual(Siege.GetLocation.GetOwner, Player.Self))))]"
+							visible = "[And(Not(IsInSameWarAsSiegeOwner(Siege.Self)), And(Not(ObjectsEqual(Siege.GetBesieger.GetCountry, Player.Self)), Not(ObjectsEqual(Siege.GetLocation.GetOwner, Player.Self))))]"
 							size = { 25 25 }
 							enabled = "[CanTakeOverSiege(Siege.Self)]"
 							action_tooltip = {
@@ -2580,18 +2580,6 @@ types SingleUnitWindowTypes
 										allow_outside = yes
 										size = { 39 39 }
 
-										#Needed to perform single action when the keyboard shortcut is pressed
-										button = {
-											size = { 0 1 }
-											tooltip_enabled = no
-											alwaystransparent = yes
-											visible = "[Not(UnitActionItem.IsToggleAction)]"
-											enabled = "[And(UnitActionItem.HasSingleLeftAction, UnitActionItem.CanSingleLeftClick)]"
-											onclick = "[UnitActionItem.SingleLeftClick]"
-											input_action = "[UnitActionItem.GetShortcut]"
-											use_global_input_instance = yes
-										}
-
 										# navigational_button_alt = {
 										# 	visible = "[Not(UnitActionItem.IsToggleAction)]"
 										# 	parentanchor = bottom|left
@@ -2839,15 +2827,12 @@ types SingleUnitWindowTypes
 									
 									name = "button_pin"
 							
-									onclick = "[PinCollection.Toggle( UnitActionItem.GetKey )]"
-									checked = "[PinCollection.IsPinnedWithDefaultValue( UnitActionItem.GetKey, UnitActionItem.IsPinnedByDefault )]"
-									tooltipwidget = { 
-										LeftClickButtonTooltip = {
-											blockoverride "onclick_text" { 
-												text = "[SelectLocalization(PinCollection.IsPinnedWithDefaultValue( UnitActionItem.GetKey, UnitActionItem.IsPinnedByDefault ), 'UNPIN_ACTION', 'PIN_ACTION')]"
-											}
-										}
+									action_tooltip = {
+										title = "[SelectLocalization(PinCollection.IsPinnedWithDefaultValue( UnitActionItem.GetKey, UnitActionItem.IsPinnedByDefault ), 'UNPIN_ACTION', 'PIN_ACTION')]"
+										on_action = "[PinCollection.Toggle( UnitActionItem.GetKey )]"
 									}
+									tooltipwidget = { BasicFunctionalTooltip = {} }
+									down = "[PinCollection.IsPinnedWithDefaultValue( UnitActionItem.GetKey, UnitActionItem.IsPinnedByDefault )]"
 								}
 							}
 						}

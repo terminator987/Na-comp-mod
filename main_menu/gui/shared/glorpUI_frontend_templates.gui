@@ -1,4 +1,4 @@
-types GlorpUIFrontEnd {
+﻿types GlorpUIFrontEnd {
 	type FrontEndBackground = widget {
 		size = { 100% 100% }
 
@@ -31,7 +31,7 @@ types GlorpUIFrontEnd {
 
 					expand = {}
 
-					icon = {
+					icon = { # GlorpUI: mod logo
 						texture = "gfx/interface/logos/glorpUI_logo.dds"
 						size = { 100 100 }
 					}

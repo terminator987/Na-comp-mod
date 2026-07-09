@@ -1,35 +1,4 @@
 types glorp {
-    type zoom_to_button = button {
-        name = "zoom_to"
-        parentanchor = right
-        size = { 25 25 }
-        position = { -30 7 }
-
-        using = ui_direction_button_overlay
-        texture = "gfx/interface/icons/unit_actions/go_to.dds"
-        texture_density = 2
-        background = {
-            using = bg_button_light_round_texture
-            modify_texture = {
-                using = color_dark_blue_texture
-            }
-        }
-
-        input_action = "macro_builder"
-        use_global_input_instance = yes
-        block "onclick_action" {}
-
-        action_tooltip = {
-            click_type = left
-            click_mode = single
-            title = "GO_TO_LOCATION"
-        }
-        tooltipwidget = {
-            LeftClickButtonTooltip = {
-                blockoverride "onclick_text" { text = "GO_TO" }
-            }
-        }
-    }
 
     type stat_item_row = hbox {
         layoutpolicy_horizontal = expanding
@@ -190,7 +159,11 @@ types glorp {
                                 minimumsize = { 80 30 }
                                 maximumsize = { 80 30 }
 								onmousehierarchyenter = "[GetScriptedGui('RefreshAvgStats').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                                onclick = "[GetScriptedGui('RefreshAvgStats').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								action_tooltip = {
+									click_type = left
+									on_action = "[GetScriptedGui('RefreshAvgStats').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									title = "REFRESH_AVG_PROX"
+								}
                                 tooltipwidget = {
                                     SimpleContextualTooltipType = {
                                         blockoverride "title_icon" {
@@ -217,10 +190,54 @@ types glorp {
                                     blockoverride "stat_icon" { texture = "gfx/interface/icons/map_modes/proximity.dds" }
                                 }
                             }
-							stat_item = {
-								blockoverride "stat_text" { text = "[Player.GetAverageControl|2%]" }
-								blockoverride "stat_icon" { texture = "gfx/interface/icons/location_icons/control.dds" }
+							button = {
+								visible = "[Not(Player.MakeScope.GetVariable('controlStatToggle').IsSet)]"
+								minimumsize = { 80 30 }
+								maximumsize = { 80 30 }
+								action_tooltip = {
+									click_type = left
+									on_action = "[GetScriptedGui('SetControlStatToggle').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									title = "SWAP_TO_AVG_CONTROL"
+								}
+								tooltipwidget = {
+									SimpleContextualTooltipType = {
+										blockoverride "title_icon" {
+											icon = {
+												using = tooltip_title_icon_size
+												texture = "gfx/interface/icons/map_modes/max_control.dds"
+											}
+										}
+										blockoverride "title_text" {
+											text = "GLORP_UI_AVG_CONTROL"
+										}
+										blockoverride "tooltip_content" {
+											TooltipTextBlock = {
+												blockoverride "text" {
+													text = "GLORP_UI_AVG_CONTROL_DESC"
+												}
+											}
+										}
+									}
+								}
+								stat_item = {
+									blockoverride "stat_text" { text = "[Player.MakeScope.GetVariable('glorpui_avg_max_control').GetValue|2%]" }
+									blockoverride "stat_icon" { texture = "gfx/interface/icons/map_modes/max_control.dds" }
+								}
+							}
+							button = {
+								visible = "[Player.MakeScope.GetVariable('controlStatToggle').IsSet]"
+								minimumsize = { 80 30 }
+								maximumsize = { 80 30 }
+								action_tooltip = {
+									click_type = left
+									on_action = "[GetScriptedGui('SetControlStatToggle').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+									title = "SWAP_TO_MAX_CONTROL"
+								}								datacontext = "[Player]"
 								tooltipwidget = { using = AverageControlTooltip }
+								stat_item = {
+									blockoverride "stat_text" { text = "[Player.GetAverageControl|2%]" }
+									blockoverride "stat_icon" { texture = "gfx/interface/icons/location_icons/control.dds" }
+								}
 							}
                         }
                         expand = {}

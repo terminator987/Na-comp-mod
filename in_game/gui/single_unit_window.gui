@@ -1,10 +1,28 @@
-# CMF Note: All the untouched vanilla types/templates were extracted to cmf_single_unit_types.gui
-
-lateralview = {
+﻿lateralview = {
 	name = "single_unit_window"
 	widgetid = "single_unit_window"
 
 	blockoverride "lateralview_topbuttons_extra" {
+		widget = {
+			parentanchor = vcenter
+			size = { 40 40 }
+			position = { 30 0 }
+			button_minimize = {
+				size = { 25 25 }
+				parentanchor = vcenter
+
+				blockoverride "button_texture" {
+					texture = "gfx/interface/buttons/flats/rename_new.dds"
+					texture_density = 2
+				}
+
+				action_tooltip = {
+					title = "RENAME_UNIT"
+					on_action = "[SingleUnitWindow.Vars.Toggle('edit_name')]"
+				}
+			}
+		}
+
 		widget = {
 			parentanchor = right|vcenter
 			size = { 40 40 }
@@ -43,7 +61,7 @@ lateralview = {
 	blockoverride "panel_header" {
 		window_header_alt = {
 			using = bg_main_inner_alt
-			blockoverride "window_header_alt_color_texture" {
+			blockoverride "window_header_alt_color_texture"{
 				using = color_default_brown_texture
 			}
 
@@ -52,7 +70,14 @@ lateralview = {
 					button = {
 						using = layoutpolicy_expanding
 						enabled = "[SingleUnitWindow.CanRenameUnit]"
-						onclick = "[SingleUnitWindow.Vars.Toggle('edit_name')]"
+
+						action_tooltip = {
+							cursor = "text"
+							enabled = "[SingleUnitWindow.CanRenameUnit]"
+							title = "RENAME_UNIT"
+							on_action = "[SingleUnitWindow.Vars.Toggle('edit_name')]"
+						}
+
 						tooltipwidget = {
 							ContextualTooltipType = {
 								blockoverride "title_icon" {
@@ -74,13 +99,6 @@ lateralview = {
 									TooltipTextBlock = {
 										blockoverride "text" {
 											text = "UNIT_NAME_TT"
-										}
-									}
-									TooltipFunctionalBlock = {
-										using = tooltip_left_click_template
-
-										blockoverride "action_left_text" {
-											text = "RENAME_UNIT"
 										}
 									}
 								}
@@ -172,12 +190,13 @@ lateralview = {
 					}
 				}
 
-                zoom_to_button = {
-                    position = { -60 7 }
-                    blockoverride "onclick_action" {
-                        onclick = "[PanToLocation(SingleUnitWindow.AccessSelectedUnit.GetLocation)]"
-                    }
-                }
+				# GlorpUI: Zoom To
+				zoom_to_button = {
+					position = { -60 7 }
+					blockoverride "onclick_action" {
+						onclick = "[PanToLocation(SingleUnitWindow.AccessSelectedUnit.GetLocation)]"
+					}
+				}
 			}
 		}
 	}
@@ -750,6 +769,13 @@ lateralview = {
 										text = "[artillery_barrage|e]"
 									}
 									blockoverride "tooltip_content" {
+										TooltipScrolledStringPairList = {
+											blockoverride "block_scrollarea" { maximumsize = { -1 300 } minimumsize = { -1 30 } }
+											blockoverride "block_title" {
+												text = "ARTILLERY_BONUS_BY_FORT_LEVEL"
+											}
+											textcontext = "[SingleUnitWindow.GetSelectedUnit.GetArtilleryBonusFortFortsTooltip]"
+										}
 										TooltipScrolledStringPairList = {
 											blockoverride "block_scrollarea" { maximumsize = { -1 300 } minimumsize = { -1 30 } }
 											blockoverride "block_title" {
@@ -1705,10 +1731,7 @@ select_menu_left = {
 		name = "single_unit_select_unit"
 	}
 
-	blockoverride "close_button" {
-		onclick = "[SingleUnitSelectUnit.OnClose]"
-	}
-
+	blockoverride "close_on_action" { on_action = "[SingleUnitSelectUnit.OnClose]" }
 	blockoverride "select_content" {
 		select_menu_header = {
 			blockoverride "select_menu_header_extra" {
@@ -1730,13 +1753,13 @@ select_menu_left = {
 				widget = {
 					size = { 485 70 }
 					visible = "[Or(And(SingleUnitSelectUnit.Parent.GetSelectedUnit.IsArmy, Unit.IsArmy), And(SingleUnitSelectUnit.Parent.GetSelectedUnit.IsNavy, Unit.IsNavy))]"
-					
+
 					hbox = {
 						datacontext = "[Unit.GetLocation]"
-						
+
 						using = bg_market_card
 						using = bg_cabinet_card_frame
-	
+
 						unit_card = {}
 					}
 				}

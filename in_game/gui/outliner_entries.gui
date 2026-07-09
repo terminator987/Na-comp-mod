@@ -1,5 +1,4 @@
-# CMF Note: All the untouched vanilla types/templates were extracted to cmf_outliner_entries_vanilla_types.gui
-
+﻿
 # Available contexts
 # "OutlinerPlayerEntry"
 # "Outliner"
@@ -17,6 +16,7 @@ OutlinerEntryBase = {
 			hbox = {
 				using = outliner_entry_margin
 				spacing = 8
+				onmousehierarchyenter = "[PdxGuiWidget.PushMapModeOverride('players')]"
 				icon = {
 					visible = "[And(OutlinerPlayerEntry.GetCountry.GetDiplomacy.IsAtWar, IsPlayerAtWarWithOtherPlayer(OutlinerPlayerEntry.GetCountry))]"
 					size = {20 20}
@@ -27,7 +27,16 @@ OutlinerEntryBase = {
 					}
 				}
 				icon = {
-					visible = "[And(OutlinerPlayerEntry.GetCountry.GetDiplomacy.IsAtWar, Not(IsPlayerAtWarWithOtherPlayer(OutlinerPlayerEntry.GetCountry)))]"
+					visible = "[And(OutlinerPlayerEntry.GetCountry.GetDiplomacy.IsAtWar, And(Not(IsPlayerAtWarWithOtherPlayer(OutlinerPlayerEntry.GetCountry)), IsPlayerAlliedWithOtherPlayerInWar(OutlinerPlayerEntry.GetCountry)))]"
+					size = {20 20}
+					texture = "gfx/interface/icons/flat_icons/war_human_friend.dds"
+					tooltip_enabled = "[DataModelHasItems(OutlinerPlayerEntry.GetCountry.GetDiplomacy.GetCurrentWars)]"
+					tooltipwidget = {
+						using = War_list_tooltip
+					}
+				}
+				icon = {
+					visible = "[And(OutlinerPlayerEntry.GetCountry.GetDiplomacy.IsAtWar, And(Not(IsPlayerAtWarWithOtherPlayer(OutlinerPlayerEntry.GetCountry)), Not(IsPlayerAlliedWithOtherPlayerInWar(OutlinerPlayerEntry.GetCountry))))]"
 					size = {20 20}
 					texture = "gfx/interface/icons/diplomatic_status/war.dds"
 					tooltip_enabled = "[DataModelHasItems(OutlinerPlayerEntry.GetCountry.GetDiplomacy.GetCurrentWars)]"
@@ -36,9 +45,59 @@ OutlinerEntryBase = {
 					}
 				}
 				OutlinerTextBase = {
-					using = layoutpolicy_expanding
-					autoresize = no
+					maximumsize = { 140 -1 }
+					autoresize = yes
 					text = "[OutlinerPlayerEntry.GetName]"
+				}
+
+				OutlinerTextBase = {
+					autoresize = yes
+					visible = "[OutlinerPlayerEntry.GetCountry.IsValid]"
+					datacontext = "[OutlinerPlayerEntry.GetCountry.GetScore]"
+					raw_text = "(#L [Score.GetCurrentRank]#!)"
+					tooltipwidget = {
+						ContextualTooltipType = {
+							blockoverride "title_text" {
+								text = "SCORE_TAB"
+							}
+							blockoverride "title_icon" {
+								icon = {
+									texture = "[GetConceptTexture('score')]"
+									using = tooltip_title_icon_size
+								}
+							}
+							blockoverride "concept_link" {
+								text = "[score|e]"
+							}
+							blockoverride "tooltip_content" {
+								TooltipTextBlock = {
+									blockoverride "text" {
+										text = "OUTLINER_PLAYER_CURRENT_SCORE"
+									}
+								}
+								TooltipStringPairList = {
+									textcontext = "[Score.GetScoreInfoForUI]"
+								}
+								TooltipTextBlock = {
+									blockoverride "text" {
+										text = "[Score.GetScoreDescriptionForUI]"
+									}
+								}
+							}
+						}
+					}
+				}
+
+				widget = {
+					using = layoutpolicy_expanding
+					size = { 0 0 }
+				}
+
+				OutlinerTextBase = {
+					autoresize = yes
+					maximumsize = { 120 -1 }
+					visible = "[OutlinerPlayerEntry.GetCountry.IsValid]"
+					text = "[OutlinerPlayerEntry.GetCountry.GetName]"
 				}
 
 				widget = {
@@ -1614,7 +1673,7 @@ OutlinerEntryBase = {
 				spacing = 5
 
 				icon = {
-					size = { 24 24 }
+					size = { 24 24 } # GlorpUI: 20->24
 					texture = "[GetGoodsIcon(Goods.Self)]"
 				}
 
@@ -1634,7 +1693,7 @@ OutlinerEntryBase = {
 
 				OutlinerTextBase = {
 					using = layoutpolicy_expanding
-					size = { 65 20 }
+					size = { 65 20 } # GlorpUI: added
 					autoresize = no
 					align = left
 					text = "[Goods.GetNameWithNoTooltip]"
@@ -2784,30 +2843,53 @@ OutlinerEntryBase = {
 					}
 					button_checkbox = {
 						size = { 100% 100% }
-						checked = "[IsUnitSelected(Unit.Self)]"
+						down = "[IsUnitSelected(Unit.Self)]"
 						alwaystransparent = yes
+					}
+				}
+
+				widget = {
+					size = { 9 20 }
+					allow_outside = yes
+					# margin = { 1 1 }
+
+					unit_composition_bar = {
+						size = { 8 20 }
+					}
+
+					icon = {
+						size = { 100% 100% }
+						texture = "gfx/interface/component_tiles/square_outline_alt.dds"
+						texture_density = 2
+						spriteType = corneredstretched
+						spriteBorder = { 20 20 }
+						modify_texture = {
+							using = color_super_dark_brown_texture
+							blend_mode = multiply
+						}
 					}
 				}
 
 				OutlinerTextBase = {
 					align = left
-					maximumsize = { 160 24 }
-					minimumsize = { 70 24 }
+					maximumsize = { 160 24 } # GlorpUI: 20->24
+					minimumsize = { 70 24 } # GlorpUI: 20->24
 					raw_text = "[Unit.GetVisualStrength]@army_strength!"
                     fontsize = 14
 				}
+
 				widget = {
-					size = { 20 20 }
+					size = { 20 20 } # GlorpUI: 18->20
 					icon = {
-						size = { 20 20 }
+						size = { 20 20 } # GlorpUI: 18->20
 						texture = "[Unit.GetStatusTexture]"
 					}
 				}
 
 				widget = {
-					size = { 20 20 }
+					size = { 20 20 } # GlorpUI: 18->20
 					icon = {
-						size = { 20 20 }
+						size = { 20 20 } # GlorpUI: 18->20
 						texture = "gfx/interface/icons/unit_view/atrittion_icon.dds"
 						visible = "[GreaterThan_CFixedPoint(Unit.GetAttrition, '(CFixedPoint)0')]"
 						glow = {
@@ -2819,20 +2901,6 @@ OutlinerEntryBase = {
 					}
 				}
 
-				widget = {
-					size = { 18 18 }
-					icon = {
-						size = { 18 18 }
-						texture = "gfx/interface/icons/unit_view/atrittion_icon.dds"
-						visible = "[GreaterThan_CFixedPoint(Unit.GetAttrition, '(CFixedPoint)0')]"
-						glow = {
-							name = "drop_shadow"
-							glow_radius = 3
-							color = {1.0 0.0 0.0 1.0}
-							alpha = 0.4
-						}
-					}
-				}
 
 				widget = {
 					size = { 18 18 }
@@ -2850,10 +2918,10 @@ OutlinerEntryBase = {
 				}
 
 				widget = {
-					size = { 20 20 }
+					size = { 20 20 } # GlorpUI: 18->20
 					icon = {
 						visible = "[Unit.IsAutomated]"
-						size = { 20 20 }
+						size = { 20 20 } # GlorpUI: 18->20
 						texture = "[GetMilitaryObjectiveIcon(Unit.GetObjectiveGroup.GetObjective.GetType)]"
 						texture_density = 2
 					}
@@ -3022,8 +3090,30 @@ OutlinerEntryBase = {
 					}
 					button_checkbox = {
 						size = { 100% 100% }
-						checked = "[IsUnitSelected(Unit.Self)]"
+						down = "[IsUnitSelected(Unit.Self)]"
 						alwaystransparent = yes
+					}
+				}
+
+				widget = {
+					size = { 9 20 }
+					allow_outside = yes
+					# margin = { 1 1 }
+
+					unit_composition_bar = {
+						size = { 8 20 }
+					}
+
+					icon = {
+						size = { 100% 100% }
+						texture = "gfx/interface/component_tiles/square_outline_alt.dds"
+						texture_density = 2
+						spriteType = corneredstretched
+						spriteBorder = { 20 20 }
+						modify_texture = {
+							using = color_super_dark_brown_texture
+							blend_mode = multiply
+						}
 					}
 				}
 
@@ -3340,7 +3430,7 @@ OutlinerEntryBase = {
 				spacing = 5
 
 				icon = {
-					size = { 20 20 }
+					size = { 26 26 }
 					texture = "[IOLawOutlinerEntry.GetIcon]"
 				}
 				OutlinerTextBase = {
@@ -3540,7 +3630,7 @@ OutlinerEntryBase = {
 				alwaystransparent = yes
 				parentanchor = center
 				allow_outside = yes
-				size = { 90% 90% }
+				size = { 90% 90% } # GlorpUI: 80%->90%
 
 				using = piechart_angles
 
@@ -3561,7 +3651,7 @@ OutlinerEntryBase = {
 
 			icon = {
 				parentanchor = center
-				size = { 66% 66% }
+				size = { 66% 66% } # GlorpUI: 60%->66%
 				texture = "gfx/interface/icons/flat_icons/reforms.dds"
 			}
 		}
@@ -3569,23 +3659,16 @@ OutlinerEntryBase = {
 
 	blockoverride "button_setup" {
 		datacontext = "[GovReformOutlinerEntry.GetReformItem.GetReform]"
-		datacontext = "[GovReformOutlinerEntry.GetReformItem.GetUIAction]"
+		datacontext = "[GovReformOutlinerEntry.GetReformItem]"
 
-		using = button_action_provider
-		enabled = yes
+		using = reform_item_action_provider
 
 		tooltipwidget = {
 			using = GovernmentReform_tooltip
 			blockoverride "UIActionDescription" {
 				TooltipBlockList = {
 					visible = "[And(Not(GovReformOutlinerEntry.GetReformItem.IsImplemented), GovReformOutlinerEntry.GetReformItem.IsValid)]"
-					textcontext = "[GovReformOutlinerEntry.GetReformItem.GetUIAction.GetDescription]"
-				}
-				TooltipFlavorTextBlock = {
-					visible = "[Not(StringIsEmpty(GovReformOutlinerEntry.GetReformItem.GetUIAction.GetConditions))]"
-					blockoverride "text" {
-						text = "[GovReformOutlinerEntry.GetReformItem.GetUIAction.GetConditions]"
-					}
+					textcontext = "[GovReformOutlinerEntry.GetReformItem.GetDescription]"
 				}
 			}
 		}
@@ -3669,7 +3752,7 @@ OutlinerEntryBase = {
 				alwaystransparent = yes
 				parentanchor = center
 				allow_outside = yes
-				size = { 90% 90% }
+				size = { 90% 90% } # GlorpUI: 80%->90%
 
 				using = piechart_angles
 
@@ -3688,7 +3771,7 @@ OutlinerEntryBase = {
 
 			icon = {
 				parentanchor = center
-				size = { 66% 66% }
+				size = { 66% 66% } # GlorpUI: 60%->66%
 				texture = "gfx/interface/icons/situations/_default.dds"
 				texture_density = 2
 			}
@@ -3737,7 +3820,7 @@ template cabinet_entry_icon_empty {
 		visible = "[Cabinet.IsActive]"
 		icon = {
 			parentanchor = center
-			size = { 70% 70% }
+			size = { 70% 70% } # GlorpUI: 63%->70%
 			texture = "[GetCabinetActionIcon(Cabinet.GetAction)]"
 			glow = {
 				name = "drop_shadow"
@@ -3760,7 +3843,7 @@ template cabinet_entry_icon {
 		# }
 		icon = {
 			parentanchor = center
-			size = { 70% 70% }
+			size = { 70% 70% } # GlorpUI: 63%->70%
 			block "cabinet_entry_icon_texture" {}
 			glow = {
 				name = "drop_shadow"
@@ -3769,6 +3852,181 @@ template cabinet_entry_icon {
 				alpha = 0.3
 			}
 			position = { 0 1 }
+		}
+	}
+}
+
+template cabinet_entry_action_progress {
+	widget = {
+		layoutpolicy_vertical = expanding
+		size = { 0 -1 }
+		icon = {
+			position = { -10 0 }
+			visible = "[Cabinet.GetCharacter.IsHeadOfCabinet]"
+			size = { 15 30 }
+			using = button_outliner_texture
+			blockoverride "texture_color" {
+				modify_texture = {
+					using = color_purple_texture
+					blend_mode = add
+				}
+				modify_texture = {
+					using = overlay_paper_03
+					blend_mode = overlay
+					alpha = 0.3
+				}
+				modify_texture = {
+					using = overlay_cloth_texture
+					blend_mode = overlay
+					alpha = 0.1
+				}
+			}
+			background = {
+				using = button_outliner_texture
+				blockoverride "texture_color" {
+					modify_texture = {
+						using = color_black_texture
+						blend_mode = add
+					}
+
+				}
+				margin_bottom = 1
+				margin_left = 1
+				alpha = 0.7
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_fade_horizontal_textured.dds"
+					texture_density = 4
+					spriteType = stretched
+					spriteBorder = { 0 0 }
+					blend_mode = alphamultiply
+					alpha = 1
+				}
+			}
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_horizontal_textured.dds"
+				texture_density = 4
+				spriteType = stretched
+				spriteBorder = { 0 0 }
+				blend_mode = alphamultiply
+				alpha = 1
+			}
+		}
+	}
+	hbox = {
+		spacing = -5
+		portrait_standard_head_button = {
+			datacontext = "[Cabinet.GetCharacter]"
+			visible = "[Cabinet.IsCharacterSet]"
+			size = { 30 30 }
+
+			action_tooltip = {
+				click_type = right
+				click_mode = single
+
+				title = "CHANGE_CABINET"
+				cost = "[Cabinet.GetPriceForAssigningCabinetMemberToSlot]"
+				enabled = "[Cabinet.ArePossibleCabinetCharactersAvailable]"
+				description = "[Cabinet.GetDescriptionForAssigningCabinetMemberToSlot]"
+				on_action_with_params = "[Cabinet.AssigningCabinetMemberToSlot]"
+			}
+
+			# blockoverride "character_tooltip" {
+			# }
+			blockoverride "character_contextmenu" {}
+			blockoverride "button_setup" {
+			}
+			blockoverride "rightclick" {}
+			# blockoverride "hover" {}
+		}
+		portrait_standard_head_button = {
+			datacontext = "[Cabinet.GetCharacter]"
+			visible = "[Not(Cabinet.IsCharacterSet)]"
+			size = { 30 30 }
+
+			action_tooltip = {
+				click_type = left
+				click_mode = single
+
+				title = "SELECT_CABINET_CHARACTER"
+				cost = "[Cabinet.GetPriceForAssigningCabinetMemberToSlot]"
+				enabled = "[Cabinet.ArePossibleCabinetCharactersAvailable]"
+				description = "[Cabinet.GetDescriptionForReplacingCabinetMemberToSlot]"
+				on_action_with_params = "[Cabinet.AssigningCabinetMemberToSlot]"
+			}
+
+			blockoverride "character_tooltip" {
+				tooltipwidget = {
+					BasicFunctionalTooltip = {}
+				}
+			}
+			blockoverride "character_contextmenu" {}
+			blockoverride "button_setup" {
+			}
+			blockoverride "rightclick" {}
+			# blockoverride "hover" {}
+		}
+		hbox = {
+			margin_right = 5
+			visible = "[Cabinet.IsCharacterSet]"
+			datamodel = "[Cabinet.GetCharacter.GetTraitsByCategory('cabinet')]"
+			item = {
+				widget = {
+					size = { 23 23 }
+					using = trait_item
+					blockoverride "trait_item_size" {
+						size = { 23 23 }
+					}
+					blockoverride "trait_positive_negative_overlay" {
+						allow_outside = yes
+						icon = {
+							ignore_layout = yes
+							size = { 20 20 }
+							position = { 10 10 }
+							texture = "gfx/interface/buttons/flats/plus.dds"
+							visible = "[Not(Trait.IsBad)]"
+							modify_texture = {
+								blend_mode = colordodge
+								using = color_light_green_texture
+							}
+						}
+						icon = {
+							ignore_layout = yes
+							size = { 14 16 }
+							position = { 13 11 }
+							texture = "gfx/interface/buttons/flats/minus.dds"
+							visible = "[Trait.IsBad]"
+							modify_texture = {
+								blend_mode = colordodge
+								using = color_red_texture
+							}
+						}
+					}
+				}
+			}
+		}
+		cabinet_efficiency_icon = {
+			blockoverride "icon_size" { size = { 23 23 } }
+			tooltipwidget = {
+				using = effective_skill_tooltip
+			}
+		}
+	}
+	block "cabinet_entry_title_text" {
+		OutlinerTextBase = {
+			using = layoutpolicy_expanding
+			text = "[Cabinet.GetNameWithNoTooltip]"
+			align = left
+			default_format = "#L"
+			maximumsize = { 160 -1 }
+		}
+	}
+	expand = {}
+
+	block "cabinet_entry_progress_text" {
+		OutlinerTextBase = {
+			maximumsize = { 90 -1 }
+			autoresize = yes
+			text = "[Cabinet.GetActionProgress]"
 		}
 	}
 }
@@ -3789,7 +4047,7 @@ OutlinerEntryBase = {
 
 				portrait_standard_head_button = {
 					datacontext = "[Cabinet.GetCharacter]"
-					size = { 28 28 }
+					size = { 30 30 }
 
 					action_tooltip = {
 						click_type = left
@@ -3959,7 +4217,7 @@ OutlinerEntryBase = {
 				blockoverride "cabinet_entry_progress_text" {
 					OutlinerTextBase = {
 						autoresize = yes
-						raw_text = "[Cabinet.GetActionProgress] ([Cabinet.GetEffectiveSkillOnlyEffect])"
+						raw_text = "[Cabinet.GetActionProgress] ([Cabinet.GetEffectiveSkillPositiveOnlyEffect])"
 					}
 				}
 			}
@@ -4168,7 +4426,7 @@ OutlinerEntryBase = {
 		blockoverride "cabinet_entry_icon_piechart" {
 			piechart = {
 				parentanchor = center
-				size = { 90% 90% }
+				size = { 90% 90% } # GlorpUI: 80%->90%
 				using = piechart_angles
 
 				pieslice_no_highlight = {
@@ -5053,7 +5311,7 @@ OutlinerEntryBase = {
 				blockoverride "cabinet_entry_progress_text" {
 					OutlinerTextBase = {
 						autoresize = yes
-						raw_text = "[Cabinet.GetActionProgress] ([Cabinet.GetEffectiveSkillOnlyEffect])"
+						raw_text = "[Cabinet.GetActionProgress] ([Cabinet.GetGovernmentPowerMonthlyModifier|+=2])"
 						maximumsize = { 80 -1 }
 					}
 				}
@@ -5494,7 +5752,7 @@ OutlinerEntryBase = {
 
 				icon = {
 					visible = "[GreaterThan_CFixedPoint(Market.GetCountryPopulation(Player.Self),'(CFixedPoint)0')]"
-					size = { 18 18 }
+					size = { 28 28 }
 					texture = "[GetConceptTexture('domestic_market')]"
 					glow = {
 						name = "drop_shadow"
@@ -5507,7 +5765,7 @@ OutlinerEntryBase = {
 				icon = {
 					visible = "[And(Not(GreaterThan_CFixedPoint(Market.GetCountryPopulation(Player.Self),'(CFixedPoint)0')),
 						GreaterThan_CFixedPoint(Market.GetTotalMerchantCapacity(Player.Self),'(CFixedPoint)0'))]"
-					size = { 22 22 }
+					size = { 30 30 } # GlorpUI: 18->22
 					texture = "[GetConceptTexture('trading_market')]"
 					glow = {
 						name = "drop_shadow"
@@ -5779,7 +6037,7 @@ OutlinerEntryBase = {
 				using = outliner_entry_margin
 				spacing = 5
 				icon = {
-					size = { 22 22 }
+					size = { 30 30 } # GlorpUI: 20->22
 					texture = "[GetConstructionIcon(Construction.Self)]"
 					texture_density = 2
 				}
@@ -5970,7 +6228,7 @@ OutlinerEntryBase = {
 				using = outliner_entry_margin
 				spacing = 5
 				icon = {
-					size = { 30 30 }
+					size = { 30 30 } # GlorpUI: 20->30
 					texture = "[GetEstateIcon(Construction.GetEstateType)]"
 					texture_density = 2
 				}
@@ -5981,7 +6239,7 @@ OutlinerEntryBase = {
 					align = left
 					using = OnlyVisibleWhenOneInLocation
 					raw_text = "[Construction.GetNameWithNoTooltip]"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 				OutlinerTextBase = {
 					layoutpolicy_horizontal = expanding
@@ -5989,13 +6247,13 @@ OutlinerEntryBase = {
 					align = left
 					using = OnlyVisibleWhenMultipleInLocation
 					raw_text = "[Construction.GetNameWithNoTooltip] #L (+[Subtract_int32(Construction.CountAllInLocation, '(int32)1')]) #!"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 
 				OutlinerTextBase = {
 					autoresize = yes
 					text = "CONSTRUCTION_DURATION_DAYS"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 			}
 		}
@@ -6140,7 +6398,7 @@ OutlinerEntryBase = {
 				using = outliner_entry_margin
 				spacing = 5
 				icon = {
-					size = { 30 30 }
+					size = { 30 30 } # GlorpUI: 20->30
 					texture = "[GetConstructionIcon(Construction.Self)]"
 					texture_density = 2
 					glow = {
@@ -6171,13 +6429,13 @@ OutlinerEntryBase = {
 					visible = "[Not(Construction.IsStalled)]"
 					autoresize = yes
 					text = "CONSTRUCTION_DURATION_DAYS"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 				OutlinerTextBase = {
 					visible = "[Construction.IsStalled]"
 					autoresize = yes
 					text = "CONSTRUCTION_INFO_STALLED"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 			}
 		}
@@ -6324,7 +6582,7 @@ OutlinerEntryBase = {
 				using = outliner_entry_margin
 				spacing = 5
 				icon = {
-					size = { 30 30 }
+					size = { 30 30 } # GlorpUI: 20->30
 					texture = "[GetConstructionIcon(Construction.Self)]"
 					texture_density = 2
 				}
@@ -6350,14 +6608,14 @@ OutlinerEntryBase = {
 					visible = "[Not(Construction.IsStalled)]"
 					autoresize = yes
 					text = "CONSTRUCTION_DURATION_DAYS"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 
 				OutlinerTextBase = {
 					visible = "[Construction.IsStalled]"
 					autoresize = yes
 					text = "CONSTRUCTION_INFO_STALLED"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 			}
 		}
@@ -6504,7 +6762,7 @@ OutlinerEntryBase = {
 				spacing = 5
 
 				widget = {
-					size = { 20 20 }
+					size = { 20 20 } # GlorpUI: 16->20
 					using = bg_circle_piechart
 					blockoverride "inside_color" {
 						modify_texture = {
@@ -6533,7 +6791,7 @@ OutlinerEntryBase = {
 					autoresize = no
 					align = left
 					text = "[Rebel.GetNameWithNoTooltip]"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: default_format #L -> fontsize 14
 				}
 
 				icon = {
@@ -6550,7 +6808,7 @@ OutlinerEntryBase = {
 				OutlinerTextBase = {
 					autoresize = yes
 					raw_text = "[Rebel.GetProgress|-V%2] ([Rebel.GetLastMonthsProgress|-=%2])"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 			}
 		}
@@ -6621,7 +6879,7 @@ OutlinerEntryBase = {
 
 				icon = {
 					texture_density = 2
-					size = { 20 20 }
+					size = { 20 20 } # GlorpUI: 17->20
 					parentanchor = center
 					texture = "[GetRebelsIcon(Rebel.Self)]"
 
@@ -6666,65 +6924,6 @@ OutlinerEntryBase = {
 # "OutlinerDiplomacyEntry"
 # "Outliner"
 ###############################################################################
-
-template "diplomacy_expanded_big_content"
-{
-	OutlinerButtonBase = {
-		size = { 95% 100% }
-
-		hbox = {
-			using = outliner_entry_margin
-			spacing = 5
-			country_flag_very_small = {
-				datacontext = "[OutlinerDiplomacyEntry.GetTargetCountry]"
-			}
-			OutlinerTextBase = {
-				using = layoutpolicy_expanding
-				fontsize = 14
-				align = left
-				autoresize = no
-				text = "[OutlinerDiplomacyEntry.GetText]"
-			}
-
-			OutlinerTextBase = {
-				align = right
-				text = "[OutlinerDiplomacyEntry.GetStatus]"
-                fontsize = 14
-			}
-		}
-	}
-}
-
-template "diplomacy_icon_content"
-{
-	OutlinerIconBg = {
-		piechart = {
-			visible = "[GreaterThan_CFixedPoint(OutlinerDiplomacyEntry.GetTotalNumber, '(CFixedPoint)0')]"
-			parentanchor = center
-			size = { 90% 90% }
-			using = piechart_angles
-
-			pieslice_no_highlight = {
-				texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
-				value = "[FixedPointToFloat(OutlinerDiplomacyEntry.GetTotalNumber)]"
-				color = { 0.3 0.8 0.3 1 }
-				alwaystransparent = yes
-			}
-
-			pieslice_no_highlight = {
-				texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
-				value = "[Subtract_float('(float)100.0', FixedPointToFloat(OutlinerDiplomacyEntry.GetTotalNumber))]"
-				color = { 0.0 0.1 0.1 1 }
-				alwaystransparent = yes
-			}
-		}
-		icon = {
-			size = { 75% 75% }
-			parentanchor = center
-			texture = "[OutlinerDiplomacyEntry.GetIcon]"
-		}
-	}
-}
 
 ## GENERIC DIPLOMACY ENTRY
 #########################################
@@ -6773,9 +6972,9 @@ OutlinerEntryBase = {
 
 	blockoverride "icon_content" {
 		using = diplomacy_icon_content
-		# Autonomous Diplomats auto-cancel widget
+		# GlorpUI: Autonomous Diplomats auto-cancel widget
 		atd_outliner_auto_cancel_widget = {}
-		# Autonomous Diplomats sync widget
+		# GlorpUI: Autonomous Diplomats sync widget
 		atd_outliner_sync_widget = {}
 	}
 
@@ -6984,8 +7183,9 @@ OutlinerEntryBase = {
 		action_tooltip = {
 			click_type = right
 			click_mode = single
-			enabled = "[And(OutlinerDiplomacyEntry.CanRightClick, Player.GetDiplomacy.HasDiplomats)]"
+			enabled = "[OutlinerDiplomacyEntry.CanRightClick]"
 			title = "ABORTANNEXTITLE"
+			conditions = "[OutlinerDiplomacyEntry.CanRightClickConditions]"
 			on_action = "[OutlinerDiplomacyEntry.OnRightClick]"
 		}
 	}
@@ -7016,7 +7216,7 @@ OutlinerEntryBase = {
 					align = left
 					raw_text = "@province! [ColonialCharter.GetProvinceDefinition.GetNameWithNoTooltip]"
 					default_format = "#yellow_titles"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 
 				hbox = {
@@ -7027,14 +7227,14 @@ OutlinerEntryBase = {
 						maximumsize = { 65 -1 }
 						autoresize = yes
 						raw_text = "[ColonialCharter.GetMonthlyMigration]@population!"
-                        fontsize = 14
+                        fontsize = 14 # GlorpUI: added
 					}
 					OutlinerTextBase = {
 						minimumsize = { 65 -1 }
 						maximumsize = { 65 -1 }
 						autoresize = yes
 						raw_text = "[ColonialCharter.GetProgress|2]%"
-                        fontsize = 14
+                        fontsize = 14 # GlorpUI: added
 					}
 				}
 
@@ -7125,7 +7325,7 @@ OutlinerEntryBase = {
 
 				portrait_standard_head_button = {
 					datacontext = "[Exploration.GetCharacter]"
-					size = { 28 28 }
+					size = { 30 30 }
 
 					action_tooltip = {
 						click_type = left
@@ -7158,13 +7358,13 @@ OutlinerEntryBase = {
 				}
 
 				icon = {
-					size = { 28 28 }
+					size = { 30 30 } # GlorpUI: 20->28
 					visible = "[Exploration.GetArea.IsNaval]"
 					texture = "gfx/interface/icons/flat_icons/geopolitics/exploration_sea.dds"
 				}
 
 				icon = {
-					size = { 28 28 }
+					size = { 30 30 } # GlorpUI: 20->28
 					visible = "[Not(Exploration.GetArea.IsNaval)]"
 					texture = "gfx/interface/icons/flat_icons/geopolitics/exploration_land.dds"
 				}
@@ -7174,7 +7374,7 @@ OutlinerEntryBase = {
 					autoresize = no
 					align = left
 					raw_text = "[Exploration.GetArea.GetNameWithNoTooltip] ([Exploration.GetArea.GetRegion.GetNameWithNoTooltip])"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: default_format #L -> fontsize 14
 				}
 
 				OutlinerTextBase = {
@@ -7205,7 +7405,7 @@ OutlinerEntryBase = {
 		OutlinerIconBg = {
 			piechart = {
 				parentanchor = center
-				size = { 85% 85% }
+				size = { 85% 85% } # GlorpUI: 80%->85%
 
 				using = piechart_angles
 				using = bg_circle_piechart
@@ -7278,13 +7478,13 @@ OutlinerEntryBase = {
 					autoresize = no
 					align = left
 					text = "[Privateer.GetArea.GetNameWithNoTooltip]"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 
 				OutlinerTextBase = {
 					autoresize = yes
 					raw_text = "[Privateer.GetPowerChange|+=%]"
-                    fontsize = 14
+                    fontsize = 14 # GlorpUI: added
 				}
 			}
 		}
@@ -7382,7 +7582,7 @@ OutlinerEntryBase = {
 				autoresize = no
 				align = right
 				raw_text = "-"
-                fontsize = 14
+                fontsize = 14 # GlorpUI: added
 			}
 		}
 	}
@@ -7451,7 +7651,7 @@ template category_big_template {
 						size = { 100% 100% }
 
 						onclick = "[OutlinerCategoryEntry.TogglePin]"
-						checked = "[OutlinerCategoryEntry.IsPinned]"
+						down = "[OutlinerCategoryEntry.IsPinned]"
 						tooltipwidget = {
 							LeftClickButtonTooltip = {
 								# block "entry_count" {
@@ -7464,7 +7664,7 @@ template category_big_template {
 			}
 
 			icon = {
-				size = { 30 30 }
+				size = { 30 30 } # GlorpUI: 20->30
 				block "category_icon_texture" { visible = no }
 				glow = {
 					name = "drop_shadow"
@@ -7603,21 +7803,18 @@ template category_small_template {
 					button_pin = {
 						size = { 100% 100% }
 
-						onclick = "[OutlinerCategoryEntry.TogglePin]"
-						checked = "[OutlinerCategoryEntry.IsPinned]"
-						tooltipwidget = {
-							LeftClickButtonTooltip = {
-								blockoverride "onclick_text" {
-									text = "[SelectLocalization(OutlinerCategoryEntry.IsPinned, 'UNPIN_CATEGORY', 'PIN_CATEGORY')]"
-								}
-							}
+						action_tooltip = {
+							title = "[SelectLocalization(OutlinerCategoryEntry.IsPinned, 'UNPIN_CATEGORY', 'PIN_CATEGORY')]"
+							on_action = "[OutlinerCategoryEntry.TogglePin]"
 						}
+						tooltipwidget = { BasicFunctionalTooltip = {} }
+						down = "[OutlinerCategoryEntry.IsPinned]"
 					}
 				}
 			}
 
 			icon = {
-				size = { 28 28 }
+				size = { 30 30 } # GlorpUI: 20->28
 				glow = {
 					name = "drop_shadow"
 					glow_radius = 3
@@ -7709,33 +7906,6 @@ template category_small_template {
 					}
 				}
 			}
-		}
-	}
-}
-
-# notclickable icon
-template category_icon_template {
-	visible = "[Not(Or3(Outliner.IsSettingsShowing, Outliner.IsMouseOver, And(Outliner.IsPinned, Not(Outliner.IsAnyOccludingPanelOpened))))]"
-
-	widget = {
-		size = { 100% 100% }
-		background = {
-			texture = "gfx/interface/component_tiles/balance_card_bg.dds"
-			texture_density = 2
-			using = button_outliner_effect
-		}
-		widget = {
-			size = {100% 100%}
-			ignore_layout = yes
-			alwaystransparent = yes
-			using = bg_cabinet_card_frame
-		}
-		OutlinerTextBase = {
-			size = { 100% 100% }
-			autoresize = no
-			align = center
-			block "outliner_category_count" { text = "[OutlinerCategoryEntry.GetEntryCount]" }
-			fontsize = 14
 		}
 	}
 }
@@ -7920,6 +8090,36 @@ OutlinerEntryBase = {
 			texture = "gfx/interface/icons/map_modes/market.dds"
 		}
 	 }
+	blockoverride "icon_content" { using = category_icon_template }
+
+	blockoverride "button_setup" {
+		tooltipwidget = { BasicFunctionalTooltip = {} }
+		action_tooltip = {
+			title = "[SelectLocalization(OutlinerCategoryEntry.IsOpened, 'CLOSE_CATEGORY', 'EXPAND_CATEGORY')]"
+			on_action = "[OutlinerCategoryEntry.Toggle]"
+		}
+	}
+
+	blockoverride "category_color" {
+		using = color_economy_texture
+	}
+}
+
+OutlinerEntryBase = {
+	name = "fav_market_category_entry"
+
+	blockoverride "expanded_big_content"  {
+		using = category_big_template
+		blockoverride "category_icon_texture" {
+			texture = "gfx/interface/icons/map_modes/market.dds"
+		}
+	}
+	blockoverride "expanded_small_content" {
+		using = category_small_template
+		blockoverride "small_category_icon_texture" {
+			texture = "gfx/interface/icons/map_modes/market.dds"
+		}
+	}
 	blockoverride "icon_content" { using = category_icon_template }
 
 	blockoverride "button_setup" {
