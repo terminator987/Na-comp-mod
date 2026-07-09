@@ -4267,14 +4267,14 @@ construction_wages = {
 	game_data = {
 		category = country
 	}
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 }
 
 infrastructure_focus = {
 	game_data = {
 		category = country
 	}
-	global_build_buildings_cost = -0.05
+	global_build_buildings_efficiency = 0.05
 }
 
 enhanced_colonial_militia = {
@@ -4563,7 +4563,7 @@ fra_loyal_nrm_lands = {
 	global_monthly_control = 0.005
 	global_monthly_development = 0.002
 	global_monthly_prosperity = 0.001
-	global_build_buildings_cost = -0.2
+	global_build_buildings_efficiency = 0.2
 }
 
 fra_success_of_the_praguerie_faction = {
@@ -5727,7 +5727,7 @@ sco_focus_on_peace = {
 	war_no_cb_cost_modifier = 1
 	declaring_war_cost_modifier = 1
 	global_monthly_prosperity = 0.001
-	global_build_buildings_cost = -0.2
+	global_build_buildings_efficiency = 0.2
 }
 
 sco_strong_wool_trade = {
@@ -5912,7 +5912,7 @@ sco_no_east_india = {
 	game_data = {
 		category = country
 	}
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	global_monthly_development = 0.002
 	stability_investment = standard_stability_investment
 }	
@@ -6382,7 +6382,7 @@ infrastructure_funds_modifier = {
 		category = country 
 	}
 
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	town_upgrade_cost_modifier = -0.1
 	city_upgrade_cost_modifier = -0.1
 	megalopolis_upgrade_cost_modifier = -0.1
@@ -6522,7 +6522,7 @@ prolific_architects_modifier = {
 	game_data = {
 		category = country
 	}
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 }
 
 executed_a_ruler = {
@@ -6970,7 +6970,7 @@ jap_shugo_autonomy_for_submission = {
 		category = country 
 	}
 
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = -0.1
 	monthly_gold_income = 3
 	global_manpower_modifier = 0.15
 }
@@ -7107,7 +7107,7 @@ jap_shoin_zukuri = {
 		decaying = yes
 	}
 
-	global_build_buildings_cost = -0.15
+	global_build_buildings_efficiency = 0.15
 	monthly_legitimacy = 0.10
 }
 
@@ -8768,7 +8768,7 @@ sultanate_of_women = {
 		category = country
 	}
 
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	stability_cost = -0.1
 }
 
@@ -10039,7 +10039,7 @@ invest_in_members_economy_modifier = {
 		category = country
 		decaying = yes
 	}
-	global_build_buildings_cost = -0.5
+	global_build_buildings_efficiency = 0.5
 	global_rgo_build_time = -0.5
 }
 invest_in_members_administration_modifier = {
@@ -10140,7 +10140,7 @@ strengthened_ministry_of_works = { #If changed, change too the modifier in the p
 	build_paved_road_cost_modifier = -0.1
 	build_modern_road_cost_modifier = -0.1
 	build_railroad_cost_modifier = -0.1
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 }
 
 expanded_palace_bureaucracy = { #If changed, change too the modifier in the policy in middle_kingdom_decrees law
@@ -10588,7 +10588,7 @@ chk_restricted_construction = {
 	game_data = {
 		category = country
 	}
-	global_build_buildings_cost = 0.33
+	global_build_buildings_efficiency = -0.33
 	monthly_gold_income = 4
 }
 
@@ -10613,7 +10613,7 @@ pue_return_to_mesa_verde = {
 	game_data = {
 		category = country	
 	}
-	global_build_buildings_cost = 0.2
+	global_build_buildings_efficiency = -0.2
 	stability_investment = small_stability_investment
 	global_food_capacity_modifier = -0.25
 }
@@ -11047,7 +11047,7 @@ angkor_architecture_modifier = {
 		category = country
 	}
 
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	monthly_prestige = 0.25
 }
 
@@ -11214,7 +11214,7 @@ chinese_architectural_influences_modifier = {
 		decaying = yes 
 	}
 
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	monthly_towards_sinicized = societal_value_significant_monthly_move
 }
 
@@ -11652,7 +11652,7 @@ lat_avoided_bulgaria_serbia_campaigns = {
 	global_monthly_development = 0.002
 	monthly_towards_conciliatory = societal_value_large_monthly_move
 	global_monthly_prosperity = 0.001
-	global_build_buildings_cost = -0.10
+	global_build_buildings_efficiency = 0.10
 }
 
 lat_leveraged_patriarchate_for_estate_gain = {
@@ -11897,7 +11897,7 @@ standardized_brewing_practices_modifier = {
 advanced_masonry_techniques_modifier = {
 	game_data = { category = country }
 
-	global_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	global_construction_speed = 0.25
 }
 

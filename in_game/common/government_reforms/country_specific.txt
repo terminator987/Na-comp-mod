@@ -274,7 +274,7 @@ iron_ring_reform = {
 		fort_maintenance_cost = -0.25
 		fort_limit = 2
 		monthly_towards_defensive = societal_value_monthly_move
-		global_build_buildings_cost = 0.25
+		global_build_buildings_efficiency = -0.25
 	}
 	years = 2
 }
@@ -733,7 +733,7 @@ manuelan_architecture = {
 	}
 	country_modifier = {
 		cultural_tradition_modifier = 0.25
-		global_build_buildings_cost = -0.1
+		global_build_buildings_efficiency = 0.1
 	}
 	years = 2
 }
@@ -4449,7 +4449,7 @@ lat_papal_restoration_claimant = {
 		}
 	}
 	country_modifier = {
-		global_build_buildings_cost = 1
+		global_build_buildings_efficiency = -1
 		global_war_score_efficiency = 0.2
 		levy_maintenance_modifier = -0.25
 		clergy_estate_levy_size = 0.5
