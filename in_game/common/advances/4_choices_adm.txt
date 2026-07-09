@@ -35,7 +35,7 @@ court_accounting = {
 
 	requires = renaissance_thought
 	
-	court_spending_cost_modifier = -0.05
+	court_spending_efficiency = 0.05
 }
 
 
@@ -140,7 +140,7 @@ organised_construction = {
 	icon = renaissance_development
 	for = adm
 
-	court_spending_cost_modifier = -0.2
+	court_spending_efficiency= 0.2
 }
 organised_mercenary_payment = {
 	age = age_3_discovery

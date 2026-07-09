@@ -1122,7 +1122,7 @@ ottoman_eunuch_viziers = {
 	country_modifier = {
 		nobles_estate_target_satisfaction = small_permanent_target_satisfaction
 		country_cabinet_efficiency = 0.05
-		court_spending_cost_modifier = 0.05
+		court_spending_efficiency = -0.05
 		government_reform_slots = 1
 	}
 	years = 2
@@ -2027,7 +2027,7 @@ shogunate = {
 		is_leader_of_international_organization = international_organization:japanese_shogunate
 	}
 	country_modifier = {
-		court_spending_cost_modifier = -0.05
+		court_spending_efficiency = 0.05
 		appease_nobles_estate_from_shogun_court_cost_modifier = -0.3
 		cultural_influence_modifier = 0.2
 		government_reform_slots = 1
@@ -2054,7 +2054,7 @@ shogunate_kanrei_council = {
 		}
 	}	
 	country_modifier = {
-		court_spending_cost_modifier = 0.20
+		court_spending_efficiency = -0.20
 		stability_investment = standard_stability_investment
 		country_cabinet_efficiency = 0.15
 		government_reform_slots = 1
@@ -2391,7 +2391,7 @@ byzantine_court_ceremonies_reform = {
 	}
 	country_modifier = {
 		cultural_tradition = 0.20
-		court_spending_cost_modifier = 0.10
+		court_spending_efficiency = -0.10
 		monthly_legitimacy = 0.10
 		monthly_prestige = 0.10
 	}
@@ -2491,7 +2491,7 @@ council_of_ten = {
 		global_nobles_estate_power = -0.1
 		monthly_republican_tradition = 0.05
 		stability_investment = small_stability_investment
-		court_spending_cost_modifier = 0.05
+		court_spending_efficiency = -0.05
 		government_reform_slots = 1
 	}
 	years = 2
@@ -3279,7 +3279,7 @@ empower_the_eunuchs = {
 		}
 	}
 	country_modifier = {
-		court_spending_cost_modifier = 0.05
+		court_spending_efficiency = -0.05
 		scale = {
 			value = 1
 			add = modifier:eunuch_power
@@ -3478,7 +3478,7 @@ mamluk_government = {
 		can_promote_mamluks = yes
 		can_build_mamluk_barracks = yes
 		monthly_army_tradition = 0.1
-		court_spending_cost_modifier = 0.1
+		court_spending_efficiency = -0.1
 	}
 	years = 2
 }
@@ -3988,7 +3988,7 @@ soyurghal_governor_reform = {
 		}
 	}
 	country_modifier = {
-		court_spending_cost_modifier = 0.1
+		court_spending_efficiency = -0.1
 		global_monthly_prosperity = 0.002
 	}
 }

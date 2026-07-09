@@ -40,7 +40,7 @@ crown_power_advance_reformation = {
 confessional_court = {
 	age = age_4_reformation
 	icon = court_accounting
-	court_spending_cost_modifier = -0.05
+	court_spending_efficiency= 0.05
 	global_pop_conversion_speed_modifier = 0.1
 	
 	requires = power_projection_advance_3

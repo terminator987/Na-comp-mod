@@ -2026,7 +2026,7 @@ royal_academy_of_arts = {
 	}
 
 	capital_country_modifier = {
-		court_spending_cost_modifier = 0.05
+		court_spending_efficiency = -0.05
 		skill_of_new_artists = 0.1
 		global_monthly_art_start_chance = 0.15
 	}

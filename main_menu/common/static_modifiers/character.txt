@@ -439,7 +439,7 @@ tonnage_and_poundage_denied = {
 		category = character
 	}
 
-	court_spending_cost_modifier = 0.05
+	court_spending_efficiency = -0.05
 	monthly_legitimacy = -0.1
 }
 
@@ -935,7 +935,7 @@ steamroll_administrator = {
 	}
 	legislative_efficiency = 0.2
 	tax_income_efficiency = large_tax_income_efficiency_bonus
-	court_spending_cost_modifier = -0.05
+	court_spending_efficiency = 0.05
 	global_nobles_estate_power = 0.1
 }
 
@@ -1287,7 +1287,7 @@ fra_sun_king_court_patronage = {
 	dip = 12
 	cultural_influence = 1
 	skill_of_new_artists = 0.1
-	court_spending_cost_modifier = 0.25
+	court_spending_efficiency = -0.25
 }
 
 fra_sun_king_scaled_back_court_patronage = {
@@ -1297,7 +1297,7 @@ fra_sun_king_scaled_back_court_patronage = {
 	monthly_prestige = 0.10
 	monthly_legitimacy = 0.10
 	dip = 5
-	court_spending_cost_modifier = 0.1
+	court_spending_efficiency = -0.1
 }
 
 the_sun_king_bonus = {
@@ -1651,7 +1651,7 @@ erratic_excited = {
 	game_data = {
 		category = character
 	}
-	court_spending_cost_modifier = 0.1
+	court_spending_efficiency = -0.1
 	#AI
 }
 erratic_paranoid = {
@@ -2062,7 +2062,7 @@ maj_works_of_faith_modifier = {
 		category = character
 	}
 	
-	global_urban_build_buildings_cost = -0.1
+	global_build_buildings_efficiency = 0.1
 	monthly_towards_humanist = societal_value_large_monthly_move
 
 }

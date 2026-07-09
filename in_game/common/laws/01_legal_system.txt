@@ -186,7 +186,7 @@
 		}
 		country_modifier = {
 			monthly_towards_plutocracy = societal_value_monthly_move
-			court_spending_cost_modifier = -0.05
+			court_spending_efficiency = 0.05
 			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
 		}
 		estate_preferences = {
@@ -209,7 +209,7 @@
 		}
 		country_modifier = {
 			monthly_towards_centralization = societal_value_monthly_move
-			court_spending_cost_modifier = 0.1
+			court_spending_efficiency = -0.1
 			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
 			burghers_estate_target_satisfaction = tiny_permanent_target_satisfaction
 			clergy_estate_target_satisfaction = tiny_permanent_target_satisfaction
