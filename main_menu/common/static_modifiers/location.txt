@@ -80,6 +80,7 @@ location_template_natural_harbor_suitability_good = {
 	#good natural harbours make construction easier
 	local_port_build_buildings_efficiency = 0.6
 	local_trade_center_power = 0.01
+
 }
 
 # mulitplied by 0-1 from total share of art in the world.  expect it to be multiplied by 0.0001 at best or maybe 0.02 if its like Paris
@@ -418,7 +419,7 @@ market_center = {
 	local_merchant_power = 20
 	local_institution_growth_modifier = 0.25
 	free_building_levels = 5
-	maximum_stockpile_capacity = 250
+	maximum_stockpile_capacity = 25
 }
 
 
@@ -578,7 +579,7 @@ building_levels = {
 		category = location
 	}
 	local_population_capacity_modifier = 0.001
-	local_trade_center_power = 0.0004
+	local_trade_center_power = 0.0005
 }
 
 unsupported_building_levels = {
