@@ -39,7 +39,7 @@ mother_of_russian_cities = {
 			has_or_had_tag = KIE
 		}
 	}
-	global_urban_build_buildings_cost = -0.05
+global_urban_build_buildings_efficiency = 0.1
 	global_devastation_recovery = 0.005
 
 	requires = power_projection_advance_2
@@ -117,7 +117,7 @@ ruthenian_state_advance = {
 			has_or_had_tag = KIE
 		}
 	}
-	stability_cost = -0.1
+	stability_cost_efficiency = 0.2
 
 	requires = the_constitution
 }
@@ -130,7 +130,7 @@ ruthenian_rural_buildings = {
 			has_or_had_tag = KIE
 		}
 	}
-	global_rural_build_buildings_cost = -0.1
+	global_rural_build_buildings_efficiency = 0.2
 
 	requires = construction_speed_absolutism
 }
