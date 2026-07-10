@@ -1528,9 +1528,10 @@ flavor_brapru.24 = { #Order of The Swan
 	option = {
 		name = flavor_brapru.24.a
 		historical_option = yes
-		set_active_chivalric_order = chivalric_order:order_of_the_swan
-		scope:country_ruler = { join_chivalric_order = chivalric_order:order_of_the_swan }
-
+		unlock_law_effect = { type = order_of_chivalry_law }
+		unlock_policy_effect = { type = order_of_the_swan_policy }
+		add_policy = policy:order_of_the_swan_policy
+		scope:country_ruler = { join_specific_order_of_chivalry = { type = order_of_the_swan } }
 
 		change_gold_effect = { scale = -12 }
 

@@ -9319,7 +9319,7 @@ flavor_fra.302 = { # Da Vinci and the Mona Lisa
 				limit = {
 					this = work_of_art:mona_lisa
 				}
-				move_art_and_owner = { location = root.capital country = root }
+				move_art = root.capital
 			}
 		}
 		ai_chance = {
