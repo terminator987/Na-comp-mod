@@ -387,6 +387,7 @@ flavor_mei.50 = { #The Rise of Dresden
 			NOR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -424,7 +425,7 @@ flavor_mei.50 = { #The Rise of Dresden
 				limit = {
 					location_rank = location_rank:rural_settlement
 				}
-				change_location_rank = location_rank:town
+				change_location_rank_effect = { location_rank = location_rank:town }
 			}
 			else = {
 				limit = {
@@ -901,6 +902,7 @@ flavor_mei.121 = {
 
 	option = {
 		name = flavor_mei.121.a
+		high_risk_option = yes
 
 		custom_tooltip = flavor_mei.121.a.tt
 		change_player = c:MEI
@@ -1059,6 +1061,7 @@ flavor_mei.131 = { #An Imperial Offer (Emperor)
 	option = {
 		name = flavor_mei.131.a
 		historical_option = yes
+		high_risk_option = yes
 		if = {
 			limit = {
 				c:SWB = {
@@ -1093,8 +1096,6 @@ flavor_mei.131 = { #An Imperial Offer (Emperor)
 		}
 		custom_tooltip = flavor_mei.131.tt
 		hidden_effect = {
-			change_country_name = SAX
-			change_country_adjective = SAX_ADJ
 			change_country_flag = SAX
 			change_country_color = map_SAX
 		}
@@ -1274,6 +1275,7 @@ flavor_mei.160 = { #University of Wittenberg
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
     }
@@ -1346,6 +1348,7 @@ flavor_mei.170 = { #University of Freiberg
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -1667,6 +1670,7 @@ flavor_mei.210 = { #The Meissen Porcelain Factory
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 	}
@@ -1790,7 +1794,10 @@ flavor_mei.230 = { #The Theory of Neptunism
 	}
 
 	trigger = {
-		has_variable = mei_werner_event
+		custom_tooltip = {
+			text = variable_mei_werner_event_tt
+			has_variable = mei_werner_event
+		}
 		owns = location:freiberg
 	}
 
@@ -2034,7 +2041,7 @@ flavor_mei.1001 = { #The Wettin Threat
 						is_at_war_with = root
 					}
 				}
-				order_by = modifier:great_power_score
+				order_by = country_economical_base
 				max = 3
 				add_to_list = saxon_alliance_targets
 			}
@@ -2114,9 +2121,20 @@ flavor_mei.1003 = { #Thuringian Counts' War - Meissen
 		name = flavor_mei.1003.a
 		historical_option = yes
 		add_prestige = prestige_mild_bonus
-		declare_war_with_cb = {
-			target = scope:target_country
-			type = casus_belli:cb_annex
+		if = {
+			limit = {
+				can_declare_legal_war_on = { target = scope:target_country }
+			}
+			declare_war_with_cb = {
+				target = scope:target_country
+				type = casus_belli:cb_claim_throne
+			}
+		}
+		else = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_claim_throne
+			}
 		}
 		change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_move_to_left }
 	}
@@ -2179,7 +2197,12 @@ flavor_mei.1004 = { #Thuringian Counts' War - Saxon Count
 		name = flavor_mei.1004.a
 		historical_option = yes
 		add_casus_belli = {	target = scope:target_country type = casus_belli:cb_conquer_province province = scope:target_location.province }
-		declare_war_with_cb = { target = scope:target_country type = casus_belli:cb_conquer_province target_province = scope:target_location.province }
+		if = {
+			limit = {
+				can_declare_legal_war_on = { target = scope:target_country }
+			}
+			declare_war_with_cb = { target = scope:target_country type = casus_belli:cb_conquer_province target_province = scope:target_location.province }
+		}
 	}
 
 	option = {
