@@ -22,7 +22,7 @@ ara_desperta_ferro = {
 		}
 	}
 	land_morale_modifier = 0.1
-	ai_weight = { add = 10 }
+	
 
 	requires = feudalism_advance
 }

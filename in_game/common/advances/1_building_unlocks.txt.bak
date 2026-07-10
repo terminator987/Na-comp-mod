@@ -24,7 +24,6 @@ construction_center_advance = {
 	age = age_3_discovery
 	
 	unlock_building = construction_center
-	global_population_capacity_modifier = 0.15
 	requires = basic_financial_instruments
 }
 
@@ -173,7 +172,6 @@ unlock_handgonners_advance = {
 	unlock_unit = a_handgonners
 	
 	requires = gun_smith_advance
-	ai_weight = { add = 20 }
 }
 
 
@@ -695,6 +693,7 @@ training_fields_advance = {
 	age = age_3_discovery
 	requires = matchlock_gun
 	
+	ai_weight = { add = 500 }
 	
 	unlock_building = training_fields
 }
@@ -1273,7 +1272,7 @@ early_council_hall_advance = {
 	age = age_2_renaissance
 	
 	requires = renaissance_court 
-
+	ai_weight = { add = 10 }
 	unlock_building = early_council_hall
 	
 }
@@ -1282,7 +1281,7 @@ council_hall_advance = {
 	age = age_3_discovery
 	
 	requires = town_rights_enable
-
+	ai_weight = { add = 10 }
 	unlock_building = council_hall
 }
 
@@ -1290,6 +1289,6 @@ modern_council_hall_advance = {
 	age = age_5_absolutism
 	
 	requires = town_rights_abs_advance
-
+	ai_weight = { add = 10 }
 	unlock_building = modern_council_hall
 }

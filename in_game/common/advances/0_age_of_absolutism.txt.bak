@@ -60,6 +60,33 @@ powerful_statues = {
 	global_stone_output_modifier = 0.1
 }
 
+ostentatious_clothing = {
+	icon = fla_cloth
+	age = age_5_absolutism
+	
+	requires = lead_ore_dressing
+	
+	global_alum_output_modifier = 0.1
+	global_dyes_output_modifier = 0.1
+}
+
+artists_advance_absolutism = {
+	age = age_5_absolutism
+	icon = renaissance_advance
+	requires = ostentatious_clothing
+	skill_of_new_artists = 0.1
+}
+
+absolutist_court = {
+	age = age_5_absolutism
+	icon = court_accounting
+	
+	global_crown_estate_power = 0.05
+	estate_power_from_cabinet = -0.5
+	
+	requires = ostentatious_clothing
+}
+
 absolute_rulership = {
 	age = age_5_absolutism
 	global_crown_estate_power = 0.50
@@ -80,6 +107,21 @@ town_rights_abs_advance = {
 	icon = town_rights_advance
 	requires = government_size_absolutism
 	capital_possible_town_rights = 1
+}
+
+cork_stoppers = {
+	age = age_5_absolutism
+	global_wine_output_modifier = 0.2
+	requires = ostentatious_clothing
+}
+
+sanitation_advance = {
+	age = age_5_absolutism
+
+	requires = government_size_absolutism
+
+	global_life_expectancy = 3
+	global_disease_resistance = 0.05
 }
 
 aqueduct_system = {
@@ -334,6 +376,15 @@ improved_supply_lines = {
 	army_logistics_distance = 25
 }
 
+increase_control_area_advance = {
+	age = age_5_absolutism
+
+	
+	requires = military_revolution_advance
+
+	unlock_cabinet_action = increase_control_area
+}
+
 artillery_vs_fort_age_5_absolutism = {
 	age = age_5_absolutism
 	icon = artillery_institution_advance
@@ -341,6 +392,22 @@ artillery_vs_fort_age_5_absolutism = {
 	artillery_bonus_vs_fort = 1
 		
 	requires = improved_supply_lines
+}
+
+army_movement_speed_absolutism = {
+	age = age_5_absolutism
+	icon = expansionism
+	requires = increase_control_area_advance
+
+	army_movement_speed = 0.1
+}
+
+regiment_reinforcement_speed_absolutism = {
+	age = age_5_absolutism
+	icon = regiment_reinforcement_speed_renaissance
+
+	requires = army_movement_speed_absolutism
+	regiment_reinforcement_speed = 0.1
 }
 
 war_score_absolutism_advance = {
@@ -419,61 +486,4 @@ country_unification_advance = {
 
 	requires = jesuits_bark
 	diplomatic_annexation_efficiency = 0.4
-}
-ostentatious_clothing = {
-	icon = fla_cloth
-	age = age_5_absolutism
-	
-	requires = lead_ore_dressing
-
-	global_alum_output_modifier = 0.1
-	global_dyes_output_modifier = 0.1
-}
-
-artists_advance_absolutism = {
-	age = age_5_absolutism
-	icon = renaissance_advance
-	requires = food_advance_absolutism
-	skill_of_new_artists = 0.1
-}
-
-absolutist_court = {
-	age = age_5_absolutism
-	icon = court_accounting
-	
-	global_crown_estate_power = 0.05
-	estate_power_from_cabinet = -0.5
-
-	requires = absolute_rulership
-}
-
-cork_stoppers = {
-	age = age_5_absolutism
-	global_wine_output_modifier = 0.2
-	requires = ostentatious_clothing
-}
-
-increase_control_area_advance = {
-	age = age_5_absolutism
-
-	
-	requires = absolutist_court
-
-	unlock_cabinet_action = increase_control_area
-}
-
-army_movement_speed_absolutism = {
-	age = age_5_absolutism
-	icon = expansionism
-	requires = increase_control_area_advance
-
-	army_movement_speed = 0.1
-}
-
-regiment_reinforcement_speed_absolutism = {
-	age = age_5_absolutism
-	icon = regiment_reinforcement_speed_renaissance
-
-	requires = army_movement_speed_absolutism
-	regiment_reinforcement_speed = 0.1
 }

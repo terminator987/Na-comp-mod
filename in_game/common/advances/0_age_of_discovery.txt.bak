@@ -309,6 +309,7 @@ improved_book_binding = {
 }
 
 
+
 regulate_court_procedures = {
 	age = age_3_discovery
 	icon = genoese_banking_traditions

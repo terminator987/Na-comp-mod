@@ -7,7 +7,7 @@ pharmacology_advance = {
 
 	global_life_expectancy = 3
 	global_disease_resistance = 0.05
-	global_population_capacity_modifier = 0.3
+
 	depth = 0
 }
 
@@ -474,7 +474,7 @@ regiment_reinforcement_speed_reformation = {
 	age = age_4_reformation
 	icon = regiment_reinforcement_speed_renaissance
 
-	requires = military_administration
+	requires = assault_ability_reformation
 	regiment_reinforcement_speed = 0.1
 }
 
@@ -488,10 +488,28 @@ recruitment_improvements_reformation = {
 }
 
 
-reformation_subject_opinions_advance = {
-	
+supply_depot_advance_age_4_reformation = {
 	age = age_4_reformation
-	icon = diplomatic_range_age_1
-	requires = diplomatic_range_age_3
-	subject_opinions = 10
+	icon = zmw_merchant_taxes
+			
+	supply_depot_capacity = 25
+		
+	requires = correct_box_advance_reformation
+}
+
+mercenaries_reformation_advance = {
+	age = age_4_reformation
+	icon = regimental_system
+	
+	global_mercenaries_modifier = 0.20
+	requires = supply_depot_advance_age_4_reformation
+}
+
+maurician_infantry = {
+	age = age_4_reformation
+	icon = offensive_army
+	
+	land_morale = 0.25
+
+	requires = assault_ability_reformation
 }
