@@ -14,6 +14,7 @@ nobles_land_rights = {
 	estate = nobles_estate
 	
 	country_modifier = {
+		allow_noble_villa = yes
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 0.75
 		
@@ -44,6 +45,7 @@ auxilium_et_consilium = {
 	}
 	
 	country_modifier = {
+		allow_nobles_recruitment_center = yes
 		global_nobles_estate_power = 0.5
 		
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -90,9 +92,10 @@ noble_fortification_licenses = {
 	}
 	
 	country_modifier = {
+		allow_nobility_fortifications = yes
 		global_nobles_estate_power = 0.75
 		fort_limit_modifier = 0.1
-		fort_maintenance_cost = -0.1
+		fort_maintenance_efficiency = 0.50
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		monthly_towards_decentralization = societal_value_monthly_move
 		monthly_towards_land = societal_value_minor_monthly_move
@@ -183,6 +186,7 @@ elaborate_court_ceremonies = {
 	}
 	
 	country_modifier = {
+		allow_local_noble_delegation = yes
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 0.2
 		court_spending_efficiency = -0.05
@@ -209,6 +213,7 @@ nobility_council = {
 
 	
 	country_modifier = {
+		allow_local_noble_delegation = yes
 		monthly_towards_aristocracy = societal_value_minor_monthly_move
 		stability_decay = -0.00025
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -704,9 +709,9 @@ noble_armies = {
 
 	potential = {
 		OR = {
-			tag = FRA
-			tag = KOR
-			tag = BUR
+			has_or_had_tag = FRA
+			has_or_had_tag = KOR
+			has_or_had_tag = BUR
 		}
 	}
 
@@ -725,8 +730,8 @@ chancellor_nobles = {
 
 	potential = {
 		OR = {
-			tag = FRA
-			tag = BUR
+			has_or_had_tag = FRA
+			has_or_had_tag = BUR
 		}
 	}
 
@@ -739,11 +744,11 @@ chancellor_nobles = {
 
 great_offices_of_the_crown_of_france = { 
 	estate = nobles_estate
-
+	content_priority = 100
 	potential = {
 		OR = {
-			tag = FRA
-			tag = BUR
+			has_or_had_tag = FRA
+			has_or_had_tag = BUR
 		}
 	}
 
@@ -775,7 +780,7 @@ residence_in_versailles = {
 
 permanent_residence_in_versailles = { 
 	estate = nobles_estate
-
+	content_priority = 600
 	potential = {
 		has_or_had_tag = FRA
 		NOT = { has_estate_privilege = estate_privilege:residence_in_versailles }
@@ -802,7 +807,7 @@ right_to_inherit = {
 	}
 	
 	country_modifier = {
-		stability_cost = -0.2
+		stability_cost_efficiency = 0.4
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 0.5
 		
@@ -1159,6 +1164,7 @@ scottish_clans = {
 		"estate_power(estate_type:crown_estate)" > 0.33		
 	}
 	country_modifier = {
+		allow_dun_fort = yes
 		global_nobles_estate_power = 0.2
 		nobles_estate_levy_size = 0.3
 		nobles_estate_max_tax = 0.05
@@ -1183,6 +1189,7 @@ autonomous_scottish_clans = {
 		"estate_power(estate_type:crown_estate)" > 0.33		
 	}
 	country_modifier = {
+		allow_dun_fort = yes
 		global_nobles_estate_power = -0.05
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		nobles_estate_max_tax = 0.05
@@ -1228,8 +1235,7 @@ coign_and_livery_privilege = {
 		nobles_estate_max_tax = 0.1
 		global_nobles_estate_power = 0.1
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
-		army_heavy_infantry_maintenance_cost_modifier = -0.25
-		army_heavy_cavalry_maintenance_cost_modifier = -0.25
+		army_maintenance_efficiency = 0.15
 	}
 }
 
@@ -1486,7 +1492,7 @@ reduced_responsibilities_for_the_nobles = { #Privilege of Koszyce
 	country_modifier = {
 		nobles_estate_target_satisfaction = small_privilege_target_satisfaction
 		global_nobles_estate_power = 0.2
-		fort_maintenance_cost = 0.2
+		fort_maintenance_efficiency = -0.2
 		global_nobles_food_consumption = 0.1
 	}
 }
@@ -1789,7 +1795,6 @@ tur_banned_weaponry_for_peasants = {
 		peasants_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
 		monthly_rebel_growth = -0.0002
 		monthly_towards_serfdom = societal_value_monthly_move
-		peasants_allowed_weapons = no #Added there in case you have another modifier that allows weapons
 	}
 }
 
@@ -1810,8 +1815,8 @@ lat_latin_crusader_elite = {
 		land_morale_modifier = 0.1
 		change_primary_culture_cost_modifier = 0.75
 		global_nobles_estate_power = 0.75
-		add_accepted_culture_cost_modifier = -0.15
-		add_tolerated_culture_cost_modifier = -0.15
+		accepted_culture_maintenance_cost_modifier = -0.15
+		tolerated_culture_maintenance_cost_modifier = -0.15
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		monthly_towards_quality = societal_value_monthly_move
 	}

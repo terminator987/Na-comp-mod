@@ -62,7 +62,7 @@
 
 	province_modifier = {
 		province_integration_speed = 1.5
-		local_build_buildings_cost = 0.15
+		local_build_buildings_efficiency = -0.15
 	}
 
 	progress = {

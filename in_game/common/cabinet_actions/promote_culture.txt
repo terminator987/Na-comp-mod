@@ -90,7 +90,7 @@
 				controller = scope:actor
 				count = all
 			}
-			NOT = { cabinet_already_performing_same_task_on_target = { cabinet_action = promote_culture interaction_target = root } }
+			NOT = { cabinet_already_performing_same_task_on_target = { cabinet_action = promote_culture interaction_target = target_1 } }
 		}
 		map_color = {
 			lerp = {

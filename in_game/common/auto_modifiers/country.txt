@@ -13,6 +13,8 @@ country_base_values = {
 	monthly_war_exhaustion = -0.025
 
 	
+	max_bonds = 1
+		
 	global_monthly_control_decline = 0.005
 
 	max_war_exhaustion = 20
@@ -25,6 +27,7 @@ country_base_values = {
 	
 	global_prosperity_decay = 0.01
 
+
 	monthly_rebel_growth = 0.001
 	
 	country_child_education = 0.75
@@ -34,6 +37,8 @@ country_base_values = {
 	global_peasant_enfranchisment = 0.25
 	
 	num_local_governors = 1
+
+	union_weight = 0.25
 
 	
 	ship_capture_chance = 0.025
@@ -57,13 +62,17 @@ country_base_values = {
 
 	crown_power_from_population = 1.0
 
-	supply_depot_capacity = 50
+	supply_depot_capacity = 1000
 	
 	artillery_bonus_vs_fort = 5
 	fort_limit = 1 #default so everyone can have one fort
 
+	building_upkeep_multiplier = 0.2
+
 	government_reform_slots = 1
 	government_size = 2
+
+	allow_bureaucracy = yes
 
 	privateer_durability = 0.05
 	
@@ -93,6 +102,8 @@ country_base_values = {
 	estate_satisfaction_from_building = 0.025
 	
 	minting_inflation_threshold = 0.05
+
+	bond_interest = 0.05
 	
 	global_food_decay = 0.005
 	
@@ -178,16 +189,18 @@ country_base_values = {
 	
 	
 	exploration_mission_speed = 0.05
-	exploration_maintenance_cost = 0
+	exploration_maintenance_efficiency = 0
+
+	ai_amount_of_parallel_charters = 2
 	
 	pop_join_rebel_threshold  = 0.20
 	pop_leave_rebels_threshold = 0.35
-	
 
 
 	
 
 	win_war_chance_threshold = 0.6
+	win_war_chance_lower_limit = 0.5
 	war_declaration_stab_hit_tolerance = 0
 	war_declaration_war_exhaustion_tolerance = 0
 	
@@ -317,22 +330,29 @@ num_colonial_charters_impact = {
 	scales_with = {
 		value = num_colonial_charters
 		subtract = 1
+		min = 0
+		max = 1
 	}
 	
-	colonial_maintenance_cost = 1
+	colonial_maintenance_efficiency = -0.5
 }
 
 
-debt_impact = {
+
+# scale = creditworthiness - 0.5, range: -0.5 (worst) to +0.5 (best)
+creditworthiness_interest_impact = {
 	scales_with = {
-		value = total_debt
-		divide = country_economical_base
+		value = creditworthiness
+		subtract = 0.5
 	}
 
-	global_crown_estate_power = -0.025
-	monthly_doom = 0.005
-	monthly_righteousness = -0.001
+	bank_interest = -0.05
+	bond_interest = -0.04
 }
+
+
+
+
 
 
 num_advances_impact = {
@@ -346,6 +366,9 @@ num_advances_impact = {
 
 
 
+
+
+
 stability_impact = {
 	scales_with = {
 		value = stability
@@ -353,7 +376,7 @@ stability_impact = {
 	}
 
 		
-	
+	creditworthiness_bonus = 0.1
 	pop_join_rebel_threshold = -0.1
 	pop_leave_rebels_threshold = -0.05
 }
@@ -387,6 +410,8 @@ negative_stability_impact = {
 	}
 
 		
+		
+	global_building_establishment_speed = -0.25
 	global_estate_target_satisfaction = negative_stability_satisfaction_scale
 	monthly_doom = 0.5
 	monthly_righteousness = -0.1
@@ -403,7 +428,7 @@ war_exhaustion_impact = {
 	
 	global_production_efficiency = scaled_production_efficiency_penalty
 	import_efficiency = scaled_trade_efficiency_penalty
-	global_monthly_food_modifier = -0.025
+	global_population_growth = -0.0005
 }
 
 
@@ -559,7 +584,9 @@ low_republican_tradition = {
 		add = 1
 	}
 
-	stability_cost = 2.0
+	stability_cost_efficiency = -2
+	legislative_efficiency = -0.10
+	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 }
 
 high_devotion = {
@@ -585,6 +612,7 @@ low_devotion = {
 	}
 
 	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	monthly_religious_influence = -0.1
 
 }
 
@@ -808,6 +836,21 @@ negative_harmony = {
 	global_monthly_development = -0.001
 	monthly_harmony = 0.1
 }
+harmony_stabilized = {
+	potential_trigger = {
+		modifier:allow_harmony = yes
+		modifier:harmony_stability = yes
+	}
+	limit = {
+		harmony <= 10
+		harmony >= -10
+	}
+	scales_with = {
+		value = harmony
+		multiply = -0.01
+	}
+	monthly_harmony = 1
+}
 
 
 positive_self_control = {
@@ -823,7 +866,7 @@ positive_self_control = {
 	}
 	stability_investment = tiny_stability_investment
 	global_pop_food_consumption = -0.1
-	diplomatic_annexation_cost = -0.2
+	diplomatic_annexation_efficiency = 0.4
 	rural_migration_attraction = 0.1
 	monthly_towards_spiritualist = societal_value_monthly_move
 }
@@ -967,13 +1010,6 @@ country_population = {
 }
 
 
-country_control_scaled_population = {
-	scales_with = total_control_scaled_population
-
-	great_power_score = 0.01
-}
-
-
 country_accepted_culture_population = {
 	scales_with = total_accepted_culture_population
 
@@ -1046,24 +1082,9 @@ peasants_percentage_in_country = {
 
 
 
-total_merchant_capacity_impact = {
-	scales_with =  total_merchant_capacity
-
-
-	great_power_score = 0.05
-}
-
 monthly_income_impact = {
 	scales_with = monthly_income_trade_and_tax
 }
-
-num_embraced_institutions = {
-	scales_with = num_embraced_institutions
-
-	great_power_score_exempt_from_forfeit = 10
-}
-
-
 
 
 
@@ -1098,7 +1119,7 @@ horde_army_expectation = {
 		min = 0
 	}
 
-	stability_cost = 2.0
+	stability_cost_efficiency = -2
 	land_morale_modifier = -0.5
 }
 
@@ -1461,7 +1482,7 @@ over_fort_limit = {
 		subtract = 1.0
 	}
 	
-	monthly_towards_conciliatory = societal_value_monthly_move
+	monthly_towards_belligerent = societal_value_monthly_move
 	monthly_towards_defensive = societal_value_monthly_move
 	global_defensive = -1.0
 }
@@ -1479,65 +1500,11 @@ over_bureaucracy_limit = {
 	court_spending_efficiency = -0.2
 }
 
-country_tax_base = {
-
-	scales_with = {
-		value = country_tax_base
-	}
-	
-	great_power_score = 0.025
-}
-
-regular_army_size = {
-
-	scales_with = {
-		value = regular_army_size
-	}
-	
-	great_power_score = 1.25
-}
-regular_navy_size = {
-
-	scales_with = {
-		value = regular_navy_size
-	}
-	
-	great_power_score = 0.5
-}
-
-country_total_army_levy_size = {
-
-	scales_with = {
-		value = country_total_army_levy_size
-	}
-	
-	great_power_score = 0.25
-
-}
-
-country_total_navy_levy_size = {
-
-	scales_with = {
-		value = country_total_navy_levy_size
-	}
-	
-	great_power_score = 0.01
-
-}
-
-used_fort_limit = {
-
-	scales_with = {
-		value = used_fort_limit
-	}
-	
-	great_power_score = 0.3
-}
 
 bureaucracy_nomos_empsychos_high_legitimacy = {
 	potential_trigger = {
 		uses_government_power = legitimacy
-		modifier:global_estate_satisfaction_from_legitimacy != 0
+		modifier:global_estate_satisfaction_from_legitimacy > 0
 	}
 	limit = { legitimacy > 50 }
 	scales_with = {
@@ -1551,7 +1518,7 @@ bureaucracy_nomos_empsychos_high_legitimacy = {
 bureaucracy_nomos_empsychos_low_legitimacy = {
 	potential_trigger = {
 		uses_government_power = legitimacy
-		modifier:global_estate_satisfaction_from_legitimacy != 0
+		modifier:global_estate_satisfaction_from_legitimacy > 0
 	}
 	limit = { legitimacy < 50 }
 	scales_with = {
@@ -1577,4 +1544,11 @@ scaled_gov_power_monthly_nahualt_reform_progress = {
 
 	monthly_nahualt_reform_progress = 0.25
 }
+
+# -------------------------------------------------------------------------
+# Imperial Circles modifiers
+# -------------------------------------------------------------------------
+# All circle modifiers are in static_modifiers/country.txt (manually applied
+# via add_country_modifier). Auto-modifier evaluation does not support
+# circle-scope iterators (any_imperial_circle_country_is_member_of).
 

@@ -1,4 +1,5 @@
 ﻿sergeantry = {
+	audio_tier = 1
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = 1
@@ -40,6 +41,7 @@
 }
 
 warrior_temple = {
+	audio_tier = 1
 	is_special = yes
 	is_foreign = no
 	pop_type = soldiers
@@ -56,7 +58,7 @@ warrior_temple = {
 	build_time = medium_soldier_building
 	
 	country_potential = {
-		religion = religion:nahuatl
+		religion ?= religion:nahuatl
 	}
 	graphical_tags = { medium_religious }
 	
@@ -77,6 +79,7 @@ warrior_temple = {
 }
 
 armory = {
+	audio_tier = 1
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = manpower_max_level
@@ -129,6 +132,7 @@ armory = {
 }
 
 training_fields = {
+	audio_tier = 1
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = manpower_max_level
@@ -141,7 +145,8 @@ training_fields = {
 	rural_settlement = yes
 
 	build_time = soldier_building
-
+	important_for_AI = yes
+	AI_ignore_available_worker_flag = yes #more important than some random RGO
 
 	allow = {
 		owner = { has_primary_or_accepted_culture = prev.dominant_culture }
@@ -172,6 +177,7 @@ training_fields = {
 }
 
 barracks = {
+	audio_tier = 2
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = manpower_max_level
@@ -180,6 +186,7 @@ barracks = {
 	forbidden_for_estates = yes
 
 	employment_size = manpower_employment
+	important_for_AI = yes
 	
 	town = yes
 	city = yes
@@ -219,12 +226,15 @@ barracks = {
 }
 
 regimental_camp = {
+	audio_tier = 2
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = manpower_max_level
 	
 	category = military_category
 	forbidden_for_estates = yes
+	important_for_AI = yes
+	AI_ignore_available_worker_flag = yes #more important than some random RGO
 	
 	employment_size = manpower_employment
 	
@@ -263,10 +273,11 @@ regimental_camp = {
 }
 
 conscription_center = {
+	audio_tier = 3
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = manpower_max_level
-	
+	important_for_AI = yes	
 	employment_size = manpower_employment
 
 	category = military_category
@@ -312,6 +323,7 @@ conscription_center = {
 }
 
 jurchen_barracks = {
+	audio_tier = 1
 	is_special = yes
 	is_foreign = no
 	pop_type = soldiers
@@ -353,6 +365,7 @@ jurchen_barracks = {
 }
 
 thema_headquarters = {
+	audio_tier = 1
 	is_special = yes
 	is_foreign = no
 	pop_type = soldiers
@@ -397,6 +410,7 @@ thema_headquarters = {
 }
 
 city_guard = {
+	audio_tier = 1
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = 1
@@ -416,7 +430,7 @@ city_guard = {
 		is_capital = yes
 	}
 	country_potential = {
-		government_type = government_type:republic 
+		government_type ?= government_type:republic
 	}
 	remove_if = {
 		is_no_longer_capital = yes
