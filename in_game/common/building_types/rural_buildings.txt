@@ -38,7 +38,7 @@
 	modifier = {
 		local_max_control = 0.1
 		local_nobles_estate_power = 1.0
-		local_peasant_enfranchisment = -0.1
+		local_peasant_enfranchisment = -0.05
 	}
 	
 	
