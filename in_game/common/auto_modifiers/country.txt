@@ -1030,6 +1030,7 @@ state_religion_clergy_ratio = {
 	}
 
 	stability_investment = clergy_stability_investment
+	monthly_devotion = 0.5
 	monthly_religious_influence = 0.05
 	monthly_towards_spiritualist = societal_value_monthly_move
 }
@@ -1065,6 +1066,7 @@ burghers_percentage_in_country = {
 		value = percentage_pop_type_in_country:burghers
 	}
 
+	monthly_republican_tradition = 2
 	monthly_towards_capital_economy = societal_value_huge_monthly_move
 }
 
