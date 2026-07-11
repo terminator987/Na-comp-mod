@@ -4405,7 +4405,6 @@ flavor_brapru.2000  = {
 
 	dynamic_historical_event = {
 		tag = BRA
-		tag = PRU
 		from = 1338.1.1
 		to = 1800.1.1
 		monthly_chance = 20
@@ -4481,7 +4480,6 @@ flavor_brapru.2001  = {
 
 	dynamic_historical_event = {
 		tag = BRA
-		tag = PRU
 		from = 1338.1.1
 		to = 1800.1.1
 		monthly_chance = 10

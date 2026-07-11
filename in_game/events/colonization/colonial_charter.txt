@@ -159,6 +159,7 @@ colonial_charter.4 = {
 	type = country_event
 	title = colonial_charter.4.title
 	desc = colonial_charter.4.desc
+	outcome = neutral
 	
 	trigger = {
 		scope:target ?= {

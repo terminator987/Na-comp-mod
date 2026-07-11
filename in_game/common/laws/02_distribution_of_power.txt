@@ -55,7 +55,7 @@
 			burghers_estate_agenda_impact = 0.1
 			global_burghers_estate_power = 0.1
 			global_burghers_city_desired_pop_scaled = 0.2
-			court_language_is_market_language_importance_modifier = 0.5
+			court_language_is_market_language_importance_modifier = 1.5
 			monthly_towards_plutocracy = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -70,7 +70,7 @@
 			clergy_estate_agenda_impact = 0.1
 			global_clergy_estate_power = 0.1
 			global_clergy_city_desired_pop_scaled = 0.1
-			court_language_is_liturgical_language_importance_modifier = 0.5
+			court_language_is_liturgical_language_importance_modifier = 1.5
 			monthly_towards_spiritualist = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -90,7 +90,7 @@
 			clergy_estate_agenda_impact = 0.1
 			global_clergy_estate_power = 0.1
 			global_clergy_city_desired_pop_scaled = 0.1
-			court_language_is_liturgical_language_importance_modifier = 0.5
+			court_language_is_liturgical_language_importance_modifier = 1.5
 			monthly_religious_influence = 0.1
 			monthly_towards_spiritualist = societal_value_monthly_move
 		}
@@ -105,7 +105,7 @@
 			peasants_estate_max_tax = 0.1
 			peasants_estate_agenda_impact = 0.1
 			global_peasants_estate_power = 0.1
-			court_language_is_common_language_importance_modifier = 0.5
+			court_language_is_common_language_importance_modifier = 1.5
 			monthly_towards_free_subjects = societal_value_monthly_move
 			monthly_towards_liberalism = societal_value_monthly_move
 		}

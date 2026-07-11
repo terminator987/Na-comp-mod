@@ -44,7 +44,7 @@ soderbarke = { topography = flatland vegetation = forest climate = arctic religi
 stora_tuna = { topography = plateau vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber}
 floda = { topography = plateau vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber}
 siljan = { topography = lakes climate = continental}
-gefle = { topography = flatland vegetation = woods climate = continental religion = catholic culture = swedish raw_material = fish natural_harbor_suitability = 0.00}
+gefle = { topography = flatland vegetation = woods climate = continental religion = catholic culture = swedish raw_material = fish natural_harbor_suitability = 0.50}
 hedesunda = { topography = flatland vegetation = forest climate = continental religion = catholic culture = swedish raw_material = beeswax}
 hamrange = { topography = flatland vegetation = woods climate = continental religion = catholic culture = swedish raw_material = fish natural_harbor_suitability = 0.00}
 ockelbo = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber}
@@ -88,7 +88,7 @@ hoborg = { topography = flatland vegetation = grasslands climate = continental r
 dalaborg = { topography = flatland vegetation = woods climate = continental religion = catholic culture = swedish raw_material = livestock}
 amal = { topography = wetlands vegetation = forest climate = continental religion = catholic culture = swedish raw_material = wild_game}
 vedbo = { topography = wetlands vegetation = woods climate = continental religion = catholic culture = swedish raw_material = wild_game}
-ribe = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = fish natural_harbor_suitability = 0.00}
+ribe = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = fish natural_harbor_suitability = 0.50}
 haderslev = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = horses natural_harbor_suitability = 0.00}
 aabenraa = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = legumes natural_harbor_suitability = 0.00}
 tonder = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = sand natural_harbor_suitability = 0.00}
@@ -100,8 +100,8 @@ limfjorden = { topography = narrows climate = oceanic}
 bolling = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = salt natural_harbor_suitability = 0.00}
 ringkobing = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = amber natural_harbor_suitability = 0.00}
 holstebro_lundenes = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = wool natural_harbor_suitability = -0.25}
-varde = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = fish natural_harbor_suitability = 0.00}
-kolding = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = danish raw_material = wheat natural_harbor_suitability = 0.00}
+varde = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = danish raw_material = fish natural_harbor_suitability = 0.50}
+kolding = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = danish raw_material = wheat natural_harbor_suitability = 0.75}
 aarhus = { topography = flatland vegetation = farmland climate = continental religion = catholic culture = danish raw_material = legumes natural_harbor_suitability = 0.25}
 grindsted = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = danish raw_material = sand}
 silkeborg = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = danish raw_material = lumber}
@@ -140,13 +140,13 @@ kungsbacka = { topography = flatland vegetation = woods climate = continental re
 ronneby = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = danish raw_material = wheat natural_harbor_suitability = 0.00}
 bregne = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = danish raw_material = livestock natural_harbor_suitability = 1.00}
 solvesborg = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = danish raw_material = wheat natural_harbor_suitability = 0.25}
-hudiksvall = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = swedish raw_material = fish natural_harbor_suitability = 0.00}
+hudiksvall = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = swedish raw_material = fish natural_harbor_suitability = 0.25}
 alfta = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber}
 soderala = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = swedish raw_material = wild_game natural_harbor_suitability = 0.00}
 hogdal = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = wild_game}
 havero = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber}
 selanger = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = swedish raw_material = medicaments natural_harbor_suitability = 0.00}
-harnosand = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = swedish raw_material = fish natural_harbor_suitability = 0.00}
+harnosand = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = swedish raw_material = fish natural_harbor_suitability = 0.50}
 solatunum = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber}
 ramsele = { topography = wetlands vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = wild_game}
 sjalevad = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber natural_harbor_suitability = 0.00}
@@ -155,7 +155,7 @@ grundsunda = { topography = flatland vegetation = forest climate = arctic religi
 umea = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = swedish raw_material = wild_game natural_harbor_suitability = 0.25}
 vindeln = { topography = flatland vegetation = forest climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = wild_game}
 skelleftea = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber natural_harbor_suitability = 0.00}
-tornea = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = finnish raw_material = fish natural_harbor_suitability = 0.00}
+tornea = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = finnish raw_material = fish natural_harbor_suitability = 0.50}
 bygdea = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = fish natural_harbor_suitability = 0.00}
 pitea = { topography = flatland vegetation = forest climate = arctic religion = catholic culture = swedish raw_material = lumber natural_harbor_suitability = 0.25}
 lulea = { topography = flatland vegetation = woods climate = arctic religion = catholic culture = swedish raw_material = lumber natural_harbor_suitability = 0.25}
@@ -308,7 +308,7 @@ halden = { topography = flatland vegetation = forest climate = continental relig
 moss = { topography = flatland vegetation = forest climate = continental religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
 trogstad = { topography = plateau vegetation = forest climate = continental religion = catholic culture = norwegian raw_material = lumber}
 tonsberg = { topography = flatland vegetation = woods climate = continental religion = catholic culture = norwegian raw_material = stone natural_harbor_suitability = 0.00}
-skien = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+skien = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
 sande = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = wool natural_harbor_suitability = 0.00}
 grenland = { topography = mountains vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = lumber}
 stavanger = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = livestock natural_harbor_suitability = 0.75}
@@ -316,13 +316,13 @@ ryfylke = { topography = hills vegetation = woods climate = arctic religion = ca
 suledal = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = lumber natural_harbor_suitability = 0.00}
 haugalandet = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 jaeren = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = beeswax natural_harbor_suitability = 0.00}
-flekkefjord = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+flekkefjord = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
 sirudal = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = medicaments natural_harbor_suitability = 0.00}
 otredal = { topography = plateau vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = lumber}
 lindesnes = { topography = hills vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = wool natural_harbor_suitability = 0.00}
-oddernes = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+oddernes = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 oyestad = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = wool natural_harbor_suitability = 0.00}
-sondeled = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+sondeled = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 amli = { topography = hills vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = lumber}
 kongsberg = { topography = hills vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = silver}
 ringerike = { topography = hills vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = livestock}
@@ -332,15 +332,15 @@ sigdal = { topography = mountains vegetation = forest climate = arctic religion 
 bragernes = { topography = flatland vegetation = woods climate = continental religion = catholic culture = norwegian raw_material = millet natural_harbor_suitability = 0.60}
 flesberg = { topography = hills vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = lumber}
 bergen = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.75}
-fana = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+fana = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 kvinnherad = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
 ullensvang = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = fruit natural_harbor_suitability = 0.00}
 moster = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = marble natural_harbor_suitability = 0.00}
 eidfjord = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = stone natural_harbor_suitability = 0.00}
-nordhordland = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+nordhordland = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 voss = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
 hardangervidda = { topography = mountain_wasteland vegetation = sparse climate = arctic}
-eid = { topography = mountains vegetation = sparse climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+eid = { topography = mountains vegetation = sparse climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
 stryn = { topography = mountains vegetation = sparse climate = oceanic religion = catholic culture = norwegian raw_material = beeswax natural_harbor_suitability = 0.00}
 sunnfjord = { topography = mountains vegetation = sparse climate = oceanic religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
 sogndal = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fiber_crops natural_harbor_suitability = 0.00}
@@ -372,29 +372,29 @@ nidaros = { topography = plateau vegetation = grasslands climate = arctic religi
 roros = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = copper}
 stjordal = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = wool natural_harbor_suitability = 0.25}
 oppdal = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = wild_game}
-orkdal = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+orkdal = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 skaun = { topography = plateau vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
 storen = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = wild_game}
 holtalen = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = stone}
 meraker = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = wild_game}
 alvdal = { topography = mountains vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = lumber}
 levanger = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = wool natural_harbor_suitability = 0.00}
-namdal = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-orland = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+namdal = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
+orland = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 snasa = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = wild_game}
 lierne = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = wild_game}
 steinkjer = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
 molde = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
-fosna = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+fosna = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 sunndal = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
 rauma = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
-sunnmore = { topography = mountains vegetation = sparse climate = continental religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+sunnmore = { topography = mountains vegetation = sparse climate = continental religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
 borgund = { topography = hills vegetation = grasslands climate = continental religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.25}
 stordal = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
 tofte = { topography = mountains vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = wild_game}
-troms = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-trondenes = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-senja = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+troms = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
+trondenes = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
+senja = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 bardodalen = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = stone natural_harbor_suitability = 0.00}
 raisa = { topography = mountains vegetation = sparse climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = wild_game natural_harbor_suitability = 0.00}
 hammerdal = { topography = hills vegetation = forest climate = arctic religion = catholic culture = norwegian raw_material = wild_game}
@@ -412,24 +412,24 @@ bodo = { topography = hills vegetation = woods climate = arctic religion = catho
 birndal = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = norwegian raw_material = stone natural_harbor_suitability = 0.00}
 hattfjelldal = { topography = mountains vegetation = sparse climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = wild_game}
 rana = { topography = mountains vegetation = sparse climate = arctic religion = sapmi_shamanism culture = norwegian raw_material = wild_game}
-alstahaug = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-gildeskal = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-steigen = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-langenes = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-lofotr = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-hamaroy = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+alstahaug = { topography = hills vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
+gildeskal = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
+steigen = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
+langenes = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
+lofotr = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
+hamaroy = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 ofoti = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.40}
 skanderna = { topography = mountain_wasteland vegetation = desert climate = arctic}
 kautokeino = { topography = hills vegetation = sparse climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = wild_game}
-varanger = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+varanger = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
 vardo = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 deatnu = { topography = hills vegetation = sparse climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = fish natural_harbor_suitability = 0.00}
-porsanger = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+porsanger = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.75}
 karasjok = { topography = hills vegetation = sparse climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = wild_game}
 hammerfest = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.75}
 alta = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = wild_game natural_harbor_suitability = 0.00}
-kirkenes = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
-lebesby = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+kirkenes = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.50}
+lebesby = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 olonets = { topography = flatland vegetation = forest climate = arctic religion = orthodox culture = novgorodian raw_material = sand}
 kinerma = { topography = flatland vegetation = forest climate = arctic religion = orthodox culture = novgorodian raw_material = fish}
 kondpoga = { topography = flatland vegetation = forest climate = arctic religion = orthodox culture = karelian raw_material = wild_game}
@@ -510,7 +510,7 @@ viinijarvi = { topography = lakes climate = arctic}
 koitere = { topography = lakes climate = arctic}
 nurmes = { topography = wetlands vegetation = forest climate = arctic religion = orthodox culture = karelian raw_material = lumber}
 lake_ladoga = { topography = lakes climate = arctic}
-kem = { topography = wetlands vegetation = forest climate = arctic religion = sapmi_shamanism culture = karelian raw_material = fish natural_harbor_suitability = 0.00}
+kem = { topography = wetlands vegetation = forest climate = arctic religion = sapmi_shamanism culture = karelian raw_material = fish natural_harbor_suitability = 0.50}
 keret = { topography = wetlands vegetation = forest climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = pearls natural_harbor_suitability = 0.00}
 kovda = { topography = wetlands vegetation = forest climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = lumber natural_harbor_suitability = 0.00}
 kriitina = { topography = wetlands vegetation = forest climate = arctic religion = sapmi_shamanism culture = sapmi raw_material = livestock natural_harbor_suitability = 0.00}
@@ -630,17 +630,17 @@ varzuga_estuary = { topography = inland_sea climate = arctic}
 holar = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = livestock natural_harbor_suitability = 0.00}
 husavik = { topography = flatland vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = stone natural_harbor_suitability = 0.00}
 akureyri = { topography = mountains vegetation = woods climate = arctic religion = catholic culture = icelandic raw_material = lumber natural_harbor_suitability = 0.00}
-blonduos = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.00}
-torshofn = { topography = flatland vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.00}
-vopnafjordur = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.00}
+blonduos = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.50}
+torshofn = { topography = flatland vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.25}
+vopnafjordur = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.75}
 egilsstadir = { topography = hills vegetation = woods climate = arctic religion = catholic culture = icelandic raw_material = lumber}
 seydisfjordur = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = stone natural_harbor_suitability = 0.00}
-reydarfjordur = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.00}
+reydarfjordur = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.75}
 holmur = { topography = mountains vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = stone natural_harbor_suitability = 0.00}
 kirkjubaejar = { topography = wetlands vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.00}
 borgarnes = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = stone natural_harbor_suitability = 0.00}
 olavsvik = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = ivory natural_harbor_suitability = 0.00}
-isafjordur = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.00}
+isafjordur = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = 0.75}
 hvamstangi = { topography = flatland vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = livestock natural_harbor_suitability = 0.00}
 skalholt = { topography = hills vegetation = grasslands climate = arctic religion = catholic culture = icelandic raw_material = wool}
 selfoss = { topography = flatland vegetation = grasslands climate = arctic religion = catholic culture = icelandic raw_material = horses natural_harbor_suitability = 0.00}
@@ -673,7 +673,7 @@ gronnedal = { topography = plateau vegetation = sparse climate = arctic religion
 ivituut = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = lead natural_harbor_suitability = 0.10}
 sandnes = { topography = plateau vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = wool natural_harbor_suitability = -0.10}
 lysufjord = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = -0.10}
-godthab = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = stone natural_harbor_suitability = 0.30}
+godthab = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = stone natural_harbor_suitability = 0.75}
 kapisillit = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = fish natural_harbor_suitability = -0.10}
 anavik = { topography = plateau vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = wool natural_harbor_suitability = -0.10}
 kangeq = { topography = flatland vegetation = sparse climate = arctic religion = catholic culture = icelandic raw_material = ivory natural_harbor_suitability = -0.10}
@@ -704,7 +704,7 @@ greenland_high_sea4 = { topography = ocean climate = arctic}
 greenland_high_sea6 = { topography = ocean climate = arctic}
 orkney = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.75}
 shetland = { topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = norwegian raw_material = wool natural_harbor_suitability = 0.00}
-torshavn = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.00}
+torshavn = { topography = hills vegetation = sparse climate = arctic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.75}
 fair_isle_gap = { topography = coastal_ocean climate = oceanic}
 pentland_firth = { topography = narrows climate = oceanic}
 sumburgh_head = { topography = coastal_ocean climate = oceanic}
@@ -755,7 +755,7 @@ nivelles = { topography = flatland vegetation = farmland climate = oceanic relig
 borgloon = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = millet}
 hasselt = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = livestock}
 bree = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = legumes}
-ghent = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = wool}
+ghent = { modifier = flanders_fine_cloth_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = wool}
 aalst = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = legumes}
 hulst = { topography = wetlands vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = salt natural_harbor_suitability = 0.60}
 kortriik = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = fiber_crops}
@@ -764,12 +764,12 @@ sint_niklaas = { topography = flatland vegetation = grasslands climate = oceanic
 lille = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = walloon raw_material = wheat}
 douai = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = picard raw_material = wheat}
 tournai = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = walloon raw_material = stone}
-bruges = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = dyes natural_harbor_suitability = 0.25}
+bruges = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = dyes natural_harbor_suitability = 0.50}
 cassel = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = wheat}
 dunkirk = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = sand natural_harbor_suitability = 0.50}
 ostend = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = fish natural_harbor_suitability = 0.50}
-veurne = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = horses natural_harbor_suitability = 0.00}
-ypres = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = clay}
+veurne = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = low_franconian raw_material = horses natural_harbor_suitability = 0.25}
+ypres = { modifier = flanders_fine_cloth_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = clay}
 emden = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = salt natural_harbor_suitability = 0.75}
 jever = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = sand natural_harbor_suitability = 0.40}
 aurich = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = legumes}
@@ -792,10 +792,10 @@ oldenzaal = { topography = flatland vegetation = woods climate = oceanic religio
 amsterdam = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = livestock natural_harbor_suitability = 0.75}
 amersfoort = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = fruit natural_harbor_suitability = 0.00}
 alkmaar = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = fish natural_harbor_suitability = 0.00}
-hoorn = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = salt natural_harbor_suitability = 0.25}
+hoorn = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = salt natural_harbor_suitability = 0.50}
 utrecht = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = millet}
 haarlemmermeer = { topography = lakes climate = oceanic}
-the_hague = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = dyes natural_harbor_suitability = 0.00}
+the_hague = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = low_franconian raw_material = dyes natural_harbor_suitability = 0.25}
 dordrecht = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = salt natural_harbor_suitability = 0.50}
 geertruidenberg = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = horses natural_harbor_suitability = 0.00}
 rotterdam = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = low_franconian raw_material = clay natural_harbor_suitability = 0.50}
@@ -1009,7 +1009,7 @@ harburg = { topography = flatland vegetation = grasslands climate = oceanic reli
 stade = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = fruit natural_harbor_suitability = 0.00}
 hamburg = { topography = wetlands vegetation = farmland climate = oceanic religion = catholic culture = lower_saxon raw_material = wheat natural_harbor_suitability = 0.75}
 neuhaus = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = sand natural_harbor_suitability = 0.00}
-ritzebuttel = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.00}
+ritzebuttel = { topography = wetlands vegetation = grasslands climate = oceanic religion = catholic culture = frisian raw_material = fish natural_harbor_suitability = 0.25}
 bremervorde = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = millet}
 hildesheim = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = lower_saxon raw_material = legumes}
 hanover = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = lower_saxon raw_material = fiber_crops}
@@ -1128,23 +1128,23 @@ ribnitz = { topography = flatland vegetation = woods climate = continental relig
 grimmen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = sand natural_harbor_suitability = 0.00}
 rugen = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = iron natural_harbor_suitability = 0.00}
 swinousjcie = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = amber natural_harbor_suitability = 0.00}
-wolgast = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = salt natural_harbor_suitability = 0.00}
+wolgast = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = salt natural_harbor_suitability = 0.75}
 anklam = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = livestock natural_harbor_suitability = 0.00}
 demmin = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = western_pomeranian raw_material = legumes}
 stettin = { topography = flatland vegetation = farmland climate = continental religion = catholic culture = western_pomeranian raw_material = wheat natural_harbor_suitability = 0.50}
 ueckermunde = { topography = flatland vegetation = woods climate = continental religion = catholic culture = western_pomeranian raw_material = fish natural_harbor_suitability = 0.00}
-kamien = { topography = wetlands vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = coal natural_harbor_suitability = 0.00}
+kamien = { topography = wetlands vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = coal natural_harbor_suitability = 0.50}
 nowogard = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = legumes}
 goleniow = { topography = wetlands vegetation = woods climate = continental religion = catholic culture = eastern_pomeranian raw_material = lumber natural_harbor_suitability = 0.00}
 koszalin = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = fish natural_harbor_suitability = 0.00}
 bialogard = { topography = flatland vegetation = woods climate = continental religion = catholic culture = eastern_pomeranian raw_material = wheat}
 gryfia_gora = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = sand natural_harbor_suitability = 0.00}
-kolobrzeg = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = salt natural_harbor_suitability = 0.00}
+kolobrzeg = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = salt natural_harbor_suitability = 0.50}
 swidwin = { topography = flatland vegetation = woods climate = continental religion = catholic culture = eastern_pomeranian raw_material = fiber_crops}
 resko = { topography = flatland vegetation = woods climate = continental religion = catholic culture = eastern_pomeranian raw_material = lumber}
 bobolice = { topography = flatland vegetation = forest climate = continental religion = catholic culture = eastern_pomeranian raw_material = lumber}
 nowoszczecin = { topography = flatland vegetation = forest climate = continental religion = catholic culture = markish raw_material = iron}
-slupsk = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = amber natural_harbor_suitability = 0.00}
+slupsk = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = eastern_pomeranian raw_material = amber natural_harbor_suitability = 0.25}
 lebork = { topography = flatland vegetation = grasslands climate = continental religion = catholic culture = kashubian raw_material = fish natural_harbor_suitability = 0.00}
 bytow = { topography = flatland vegetation = forest climate = continental religion = catholic culture = kashubian raw_material = lumber}
 miastko = { topography = flatland vegetation = forest climate = continental religion = catholic culture = eastern_pomeranian raw_material = wild_game}
@@ -1546,55 +1546,55 @@ portsmouth = { topography = flatland vegetation = woods climate = oceanic religi
 winchester = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = fruit}
 lymington = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = salt natural_harbor_suitability = 0.25}
 wight = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wild_game natural_harbor_suitability = 0.00}
-basingstoke = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
+basingstoke = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
 dover = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = fish natural_harbor_suitability = 0.40}
 canterbury = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = salt natural_harbor_suitability = 0.00}
 rochester = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = fruit natural_harbor_suitability = 0.60}
 hythe = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = english raw_material = livestock natural_harbor_suitability = 0.00}
-tonbridge = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = wool}
+tonbridge = { modifier = england_wool_base topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = wool}
 shoreham = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = lumber natural_harbor_suitability = 0.25}
 lewes = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = iron natural_harbor_suitability = 0.00}
 hastings = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = iron natural_harbor_suitability = 0.00}
 chichester = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = stone natural_harbor_suitability = 0.50}
-dunstable = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
+dunstable = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
 bedford = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = legumes}
 oxford = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = medicaments}
-henley = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
-banbury = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
+henley = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
+banbury = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
 windsor = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wild_game}
 reading = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wheat}
-abingdon = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
+abingdon = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
 buckingham = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = wheat}
-aylesbury = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
+aylesbury = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
 wycombe = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wheat}
-leicester = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = wheat}
+leicester = { modifier = yorkshire_cloth_base topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = wheat}
 loughborough = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = livestock}
-bosworth = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wool}
+bosworth = { modifier = england_wool_base topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wool}
 rutland = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wild_game}
 derby = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = wheat}
 glossop = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = english raw_material = lead}
 chesterfield = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = lead}
 nottingham = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = coal}
 newark = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = wild_game}
-retford = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = wool}
+retford = { modifier = england_wool_base topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = wool}
 lincoln = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = english raw_material = wheat}
 boston = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = english raw_material = salt natural_harbor_suitability = 0.00}
 grimsby = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = sand natural_harbor_suitability = 0.15}
 grantham = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = livestock}
 louth = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = fish natural_harbor_suitability = 0.00}
 spalding = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = english raw_material = clay natural_harbor_suitability = 0.00}
-northampton = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
+northampton = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
 daventry = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wheat}
 kettering = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wild_game}
-coventry = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wheat}
-birmingham = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
+coventry = { modifier = yorkshire_cloth_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wheat}
+birmingham = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool}
 stratford = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = livestock}
 shrewsbury = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = wild_game}
 oswestry = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = livestock}
 ludlow = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = english raw_material = lead}
 hereford = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = english raw_material = lumber}
 ewyas = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = welsh raw_material = lumber}
-wigmore = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wool}
+wigmore = { modifier = england_wool_base topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wool}
 worcester = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = salt}
 kidderminster = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = lumber}
 stafford = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = beeswax}
@@ -1603,11 +1603,11 @@ tamworth = { topography = flatland vegetation = woods climate = oceanic religion
 lancaster = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = livestock natural_harbor_suitability = 0.25}
 blackburn = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = english raw_material = coal}
 liverpool = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = sand natural_harbor_suitability = 0.80}
-preston = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool natural_harbor_suitability = 0.20}
+preston = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = wool natural_harbor_suitability = 0.20}
 manchester = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = coal}
 pennines_01 = { topography = hills_wasteland vegetation = sparse climate = continental}
 pennines_02 = { topography = hills_wasteland vegetation = sparse climate = continental}
-york = { topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = northumbrian raw_material = wheat}
+york = { modifier = yorkshire_cloth_base topography = flatland vegetation = farmland climate = oceanic religion = catholic culture = northumbrian raw_material = wheat}
 scarborough = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = northumbrian raw_material = alum natural_harbor_suitability = 0.25}
 bedale = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = horses}
 richmond = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = northumbrian raw_material = lead}
@@ -1616,11 +1616,11 @@ north_york_moors = { topography = hills_wasteland vegetation = sparse climate = 
 hull = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = fish natural_harbor_suitability = 0.40}
 bridlington = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = fiber_crops natural_harbor_suitability = 0.20}
 selby = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = horses}
-norton = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool}
-leeds = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = english raw_material = iron}
-pontefract = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wool}
-skipton = { topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = northumbrian raw_material = wool}
-wakefield = { topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = english raw_material = stone}
+norton = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool}
+leeds = { modifier = yorkshire_cloth_base topography = hills vegetation = woods climate = oceanic religion = catholic culture = english raw_material = iron}
+pontefract = { modifier = england_wool_base topography = flatland vegetation = woods climate = oceanic religion = catholic culture = english raw_material = wool}
+skipton = { modifier = england_wool_base topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = northumbrian raw_material = wool}
+wakefield = { modifier = yorkshire_cloth_base topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = english raw_material = stone}
 doncaster = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = english raw_material = iron}
 ripon = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = beeswax}
 pennines_04 = { topography = hills_wasteland vegetation = sparse climate = continental}
@@ -1628,17 +1628,17 @@ pennines_05 = { topography = hills_wasteland vegetation = sparse climate = conti
 pennines_06 = { topography = hills_wasteland vegetation = sparse climate = oceanic}
 newcastle = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = coal natural_harbor_suitability = 0.50}
 hexham = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = northumbrian raw_material = coal}
-alnwick = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.00}
-morpeth = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.00}
+alnwick = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.00}
+morpeth = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.00}
 billingham = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = northumbrian raw_material = wild_game}
 carlisle = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = northumbrian raw_material = clay natural_harbor_suitability = 0.50}
 cockermouth = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = northumbrian raw_material = lead natural_harbor_suitability = 0.00}
 penrith = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = northumbrian raw_material = copper}
-egremont = { topography = flatland vegetation = forest climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.00}
+egremont = { modifier = england_wool_base topography = flatland vegetation = forest climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.00}
 derwent_water = { topography = lakes climate = oceanic}
 kendal = { topography = wetlands vegetation = woods climate = oceanic religion = catholic culture = northumbrian raw_material = iron natural_harbor_suitability = 0.00}
 appleby = { topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = northumbrian raw_material = clay}
-durham = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.00}
+durham = { modifier = england_wool_base topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.00}
 darlington = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = northumbrian raw_material = coal}
 stockton = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = northumbrian raw_material = wool natural_harbor_suitability = 0.30}
 pennines_03 = { topography = hills_wasteland vegetation = sparse climate = continental}
@@ -1710,19 +1710,19 @@ tongue = { topography = wetlands vegetation = sparse climate = oceanic religion 
 thurso = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = norwegian raw_material = fish natural_harbor_suitability = 0.25}
 ben_klibreck = { topography = mountain_wasteland vegetation = sparse climate = oceanic}
 inverary = { topography = hills vegetation = forest climate = oceanic religion = catholic culture = highland raw_material = lumber natural_harbor_suitability = 0.40}
-oban = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = highland raw_material = clay natural_harbor_suitability = 0.50}
+oban = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = highland raw_material = clay natural_harbor_suitability = 0.5}
 cowal = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = highland raw_material = lumber natural_harbor_suitability = 0.00}
 lochaber = { topography = mountains vegetation = forest climate = oceanic religion = catholic culture = highland raw_material = alum natural_harbor_suitability = 0.00}
 ardtornish = { topography = mountains vegetation = woods climate = oceanic religion = catholic culture = highland raw_material = salt natural_harbor_suitability = 0.50}
-kintyre = { topography = hills vegetation = forest climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.00}
+kintyre = { topography = hills vegetation = forest climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.50}
 ben_nevis = { topography = mountain_wasteland vegetation = sparse climate = oceanic}
 carn_eige = { topography = mountain_wasteland vegetation = sparse climate = oceanic}
 lewis = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = norse_gael raw_material = wool natural_harbor_suitability = 0.00}
-uist = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.00}
+uist = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.25}
 harris = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = norse_gael raw_material = wool natural_harbor_suitability = 0.00}
-skye = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.00}
-arran = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.00}
-mull = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.00}
+skye = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.50}
+arran = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.25}
+mull = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = norse_gael raw_material = fish natural_harbor_suitability = 0.50}
 islay = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = norse_gael raw_material = fiber_crops natural_harbor_suitability = 0.00}
 mann = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = norse_gael raw_material = copper natural_harbor_suitability = 0.00}
 edinburgh = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = scottish raw_material = millet natural_harbor_suitability = 0.50}
@@ -1789,7 +1789,7 @@ cardiff = { topography = flatland vegetation = grasslands climate = oceanic reli
 monmouth = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = welsh raw_material = fruit natural_harbor_suitability = 0.00}
 newport = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = welsh raw_material = iron natural_harbor_suitability = 0.25}
 neath = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = welsh raw_material = stone natural_harbor_suitability = 0.20}
-swansea = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = welsh raw_material = coal natural_harbor_suitability = 0.50}
+swansea = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = welsh raw_material = coal natural_harbor_suitability = 0.5}
 caerphilly = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = welsh raw_material = coal}
 rhine_estuary = { topography = coastal_ocean climate = oceanic}
 scheldt_estuary = { topography = narrows climate = oceanic}
@@ -1815,8 +1815,8 @@ humber_estuary = { topography = coastal_ocean climate = oceanic}
 flamborough_head = { topography = coastal_ocean climate = oceanic}
 north_sea1 = { topography = ocean climate = oceanic}
 north_sea7 = { topography = ocean climate = oceanic}
-firth_of_forth = { topography = narrows climate = oceanic}
-moray_firth = { topography = narrows climate = oceanic}
+firth_of_forth = { topography = coastal_ocean climate = oceanic}
+moray_firth = { topography = coastal_ocean climate = oceanic}
 northumbrian_coast = { topography = coastal_ocean climate = oceanic}
 kinnaird_head = { topography = coastal_ocean climate = oceanic}
 firth_of_tay = { topography = coastal_ocean climate = oceanic}
@@ -1825,16 +1825,16 @@ solent = { topography = coastal_ocean climate = oceanic}
 seine_bay = { topography = coastal_ocean climate = oceanic}
 alabaster_coast = { topography = coastal_ocean climate = oceanic}
 seven_sisters = { topography = coastal_ocean climate = oceanic}
-strait_of_dover = { topography = narrows climate = oceanic}
+strait_of_dover = { topography = coastal_ocean climate = oceanic}
 lyme_bay = { topography = coastal_ocean climate = oceanic}
 lizard_point = { topography = coastal_ocean climate = oceanic}
 saint_malo_gulf = { topography = coastal_ocean climate = oceanic}
 breton_sea = { topography = coastal_ocean climate = oceanic}
 north_uist = { topography = coastal_ocean climate = oceanic}
 south_uist = { topography = coastal_ocean climate = oceanic}
-little_minch = { topography = narrows climate = oceanic}
-north_minch = { topography = narrows climate = oceanic}
-firth_of_lorne = { topography = narrows climate = oceanic}
+little_minch = { topography = coastal_ocean climate = oceanic}
+north_minch = { topography = coastal_ocean climate = oceanic}
+firth_of_lorne = { topography = coastal_ocean climate = oceanic}
 butt_of_lewis = { topography = coastal_ocean climate = oceanic}
 north_eastern_atlantic25 = { topography = ocean climate = continental}
 north_eastern_atlantic26 = { topography = ocean climate = oceanic}
@@ -1881,7 +1881,7 @@ lough_erne = { topography = lakes climate = oceanic}
 derry = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = irish raw_material = horses natural_harbor_suitability = 0.60}
 coleraine = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = irish raw_material = millet natural_harbor_suitability = 0.00}
 magherafelt = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = irish raw_material = fiber_crops}
-donegal = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = fish natural_harbor_suitability = 0.50}
+donegal = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = fish natural_harbor_suitability = 0.65}
 kilmacrennan = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = salt natural_harbor_suitability = 0.00}
 inishowen = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = fish natural_harbor_suitability = 0.25}
 raphoe = { topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = livestock natural_harbor_suitability = 0.00}
@@ -1905,7 +1905,7 @@ athlone = { topography = flatland vegetation = woods climate = oceanic religion 
 skreen = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = livestock natural_harbor_suitability = 0.00}
 lough_ree = { topography = lakes climate = oceanic}
 dromahair = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = livestock natural_harbor_suitability = 0.00}
-leitrim = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = wild_game}
+leitrim = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = iron}
 killeshandra = { topography = hills vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = livestock}
 cavan = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = horses}
 killycolly = { topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = livestock}
@@ -1932,7 +1932,7 @@ adare = { topography = wetlands vegetation = woods climate = oceanic religion = 
 castleconnell = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = irish raw_material = livestock}
 ennis = { topography = flatland vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = fiber_crops natural_harbor_suitability = 0.00}
 bunratty = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = irish raw_material = millet natural_harbor_suitability = 0.00}
-moyarta = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = fish natural_harbor_suitability = 0.00}
+moyarta = { topography = wetlands vegetation = sparse climate = oceanic religion = catholic culture = irish raw_material = fish natural_harbor_suitability = 0.50}
 tipperary = { topography = hills vegetation = grasslands climate = oceanic religion = catholic culture = irish raw_material = silver}
 nenagh = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = irish raw_material = lead}
 clonmel = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = irish raw_material = livestock}
@@ -2041,8 +2041,8 @@ brest = { topography = flatland vegetation = grasslands climate = oceanic religi
 chatelaudren = { topography = flatland vegetation = woods climate = oceanic religion = catholic culture = breton raw_material = wheat natural_harbor_suitability = 0.00}
 st_pol_de_leon = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = breton raw_material = horses natural_harbor_suitability = 0.00}
 treguier = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = breton raw_material = horses natural_harbor_suitability = 0.00}
-vannes = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = breton raw_material = tin natural_harbor_suitability = 0.00}
-hennebont = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = breton raw_material = wheat natural_harbor_suitability = 0.00}
+vannes = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = breton raw_material = tin natural_harbor_suitability = 0.75}
+hennebont = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = breton raw_material = wheat natural_harbor_suitability = 0.50}
 redon = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = gallo raw_material = stone natural_harbor_suitability = 0.00}
 auxerre = { topography = flatland vegetation = grasslands climate = oceanic religion = catholic culture = burgundian raw_material = wheat}
 aignay = { topography = hills vegetation = woods climate = oceanic religion = catholic culture = burgundian raw_material = lumber}

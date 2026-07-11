@@ -58,6 +58,9 @@
 						culture = root
 						value >= 1000
 					}
+					any_estate = {
+						dominant_culture ?= { this = root }
+					}
 				}
 			}
 		}
@@ -392,6 +395,9 @@ add_tolerated_culture = {
 					culture_population_in_country = {
 						culture = root
 						value >= 1000
+					}
+					any_estate = {
+						dominant_culture ?= { this = root }
 					}
 				}
 			}
