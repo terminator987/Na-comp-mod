@@ -4,7 +4,6 @@ flavor_fra.1 = { # Birth of a Permanent Taxation System
 	type = country_event
 	title = flavor_fra.1.title
 	desc = flavor_fra.1.desc
-	outcome = neutral
 	historical_info = flavor_fra.1.historical_info
 
 
@@ -64,7 +63,6 @@ flavor_fra.2 = { # The Anjou Claim to Naples
 	type = country_event
 	title = flavor_fra.2.title
 	desc = flavor_fra.2.desc
-	outcome = neutral
 	historical_info = flavor_fra.2.historical_info
 
 
@@ -170,7 +168,6 @@ flavor_fra.3 = { # Seizure of the Guilds
 	type = country_event
 	title = flavor_fra.3.title
 	desc = flavor_fra.3.desc
-	outcome = neutral
 
 
 	fire_only_once = yes
@@ -216,7 +213,6 @@ flavor_fra.4 = { # Protestant Dissatisfaction in Pau
 	type = country_event
 	title = flavor_fra.4.title
 	desc = flavor_fra.4.desc
-	outcome = neutral
 	historical_info = flavor_fra.4.historical_info
 
 	fire_only_once = yes
@@ -275,7 +271,6 @@ flavor_fra.5 = { # Cardinal Richelieu
 	type = country_event
 	title = flavor_fra.5.title
 	desc = flavor_fra.5.desc
-	outcome = neutral
 	historical_info = flavor_fra.5.historical_info
 
 	fire_only_once = yes
@@ -338,7 +333,6 @@ flavor_fra.6 = {  # Invention of the Table Knife
 	type = country_event
 	title = flavor_fra.6.title
 	desc = flavor_fra.6.desc
-	outcome = neutral
 	fire_only_once = yes
 
 	illustration_tags = {
@@ -381,7 +375,6 @@ flavor_fra.7 = { # The Fronde in France
 	type = country_event
 	title = flavor_fra.7.title
 	desc = flavor_fra.7.desc
-	outcome = neutral
 	historical_info = flavor_fra.7.historical_info
 
 	fire_only_once = yes
@@ -461,7 +454,6 @@ flavor_fra.8 = { # Academie Française
 	type = country_event
 	title = flavor_fra.8.title
 	desc = flavor_fra.8.desc
-	outcome = neutral
 	historical_info = flavor_fra.8.historical_info
 
 	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_books.dds"
@@ -511,7 +503,6 @@ flavor_fra.9 = { # Colbertism
 	type = country_event
 	title = flavor_fra.9.title
 	desc = flavor_fra.9.desc
-	outcome = neutral
 	historical_info = flavor_fra.9.historical_info
 
 	fire_only_once = yes
@@ -582,7 +573,6 @@ flavor_fra.10 = { # The Commissioning of Versailles
 	type = country_event
 	title = flavor_fra.10.title
 	desc = flavor_fra.10.desc
-	outcome = neutral
 	historical_info = flavor_fra.10.historical_info
 
 	illustration_tags = {
@@ -645,7 +635,6 @@ flavor_fra.11 = { # Chambers of Reunion
 	type = country_event
 	title = flavor_fra.11.title
 	desc = flavor_fra.11.desc
-	outcome = neutral
 	historical_info = flavor_fra.11.historical_info
 
 
@@ -730,7 +719,6 @@ flavor_fra.12 = { # Plight of the Lutherans
 	type = country_event
 	title = flavor_fra.12.title
 	desc = flavor_fra.12.desc
-	outcome = neutral
 	historical_info = flavor_fra.12.historical_info
 
 
@@ -825,7 +813,6 @@ flavor_fra.13 = { # Calvinists expelled from France
 	type = country_event
 	title = flavor_fra.13.title
 	desc = flavor_fra.13.desc
-	outcome = neutral
 	historical_info = flavor_fra.13.historical_info
 
 
@@ -839,10 +826,7 @@ flavor_fra.13 = { # Calvinists expelled from France
 
 	trigger = {
 		religion = religion:catholic
-		custom_tooltip = {
-			text = variable_tt_nantes_revoked_by_sun_king
-			has_variable = nantes_revoked_by_sun_king
-		}
+		has_variable = nantes_revoked_by_sun_king
 		has_country_modifier = fra_quartering_of_the_dragoons
 		"religion_percentage_in_country(religion:calvinist)" >= 0.10
 		any_country = {
@@ -922,7 +906,6 @@ flavor_fra.14 = { # Charles-François de Broglie
 	type = country_event
 	title = flavor_fra.14.title
 	desc = flavor_fra.14.desc
-	outcome = neutral
 	historical_info = flavor_fra.14.historical_info
 
 
@@ -996,7 +979,6 @@ flavor_fra.15 = { # André-Hercule de Fleury
 	type = country_event
 	title = flavor_fra.15.title
 	desc = flavor_fra.15.desc
-	outcome = neutral
 	historical_info = flavor_fra.15.historical_info
 
 
@@ -1060,7 +1042,6 @@ flavor_fra.16 = { # Machault's 5 Percent tax
 	type = country_event
 	title = flavor_fra.16.title
 	desc = flavor_fra.16.desc
-	outcome = neutral
 	historical_info = flavor_fra.16.historical_info
 
 
@@ -1142,7 +1123,6 @@ flavor_fra.17 = { # Turgot's Economic Reforms
 	type = country_event
 	title = flavor_fra.17.title
 	desc = flavor_fra.17.desc
-	outcome = neutral
 	historical_info = flavor_fra.17.historical_info
 
 
@@ -1215,7 +1195,6 @@ flavor_fra.18 = { # Necker announces the Budget Deficit
 	type = country_event
 	title = flavor_fra.18.title
 	desc = flavor_fra.18.desc
-	outcome = neutral
 	historical_info = flavor_fra.18.historical_info
 
 
@@ -1284,7 +1263,6 @@ flavor_fra.19 = { # The Eden Agreement
 	type = country_event
 	title = flavor_fra.19.title
 	desc = flavor_fra.19.desc
-	outcome = neutral
 	historical_info = flavor_fra.19.historical_info
 
 
@@ -1333,7 +1311,6 @@ flavor_fra.20 = { # Rousseau Publishes 'The Social Contract'
 	type = country_event
 	title = flavor_fra.20.title
 	desc = flavor_fra.20.desc
-	outcome = neutral
 
 
 	fire_only_once = yes
@@ -1428,7 +1405,6 @@ flavor_fra.21 = { # Voltaire 'Philosophical Letters'
 			}
 		}
 	}
-	outcome = neutral
 
 
 
@@ -1497,7 +1473,6 @@ flavor_fra.22 = { # Montesquieu publishes 'The spirit of laws'
 	type = country_event
 	title = flavor_fra.22.title
 	desc = flavor_fra.22.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -1562,7 +1537,6 @@ flavor_fra.23 = { # René Descartes
 	type = country_event
 	title = flavor_fra.23.title
 	desc = flavor_fra.23.desc
-	outcome = neutral
 	historical_info = flavor_fra.23.historical_info
 
 	fire_only_once = yes
@@ -1630,7 +1604,6 @@ flavor_fra.24 = { # Samuel de Champlain and the Hurons
 	type = country_event
 	title = flavor_fra.24.title
 	desc = flavor_fra.24.desc
-	outcome = neutral
 
 
 	fire_only_once = yes
@@ -1723,7 +1696,6 @@ flavor_fra.25 = {
 			}
 		}
 	}
-	outcome = neutral
 
 	illustration_tags = {
 		10 = happy
@@ -1796,7 +1768,6 @@ flavor_fra.26 = {
 
 	title = flavor_fra.26.title
 	desc = flavor_fra.26.desc
-	outcome = neutral
 
 	historical_info = flavor_fra.26.historical_info
 
@@ -1831,7 +1802,6 @@ flavor_fra.1001 = { # The Reappropriation of Templar Lands
 
 	title = flavor_fra.1001.t
 	desc = flavor_fra.1001.desc
-	outcome = neutral
 
 
 	fire_only_once = yes
@@ -1895,7 +1865,6 @@ flavor_fra.1002 = { # The Mongoosing of Robert the Third
 
 	title = flavor_fra.1002.t
 	desc = flavor_fra.1002.desc
-	outcome = neutral
 	historical_info = flavor_fra.1002.historical_info
 
 
@@ -1975,7 +1944,6 @@ flavor_fra.1003 = { # The Mongoosing of Robert the Third - DYNAMIC Notification 
 			desc = flavor_fra.1002.desc.eng.b
 		}
 	}
-	outcome = neutral
 
 	illustration_tags = {
 		10 = angry
@@ -2014,7 +1982,6 @@ flavor_fra.1008 = { # St. Guinefort's Day
 
 	title = flavor_fra.1008.t
 	desc = flavor_fra.1008.desc
-	outcome = neutral
 	historical_info = flavor_fra.1008.historical_info
 
 
@@ -2107,7 +2074,6 @@ flavor_fra.1009 = { # Charivari Against *Anyone*
 			desc = flavor_fra.1009.desc
 		}
 	}
-	outcome = neutral
 
 	historical_info = flavor_fra.1009.historical_info
 
@@ -2222,7 +2188,6 @@ flavor_fra.1015 = { # Jacquerie
 
 	title = flavor_fra.1015.t
 	desc = flavor_fra.1015.desc
-	outcome = neutral
 
 	historical_info = flavor_fra.1015.historical_info
 
@@ -2397,7 +2362,6 @@ flavor_fra.1016 = { # Ordinance of Normandy
 
 	title = flavor_fra.1016.t
 	desc = flavor_fra.1016.desc
-	outcome = neutral
 
 	historical_info = flavor_fra.1016.historical_info
 
@@ -2446,7 +2410,6 @@ flavor_fra.1017 = { # Gabelle
 
 	title = flavor_fra.1017.t
 	desc = flavor_fra.1017.desc
-	outcome = neutral
 
 	historical_info = flavor_fra.1017.historical_info
 
@@ -2501,7 +2464,6 @@ flavor_fra.1020 = { # Roman Law
 
 	title = flavor_fra.1020.t
 	desc = flavor_fra.1020.desc
-	outcome = neutral
 
 	historical_info = flavor_fra.1020.historical_info
 
@@ -2546,7 +2508,6 @@ flavor_fra.1023 = { # Found the Franc
 	type = country_event
 	title = flavor_fra.1023.title
 	desc = flavor_fra.1023.desc
-	outcome = neutral
 	historical_info = flavor_fra.1023.historical_info
 	
 	fire_only_once = yes
@@ -2624,7 +2585,6 @@ flavor_fra.1100 = { # Princes of the Blood ### For Appanages
 	type = country_event
 	title = flavor_fra.1100.title
 	desc = flavor_fra.1100.desc
-	outcome = neutral
 	historical_info = flavor_fra.1100.historical_info
 
 	fire_only_once = yes
@@ -2726,7 +2686,6 @@ flavor_fra.1101 = { # Son demands landed title
 	type = country_event
 	title = flavor_fra.1101.title
 	desc = flavor_fra.1101.desc
-	outcome = neutral
 
 
 	trigger = {
@@ -2854,7 +2813,6 @@ flavor_fra.1102 = { # Annexation of an Appanage
 	type = country_event
 	title = flavor_fra.1102.title
 	desc = flavor_fra.1102.desc
-	outcome = neutral
 
 	trigger = {
 		exists = scope:target
@@ -2909,7 +2867,6 @@ flavor_fra.1103 = { # Consolidation of Appanage Lands
 	type = country_event
 	title = flavor_fra.1103.title
 	desc = flavor_fra.1103.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -2967,7 +2924,6 @@ flavor_fra.1110 = { # General Estates Halt Support
 	type = country_event
 	title = flavor_fra.1110.title
 	desc = flavor_fra.1110.desc
-	outcome = neutral
 	historical_info = flavor_fra.1110.historical_info
 
 
@@ -3034,7 +2990,6 @@ flavor_fra.1120 = { # Fouage Tax
 	type = country_event
 	title = flavor_fra.1120.title
 	desc = flavor_fra.1120.desc
-	outcome = neutral
 	historical_info = flavor_fra.1120.historical_info
 
 
@@ -3143,7 +3098,6 @@ flavor_fra.1121 = { # Rumors of Revolt in Tuchin
 	type = country_event
 	title = flavor_fra.1121.title
 	desc = flavor_fra.1121.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -3207,7 +3161,6 @@ flavor_fra.1122 = { # Harelle and Maillotin Revolts
 	type = country_event
 	title = flavor_fra.1122.title
 	desc = flavor_fra.1122.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -3218,10 +3171,7 @@ flavor_fra.1122 = { # Harelle and Maillotin Revolts
 	}
 
 	trigger = {
-		custom_tooltip = {
-			text = variable_tt_last_rites_of_charles_v
-			has_variable = last_rites_of_charles_v
-		}
+		has_variable = last_rites_of_charles_v
 		owns = location:rouen
 		has_policy = allowed_fouage_tax
 	}
@@ -3268,7 +3218,6 @@ flavor_fra.1123 = { # King Abolishes Fouage on Deathbed... but the state ignores
 	type = country_event
 	title = flavor_fra.1123.title
 	desc = flavor_fra.1123.desc
-	outcome = neutral
 	historical_info = flavor_fra.1123.historical_info
 
 
@@ -3283,10 +3232,7 @@ flavor_fra.1123 = { # King Abolishes Fouage on Deathbed... but the state ignores
     trigger = {
 		has_policy = allowed_fouage_tax
 		NOT = { has_policy = pause_on_fouage_collection }
-        custom_tooltip = {
-            text = variable_tt_enabled_fouage_tax
-            has_variable = enabled_fouage_tax
-        }        
+        has_variable = enabled_fouage_tax
         OR = {
             AND = {
                 has_regent = yes
@@ -3381,7 +3327,6 @@ flavor_fra.1130 = { # Étienne Marcel
 	type = country_event
 	title = flavor_fra.1130.title
 	desc = flavor_fra.1130.desc
-	outcome = neutral
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = FRA
@@ -3455,7 +3400,6 @@ flavor_fra.1131 = { # The Great Ordinance
 	type = country_event
 	title = flavor_fra.1131.title
 	desc = flavor_fra.1131.desc
-	outcome = neutral
 	historical_info = flavor_fra.1131.historical_info
 
 	fire_only_once = yes
@@ -3547,7 +3491,6 @@ flavor_fra.1132 = { # Marcel Levies power and enacts a Tax Embargo
 	type = country_event
 	title = flavor_fra.1132.title
 	desc = flavor_fra.1132.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -3605,7 +3548,6 @@ flavor_fra.1133 = { # Murder of the Marshals
     type = country_event
     title = flavor_fra.1133.title
     desc = flavor_fra.1133.desc
-	outcome = neutral
 
 
     fire_only_once = yes
@@ -3618,10 +3560,7 @@ flavor_fra.1133 = { # Murder of the Marshals
 
 
 	trigger = { #
-		custom_tooltip = {
-			text = variable_tt_fra_marcel_opposes_the_crown
-			has_variable = fra_marcel_opposes_the_crown
-		}		
+		has_variable = fra_marcel_opposes_the_crown
 		any_character = {
 			AND = {
 				is_ruler = no
@@ -3741,7 +3680,6 @@ flavor_fra.1134 = { # Marcel dies
 			}
 		}
 	}
-outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -3858,7 +3796,6 @@ flavor_fra.1135 = { # A Royal Progress (Tour)
 	type = country_event
 	title = flavor_fra.1135.title
 	desc = flavor_fra.1135.desc
-    outcome = neutral
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = FRA
@@ -3953,7 +3890,6 @@ flavor_fra.1136 = { # Ball of the Burning Men
 	type = country_event
 	title = flavor_fra.1136.title
 	desc = flavor_fra.1136.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -4214,7 +4150,6 @@ flavor_fra.1140 = { # Dream of the Orchard ## Songe du Vergier
 	type = country_event
 	title = flavor_fra.1140.title
 	desc = flavor_fra.1140.desc
-	outcome = neutral
 	historical_info = flavor_fra.1140.historical_info
 
 	image = "gfx/interface/illustrations/institutions/renaissance.dds"
@@ -4278,7 +4213,6 @@ flavor_fra.1150 = { # Western Schism and France
 	type = country_event
 	title = flavor_fra.1150.title
 	desc = flavor_fra.1150.desc
-	outcome = neutral
 
 	fire_only_once = yes
 
@@ -4347,7 +4281,6 @@ flavor_fra.1160 = { # The Roaming Routiers
 	type = country_event
 	title = flavor_fra.1160.title
 	desc = flavor_fra.1160.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -4611,16 +4544,12 @@ flavor_fra.1161 = { # Merc Companies raid the countryside # Happens at Peace
 	type = country_event
 	title = flavor_fra.1161.title
 	desc = flavor_fra.1161.desc
-	outcome = neutral
 
 	fire_only_once = yes
 
 	trigger = {
 		tag = FRA
-		custom_tooltip = {
-			text = variable_tt_fra_allowed_routiers_to_roam
-			has_variable = fra_allowed_routiers_to_roam
-		}		
+		has_variable = fra_allowed_routiers_to_roam
 		at_war = no
 		any_owned_location = {
 			is_capital = no
@@ -4694,7 +4623,6 @@ flavor_fra.1162 = { # Routiers handled
 	type = country_event
 	title = flavor_fra.1162.title
 	desc = flavor_fra.1162.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	illustration_tags = {
@@ -4739,7 +4667,6 @@ flavor_fra.1163 = { # Tard-Venus
 	type = country_event
 	title = flavor_fra.1163.title
 	desc = flavor_fra.1163.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -4879,7 +4806,6 @@ flavor_fra.1170 = { # The Eagle of Brittany
             }
         }
     }
-	outcome = neutral
     
 	fire_only_once = yes
    
@@ -4989,7 +4915,6 @@ flavor_fra.1171 = { ## Guesclin's Fabian Strategy
 	type = country_event
 	title = flavor_fra.1171.title
 	desc = flavor_fra.1171.desc
-	outcome = neutral
 
 	fire_only_once = yes
 	
@@ -5054,7 +4979,6 @@ flavor_fra.1172 = { # The Title of Constable
 	type = country_event
 	title = flavor_fra.1172.title
 	desc = flavor_fra.1172.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -5124,7 +5048,6 @@ flavor_fra.1173 = { # Guesclin Proposes Naval Raids
 	type = country_event
 	title = flavor_fra.1173.title
 	desc = flavor_fra.1173.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -5175,7 +5098,6 @@ flavor_fra.1174 = { # Naval raids successful
 	type = country_event
 	title = flavor_fra.1174.title
 	desc = flavor_fra.1174.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -5187,10 +5109,7 @@ flavor_fra.1174 = { # Naval raids successful
 
 	trigger = {
 		has_ruler = yes
-		custom_tooltip = {
-			text = variable_tt_fra_can_launch_naval_raids
-			has_variable = fra_can_launch_naval_raids
-		}		
+		has_variable = fra_can_launch_naval_raids
 		character:bertrand_guesclin ?= { is_alive = yes }
 		navy_size_percentage >= 0.75
 		country_exists = c:ENG
@@ -5320,7 +5239,6 @@ flavor_fra.1175 = { # Disloyalty in Normandy
 	type = country_event
 	title = flavor_fra.1175.title
 	desc = flavor_fra.1175.desc
-	outcome = neutral
 
 	fire_only_once = yes
 	
@@ -5333,10 +5251,7 @@ flavor_fra.1175 = { # Disloyalty in Normandy
 
 	trigger = {
 		has_ruler = yes
-		custom_tooltip = {
-			text = variable_tt_norman_lords_disloyal
-			has_variable = norman_lords_disloyal
-		}		
+		has_variable = norman_lords_disloyal
 		country_exists = c:NRM
 		c:NRM ?= {
 			is_subject_of = c:FRA
@@ -5395,7 +5310,6 @@ flavor_fra.1176 = { # Consolidating the Norman Domain
 	type = country_event
 	title = flavor_fra.1176.title
 	desc = flavor_fra.1176.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -5406,10 +5320,7 @@ flavor_fra.1176 = { # Consolidating the Norman Domain
 	}
 
 	trigger = {
-		custom_tooltip = {
-			text = variable_tt_disloyal_normandy_fired
-			has_variable = disloyal_normandy_fired
-		}		
+		has_variable = disloyal_normandy_fired
 		has_ruler = yes
 		country_exists = c:NRM
 		c:NRM ?= {
@@ -5471,7 +5382,6 @@ flavor_fra.1177 = { # Norman Lords Swear Fealty to England
 	type = country_event
 	title = flavor_fra.1177.title
 	desc = flavor_fra.1177.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -5482,10 +5392,7 @@ flavor_fra.1177 = { # Norman Lords Swear Fealty to England
 	}
 
 	trigger = {
-		custom_tooltip = {
-			text = variable_tt_disloyal_normandy_fired
-			has_variable = disloyal_normandy_fired
-		}		
+		has_variable = disloyal_normandy_fired
 		has_ruler = yes
 		country_exists = c:NRM
 		c:NRM ?= {
@@ -5585,7 +5492,6 @@ flavor_fra.1180 = { # Jeanne d'Arc
 	type = country_event
 	title = flavor_fra.1180.title
     desc = flavor_fra.1180.desc
-	outcome = neutral
 
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -5709,7 +5615,6 @@ flavor_fra.2000 = { # Resurgence against the English ## Based around Joan of Arc
 	fire_only_once = yes
  	title = flavor_fra.2000.title
  	desc = flavor_fra.2000.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -5770,7 +5675,6 @@ flavor_fra.2002 = { # Capture of Joan of Arc
 
  	title = flavor_fra.2002.title
  	desc = flavor_fra.2002.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -5780,10 +5684,7 @@ flavor_fra.2002 = { # Capture of Joan of Arc
 	}
 
  	trigger = {
-		custom_tooltip = {
-			text = variable_tt_jeanne_d_arc_captured
-			has_variable = jeanne_d_arc_captured
-		}		
+		has_variable = jeanne_d_arc_captured
 		character:joan_of_arc ?= { is_alive = yes }
  	}
 
@@ -5814,7 +5715,6 @@ flavor_fra.2003 = { # The Trial of Joan of Arc
 
  	title = flavor_fra.2003.title
  	desc = flavor_fra.2003.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = ENG
@@ -5824,14 +5724,8 @@ flavor_fra.2003 = { # The Trial of Joan of Arc
 	}
 
  	trigger = {
-		custom_tooltip = {
-			text = variable_tt_jeanne_d_arc_captured_eng
-			has_variable = jeanne_d_arc_captured_eng
-		}
-		custom_tooltip = {
-			text = variable_tt_fra_informed_of_joan_capture
-			has_variable = fra_informed_of_joan_capture
-		}		
+		has_variable = jeanne_d_arc_captured_eng
+		has_variable = fra_informed_of_joan_capture
 		character:joan_of_arc ?= { is_alive = yes }
  	}
 
@@ -5887,7 +5781,6 @@ flavor_fra.2004 = { # Joan of Arc executed by England
 
  	title = flavor_fra.2004.title
  	desc = flavor_fra.2004.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -5897,10 +5790,7 @@ flavor_fra.2004 = { # Joan of Arc executed by England
 	}
 
  	trigger = {
-		custom_tooltip = {
-			text = variable_tt_fra_joan_of_arc_executed
-			has_variable = fra_joan_of_arc_executed
-		}		
+		has_variable = fra_joan_of_arc_executed
 		character:joan_of_arc ?= { is_alive = no }
  	}
 
@@ -5980,7 +5870,6 @@ flavor_fra.2005 = { # The Return of Joan of Arc
 			}
 		}
 	}
-	outcome = neutral
 
  	trigger = {
 		OR = {
@@ -6100,7 +5989,6 @@ flavor_fra.2006 = { # A Contested Succession ## Based around Charles VII 'disinh
 	fire_only_once = yes
  	title = flavor_fra.2006.title
  	desc = flavor_fra.2006.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -6171,7 +6059,6 @@ flavor_fra.2007 = { # Prince/Dauphin is crowned King of France
 
  	title = flavor_fra.2007.title
  	desc = flavor_fra.2007.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -6182,10 +6069,7 @@ flavor_fra.2007 = { # Prince/Dauphin is crowned King of France
 
  	trigger = {
 		country_exists = c:ENG
-		custom_tooltip = {
-			text = variable_tt_french_succession_is_contested
-			has_variable = french_succession_is_contested
-		}		
+		has_variable = french_succession_is_contested
 		has_ruler = yes
 		region:france_region = {
 			any_location_in_region = {
@@ -6296,7 +6180,6 @@ flavor_fra.2010 = { # Jean Bureau
 
  	title = flavor_fra.2010.title
  	desc = flavor_fra.2010.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -6366,7 +6249,6 @@ flavor_fra.2011 = { # The Master Gunner of France
 
  	title = flavor_fra.2011.title
  	desc = flavor_fra.2011.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -6429,7 +6311,6 @@ flavor_fra.2012 = { # Jean de Dunois, the Bastard of Orleans
 
  	title = flavor_fra.2012.title
  	desc = flavor_fra.2012.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -6507,7 +6388,6 @@ flavor_fra.2013 = { # University of Poitiers
 	type = country_event
 	title = flavor_fra.2013.title
 	desc = flavor_fra.2013.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -6584,7 +6464,6 @@ flavor_fra.2014 = { # The Praguerie
 	type = country_event
 	title = flavor_fra.2014.title
 	desc = flavor_fra.2014.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -6682,7 +6561,6 @@ flavor_fra.2020 = { # Jacques Coeur, Master of Mint
 	type = country_event
 	title = flavor_fra.2020.title
 	desc = flavor_fra.2020.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -6751,7 +6629,6 @@ flavor_fra.2021 = { # Couer and the Royal Expenditure
 	type = country_event
 	title = flavor_fra.2021.title
 	desc = flavor_fra.2021.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -6804,7 +6681,6 @@ flavor_fra.2022 = { # Couer Negotiates with Mamluks Sultans
 	type = country_event
 	title = flavor_fra.2022.title
 	desc = flavor_fra.2022.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -6887,7 +6763,6 @@ flavor_fra.2023 = { # Château d'Ainay-le-Vieil by Couer
 	type = country_event
 	title = flavor_fra.2023.title
 	desc = flavor_fra.2023.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -6942,7 +6817,6 @@ flavor_fra.2024 = { # Enterprising Nobles
 	type = country_event
 	title = flavor_fra.2024.title
 	desc = flavor_fra.2024.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -6991,7 +6865,6 @@ flavor_fra.2025 = { # Monopolization of Coeur
 	type = country_event
 	title = flavor_fra.2025.title
 	desc = flavor_fra.2025.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
@@ -7072,7 +6945,6 @@ flavor_fra.2031 = { # The League of the Public Weal
 
  	title = flavor_fra.2031.t
  	desc = flavor_fra.2031.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7125,7 +6997,6 @@ flavor_fra.2032 = { # The League of Public the Public Weal # For Appanges
 
  	title = flavor_fra.2031.t
  	desc = flavor_fra.2031.desc
-	outcome = neutral
 
 	illustration_tags = {
 		10 = regular
@@ -7171,7 +7042,6 @@ flavor_fra.2033 = { # The League Demands Autonomy!
 
  	title = flavor_fra.2033.t
  	desc = flavor_fra.2033.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7343,7 +7213,6 @@ flavor_fra.2034 = { # Triumph of the League or Triumph of the State
 			}
 		}
 	}
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7416,7 +7285,6 @@ flavor_fra.2040 = { # The Compagnie d'Ordonnance ## First Standing Army in Europ
 
  	title = flavor_fra.2040.t
  	desc = flavor_fra.2040.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7494,7 +7362,6 @@ flavor_fra.2041 = { #The Fiscal Prudence of Louis XI (Takes current ruler name)
 
  	title = flavor_fra.2041.t
  	desc = flavor_fra.2041.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7582,7 +7449,6 @@ flavor_fra.2042 = { # Pragmatic Sanction of Bourges
 
  	title = flavor_fra.2042.t
  	desc = flavor_fra.2042.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7647,7 +7513,6 @@ flavor_fra.2043 = { # Expansion of the Royal Postal roads
 
  	title = flavor_fra.2043.t
  	desc = flavor_fra.2043.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7719,7 +7584,6 @@ flavor_fra.2044 = { # Coaching Inns # 'Postal' inns created during the reign of 
 
  	title = flavor_fra.2044.t
  	desc = flavor_fra.2044.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7792,7 +7656,6 @@ flavor_fra.2050 = { # Succession Crisis in Brittany
 
  	title = flavor_fra.2050.t
  	desc = flavor_fra.2050.desc
-	outcome = neutral
 
 	dynamic_historical_event = {
 		tag = FRA
@@ -7970,7 +7833,6 @@ flavor_fra.2060 = { # A Traveling King/Queen
 	type = country_event
 	title = flavor_fra.2060.title
 	desc = flavor_fra.2060.desc
-	outcome = neutral
 	fire_only_once = yes
 	
 	dynamic_historical_event = {
