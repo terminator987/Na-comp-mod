@@ -6,6 +6,7 @@ colonial_charter.1 = {
 
 	title = colonial_charter.1.title
 	desc = colonial_charter.1.desc
+	outcome = neutral
 	
 	
 	
@@ -92,6 +93,7 @@ colonial_charter.3 = {
 	type = country_event
 	title = colonial_charter.3.title
 	desc = colonial_charter.3.desc
+	outcome = neutral
 
 	
 		
@@ -235,6 +237,7 @@ colonial_charter.5 = {
 	type = country_event
 	title = colonial_charter.5.title
 	desc = colonial_charter.5.desc
+	outcome = neutral
 	trigger = {
 		has_policy = native_trade
 		
@@ -294,6 +297,7 @@ colonial_charter.6 = {
 	type = country_event
 	title = colonial_charter.6.title
 	desc = colonial_charter.6.desc
+	outcome = neutral
 
 	trigger = {
 		any_province = {
@@ -336,6 +340,7 @@ colonial_charter.7 = {
 	type = country_event
 	title = colonial_charter.7.title
 	desc = colonial_charter.7.desc
+	outcome = neutral
 	trigger = {
 		has_policy = settled_colonies
 		
@@ -370,6 +375,7 @@ colonial_charter.8 = {
 	type = country_event
 	title = colonial_charter.8.title
 	desc = colonial_charter.8.desc
+	outcome = neutral
 	trigger = {
 		has_policy = settled_colonies
 		scope:target.province_definition = {
@@ -416,6 +422,7 @@ colonial_charter.9 = {
 	type = country_event
 	title = colonial_charter.9.title
 	desc = colonial_charter.9.desc
+	outcome = neutral
 	trigger = {
 		any_colonial_charter = {
 			count > 5
@@ -453,6 +460,7 @@ colonial_charter.10 = {
 	type = country_event
 	title = colonial_charter.10.title
 	desc = colonial_charter.10.desc
+	outcome = neutral
 
 	immediate = {
 		scope:target.province_definition = {
@@ -516,6 +524,7 @@ colonial_charter.100 = {
 
 	title = colonial_charter.100.title
 	desc = colonial_charter.100.desc
+	outcome = neutral
 
 	immediate = {
 		if = {
