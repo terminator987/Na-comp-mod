@@ -13987,7 +13987,6 @@ countries = {
 				chancellor_nobles
 				villes_franches
 				great_offices_of_the_crown_of_france
-				banal_lordship
 			}
 		}
 
