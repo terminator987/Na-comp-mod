@@ -367,7 +367,7 @@ countries = {
 			hamar kongsvinger elverum glommadal trysil amot tynset
 			troms trondenes senja bardodalen 
 			bodo birndal alstahaug gildeskal steigen langenes lofotr hamaroy ofoti
-			
+			raisa porsanger hammerfest vardo
 
 			# Northern Isles
 			#shetland orkney 
@@ -376,9 +376,8 @@ countries = {
 		
 		own_control_integrated = {
 			varanger  alta
-			raisa deatnu porsanger hammerfest lebesby
+			 deatnu   lebesby
 			kirkenes
-			vardo  
 		}
 
 		accepted_cultures = {
@@ -1708,14 +1707,6 @@ countries = {
 		include = "expl_northern_europe"
 
 		government = {
-			regnal_numbers = {
-				name_odoacer = 2
-				name_wenceslas = 3
-				name_rudolf = 1
-				name_henry = 1
-				name_john = 1
-				name_vladislav = 1
-			}
 
 			ruler = boh_john_luxembourg
 
@@ -1725,6 +1716,15 @@ countries = {
 			ruler_term = { character = boh_rudolf_habsburg start_date = 1306.8.4 end_date = 1307.7.3 regnal_number = 1 }
 			ruler_term = { character = tir_henry_gorizia start_date = 1307.7.3 end_date = 1310.8.31 regnal_number = 1 }
 			ruler_term = { character = boh_john_luxembourg start_date = 1310.8.31 regnal_number = 1 }
+			
+			regnal_numbers = {
+				name_odoacer = 2
+				name_wenceslas = 3
+				name_henry = 1
+				name_rudolf = 1
+				name_henry = 1
+				name_john = 1
+			}
 
 			centralization_vs_decentralization = 80
 			aristocracy_vs_plutocracy = -70
@@ -4010,8 +4010,10 @@ countries = {
 		capital = theodoro
 
 		tolerated_cultures = {
-			pontic_greek_culture
+			gothic_culture
 		}
+
+		liturgical_language = koine_dialect
 
 		include = "expl_western_europe"
 		include = "eastern_european_monarchy"
@@ -4653,7 +4655,7 @@ countries = {
 			land_vs_naval = 100
 			belligerent_vs_conciliatory = -30
 		}
-		
+				capital = orkney
 	}
 
 	SCO = { # Scotland
@@ -6058,9 +6060,9 @@ countries = {
 		}
 
 		tolerated_cultures = {
-			kangri
 			kashmiri_culture
-		 }
+			punjabi		 
+		}
 	}
 
 	#RJR - Rajouri
@@ -9416,6 +9418,7 @@ countries = {
 			privilege = {
 				signoria_council
 				florence_guilds
+				arte_della_lana
 			}
 			laws = {
 				guilds_of_florence = arti_maggiori
@@ -9431,6 +9434,7 @@ countries = {
 			ruler_term = { character = gub_jacopo_gabrielli start_date = 1335.11.1 regnal_number = 0 }
 		}
 
+		country_rank = rank_duchy
 		capital = florence
 
 		tolerated_cultures = {
@@ -9541,6 +9545,8 @@ countries = {
 			heir_selection = bank_selection
 			reforms = {	banking_country }
 			ruler = acc_acciaiolo_acciaioli
+			ruler_term = { character = acc_leone_acciaioli start_date = 1284.1.1 end_date = 1300.1.1 regnal_number = 0 }
+			ruler_term = { character = acc_acciaiolo_acciaioli start_date = 1333.11.1 regnal_number = 0 }
 
 			centralization_vs_decentralization = 20
 			aristocracy_vs_plutocracy = 70
@@ -9896,6 +9902,10 @@ countries = {
 			canossa guastalla mirandola reggioem
 		}
 
+		own_control_conquered = {
+			asola
+		}
+
 		starting_technology_level = 3
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -10118,7 +10128,7 @@ countries = {
 			emilian
 		}
 
-		country_rank = rank_county
+		country_rank = rank_duchy
 		capital = milano
 		dynasty = visconti_dynasty
 	}
@@ -10323,7 +10333,7 @@ countries = {
 				formal_guilds
 			}
 		}
-		accepted_cultures = { sicilian }
+		accepted_cultures = { sicilian french }
 		tolerated_cultures = { median }
 		capital = naples
 		country_rank = rank_kingdom
@@ -10408,7 +10418,10 @@ countries = {
 
 	PAD = {
 		own_control_core = {
-			este monselice padova
+			monselice padova
+		}
+		own_core = {
+			este		
 		}
 
 		starting_technology_level = 3
@@ -10773,7 +10786,7 @@ countries = {
 		}
 
 		our_cores_conquered_by_others = {
-			aleria bastia calvi corte ajaccio sartene vico
+			aleria bastia calvi corte ajaccio sartene vico bonifacio
 			cagliari tratalias villa_di_chiesa isili muravera seddori tortoli
 			orosei terranova_pausania posada tempiopausania
 		}
@@ -11159,7 +11172,7 @@ countries = {
 		}
 
 		country_rank = rank_county
-		capital = annecy
+		capital = la_roche_sur_foron
 	}
 
 	#Vaud - VUD
@@ -11520,6 +11533,7 @@ countries = {
 			type = republic
 			heir_selection = podesta_elective
 
+			ruler_term = { character = gor_john_henry_iv_gorizia start_date = 1332.12.1 end_date = 1333.12.1 regnal_number = 0 }
 			reforms = {
 				signoria_reform
 			}
@@ -11634,7 +11648,7 @@ countries = {
 		country_rank = rank_duchy
 		government = {
 			type = republic
-			heir_selection = lottery_election
+			heir_selection = doge_election
 
 			ruler = ven_francesco_dandolo
 
@@ -11807,7 +11821,7 @@ countries = {
 		}
 
 		own_control_conquered = {
-			asola brescia palazzolo salo_ita breno nozza
+			brescia palazzolo salo_ita breno nozza
 			cividale
 			
 		
@@ -11847,6 +11861,8 @@ countries = {
 			ruler_term = { character = ver_cangrande_scala start_date = 1311.11.29 end_date = 1329.7.22 regnal_number = 1 }
 			ruler_term = { character = ver_mastino_ii_scala start_date = 1329.7.22 regnal_number = 2 }
 			#ruler_term = { character = ver_alberto_ii_scala start_date = 1329.7.22 regnal_number = 2 } # Co-Ruler until 1351
+
+			belligerent_vs_conciliatory = -90
 		}
 
 		tolerated_cultures = {
@@ -11944,6 +11960,16 @@ countries = {
 				name_roger = 1
 				name_manfred = 1
 			}
+			reforms = {
+				ath_rule_of_the_catalans
+				partitio_reform
+			}
+			laws = {
+				legal_code_law = assizes_of_romania_policy
+			}
+			privilege = {
+				lat_latin_crusader_elite
+			}
 		}
 
 		tolerated_cultures = {
@@ -11960,10 +11986,13 @@ countries = {
 		own_control_core = {
 			damala ermioni kalamata kyparissia
 			andritsaina pontikokastro andravida corinth
-			chalandritsa patras vostitsa kalavryta xylokastro
+			vostitsa kalavryta xylokastro
+			nafpaktos 
 		}
+		
 		our_cores_conquered_by_others = {
 			tripolitsa veligosti karytaina
+			chalandritsa patras 		
 		}
 		starting_technology_level = 3
 		include = "expl_mediterranean"
@@ -12023,10 +12052,22 @@ countries = {
 				name_john = 1
 				name_robert = 0 # Should be 1 if Co-Rulers are added
 			}
+			
+			reforms = {
+				ach_heirs_of_the_latin_empire
+				partitio_reform
+			}
+			laws = {
+				legal_code_law = assizes_of_romania_policy
+			}
+			privilege = {
+				lat_latin_crusader_elite
+			}
 		}
 
 		tolerated_cultures = {
 			greek_culture
+			neapolitan		
 		}
 
 		country_rank = rank_duchy
@@ -12036,9 +12077,62 @@ countries = {
 		#dynasty = anjou_taranto_dynasty
 	}
 
+	PAT = { 
+		own_control_core = {
+			chalandritsa patras
+		}
+
+		own_control_integrated = {
+		}
+		
+		our_cores_conquered_by_others = {
+		}
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "expl_silk_road_west"
+		include = "expl_silk_road_center"
+		include = "expl_silk_road_east"
+		include = "expl_indian_trade_route"
+		include = "catholic_bishopric"
+		government = {
+			type = theocracy
+
+			ruler = pat_guglielmo_frangipani
+
+			ruler_term = { character = pat_guglielmo_frangipani start_date = 1317.1.3 regnal_number = 1 }
+
+			regnal_numbers = {
+				#Antelm = 1
+				name_bernard = 1
+				name_godfrey = 1
+				name_benedict = 1
+				name_john = 2
+				name_james = 1
+				name_rayner = 1
+				name_william = 1
+			}
+			
+			reforms = {
+				partitio_reform
+			}
+			laws = {
+				legal_code_law = assizes_of_romania_policy
+			}
+			privilege = {
+				lat_latin_crusader_elite
+			}
+		}
+
+		tolerated_cultures = {
+			greek_culture
+		}
+
+		country_rank = rank_duchy
+		capital = patras
+	}
 	CEP = {
 		own_control_core = {
-			zakynthos leukas cephalonia
+			zakynthos cephalonia
 		}
 
 		starting_technology_level = 3
@@ -12072,6 +12166,16 @@ countries = {
 				name_john = 3
 				name_charles = 1
 				name_robert = 1
+			}
+			
+			reforms = {
+				partitio_reform
+			}
+			laws = {
+				legal_code_law = assizes_of_romania_policy
+			}
+			privilege = {
+				lat_latin_crusader_elite
 			}
 		}
 		
@@ -12112,6 +12216,16 @@ countries = {
 				name_catherine = 2
 				name_charles = 1
 			}
+			
+			reforms = {
+				partitio_reform
+			}
+			laws = {
+				legal_code_law = assizes_of_romania_policy
+			}
+			privilege = {
+				lat_latin_crusader_elite
+			}
 		}
 		country_rank = rank_empire
 		court_language = french_language
@@ -12149,6 +12263,16 @@ countries = {
 				name_william = 1
 				name_nicholas = 1
 			}
+			
+			reforms = {
+				partitio_reform
+			}
+			laws = {
+				legal_code_law = assizes_of_romania_policy
+			}
+			privilege = {
+				lat_latin_crusader_elite
+			}
 		}
 
 		tolerated_cultures = {
@@ -12161,7 +12285,7 @@ countries = {
 
 	EPI = {
 		own_control_core = {
-			nafpaktos angelokastron vonitsa arta preveza parga ioannina kleisoura_epirus butrint
+			angelokastron arta preveza parga ioannina kleisoura_epirus
 			argyrokastro avlonya karpenisi konitsa
 		}
 		our_cores_conquered_by_others = {
@@ -12308,11 +12432,11 @@ countries = {
 			malgara alasehir
 			monemvasia mystras oitylo leuktron astros ostrovo
 			uskudar silli biga eregli
-			chios vize
+			chios ikaria vize
 			ormenio
 		}
 		own_control_integrated = {
-			bukelon devol ustra
+			bukelon devol ustra berat plovdiv stanimaka tsepina beden perperek smolyan haskovo melnik dospat bansko krupnik nevrokop
 		}
 		own_control_conquered = {
 			demetrias tripolitsa veligosti karytaina farsala elassona larissa siatista stomio trikala tyrnavos pyli karditsa grevena
@@ -12512,6 +12636,10 @@ countries = {
 			durres
 		}
 
+		own_control_integrated = {
+			corfu butrint
+		}
+
 		our_cores_conquered_by_others = {
 			elbasan kavaje kruje tirana
 		}
@@ -12549,6 +12677,7 @@ countries = {
 			bulgarian
 		}
 
+		culture = neapolitan
 		country_rank = rank_kingdom
 		capital = durres
 		dynasty = anjou_dynasty
@@ -12934,7 +13063,7 @@ countries = {
 
 	BUL = {
 		own_control_core = {
-			sredets samokov plovdiv stipon ovech
+			sredets samokov stipon ovech
 			hiambouli rusokastro lardeja boruy
 			tarnovo drastar tutrakan cherven razgrad shumen aytos targoviste_BUL sliven kran
 			lovech nikopol pleven vratsa kutlovitsa vidin oryahovo bozhenitsa hotalich tryavna
@@ -12944,11 +13073,6 @@ countries = {
 			babadag cernavoda constanta enisala isaccea
 			visesav kozelj svrljig pirot tsaribrod  
 			zemlungrad dupnitsa
-		}
-		own_control_conquered = {
- 			dospat bansko krupnik melnik nevrokop 
-			tsepina 
-			beden haskovo perperek smolyan stanimaka
 		}
 		own_control_integrated = {
 			burgas sozopol
@@ -12961,7 +13085,7 @@ countries = {
 		starting_technology_level = 3
 		include = "expl_mediterranean"
 		include = "eastern_european_monarchy"
-		country_rank = rank_kingdom
+		country_rank = rank_empire
 		government = {
 			type = monarchy
 			heir_selection = cognatic_primogeniture
@@ -17489,6 +17613,7 @@ countries = {
 	ARG = { #Argos
 		own_control_core = {
 			argos nafplio
+			leukas vonitsa 
 		}
 		our_cores_conquered_by_others = {
 			athens megara thebes atalanti livadeia gravia
