@@ -10418,12 +10418,8 @@ countries = {
 
 	PAD = {
 		own_control_core = {
-			monselice padova
+			monselice padova este
 		}
-		own_core = {
-			este		
-		}
-
 		starting_technology_level = 3
 		include = "expl_mediterranean"
 		include = "expl_silk_road_west"
@@ -12712,7 +12708,7 @@ countries = {
 
 	MZK = {
 		own_control_core = {
-			berat ballsh
+			ballsh
 		}
 
 		starting_technology_level = 3
@@ -12739,7 +12735,7 @@ countries = {
 			aromanian
 		}
 
-		capital = berat
+		capital = ballsh
 		dynasty = muzakajt_dynasty
 	}
 
