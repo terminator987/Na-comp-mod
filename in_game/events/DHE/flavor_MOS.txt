@@ -166,11 +166,11 @@ flavor_mos.3 = {
 
 		c:LIT = {
 			is_subject = no
-			great_power_score > root.great_power_score
+			country_economical_base > root.country_economical_base
 		}
 
 		c:GLH = {
-			great_power_score > root.great_power_score
+			country_economical_base > root.country_economical_base
 			OR = {
 				stability <= 25
 				in_civil_war = yes
@@ -213,7 +213,7 @@ flavor_mos.3 = {
 		}
 
 		c:LIT = {
-			add_trust = {
+			add_trust_equilibrium = {
 				target = root
 				modifier = trust_mongol_allegiance
 			}
@@ -239,7 +239,7 @@ flavor_mos.3 = {
 		}
 
 		c:GLH = {
-			add_trust = {
+			add_trust_equilibrium = {
 				target = root
 				modifier = trust_slavic_allegiance
 			}
@@ -258,14 +258,14 @@ flavor_mos.3 = {
 		name = flavor_mos.3.c
 
 		c:LIT = {
-			add_trust = {
+			add_trust_equilibrium = {
 				target = root
 				modifier = trust_asserting_independence
 			}
 		}
 
 		c:GLH = {
-			add_trust = {
+			add_trust_equilibrium = {
 				target = root
 				modifier = trust_asserting_independence
 			}
@@ -410,7 +410,7 @@ flavor_mos.4 = {
 					limit = {
 						NOT = { is_subject_of = root }
 					}
-					add_trust = {
+			add_trust_equilibrium = {
 						target = root
 						modifier = trust_peaceful_coexistence
 					}
@@ -612,8 +612,11 @@ flavor_mos.6 = {
 			has_building_with_at_least_one_level = orthodox_monastery
 		}
 
-		character:mos_sergius_of_radonezh ?= {
-			is_alive = yes
+		custom_tooltip = {
+			text = mos_sergius_of_radonezh_alive_tt
+			character:mos_sergius_of_radonezh ?= {
+				is_alive = yes
+			}
 		}
 	}
 
@@ -985,7 +988,7 @@ flavor_mos.9 = {
 		historical_option = yes
 
 		c:GLH = {
-			add_trust = {
+			add_trust_equilibrium = {
 				modifier = trust_efficient_tax_collector
 				target = root
 			}
@@ -1413,7 +1416,10 @@ flavor_mos.12 = {
 
 	trigger = {
 
-		character:mos_andrei_rublev ?= { is_alive = yes }
+		custom_tooltip = {
+			text = mos_andrei_rublev_alive_tt
+			character:mos_andrei_rublev ?= { is_alive = yes }
+		}
 	}
 
 	illustration_tags = {
@@ -2257,7 +2263,7 @@ flavor_mos.23 = {
 		area:smolensk_area = {
 			any_location_in_area = {
 				percent > 0.5
-				top_owner = ROOT
+				top_owner ?= ROOT
 			}
 		}
 	}
@@ -2280,7 +2286,7 @@ flavor_mos.23 = {
 		name = flavor_mos.23.a
 		historical_option = yes
 
-		add_trust = {
+		add_trust_equilibrium = {
 			modifier = trust_treaty_of_ugra
 			target = c:LIT
 		}
@@ -2536,7 +2542,7 @@ flavor_mos.26 = {
 
 		scope:sender = { remove_variable = treaty_of_ugra_declined }
 
-		add_trust = {
+		add_trust_equilibrium = {
 			modifier = trust_incompatible_foreign_policies
 			target = scope:sender
 		}
@@ -2735,8 +2741,6 @@ flavor_mos.28 = {
 		name = flavor_mos.28.a
 		historical_option = yes
 
-		change_gold_effect = { scale = -4 }
-
 		location:moscow = {
 			if = {
 				limit = {
@@ -2746,6 +2750,8 @@ flavor_mos.28 = {
 				}
 				construct_building = {
 					building_type = building_type:cathedral
+					cost_multiplier = 0.5
+					cost_multiplier_reason = "clergy_cheap_sponsorship"
 				}
 			}
 			create_art = {
@@ -4524,9 +4530,12 @@ flavor_mos.42 = {
 
 	trigger = {
 
-		character:mos_eleanor_glinskaya ?= {
-			is_alive = yes
-			is_regent = yes
+		custom_tooltip = {
+			text = mos_eleanor_glinskaya_regent_tt
+			character:mos_eleanor_glinskaya ?= {
+				is_alive = yes
+				is_regent = yes
+			}
 		}
 
 		any_character = {
@@ -4703,6 +4712,7 @@ flavor_mos.43 = {
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 
@@ -4756,7 +4766,7 @@ flavor_mos.43 = {
 					}
 					scope:target_location.province_definition = {
 						add_migration = {
-							owner = prev
+							owner = root
 							from = prev.province_definition
 							to = this
 							culture = scope:location_dominant_culture
@@ -4969,12 +4979,7 @@ flavor_mos.45 = {
 		name = flavor_mos.45.a
 		historical_option = yes
 
-		research_advance = advance_type:printing_press_shop_advance
-
-		capital = {
-			construct_building = { building_type = building_type:printing_press_shop }
-			change_institution_progress = { type = institution:printing_press value = institution_progress_ultimate_bonus }
-		}
+		add_country_modifier = { modifier = printing_boom years = 25 mode = add_and_extend }
 
 		if = {
 			limit = {
@@ -5047,10 +5052,12 @@ flavor_mos.46 = {
 
 	trigger = {
 
-		character:mos_ivan_fyodorov ?= {
-			is_alive = yes
-		}
-
+		custom_tooltip = {
+			text = mos_ivan_fyodorov_alive_tt
+			character:mos_ivan_fyodorov ?= {
+				is_alive = yes
+			}		
+	 }
 		capital = {
 			controller = root
 			has_building_with_at_least_one_level = printing_press_shop
@@ -6413,7 +6420,10 @@ flavor_mos.56 = {
 	}
 
 	trigger = {
-		has_variable = great_fire_moscow
+		custom_tooltip = {
+			text = variable_great_fire_moscow_tt
+			has_variable = great_fire_moscow
+		}
 		has_ruler = yes
 		location:moscow = {
 			owner = root
@@ -6423,7 +6433,7 @@ flavor_mos.56 = {
 		any_character = {
 			is_alive = yes
 			is_ruler = no
-			dynasty = dynasty:glinski_dynasty
+			dynasty ?= dynasty:glinski_dynasty
 			is_close_relative = root.ruler
 		}
 	}
@@ -6487,9 +6497,12 @@ flavor_mos.56 = {
 	option = {
 		name = flavor_mos.56.b
 		trigger = {
-			character:mos_eleanor_glinskaya ?= {
-				is_alive = yes
-				is_spouse_of = root.ruler
+			custom_tooltip = {
+				text = mos_eleanor_glinskaya_spouse_tt
+				character:mos_eleanor_glinskaya ?= {
+					is_alive = yes
+					is_spouse_of = root.ruler
+				}
 			}
 		}
 
@@ -6842,9 +6855,10 @@ flavor_mos.59 = {
 					NOR = {
 						location_rank = location_rank:town
 						location_rank = location_rank:city
+						location_rank = location_rank:megalopolis
 					}
 				}
-				change_location_rank = location_rank:town
+				change_location_rank_effect = { location_rank = location_rank:town }
 			}
 			construct_building = {
 				building_type = building_type:port_authority
@@ -8348,7 +8362,7 @@ flavor_mos.74 = {
 		name = flavor_mos.74.a
 		historical_option = yes
 
-		set_as_designated_heir = {
+		set_as_designated_heir_with_reason_effect = {
 			target = scope:boris_godunov
 			reason = preferred_heir_of_ruler
 		}
@@ -8393,7 +8407,7 @@ flavor_mos.74 = {
 	option = {
 		name = flavor_mos.74.b
 
-		set_as_designated_heir = {
+		set_as_designated_heir_with_reason_effect = {
 			target = scope:feodor_romanov
 			reason = preferred_heir_of_ruler
 		}
@@ -8583,8 +8597,11 @@ flavor_mos.76 = {
 			controller = root
 		}
 
-		has_variable = posolsky_prikaz_established
-
+		custom_tooltip = {
+			text = variable_posolsky_prikaz_established_tt
+			has_variable = posolsky_prikaz_established
+		}
+		
 		has_reform = government_reform:prikazi_reform
 
 	}
@@ -8975,8 +8992,11 @@ flavor_mos.80 = {
 
 	trigger = {
 
-		has_variable = bolotnikov_uprising_possible
-
+		custom_tooltip = {
+			text = variable_bolotnikov_uprising_possible_tt
+			has_variable = bolotnikov_uprising_possible
+		}
+		
 		character:mos_ivan_bolotnikov ?= {
 			is_alive = yes
 		}
@@ -9154,7 +9174,7 @@ flavor_mos.81 = {
 
 		create_character = {
 			first_name = name_alexis
-			last_name = Lvov
+			dynasty = dynasty:lvov_dynasty
 			estate = estate_type:nobles_estate
 			adm = 66
 			dip = 21
@@ -10274,6 +10294,7 @@ flavor_mos.91 = {
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 			}
 		}
 
@@ -10551,7 +10572,10 @@ flavor_mos.93 = {
 					}
 				}
 			}
-			has_variable = grand_embassy
+			custom_tooltip = {
+				text = variable_grand_embassy_tt
+				has_variable = grand_embassy
+			}
 		}
 
 	}
@@ -10631,7 +10655,6 @@ flavor_mos.94 = {
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1685.1.1
 		to = 1725.1.1
 		monthly_chance = 5
@@ -11040,7 +11063,7 @@ flavor_mos.96 = {
 			has_variable = posolsky_prikaz_established
 		}
 
-		scope:target_character = { move_country = root }
+		scope:afanasy_nashchokin = { move_country = root }
 
 		add_country_modifier = {
 			modifier = posolsky_prikaz_excelling
@@ -11267,8 +11290,10 @@ flavor_mos.98 = {
 
 		has_policy = dop_law_governing_senate
 
-		has_variable = prikazi
-
+		custom_tooltip = {
+			text = variable_prikazi_tt
+			has_variable = prikazi
+		}
 		location:neva = {
 			owner = root
 			controller = root
@@ -11340,7 +11365,6 @@ flavor_mos.99 = {
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1690.1.1
 		to = 1790.1.1
 		monthly_chance = 1
@@ -11458,7 +11482,6 @@ flavor_mos.100 = {
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1690.1.1
 		to = 1730.1.1
 		monthly_chance = 10
@@ -11585,7 +11608,6 @@ flavor_mos.101 = {
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1690.1.1
 		to = 1740.1.1
 		monthly_chance = 10
@@ -11599,8 +11621,10 @@ flavor_mos.101 = {
 
 	trigger = {
 
-		has_variable = incognito_travels_in_progress
-
+		custom_tooltip = {
+			text = variable_incognito_travels_in_progress_tt
+			has_variable = incognito_travels_in_progress
+		}
 		has_regent = no
 
 		any_known_country = {
@@ -11802,7 +11826,6 @@ flavor_mos.102 = {
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1695.1.1
 		to = 1745.1.1
 		monthly_chance = 5
@@ -11907,7 +11930,6 @@ flavor_mos.103 = {
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1700.1.1
 		to = 1800.1.1
 		monthly_chance = 1
@@ -12043,7 +12065,6 @@ flavor_mos.104 = {
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1675.1.1
 		to = 1700.1.1
 		monthly_chance = 5
@@ -12056,7 +12077,10 @@ flavor_mos.104 = {
 			controller = root
 		}
 
-		has_variable = posolsky_prikaz_established
+		custom_tooltip = {
+			text = variable_posolsky_prikaz_established_tt
+			has_variable = posolsky_prikaz_established
+		}
 	}
 
 	illustration_tags = {
@@ -12098,7 +12122,7 @@ flavor_mos.104 = {
 		name = flavor_mos.104.a
 		historical_option = yes
 
-		scope:target_character = { move_country = root }
+		scope:francois_le_fort = { move_country = root }
 		custom_tooltip = flavor_mos.104.tt2
 
 		ai_chance = {
@@ -12160,13 +12184,14 @@ flavor_mos.105 = {
 			}
 		}
 	}
+	outcome = neutral
 	image = "gfx/interface/illustrations/institutions/military_revolution.dds"
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
+
 		from = 1672.1.1
 		to = 1722.1.1
 		monthly_chance = 5
@@ -12321,8 +12346,10 @@ flavor_mos.106 = {
 
 	trigger = {
 
-		has_variable = preobrazhensky_semenovsky
-
+		custom_tooltip = {
+			text = variable_preobrazhensky_semenovsky_tt
+			has_variable = preobrazhensky_semenovsky
+		}
 		government_type = government_type:monarchy
 
 		ruler ?= {
@@ -12393,7 +12420,6 @@ flavor_mos.107 = {
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1674.1.1
 		to = 1710.1.1
 		monthly_chance = 10
@@ -12480,12 +12506,12 @@ flavor_mos.108 = {
 
 	title = flavor_mos.108.title
 	desc = flavor_mos.108.desc
+	outcome = neutral
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1700.1.1
 		to = 1750.1.1
 		monthly_chance = 1
@@ -12660,12 +12686,12 @@ flavor_mos.109 = {
 
 	title = flavor_mos.109.title
 	desc = flavor_mos.109.desc
+	outcome = neutral
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1700.1.1
 		to = 1755.1.1
 		monthly_chance = 10
@@ -12854,12 +12880,12 @@ flavor_mos.110 = {
 
 	title = flavor_mos.110.title
 	desc = flavor_mos.110.desc
+	outcome = neutral
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1703.1.1
 		to = 1760.1.1
 		monthly_chance = 20
@@ -12877,7 +12903,10 @@ flavor_mos.110 = {
 		}
 
 		NOT = {
-			has_variable = gannibal_studies_abroad
+			custom_tooltip = {
+				text = variable_gannibal_studies_abroad_tt
+				has_variable = gannibal_studies_abroad
+			}
 		}
 	}
 
@@ -12983,12 +13012,12 @@ flavor_mos.111 = {
 
 	title = flavor_mos.111.title
 	desc = flavor_mos.111.desc
+	outcome = neutral
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1705.1.1
 		to = 1775.1.1
 		monthly_chance = 5
@@ -13078,9 +13107,10 @@ flavor_mos.111 = {
 					NOR = {
 						location_rank = location_rank:town
 						location_rank = location_rank:city
+						location_rank = location_rank:megalopolis
 					}
 				}
-				change_location_rank = location_rank:town
+				change_location_rank_effect = { location_rank = location_rank:town }
 			}
 
 			construct_building = {
@@ -13138,12 +13168,12 @@ flavor_mos.112 = {
 
 	title = flavor_mos.112.title
 	desc = flavor_mos.112.desc
+	outcome = neutral
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1710.1.1
 		to = 1729.1.1
 		monthly_chance = 20
@@ -13162,6 +13192,7 @@ flavor_mos.112 = {
 			OR = {
 				location_rank = location_rank:town
 				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
 				has_building = building_type:star_fort
 			}
 		}
@@ -13273,12 +13304,12 @@ flavor_mos.113 = {
 
 	title = flavor_mos.113.title
 	desc = flavor_mos.113.desc
+	outcome = neutral
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1712.1.1
 		to = 1800.1.1
 		monthly_chance = 5
@@ -13321,9 +13352,10 @@ flavor_mos.113 = {
 					NOR = {
 						location_rank = location_rank:town
 						location_rank = location_rank:city
+						location_rank = location_rank:megalopolis
 					}
 				}
-				change_location_rank = location_rank:town
+				change_location_rank_effect = { location_rank = location_rank:town }
 			}
 			rename_location = st_petersburg
 			change_prosperity = prosperity_very_weak_bonus
@@ -13371,12 +13403,12 @@ flavor_mos.114 = {
 
 	title = flavor_mos.114.title
 	desc = flavor_mos.114.desc
+	outcome = neutral
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1671.1.1
 		to = 1681.1.1
 		monthly_chance = 20
@@ -13536,13 +13568,13 @@ flavor_mos.115 = {
 
 	title = flavor_mos.115.title
 	desc = flavor_mos.115.desc
+	outcome = neutral
 	image = "gfx/interface/illustrations/institutions/artillery_institution.dds"
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = MOS
-		tag = RUS
 		from = 1687.1.1
 		to = 1735.1.1
 		monthly_chance = 5
