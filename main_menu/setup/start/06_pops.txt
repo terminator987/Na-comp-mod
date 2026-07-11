@@ -17906,7 +17906,7 @@ sulechow = {
 	define_pop = {	type = peasants	size = 3.669	culture = german_silesian	religion = catholic }
 }
 zary = {
-	define_pop = {	type = clergy	size = 0.006	culture = brandenburgish	religion = catholic }
+	define_pop = {	type = clergy	size = 0.006	culture = markish	religion = catholic }
 	define_pop = {	type = peasants	size = 0.970	culture = silesian	religion = catholic }
 	define_pop = {	type = peasants	size = 6.305	culture = sorbian	religion = catholic }
 	define_pop = {	type = peasants	size = 2.766	culture = german_silesian	religion = catholic }
