@@ -1,45 +1,45 @@
 ﻿alliance_can_exist = {
-	scope:actor = {
-		opinion = { target = scope:recipient value >= 0 }
-		not = { has_blocked_treaties = scope:recipient }
-		not = { is_subject_of = scope:recipient }
-		not = { is_rival_of = scope:recipient }
+	$first$ = {
+		opinion = { target = $second$ value >= -201 }
+		not = { has_blocked_treaties = $second$ }
+		not = { is_subject_of = $second$ }
+		not = { is_rival_of = $second$ }
 		modifier:allowed_alliance = yes
 		NOT = {
 			is_member_of_international_organization_of_type = {
 				type = coalition
-				target = scope:recipient
+				target = $second$
 			}
 		}
 		NOT = {
-			in_union_with = scope:recipient
+			in_union_with = $second$
 		}
 		is_rebel_country = no
 	}
-	scope:recipient = {
-		opinion = { target = scope:actor value >= -201 }
-		not = { has_blocked_treaties = scope:actor }
-		not = { is_subject_of = scope:actor }
-		not = { is_rival_of = scope:actor }
+	$second$ = {
+		opinion = { target = $first$ value >= -201 }
+		not = { has_blocked_treaties = $first$ }
+		not = { is_subject_of = $first$ }
+		not = { is_rival_of = $first$ }
 		modifier:allowed_alliance = yes
 		NOT = {
 			is_member_of_international_organization_of_type = {
 				type = coalition
-				target = scope:actor
+				target = $first$
 			}
 		}
 		is_rebel_country = no
 	}
 	can_create_subject_alliance = {
-		actor = scope:actor
-		recipient = scope:recipient
+		actor = $first$
+		recipient = $second$
 	}
-	not = {
-		and = {
-			scope:actor = {
+	NOT = {
+		 AND = {
+			$first$ = {
 				is_hegemon = yes
 			}
-			scope:recipient = {
+			$second$ = {
 				is_hegemon = yes
 			}
 		}
