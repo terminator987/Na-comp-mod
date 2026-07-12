@@ -737,6 +737,7 @@ call_emergency_parliament = {
 			is_active_parliament = no
 			months_since_last_parliament_called <= "define:NCountry|PARLIAMENT_COOLDOWN_MONTHS"
 			at_war = yes
+			government_power >= 20
 			NOT = {
 				modifier:parliament_abolished = yes
 				modifier:has_a_parliamentary_system = no
