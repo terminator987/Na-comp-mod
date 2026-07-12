@@ -1,0 +1,58 @@
+#Feudalism
+feudalism_advance = {
+	age = age_1_traditions
+	icon = feudalism_advance
+
+	unlock_subject_type = fiefdom
+	unlock_government_reform = feudal_nobility
+	unlock_government_reform = margraviate
+	requires = horse_riding_advance
+
+	global_nobles_max_literacy = 20
+	allow_estate_parliament = yes
+	military_tactics = 1.0 # WAD, decision by johan
+	ai_weight = { add = 20 }
+	global_mercenaries_modifier = -0.6
+	mercenary_maintenance_efficiency = 2
+	land_morale_movement_cost = -1
+
+	allow = { has_embraced_institution = institution:feudalism }
+}
+
+#Renaissance
+renaissance_urbanisation = {
+	age = age_2_renaissance
+	requires = food_advance_renaissance
+
+
+	global_max_rgo_size_modifier_in_non_rural = 0.1
+	global_population_capacity_modifier = 0.15
+}
+
+#Age 3 population capacity 
+construction_center_advance = {
+	age = age_3_discovery
+	
+	unlock_building = construction_center
+	global_population_capacity_modifier = 0.15
+	requires = basic_financial_instruments
+}
+
+#Changed pharmacology
+pharmacology_advance = {
+	age = age_4_reformation
+
+	global_life_expectancy = 3
+	global_disease_resistance = 0.05
+	global_population_capacity_modifier = 0.3
+	depth = 0
+}
+
+#Aqueduct
+aqueduct_system = {
+	age = age_5_absolutism
+
+	requires = sanitation_advance
+
+	unlock_building = generic_aqueduct
+}
