@@ -8,6 +8,7 @@
 	
 	auto_slave_raid_different_religion = yes
 	peasants_estate_levy_size = 0.15
+	tribes_estate_levy_size = -0.3
 }
 zenata_roots = {
 	age = age_1_traditions
