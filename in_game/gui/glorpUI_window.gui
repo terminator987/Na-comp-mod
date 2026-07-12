@@ -342,17 +342,6 @@
                         	}
                         }
                     }
-
-                    # Other
-                    vbox = {
-                        visible = "[GetVariableSystem.HasValue( 'glorpUI_tab', 'other' )]"
-                        button_regular = {
-                            tooltip_enabled = no
-                            size = {150 35}
-                            text = "GLORP_UI_TOGGLE_DEBUG"
-                            onclick = "[ExecuteConsoleCommand('debug_mode')]"
-                        }
-                    }
                 }
             }
         }
