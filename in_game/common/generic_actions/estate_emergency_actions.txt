@@ -796,7 +796,7 @@ call_emergency_parliament = {
 					}
 				}
 			}
-			add_legitimacy = legitimacy_mild_penalty
+			add_legitimacy = legitimacy_extreme_penalty
 		}
 	}
 }
