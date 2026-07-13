@@ -39,8 +39,7 @@
 		country_modifier = {
 			nobles_estate_max_tax = 0.1
 			nobles_estate_agenda_impact = 0.1
-			global_nobles_estate_power = 0.1
-			global_nobles_city_desired_pop_scaled = 0.01
+			global_nobles_food_consumption = 0.1
 			monthly_towards_aristocracy = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -48,13 +47,11 @@
 		}
 		years = 2
 	}
-
 	dop_favor_the_burghers = {
 		country_modifier = {
 			burghers_estate_max_tax = 0.1
 			burghers_estate_agenda_impact = 0.1
-			global_burghers_estate_power = 0.1
-			global_burghers_city_desired_pop_scaled = 0.2
+			global_burghers_food_consumption = 0.1
 			court_language_is_market_language_importance_modifier = 1.5
 			monthly_towards_plutocracy = societal_value_monthly_move
 		}
@@ -68,8 +65,7 @@
 		country_modifier = {
 			clergy_estate_max_tax = 0.1
 			clergy_estate_agenda_impact = 0.1
-			global_clergy_estate_power = 0.1
-			global_clergy_city_desired_pop_scaled = 0.1
+			global_clergy_food_consumption = 0.1
 			court_language_is_liturgical_language_importance_modifier = 1.5
 			monthly_towards_spiritualist = societal_value_monthly_move
 		}
@@ -80,7 +76,7 @@
 	}
 
 	# Catholic variant: replaces the useless clergy_estate_max_tax (Catholics cannot tax clergy) with tax_income_efficiency (b) and a Curia benefit via monthly_religious_influence (c)
-	dop_favor_the_clergy_catholic = {
+		dop_favor_the_clergy_catholic = {
 		unique = yes
 		potential = {
 			religion = religion:catholic
@@ -88,8 +84,7 @@
 		country_modifier = {
 			tax_income_efficiency = small_tax_income_efficiency_bonus
 			clergy_estate_agenda_impact = 0.1
-			global_clergy_estate_power = 0.1
-			global_clergy_city_desired_pop_scaled = 0.1
+			global_clergy_food_consumption = 0.1
 			court_language_is_liturgical_language_importance_modifier = 1.5
 			monthly_religious_influence = 0.1
 			monthly_towards_spiritualist = societal_value_monthly_move
@@ -104,7 +99,8 @@
 		country_modifier = {
 			peasants_estate_max_tax = 0.1
 			peasants_estate_agenda_impact = 0.1
-			global_peasants_estate_power = 0.1
+			global_peasants_food_consumption = 0.1
+			global_laborers_food_consumption = 0.1
 			court_language_is_common_language_importance_modifier = 1.5
 			monthly_towards_free_subjects = societal_value_monthly_move
 			monthly_towards_liberalism = societal_value_monthly_move
@@ -115,7 +111,7 @@
 		years = 2
 	}
 
-	#Mali
+#Mali
 	dop_law_gbara = {
 		unique = yes
 		potential = {
@@ -125,7 +121,7 @@
 			nobles_estate_agenda_impact = 0.2
 			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
 			cultures_capacity = 1
-			add_accepted_culture_cost_modifier = -0.2
+			accepted_culture_maintenance_cost_modifier = -0.2
 			monthly_towards_decentralization = societal_value_monthly_move
 		}
 		estate_preferences = {
@@ -377,7 +373,7 @@
 		}
 
 		country_modifier = {
-			global_foreign_build_buildings_cost = -0.05
+			global_foreign_build_buildings_efficiency = 0.1
 			burghers_estate_agenda_impact = 0.2
 		}
 		estate_preferences = {
