@@ -13966,10 +13966,6 @@ countries = {
 
 			chateauroux boussac #S. de Chateauroux
 			chaumont_vexin
-
-		
-		}
-		own_control_integrated = {
 			#Appanages
 
 			#Poitou (Own by the ruler)
@@ -13991,6 +13987,11 @@ countries = {
 			brienne #C. Brienne
 			joinville #S. Joinville
 			grandpre #C. Grandpre
+
+		
+		}
+		own_control_integrated = {
+			
 		}
 
 		our_cores_conquered_by_others = {
