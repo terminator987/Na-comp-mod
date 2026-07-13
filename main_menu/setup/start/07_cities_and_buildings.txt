@@ -205,6 +205,7 @@ locations={
 	toulouse = { rank = city 	town_setup = french_city }
 	tours = { rank = city 		town_setup = french_city }
 	troyes = { rank = city 		town_setup = troyes_city }
+	dijon = { rank = city       town_setup = french_city }
 	
 	agen = { rank = town 			town_setup = french_town }
 	aix_en_provence = { rank = town town_setup = french_town }
@@ -227,7 +228,7 @@ locations={
 	chartres = { rank = town town_setup = french_town }
 	cherbourg = { rank = town town_setup = french_town }
 	clermont = { rank = town town_setup = french_town }
-	dijon = { rank = town town_setup = french_town }
+	
 	colmar = { rank = town town_setup = french_town }
 	mulhouse = { rank = town town_setup = french_town }
 	laon = { rank = town town_setup = french_town }
