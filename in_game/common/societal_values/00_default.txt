@@ -125,8 +125,6 @@ serfdom_vs_free_subjects = {
 		levy_recovery_modifier = 0.5
 		
 		nobles_estate_target_satisfaction = large_permanent_target_satisfaction
-
-		building_upkeep_efficiency = 0.1
 	
 		global_peasant_enfranchisment = -0.33
 		
