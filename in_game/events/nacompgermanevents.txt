@@ -31,7 +31,7 @@ german_events_nacomp.1 = {
 
 	option = {
 		name = german_events_nacomp.1.a
-		add_country_modifier = { modifier = german_minor_expansion years = 30 mode = add_and_extend }
+		add_country_modifier = { modifier = german_minor_expansion years = 20 mode = add_and_extend }
 	}
 }
 german_events_nacomp.2 = {
@@ -65,7 +65,7 @@ german_events_nacomp.2 = {
 
 	option = {
 		name = german_events_nacomp.2.a
-		add_country_modifier = { modifier = german_minor_expansion years = 30 mode = add_and_extend }
+		add_country_modifier = { modifier = german_minor_expansion years = 20 mode = add_and_extend }
 	}
 }
 german_events_nacomp.3 = {
@@ -98,7 +98,7 @@ german_events_nacomp.3 = {
 
 	option = {
 		name = german_events_nacomp.3.a
-		add_country_modifier = { modifier = german_minor_expansion years = 30 mode = add_and_extend }
+		add_country_modifier = { modifier = german_minor_expansion years = 20 mode = add_and_extend }
 	}
 }
 german_events_nacomp.4 = {
@@ -131,7 +131,7 @@ german_events_nacomp.4 = {
 
 	option = {
 		name = german_events_nacomp.4.a
-		add_country_modifier = { modifier = german_minor_expansion years = 30 mode = add_and_extend }
+		add_country_modifier = { modifier = german_minor_expansion years = 20 mode = add_and_extend }
 	}
 }
 german_events_nacomp.5 = {
@@ -164,7 +164,7 @@ german_events_nacomp.5 = {
 
 	option = {
 		name = german_events_nacomp.5.a
-		add_country_modifier = { modifier = german_minor_expansion years = 30 mode = add_and_extend }
+		add_country_modifier = { modifier = german_minor_expansion years = 20 mode = add_and_extend }
 	}
 }
 german_events_nacomp.6 = {
@@ -196,6 +196,6 @@ german_events_nacomp.6 = {
 
 	option = {
 		name = german_events_nacomp.6.a
-		add_country_modifier = { modifier = german_minor_expansion years = 30 mode = add_and_extend }
+		add_country_modifier = { modifier = german_minor_expansion years = 20 mode = add_and_extend }
 	}
 }
