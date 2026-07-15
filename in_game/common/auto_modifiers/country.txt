@@ -614,6 +614,7 @@ low_devotion = {
 
 	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 	monthly_religious_influence = -0.1
+	global_crown_estate_power = -0.10
 
 }
 
