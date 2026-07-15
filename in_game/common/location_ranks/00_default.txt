@@ -37,7 +37,6 @@ megalopolis = {
 		local_frontage_allowed = -3
 
 		local_mills_build_buildings_efficiency = 0.33
-		local_disease_resistance = -0.8
 		
 	}
 	
@@ -101,8 +100,6 @@ city = {
 		free_building_levels = 100
 
 		local_peasant_enfranchisment = 0.25
-
-		local_disease_resistance = -0.6
 		
 		max_constructions_at_same_time = 1
 

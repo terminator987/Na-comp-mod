@@ -2108,6 +2108,7 @@ precious_metal_distribution_law = {
 			global_silver_output_modifier = -0.05
 			minting_income_factor = 0.1
 			monthly_towards_mercantilism = societal_value_tiny_monthly_move
+			export_impact_on_demand = 0.05
 		}
 		estate_preferences = {
 			nobles_estate
