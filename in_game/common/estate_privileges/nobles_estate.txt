@@ -1863,7 +1863,7 @@ decentralized_mamluk_aristocracy = {
 
 	can_revoke = {
 		estate_satisfaction:nobles_estate > 0.80
-		"estate_power(estate_type:nobles_estate)" <= 0.15
+		"estate_power(estate_type:nobles_estate)" <= 0.25
 		stability >= 50
 	}
 	country_modifier = {
@@ -1871,7 +1871,7 @@ decentralized_mamluk_aristocracy = {
 		global_nobles_estate_power = 1
 		monthly_towards_aristocracy = societal_value_monthly_move
 		monthly_towards_decentralization = societal_value_monthly_move
-		global_max_control = -0.10
-		nobles_estate_max_tax = -0.15
+		global_max_control = -0.05
+		nobles_estate_max_tax = -0.1
 	}
 }
