@@ -1043,7 +1043,7 @@ janissary_barracks = {
 	is_foreign = no
 	pop_type = slaves
 	
-	max_levels = janissary_barracks_size
+	max_levels = 1
 	employment_size = slave_soldier_barracks
 	
 	category = military_category
