@@ -1,3 +1,18 @@
 ﻿maghreb_coastal_settlement = {
 	fishing_village = 2
 }
+french_town_no_castle = {
+	temple = 1
+	tools_guild = 1
+	mason = 1
+	pottery_guild = 1
+	brewery = 1
+	weapon_guild = 1
+	paper_guild = 1
+	granary = 1
+	tannery = 1
+	marketplace = 1
+}
+castle_settlement = {
+	castle = 1
+}

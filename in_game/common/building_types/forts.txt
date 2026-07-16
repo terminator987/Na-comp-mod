@@ -80,13 +80,13 @@ castle = {
 						has_building = building_type:fortress
 						has_building = building_type:fortress_church
 					}
+					is_capital = no
 				}
 			}
 			is_strait = yes
 		}
 	}
-	
-	
+
 	unique_production_methods = {
 		castle_maintenance = {
 			stone = 0.1
@@ -142,6 +142,7 @@ bastion = {
 						has_building = building_type:fortress
 						has_building = building_type:fortress_church
 					}
+					is_capital = no
 				}
 			}
 			is_strait = yes
@@ -207,6 +208,7 @@ star_fort = {
 						has_building = building_type:fortress
 						has_building = building_type:fortress_church
 					}
+					is_capital = no
 				}
 			}
 			is_strait = yes
@@ -270,12 +272,13 @@ fortress = {
 						has_building = building_type:fortress
 						has_building = building_type:fortress_church
 					}
+					is_capital = no
 				}
 			}
 			is_strait = yes
 		}
 	}
-	
+
 	build_time = large_fort_building
 
 	expensive = yes

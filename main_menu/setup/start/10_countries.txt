@@ -11131,9 +11131,6 @@ countries = {
 
 	#Saint-Claude Abbey - SCL
 	SCL = {
-		own_control_core = {
-			saint_claude
-		}
 
 		government = {
 			ruler = scl_jean_ii_rousillon
@@ -14234,6 +14231,8 @@ countries = {
 			macon #C. de Macon
 			besancon
 			choiseul
+			saint_claude
+			montbeliard
 		}
 
 		starting_technology_level = 3
@@ -14942,6 +14941,9 @@ countries = {
 			wallerfangen merzig
 			darney arches
 			luneville morhange sarreguemines
+			metz epinal sarrebourg vic_sur_seille
+			saint_avold
+			salm
 		}
 
 		starting_technology_level = 3
@@ -14998,6 +15000,8 @@ countries = {
 			saint_mihiel longwy #HRE
 			# own_control_integrated, but culture accepted
 			ligny etain
+			verdun fresnes
+			toul
 		}
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -36216,9 +36220,6 @@ countries = {
 	}
 
 	TUL = { #Toul
-		own_control_core = {
-			toul
-		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -36241,9 +36242,6 @@ countries = {
 	}
 
 	VDU = { #Verdun
-		own_control_core = {
-			verdun fresnes
-		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -36262,9 +36260,6 @@ countries = {
 	}
 
 	MTB = { #Montbeliard (Appanage)
-		own_control_core = {
-			montbeliard
-		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -36303,10 +36298,6 @@ countries = {
 	}
 
 	MTZ = { #Metz
-		own_control_core = {
-			metz epinal sarrebourg vic_sur_seille
-			saint_avold
-		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"
@@ -36373,9 +36364,6 @@ countries = {
 	}
 
 	SLM = { #Salm
-		own_control_core = {
-			salm
-		}
 
 		starting_technology_level = 3
 		include = "expl_western_europe"

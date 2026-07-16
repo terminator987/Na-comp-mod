@@ -207,9 +207,9 @@ locations={
 	troyes = { rank = city 		town_setup = troyes_city }
 	dijon = { rank = city       town_setup = french_city }
 	
-	agen = { rank = town 			town_setup = french_town }
+	agen = { rank = town 			town_setup = french_town_no_castle }
 	aix_en_provence = { rank = town town_setup = french_town }
-	albi = { rank = town town_setup = french_town }
+	albi = { rank = town town_setup = french_town_no_castle }
 	amiens = { rank = town town_setup = french_town }
 	angouleme = { rank = town town_setup = french_town }
 	arles = { rank = town town_setup = french_town }
@@ -235,7 +235,7 @@ locations={
 	le_puy = { rank = town town_setup = french_town }
 	libourne = { rank = town town_setup = french_town }
 	lyon = { rank = town town_setup = french_town }
-	montauban = { rank = town town_setup = french_town }
+	montauban = { rank = town town_setup = french_town_no_castle }
 	montbrison = { rank = town town_setup = french_town }
 	nantes = { rank = town town_setup = french_town }
 	nice = { rank = town town_setup = french_town }
@@ -249,7 +249,10 @@ locations={
 	rennes = { rank = town town_setup = french_town }
 	rodez = { rank = town town_setup = french_town }
 	saint_flour = { rank = town town_setup = french_town }
-	sens = { rank = town town_setup = french_town }
+	sens = { rank = town town_setup = french_town_no_castle }
+	nemours = { rank = rural_settlement town_setup = castle_settlement }
+	langres = { rank = rural_settlement town_setup = castle_settlement }
+	macon = { rank = rural_settlement town_setup = castle_settlement }
 	sisteron = { rank = town town_setup = french_town }
 	strasbourg = { rank = town town_setup = french_town }
 	tarbes = { rank = town town_setup = french_town } #Bagneres-de-Bigorre
