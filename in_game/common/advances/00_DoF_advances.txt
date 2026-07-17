@@ -13,7 +13,7 @@ feudalism_advance = {
 	military_tactics = 1.0 # WAD, decision by johan
 	ai_weight = { add = 20 }
 	global_mercenaries_modifier = -0.6
-	mercenary_maintenance_efficiency = -2
+	mercenary_maintenance_efficiency = -1.5
 	land_morale_movement_cost = -1
 
 	allow = { has_embraced_institution = institution:feudalism }
