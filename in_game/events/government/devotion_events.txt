@@ -850,48 +850,6 @@ devotion_events.19 = {
 	}
 }
 
-#################################
-# The Secularists Among Us
-#################################
-devotion_events.21 = {
-	type = country_event
-	title = devotion_events.21.title
-	desc = devotion_events.21.desc
-	outcome = neutral
-	
-	illustration_tags = {
-		10 = angry
-		10 = exterior
-	}
-	
-	trigger = {
-		government_type = government_type:theocracy
-		NOT = { tag = PAP }
-		devotion < 20
-		has_ruler = yes
-	}
-
-	immediate = {
-		ruler = { save_scope_as = target_ruler }
-		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
-	}
-
-	option = {
-		name = devotion_events.21.a
-		add_estate_satisfaction = { type = estate_type:clergy_estate
-			value = estate_satisfaction_extreme_penalty
-		}
-		change_government_type = government_type:monarchy
-	}
-	
-	option = {
-		name = devotion_events.21.b
-		add_estate_satisfaction = { type = estate_type:clergy_estate
-			value = estate_satisfaction_mild_bonus
-		}
-		add_prestige = prestige_extreme_penalty
-	}
-}
 
 ######################
 # Decadence Rules
