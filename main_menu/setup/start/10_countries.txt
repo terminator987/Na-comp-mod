@@ -13984,6 +13984,17 @@ countries = {
 			brienne #C. Brienne
 			joinville #S. Joinville
 			grandpre #C. Grandpre
+			toulouse villemur castelnaudary lavaur #Toulousain
+			carcassonne fenouillet limoux #Razés
+			saint_pons beziers agde lodeve #Narbonnais
+			melgueil nimes uzes french_ales #Nimois
+			villefranche rodez st_affrique millau entraigues peyrusse #Rouergue
+			castres albi lautrec #Castres
+			mirepoix foix pamiers #Foix
+			florac #Gevaudan
+			figeac cahors montflanquin gourdon #Quercy
+			agen montauban marmande #Agenais 
+			sarlat limeuil bergerac #Périgord  
 
 		
 		}
@@ -16338,17 +16349,7 @@ countries = {
 	#Toulouse (Appanage)
 	TOU = {
 		own_control_core = {
-			toulouse villemur castelnaudary lavaur #Toulousain
-			carcassonne fenouillet limoux #Razés
-			saint_pons beziers agde lodeve #Narbonnais
-			melgueil nimes uzes french_ales #Nimois
-			villefranche rodez st_affrique millau entraigues peyrusse #Rouergue
-			castres albi lautrec #Castres
-			mirepoix foix pamiers #Foix
-			florac #Gevaudan
-			figeac cahors montflanquin gourdon #Quercy
-			agen montauban marmande #Agenais 
-			sarlat limeuil bergerac #Périgord       		 
+			     		 
 		}
 
 		starting_technology_level = 3

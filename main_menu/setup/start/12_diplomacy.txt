@@ -6,9 +6,7 @@ diplomacy_manager = {
     dependency = { first = ENG second = DHM subject_type = vassal }
     dependency = { first = ENG second = CET subject_type = vassal }
     dependency = { first = ENG second = LAN subject_type = vassal }
-    dependency = { first = ENG second = NRM subject_type = fiefdom }
-    dependency = { first = ENG second = EVR subject_type = fiefdom }
-    dependency = { first = FRA second = MRT subject_type = vassal }
+   
 
     dependency = { first = SCO second = LOI subject_type = vassal }
     dependency = { first = SCO second = ROS subject_type = vassal }
@@ -42,7 +40,7 @@ diplomacy_manager = {
     dependency = { first = TYR second = KEE subject_type = vassal }
     dependency = { first = LEI second = OSS subject_type = vassal }
     dependency = { first = MCM second = BEA subject_type = vassal }
-
+    dependency = { first = ENG second = AQN subject_type = fiefdom }
     scripted_mutual = { first = THO second = CWM type = alliance }
     scripted_mutual = { first = MYO second = UMH type = alliance }
 
@@ -164,12 +162,16 @@ diplomacy_manager = {
     dependency = { first = FRA second = DRE subject_type = appanage }
     dependency = { first = FRA second = VDM subject_type = appanage }
     dependency = { first = FRA second = ETA subject_type = appanage }
-    dependency = { first = FRA second = BRI subject_type = vassal }
+    dependency = { first = FRA second = BRI subject_type = appanage }
     dependency = { first = FRA second = ANJ subject_type = appanage }
     dependency = { first = FRA second = ARS subject_type = appanage }
     dependency = { first = FRA second = ANG subject_type = appanage }
     dependency = { first = FRA second = AUV subject_type = appanage }
     dependency = { first = FRA second = BOU subject_type = appanage }
+    dependency = { first = FRA second = GUY subject_type = appanage }
+    dependency = { first = FRA second = NRM subject_type = appanage }
+    dependency = { first = FRA second = EVR subject_type = appanage }
+    dependency = { first = FRA second = MRT subject_type = appanage }
    
 
 
@@ -191,7 +193,7 @@ diplomacy_manager = {
     dependency = { first = ARS second = STP subject_type = vassal }
     dependency = { first = ALE second = PRC subject_type = fiefdom }
     dependency = { first = BOU second = MRC subject_type = fiefdom }
-
+    
     #Burgundy Vassals
     dependency = { first = BUR second = LOR subject_type = vassal }
     dependency = { first = BUR second = MTZ subject_type = vassal }
