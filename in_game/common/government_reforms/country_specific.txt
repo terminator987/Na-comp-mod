@@ -933,7 +933,6 @@ ancient_french_taxation = {
 		global_peasant_enfranchisment = -0.20
 		government_reform_slots = 1
 		nobles_estate_max_tax = 0.10
-		global_levy_size_modifier = -0.10
 		subject_loyalty = -10
 	}
 	years = 2
@@ -970,7 +969,6 @@ french_feudal_nobility = { # French Feudalism
 		monthly_towards_serfdom = societal_value_large_monthly_move
 		monthly_towards_aristocracy = societal_value_monthly_move
 		subject_loyalty = -10
-		global_levy_size_modifier = -0.10
 	}
 	years = 2
 }
