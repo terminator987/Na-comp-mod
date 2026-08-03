@@ -1,0 +1,13 @@
+cheaper_urban_rights = {
+	age = age_3_discovery
+
+	potential = {
+		num_of_non_rural > 1
+	}
+
+	country_modifier = {
+		grant_town_rights_cost_modifier = -0.5
+	}
+
+	years = 10
+}
