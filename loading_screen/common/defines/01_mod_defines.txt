@@ -78,9 +78,7 @@ NDiplomacy = {
 NEconomy = {
 	OVER_FORT_LIMIT_MULTIPLIER = 10.0
 }
-NLocation = {
-    FORT_GARRISON_UPKEEP = 1.5
-}
+
 NCombat = {
     SIEGE_REGIMENTS_FOR_ARTILLERY = 1
 	COMBAT_DICE_SIDE = 7
