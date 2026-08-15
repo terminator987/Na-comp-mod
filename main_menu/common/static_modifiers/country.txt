@@ -6182,8 +6182,7 @@ hussite_heresy_modifier = {
 	game_data = {
 		category = country
 	}
-	global_estate_target_satisfaction = small_permanent_target_satisfaction_penalty
-	monthly_religious_influence = -0.1
+	
 }
 
 working_from_within = {
